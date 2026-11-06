@@ -1,0 +1,133 @@
+{
+  "schema": "openarm_camera_rig_v1",
+  "revision": "2026-10-28_camera_rig_v2_symmetric_wrist_mounts",
+  "description": "Official camera modules on project-adapted OpenArm v1/S-tool mounts. Shared MJCF is displayed by MuJoCo and Viser.",
+  "default_profile": "visual_only",
+  "profiles": {
+    "visual_only": {
+      "added_mass_kg": 0.0,
+      "collision_enabled": false,
+      "note": "Visible camera/support geometry and optical viewpoints only. Existing robot inertias and contact pairs remain unchanged. This is not a full inertial model of the physical kit."
+    },
+    "collision_envelopes": {
+      "added_mass_kg": 0.0,
+      "collision_enabled": true,
+      "note": "Explicit optional simplified outer collision envelopes; no unverified module/support inertia is invented. Not a complete physical camera-kit model."
+    }
+  },
+  "head": {
+    "model": "Stereolabs ZED Mini",
+    "body_name": "openarm_head_camera_mount",
+    "image_size_px": [
+      1280,
+      720
+    ],
+    "housing_dimensions_m": [
+      0.1245,
+      0.0305,
+      0.0265
+    ],
+    "stereo_baseline_m": 0.063,
+    "manufacturer_camera_mass_kg": 0.0629,
+    "source_nominal_fov_deg": {
+      "horizontal": 102.0,
+      "vertical": 57.0,
+      "diagonal": 118.0
+    },
+    "model_pinhole_projection": {
+      "vertical_fov_deg": 57.0,
+      "aspect_ratio": 1.7777777777777777,
+      "horizontal_fov_is_derived_from_vertical_and_aspect": true,
+      "note": "Manufacturer maximum H/V figures are not a mutually calibrated ideal pinhole model at every mode. Simulation uses vertical 57 degrees and 1280x720, deriving horizontal FOV. Real lens calibration/distortion are not reproduced."
+    },
+    "default_settings": {
+      "tilt": 52.0,
+      "yaw": 0.0,
+      "fov": 57.0,
+      "forward": 8.0,
+      "height": 22.0
+    },
+    "mount_reference": "Project-designed post above OpenArm shoulders; source optical midpoint is shoulder height +22 cm, +8 cm along torso forward. These are project adaptation coordinates, not official OpenArm CAD mounting coordinates.",
+    "geometry": {
+      "kind": "official_manufacturer_mesh",
+      "mesh_file": "../assets/cameras/zedmini/zedm.stl",
+      "geometry_status": "Official Stereolabs ZED Mini mesh; project adapter transforms checked against its URDF."
+    },
+    "sources": [
+      "https://docs.openarm.dev/hardware/openarm-2.0/upgrade-from-1.0/",
+      "https://docs.stereolabs.com/docs/products/cameras/zed/specifications",
+      "https://support.stereolabs.com/articles/8809264540-what-is-the-camera-focal-length-and-field-of-view",
+      "https://github.com/stereolabs/zed-ros2-description"
+    ]
+  },
+  "wrist": {
+    "model": "Arducam B0495",
+    "image_size_px": [
+      960,
+      600
+    ],
+    "native_image_size_px": [
+      1920,
+      1200
+    ],
+    "board_dimensions_m": [
+      0.034,
+      0.034,
+      0.002
+    ],
+    "visual_envelope_depth_m": 0.024,
+    "visual_envelope_depth_status": "Project simplified optical barrel/housing envelope; exact assembled thickness not yet verified against CAD.",
+    "source_nominal_fov_deg": {
+      "horizontal": 82.0,
+      "vertical": 66.0,
+      "diagonal": 95.0
+    },
+    "model_pinhole_projection": {
+      "vertical_fov_deg": 66.0,
+      "aspect_ratio": 1.6,
+      "horizontal_fov_is_derived_from_vertical_and_aspect": true,
+      "note": "Ideal pinhole uses vertical 66 degrees at 16:10; real distortion/calibration is not reproduced. Effective FOV includes actual model occlusion."
+    },
+    "mount_reference": "Project-designed symmetric holders fixed directly to left/right J7 wrists, above the hand in matching wrist coordinates. Offsets are measured from the hand/tool installation origin using wrist axes; fixed hook rotations, including left-Z180, do not flip the camera or support. Sensors follow wrist joints, aim at the tool region, and never track the valve.",
+    "geometry_status": "Simplified board/lens/housing sized from manufacturer board drawing; custom S-tool support is not the official 2.0 in-gripper assembly.",
+    "focus": {
+      "type": "manual",
+      "factory_default_distance": "2 m to infinity",
+      "near_focus_limit": "not published; real near-field image sharpness requires focus adjustment/verification",
+      "blur_simulated": false
+    },
+    "sources": [
+      "https://docs.openarm.dev/hardware/openarm-2.0/gripper/",
+      "https://docs.openarm.dev/hardware/openarm-2.0/upgrade-from-1.0/",
+      "https://www.arducam.com/downloads/datasheet/B0495_AR0234_Global_Shutter_USB3.0_Camera_Module_Datasheet.pdf",
+      "https://cdn.robotshop.com/media/A/Adu/RB-Adu-276/pdf/arducam_2_3mp_ar0234_color_global_shutter_usb_3_0_camera_module_w_encolsure_datasheet.pdf"
+    ],
+    "board_thickness_status": "The 34x34 mm board width/height are documented; the 2 mm thickness is a project visualization approximation.",
+    "board_dimensions_source_status": "Official datasheet page 3 search cache gives board size 34x34 mm. Direct PDF fetch currently unavailable; no module depth or mass inferred from that board size.",
+    "mount_optical_offset_in_wrist_frame_m": [
+      0.045,
+      0.0,
+      0.02
+    ],
+    "mount_aim_offset_in_wrist_frame_m": [
+      0.0,
+      0.0,
+      0.09
+    ],
+    "mount_up_in_wrist_frame": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "support_anchor_offset_in_wrist_frame_m": [
+      0.018,
+      0.0,
+      -0.012
+    ]
+  },
+  "notes": [
+    "Only physical optical pose, ideal pinhole field of view and geometric occlusion are represented; no depth-estimation pipeline or sensor noise is simulated.",
+    "robot_head remains a compatibility alias of head_left; no synthetic center-eye stream is presented as a real stereo image.",
+    "All dimensions are metres, angles degrees, camera frame is MuJoCo -Z forward / +Y image up."
+  ]
+}

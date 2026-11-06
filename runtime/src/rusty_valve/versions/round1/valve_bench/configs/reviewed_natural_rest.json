@@ -1,0 +1,91 @@
+{
+  "schema": "reviewed_bimanual_natural_rest_v1",
+  "name": "双臂自然垂放修正",
+  "robot": "openarm_s_hook",
+  "scope": "all_workstations",
+  "applies_to": [
+    "initial_pose",
+    "final_pose"
+  ],
+  "source_frame_file": "provenance/recorded_sources.json#source_00068",
+  "source_frame_index": 9,
+  "source_frame_label": "自然垂放修正",
+  "user_instruction_date": "2026-10-27",
+  "left_pose_origin": "user_saved_and_designated_as_shared_rest",
+  "right_pose_origin": "requested_mirror_of_left",
+  "mirror_joint_signs": [
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "arms": {
+    "left": {
+      "joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7"
+      ],
+      "joint_angles_rad": [
+        0.017832844065919572,
+        0.014516345248056249,
+        -0.013705908258732535,
+        0.2683443731333422,
+        -0.004353561667046997,
+        0.004414819202316108,
+        -0.17823315206248028
+      ]
+    },
+    "right": {
+      "joint_names": [
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7"
+      ],
+      "joint_angles_rad": [
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028
+      ]
+    }
+  },
+  "body_relative": true,
+  "changes_valve": false,
+  "changes_body_layout": false,
+  "changes_camera": false,
+  "editor_sequence_file": "provenance/recorded_sources.json#source_00069",
+  "data_kind": "user_pose_and_geometric_mirror_not_physics",
+  "note": "仅规定双臂的起始和最终姿势；不规定关节中途回零，不替代接近和返回连接段，不等于整条G1通过。当前历史帧与成绩保留。",
+  "implementation_status": {
+    "shared_reference_saved": true,
+    "executor_changed": true,
+    "historical_frames_changed": false,
+    "editor_default_sync": "requested_in_tool_thread",
+    "executor_integration_note": "修正G1、共享下垂及方向口径已确认并复跑通过；S4保留原接近连接与曲线后A1开关2/2通过。此前S4失败试验另存，第5项未开始。",
+    "executor_direction_policy": "g1_stage_aware_orientation_v1",
+    "physics_regression_completed": true,
+    "g1_review_pending": false,
+    "confirmed_G1_regression": {
+      "open_passed": true,
+      "close_passed": true,
+      "record_root": "试验记录/2026-10-27_V2_确认G1复跑与S4/S4前复跑"
+    },
+    "S4_status": "A1_standard_open_and_close_2_of_2_passed_with_preserved_approach_connections",
+    "S4_result_root": "试验记录/2026-10-27_V2_S4保留原连接复测"
+  }
+}

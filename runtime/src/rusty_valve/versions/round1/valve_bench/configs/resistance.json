@@ -1,0 +1,69 @@
+{
+  "schema": "wp1-passive-valve-resistance-v2",
+  "units": {
+    "torque": "N*m",
+    "angle": "rad",
+    "speed": "rad/s",
+    "time": "s"
+  },
+  "model": "MuJoCo passive dry-friction constraint; a static breakaway bound and an angle/direction-dependent moving bound, with rest/motion hysteresis. The actual force is read from the solver, never inferred from this configured bound.",
+  "common": {
+    "joint_name": "valve_hinge",
+    "motion_enter_rad_s": 0.02,
+    "rest_enter_rad_s": 0.003,
+    "rest_dwell_s": 0.1,
+    "solref": [
+      0.002,
+      1.0
+    ],
+    "solimp": [
+      0.9999,
+      0.9999,
+      0.001,
+      0.5,
+      2.0
+    ]
+  },
+  "profiles": {
+    "ball": {
+      "parameters": {
+        "breakaway_Nm": 14.0,
+        "running_ratio": 0.75,
+        "opening_end_ratio": 0.9,
+        "closing_end_ratio": 0.9,
+        "opening_start_fraction": 0.15,
+        "opening_end_fraction": 0.22,
+        "closing_start_fraction": 0.15,
+        "closing_end_fraction": 0.22
+      },
+      "magnitude_source": "Bray TB1005, page 3: DN25 full-port two-way ball valve with RPTFE seats, 0 bar line pressure, basic torque 14 N*m. Used as the task breakaway reference for the Bray Flow-Tek 7000/7100 dimension-reference valve. This is manufacturer actuator-sizing guidance, not a direct measurement of our valve or a universal DN25 standard value; application and operation-frequency factors may change real requirements.",
+      "magnitude_url": "https://www.bray.com/docs/default-source/technical-bulletin/en_tb-1005_act-selectguide-ball-valves.pdf#page=3",
+      "shape_source": "Bray TB1005, page 11: typical floating-ball valve curve in both opening and closing directions, break torque 100%, running approximately 75%, ending approximately 90%. MSS SP-91-2025 provides broader qualitative guidance; it does not specify a universal DN25 torque.",
+      "shape_assumptions": "The model uses the manufacturer typical 100/75/90 percent ratios in both directions. Smooth initial transitions span 15% of travel and end rises span 22%; these transition positions, interpolation, static re-entry and friction hysteresis are task assumptions, not digitized or individually measured Bray curves. With scale=1, nominal break/run/end levels are 14/10.5/12.6 N*m.",
+      "measured_real_valve": false,
+      "shape_url": "https://www.bray.com/docs/default-source/technical-bulletin/en_tb-1005_act-selectguide-ball-valves.pdf#page=11"
+    },
+    "globe": {
+      "parameters": {
+        "breakaway_Nm": 5.0,
+        "running_ratio": 0.55,
+        "closing_end_ratio": 1.0,
+        "opening_start_fraction": 0.08,
+        "closing_start_fraction": 0.08,
+        "closing_end_fraction": 0.18
+      },
+      "magnitude_source": "Temporary 5 N*m task assumption for the generic DN25 handwheel globe valve. Not a KSB/Festo/ASAHI product measurement. Replace after a specific applicable datasheet or a real measurement is obtained.",
+      "shape_source": "MSS SP-91-2025 Figure 6/7 show threaded-stem globe valve torque, distinguishing flow under/over the disc. This first task uses the qualitative flow-under seating rise; it does not model pressure or calculate screw efficiency.",
+      "shape_assumptions": "All numerical ratios and transition widths are adjustable assumptions. This is an equivalent torque at the rotating handwheel hinge. Fluid forces, spindle translation and sealing are not validated by the model.",
+      "measured_real_valve": false
+    }
+  },
+  "parameter_notes": {
+    "scale": "Nonnegative load multiplier used for later load scans. Does not change robot motor caps.",
+    "solref_solimp": "Numerical regularization copied from the corrected old valve-only friction experiment. Not material properties.",
+    "hysteresis": "Motion begins above 0.02 rad/s; static mode returns only below 0.003 rad/s for 0.1 s. These are numerical task assumptions and must be reported as such.",
+    "limits": "Joint stops are set by the scene and handled separately from friction. Ball close-angle variation of 87-92 degrees is a task setting, not a measured closing angle.",
+    "not_modelled": "No fluid, pressure-dependent forces, wear, seal leakage, thermal behavior, or real tactile measurements. Any contact/friction force recorded is a simulation result.",
+    "reference_condition": "Ball default reference: Bray full-port DN25, RPTFE seats, line pressure 0 bar; fluid dynamics and pressure are not simulated. Reference torque is not a certified capability or a measurement of an individual valve."
+  }
+}

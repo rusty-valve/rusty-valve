@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "adapter_id": "openarm_s_hook_left_mount180_v1",
+  "model_file": "assets/openarm_v1/openarm_s_hook_left_mount180_v1.xml",
+  "tool_adapter": "s_hook",
+  "tool_preinstalled": true,
+  "tool_integration_revision": "preinstalled_s_tool_identity_v1",
+  "active_side": "left",
+  "placement": {
+    "root_body": "openarm_body_link0",
+    "base_position_m": [
+      0.16475009055163012,
+      -1.43,
+      0.703
+    ],
+    "base_yaw_deg": 0.0,
+    "base_quaternion_wxyz": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "shoulder_height_m": 1.4,
+    "shoulder_reference_offset_m": 0.697
+  },
+  "initial_keyframe": "home",
+  "mount_support": true,
+  "robot_scope": {
+    "root_bodies": [
+      "openarm_body_link0"
+    ],
+    "geom_names": [
+      "robot_mount_stand",
+      "robot_mount_foot"
+    ]
+  },
+  "geometry_groups": {
+    "operation_end": {
+      "body_names": [
+        "openarm_left_hook"
+      ]
+    },
+    "idle_hand": {
+      "body_names": [
+        "openarm_right_link0"
+      ]
+    },
+    "robot_other": {
+      "remaining_robot_collision_geoms": true
+    }
+  },
+  "control": {
+    "mode": "joint_position",
+    "units": "rad for arm hinges; m for stock gripper sliders",
+    "actuator_names": [
+      "left_joint1_ctrl",
+      "left_joint2_ctrl",
+      "left_joint3_ctrl",
+      "left_joint4_ctrl",
+      "left_joint5_ctrl",
+      "left_joint6_ctrl",
+      "left_joint7_ctrl",
+      "right_joint1_ctrl",
+      "right_joint2_ctrl",
+      "right_joint3_ctrl",
+      "right_joint4_ctrl",
+      "right_joint5_ctrl",
+      "right_joint6_ctrl",
+      "right_joint7_ctrl"
+    ],
+    "controlled_joint_names": [
+      "openarm_left_joint1",
+      "openarm_left_joint2",
+      "openarm_left_joint3",
+      "openarm_left_joint4",
+      "openarm_left_joint5",
+      "openarm_left_joint6",
+      "openarm_left_joint7",
+      "openarm_right_joint1",
+      "openarm_right_joint2",
+      "openarm_right_joint3",
+      "openarm_right_joint4",
+      "openarm_right_joint5",
+      "openarm_right_joint6",
+      "openarm_right_joint7"
+    ],
+    "robot_joint_names": [
+      "openarm_left_joint1",
+      "openarm_left_joint2",
+      "openarm_left_joint3",
+      "openarm_left_joint4",
+      "openarm_left_joint5",
+      "openarm_left_joint6",
+      "openarm_left_joint7",
+      "openarm_right_joint1",
+      "openarm_right_joint2",
+      "openarm_right_joint3",
+      "openarm_right_joint4",
+      "openarm_right_joint5",
+      "openarm_right_joint6",
+      "openarm_right_joint7"
+    ],
+    "active_joint_names": [
+      "openarm_left_joint1",
+      "openarm_left_joint2",
+      "openarm_left_joint3",
+      "openarm_left_joint4",
+      "openarm_left_joint5",
+      "openarm_left_joint6",
+      "openarm_left_joint7"
+    ],
+    "active_actuator_names": [
+      "left_joint1_ctrl",
+      "left_joint2_ctrl",
+      "left_joint3_ctrl",
+      "left_joint4_ctrl",
+      "left_joint5_ctrl",
+      "left_joint6_ctrl",
+      "left_joint7_ctrl"
+    ],
+    "idle_joint_names": [
+      "openarm_right_joint1",
+      "openarm_right_joint2",
+      "openarm_right_joint3",
+      "openarm_right_joint4",
+      "openarm_right_joint5",
+      "openarm_right_joint6",
+      "openarm_right_joint7"
+    ],
+    "idle_actuator_names": [
+      "right_joint1_ctrl",
+      "right_joint2_ctrl",
+      "right_joint3_ctrl",
+      "right_joint4_ctrl",
+      "right_joint5_ctrl",
+      "right_joint6_ctrl",
+      "right_joint7_ctrl"
+    ],
+    "ee_site_name": "left_ee_control",
+    "operation_body_name": "openarm_left_hook"
+  },
+  "additional_sites": [],
+  "cameras": [],
+  "provenance": {
+    "model": "Official OpenArm v1 bimanual MJCF already in repository",
+    "source_commit": "a3c8a57ec15d385e3c1dbd3fd090ee486b7f258c",
+    "reference": "Same unmodified arm inertias, joint limits, arm actuator gains and force caps as existing bimanual_robot.py; only declared fixed base placement, camera/sites and selected end tool differ.",
+    "versioned_from": "provenance/recorded_sources.json#source_01799",
+    "robot_source": "assets/openarm_v1/openarm_bimanual.xml",
+    "hook_installer": "valve_bench.hook_tool.install_hook",
+    "tool_geometry_version": "s_hook_v3_real_bores_2026-10-24",
+    "change": "Only fixed left hook local Z rotation 180 degrees; right and arm model untouched.",
+    "user_approval": "The shared natural rest pose and both A1 operation references were confirmed.",
+    "recorded_at": "2026-10-27T23:22:34.596951+08:00",
+    "installed_tool_already_in_model": true
+  },
+  "category_note": "operation_end includes every collision part of the active S end-effector; idle_hand is the complete unused arm and tool; robot_other is the rest. Legacy v2.1 did not qualify by working face. Current S-tool v2.2 additionally identifies true blue pulling or orange pushing surfaces from solved contact geometry and wrench; the operation_end group must not be narrowed to hide back-side contacts.",
+  "model_revision": "left_hook_mount_z180_review_v1",
+  "camera_rig": {
+    "profile": "visual_only",
+    "config": "valve_bench/configs/openarm_camera_rig.json"
+  }
+}

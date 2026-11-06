@@ -1,0 +1,980 @@
+{
+  "id": "act_round2__new_unseen_positions__coverage_test_A2_close_19_train_episode_0161",
+  "group": "act_round2",
+  "suite": "new_unseen_positions",
+  "folder": "evaluations/round2/new_unseen_positions/coverage_test_A2_close_19_train_episode_0161",
+  "record": "evaluations/round2/new_unseen_positions/coverage_test_A2_close_19_train_episode_0161/physical_step_evidence.jsonl.gz",
+  "format": "solved_log",
+  "original_file": "evaluations/round2/new_unseen_positions/coverage_test_A2_close_19_train_episode_0161/original_score_v25.json",
+  "published_score_file": "evaluations/round2/new_unseen_positions/coverage_test_A2_close_19_train_episode_0161/result.json",
+  "original_score": {
+    "procedure_version": "A1-v2.5",
+    "passed": false,
+    "verdict": "未通过",
+    "grade": "转了一些",
+    "failed_rules": [
+      "final_target_hold"
+    ],
+    "unverified_rules": [],
+    "hard_collision": false
+  },
+  "previous_published_passed": false,
+  "previous_published_grade": "转了一些",
+  "tool_specific_checks": {
+    "applicable_to": "S_tool_only",
+    "original": {
+      "status": "pass",
+      "applicable_to": "S_tool_only",
+      "reason": "实际橙面推或蓝面勾拉对正确转向做正功，未观察到非工作面朝任务目标方向驱动",
+      "correct_working_face_drive_seen": true,
+      "nonworking_face_drive_seen": false,
+      "ambiguous_face_drive_seen": false,
+      "evidence_complete": true,
+      "qualification_direction": "toward_task_target",
+      "driving_basis": "positive solved contact torque times actual valve angular velocity; qualification concerns task-target-direction drive; reverse work is recorded and terminal holding judges rebound; no face-share/force/angle/speed-margin threshold",
+      "face_stats": {
+        "nonworking": {
+          "driving_samples": 467,
+          "positive_work_J": 3.250830986085036e-06,
+          "maximum_absolute_torque_Nm": 2.7475534314300623,
+          "target_direction_drive_samples": 0,
+          "terminal_record_only_drive_samples": 0
+        },
+        "unknown": {
+          "driving_samples": 828,
+          "positive_work_J": 1.2040837251749716e-05,
+          "maximum_absolute_torque_Nm": 4.933460992239491,
+          "target_direction_drive_samples": 0,
+          "terminal_record_only_drive_samples": 0
+        },
+        "blue_pull": {
+          "driving_samples": 50061,
+          "positive_work_J": 7.258703703226844,
+          "maximum_absolute_torque_Nm": 7.546972550313762,
+          "target_direction_drive_samples": 50061,
+          "terminal_record_only_drive_samples": 0
+        }
+      },
+      "events": [
+        {
+          "time_s": 7.241000000000753,
+          "opening_deg": 90.00001110652086,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "nonworking",
+          "geometry": {
+            "face": "nonworking",
+            "region": "extrusion_side",
+            "geometry_version": "s_hook_v3_real_bores_2026-10-24"
+          },
+          "requested_torque_Nm": -1.0067880440156936,
+          "angular_speed_about_requested_axis_rad_s": -0.00019384535746848276,
+          "power_W": 0.00019516118828721667,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.241000000000753,
+          "opening_deg": 90.00001110652086,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "nonworking",
+          "geometry": {
+            "face": "nonworking",
+            "region": "extrusion_side",
+            "geometry_version": "s_hook_v3_real_bores_2026-10-24"
+          },
+          "requested_torque_Nm": -1.1516592186443633,
+          "angular_speed_about_requested_axis_rad_s": -0.00019384535746848276,
+          "power_W": 0.00022324379291999014,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.241000000000753,
+          "opening_deg": 90.00001110652086,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "nonworking",
+          "geometry": {
+            "face": "nonworking",
+            "region": "extrusion_side",
+            "geometry_version": "s_hook_v3_real_bores_2026-10-24"
+          },
+          "requested_torque_Nm": -1.0067880440163517,
+          "angular_speed_about_requested_axis_rad_s": -0.00019384535746848276,
+          "power_W": 0.00019516118828734425,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.241000000000753,
+          "opening_deg": 90.00001110652086,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8399591311575122,
+          "angular_speed_about_requested_axis_rad_s": -0.00019384535746848276,
+          "power_W": 0.00016282217803814414,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.257000000000758,
+          "opening_deg": 90.0000073194494,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "nonworking",
+          "geometry": {
+            "face": "nonworking",
+            "region": "extrusion_side",
+            "geometry_version": "s_hook_v3_real_bores_2026-10-24"
+          },
+          "requested_torque_Nm": -1.573130212751604,
+          "angular_speed_about_requested_axis_rad_s": -3.2549840300593806e-05,
+          "power_W": 5.120513719710387e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2640000000007605,
+          "opening_deg": 90.00000672214722,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "nonworking",
+          "geometry": {
+            "face": "nonworking",
+            "region": "extrusion_side",
+            "geometry_version": "s_hook_v3_real_bores_2026-10-24"
+          },
+          "requested_torque_Nm": -1.444091742176772,
+          "angular_speed_about_requested_axis_rad_s": -2.3168933748090247e-05,
+          "power_W": 3.345806590065785e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2700000000007625,
+          "opening_deg": 90.00000616193977,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.7579560809111939,
+          "angular_speed_about_requested_axis_rad_s": -2.8803531898260952e-05,
+          "power_W": 2.1831812154006432e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2700000000007625,
+          "opening_deg": 90.00000616193977,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.7579560809111939,
+          "angular_speed_about_requested_axis_rad_s": -2.8803531898260952e-05,
+          "power_W": 2.1831812154006432e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2730000000007635,
+          "opening_deg": 90.00000646011578,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8396261488779055,
+          "angular_speed_about_requested_axis_rad_s": -3.0326389118093884e-05,
+          "power_W": 2.546282930459799e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2730000000007635,
+          "opening_deg": 90.00000646011578,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8396261488779055,
+          "angular_speed_about_requested_axis_rad_s": -3.0326389118093884e-05,
+          "power_W": 2.546282930459799e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2760000000007645,
+          "opening_deg": 90.00000654459433,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8090609175636454,
+          "angular_speed_about_requested_axis_rad_s": -2.7812060227836367e-05,
+          "power_W": 2.250165096726866e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2760000000007645,
+          "opening_deg": 90.00000654459433,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8090609175636262,
+          "angular_speed_about_requested_axis_rad_s": -2.7812060227836367e-05,
+          "power_W": 2.2501650967268127e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.280000000000766,
+          "opening_deg": 90.00000602443582,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.7878798424553585,
+          "angular_speed_about_requested_axis_rad_s": -2.8555413903280356e-05,
+          "power_W": 2.249823500736408e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.280000000000766,
+          "opening_deg": 90.00000602443582,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.7878798424553421,
+          "angular_speed_about_requested_axis_rad_s": -2.8555413903280356e-05,
+          "power_W": 2.2498235007363613e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.283000000000767,
+          "opening_deg": 90.00000701600614,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8710883503681675,
+          "angular_speed_about_requested_axis_rad_s": -4.186697808541288e-05,
+          "power_W": 3.6469836875322526e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.283000000000767,
+          "opening_deg": 90.00000701600614,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8710883503681675,
+          "angular_speed_about_requested_axis_rad_s": -4.186697808541288e-05,
+          "power_W": 3.6469836875322526e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.286000000000768,
+          "opening_deg": 90.00000705165918,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8459899712434674,
+          "angular_speed_about_requested_axis_rad_s": -2.920766108071921e-05,
+          "power_W": 2.4709388357766586e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.286000000000768,
+          "opening_deg": 90.00000705165918,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8459899712434674,
+          "angular_speed_about_requested_axis_rad_s": -2.920766108071921e-05,
+          "power_W": 2.4709388357766586e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.290000000000769,
+          "opening_deg": 90.00000645695914,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8364694359299533,
+          "angular_speed_about_requested_axis_rad_s": -3.017161504225617e-05,
+          "power_W": 2.523763381549171e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.290000000000769,
+          "opening_deg": 90.00000645695914,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8364694359299379,
+          "angular_speed_about_requested_axis_rad_s": -3.017161504225617e-05,
+          "power_W": 2.5237633815491247e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2970000000007715,
+          "opening_deg": 90.00000611836367,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.9636347908341945,
+          "angular_speed_about_requested_axis_rad_s": -3.786921463170964e-05,
+          "power_W": 3.649209272068274e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2970000000007715,
+          "opening_deg": 90.00000611836367,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.9636347908341945,
+          "angular_speed_about_requested_axis_rad_s": -3.786921463170964e-05,
+          "power_W": 3.649209272068274e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.3060000000007745,
+          "opening_deg": 90.00000635270034,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -1.0413745908438006,
+          "angular_speed_about_requested_axis_rad_s": -4.1758532667504034e-05,
+          "power_W": 4.3486274870859496e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.3060000000007745,
+          "opening_deg": 90.00000635270034,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -1.0413745908438006,
+          "angular_speed_about_requested_axis_rad_s": -4.1758532667504034e-05,
+          "power_W": 4.3486274870859496e-05,
+          "driving": true,
+          "driving_toward_target": false
+        }
+      ],
+      "terminal_record_only_contacts": 0,
+      "terminal_record_only_drive_samples": 0,
+      "terminal_record_only_missing_vectors": 0,
+      "event_count": 331,
+      "events_truncated": true,
+      "attribution_policy": "first target-band crossing assessed; later continuous in-band contact after observed correct drive is record-only; excursion restores assessment; earlier violations retained",
+      "geometry_policy": "working-side physical hole rims accepted; unknown geometry and nonworking faces unchanged"
+    },
+    "frozen_face_repair": {
+      "status": "pass",
+      "applicable_to": "S_tool_only",
+      "reason": "实际橙面推或蓝面勾拉对正确转向做正功，未观察到非工作面朝任务目标方向驱动",
+      "correct_working_face_drive_seen": true,
+      "nonworking_face_drive_seen": false,
+      "ambiguous_face_drive_seen": false,
+      "evidence_complete": true,
+      "qualification_direction": "toward_task_target",
+      "driving_basis": "positive solved contact torque times actual valve angular velocity; qualification concerns task-target-direction drive; reverse work is recorded and terminal holding judges rebound; no face-share/force/angle/speed-margin threshold",
+      "face_stats": {
+        "nonworking": {
+          "driving_samples": 467,
+          "positive_work_J": 3.250830986085036e-06,
+          "maximum_absolute_torque_Nm": 2.7475534314300623,
+          "target_direction_drive_samples": 0,
+          "terminal_record_only_drive_samples": 0
+        },
+        "unknown": {
+          "driving_samples": 828,
+          "positive_work_J": 1.2040837251749716e-05,
+          "maximum_absolute_torque_Nm": 4.933460992239491,
+          "target_direction_drive_samples": 0,
+          "terminal_record_only_drive_samples": 0
+        },
+        "blue_pull": {
+          "driving_samples": 50061,
+          "positive_work_J": 7.258703703226844,
+          "maximum_absolute_torque_Nm": 7.546972550313762,
+          "target_direction_drive_samples": 50061,
+          "terminal_record_only_drive_samples": 0
+        }
+      },
+      "events": [
+        {
+          "time_s": 7.241000000000753,
+          "opening_deg": 90.00001110652086,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "nonworking",
+          "geometry": {
+            "face": "nonworking",
+            "region": "extrusion_side",
+            "geometry_version": "s_hook_v3_real_bores_2026-10-24"
+          },
+          "requested_torque_Nm": -1.0067880440156936,
+          "angular_speed_about_requested_axis_rad_s": -0.00019384535746848276,
+          "power_W": 0.00019516118828721667,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.241000000000753,
+          "opening_deg": 90.00001110652086,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "nonworking",
+          "geometry": {
+            "face": "nonworking",
+            "region": "extrusion_side",
+            "geometry_version": "s_hook_v3_real_bores_2026-10-24"
+          },
+          "requested_torque_Nm": -1.1516592186443633,
+          "angular_speed_about_requested_axis_rad_s": -0.00019384535746848276,
+          "power_W": 0.00022324379291999014,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.241000000000753,
+          "opening_deg": 90.00001110652086,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "nonworking",
+          "geometry": {
+            "face": "nonworking",
+            "region": "extrusion_side",
+            "geometry_version": "s_hook_v3_real_bores_2026-10-24"
+          },
+          "requested_torque_Nm": -1.0067880440163517,
+          "angular_speed_about_requested_axis_rad_s": -0.00019384535746848276,
+          "power_W": 0.00019516118828734425,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.241000000000753,
+          "opening_deg": 90.00001110652086,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8399591311575122,
+          "angular_speed_about_requested_axis_rad_s": -0.00019384535746848276,
+          "power_W": 0.00016282217803814414,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.257000000000758,
+          "opening_deg": 90.0000073194494,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "nonworking",
+          "geometry": {
+            "face": "nonworking",
+            "region": "extrusion_side",
+            "geometry_version": "s_hook_v3_real_bores_2026-10-24"
+          },
+          "requested_torque_Nm": -1.573130212751604,
+          "angular_speed_about_requested_axis_rad_s": -3.2549840300593806e-05,
+          "power_W": 5.120513719710387e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2640000000007605,
+          "opening_deg": 90.00000672214722,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "nonworking",
+          "geometry": {
+            "face": "nonworking",
+            "region": "extrusion_side",
+            "geometry_version": "s_hook_v3_real_bores_2026-10-24"
+          },
+          "requested_torque_Nm": -1.444091742176772,
+          "angular_speed_about_requested_axis_rad_s": -2.3168933748090247e-05,
+          "power_W": 3.345806590065785e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2700000000007625,
+          "opening_deg": 90.00000616193977,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.7579560809111939,
+          "angular_speed_about_requested_axis_rad_s": -2.8803531898260952e-05,
+          "power_W": 2.1831812154006432e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2700000000007625,
+          "opening_deg": 90.00000616193977,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.7579560809111939,
+          "angular_speed_about_requested_axis_rad_s": -2.8803531898260952e-05,
+          "power_W": 2.1831812154006432e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2730000000007635,
+          "opening_deg": 90.00000646011578,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8396261488779055,
+          "angular_speed_about_requested_axis_rad_s": -3.0326389118093884e-05,
+          "power_W": 2.546282930459799e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2730000000007635,
+          "opening_deg": 90.00000646011578,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8396261488779055,
+          "angular_speed_about_requested_axis_rad_s": -3.0326389118093884e-05,
+          "power_W": 2.546282930459799e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2760000000007645,
+          "opening_deg": 90.00000654459433,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8090609175636454,
+          "angular_speed_about_requested_axis_rad_s": -2.7812060227836367e-05,
+          "power_W": 2.250165096726866e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2760000000007645,
+          "opening_deg": 90.00000654459433,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8090609175636262,
+          "angular_speed_about_requested_axis_rad_s": -2.7812060227836367e-05,
+          "power_W": 2.2501650967268127e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.280000000000766,
+          "opening_deg": 90.00000602443582,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.7878798424553585,
+          "angular_speed_about_requested_axis_rad_s": -2.8555413903280356e-05,
+          "power_W": 2.249823500736408e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.280000000000766,
+          "opening_deg": 90.00000602443582,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.7878798424553421,
+          "angular_speed_about_requested_axis_rad_s": -2.8555413903280356e-05,
+          "power_W": 2.2498235007363613e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.283000000000767,
+          "opening_deg": 90.00000701600614,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8710883503681675,
+          "angular_speed_about_requested_axis_rad_s": -4.186697808541288e-05,
+          "power_W": 3.6469836875322526e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.283000000000767,
+          "opening_deg": 90.00000701600614,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8710883503681675,
+          "angular_speed_about_requested_axis_rad_s": -4.186697808541288e-05,
+          "power_W": 3.6469836875322526e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.286000000000768,
+          "opening_deg": 90.00000705165918,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8459899712434674,
+          "angular_speed_about_requested_axis_rad_s": -2.920766108071921e-05,
+          "power_W": 2.4709388357766586e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.286000000000768,
+          "opening_deg": 90.00000705165918,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8459899712434674,
+          "angular_speed_about_requested_axis_rad_s": -2.920766108071921e-05,
+          "power_W": 2.4709388357766586e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.290000000000769,
+          "opening_deg": 90.00000645695914,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8364694359299533,
+          "angular_speed_about_requested_axis_rad_s": -3.017161504225617e-05,
+          "power_W": 2.523763381549171e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.290000000000769,
+          "opening_deg": 90.00000645695914,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.8364694359299379,
+          "angular_speed_about_requested_axis_rad_s": -3.017161504225617e-05,
+          "power_W": 2.5237633815491247e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2970000000007715,
+          "opening_deg": 90.00000611836367,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.9636347908341945,
+          "angular_speed_about_requested_axis_rad_s": -3.786921463170964e-05,
+          "power_W": 3.649209272068274e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.2970000000007715,
+          "opening_deg": 90.00000611836367,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -0.9636347908341945,
+          "angular_speed_about_requested_axis_rad_s": -3.786921463170964e-05,
+          "power_W": 3.649209272068274e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.3060000000007745,
+          "opening_deg": 90.00000635270034,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -1.0413745908438006,
+          "angular_speed_about_requested_axis_rad_s": -4.1758532667504034e-05,
+          "power_W": 4.3486274870859496e-05,
+          "driving": true,
+          "driving_toward_target": false
+        },
+        {
+          "time_s": 7.3060000000007745,
+          "opening_deg": 90.00000635270034,
+          "record_only_after_correct_arrival": false,
+          "evidence_status": "observed",
+          "face": "unknown",
+          "geometry": {
+            "face": "unknown",
+            "reason": "unidentified_edge_or_normal"
+          },
+          "requested_torque_Nm": -1.0413745908438006,
+          "angular_speed_about_requested_axis_rad_s": -4.1758532667504034e-05,
+          "power_W": 4.3486274870859496e-05,
+          "driving": true,
+          "driving_toward_target": false
+        }
+      ],
+      "terminal_record_only_contacts": 0,
+      "terminal_record_only_drive_samples": 0,
+      "terminal_record_only_missing_vectors": 0,
+      "event_count": 331,
+      "events_truncated": true,
+      "attribution_policy": "first target-band crossing assessed; later continuous in-band contact after observed correct drive is record-only; excursion restores assessment; earlier violations retained",
+      "geometry_policy": "working-side physical hole rims accepted; unknown geometry and nonworking faces unchanged",
+      "offline_identification_policy": "v25_offline_finite_surface_r2"
+    }
+  },
+  "full_return": false,
+  "stop_reason": "observation_cutoff",
+  "public_v1": {
+    "version": "public_exam_v1",
+    "authority": "项目指挥/规程/公开考试_v1.md",
+    "source": "evaluations/round2/new_unseen_positions/coverage_test_A2_close_19_train_episode_0161/physical_step_evidence.jsonl.gz",
+    "result": "fail",
+    "passed": false,
+    "rules": {
+      "target_hold": {
+        "status": "fail",
+        "target_opening_deg": 0.0,
+        "tolerance_deg": 5.0,
+        "final_opening_deg": 49.11770362142981,
+        "final_in_band": false,
+        "end_hold_s": 0.0,
+        "required_hold_s": 1.0,
+        "hold_start_s": null,
+        "basis": "original solved angles; consecutive in-band samples at the actual endpoint/cutoff"
+      },
+      "environment_collision": {
+        "status": "pass",
+        "limit_N": 20.0,
+        "comparison": "individual force > 20 N; no force summation",
+        "peak_force_N": 0.0,
+        "peak_contact": null,
+        "first_violation": null,
+        "all_environment_contacts_covered": true
+      },
+      "deadline": {
+        "status": "pass",
+        "cutoff_s": 90.0,
+        "evaluated_end_s": 90.0,
+        "endpoint": "90_second_cutoff",
+        "ignored_samples_after_cutoff": 0
+      }
+    },
+    "physical_validity": {
+      "status": "pass",
+      "provenance": {
+        "data_kind": "recorded_simulation_every_solved_physics_step",
+        "runtime": {
+          "motor_limits_unchanged": true,
+          "valve_contact_only": true,
+          "evidence": "Separate robot model actuator limits preserved during composition and run; passive valve has no actuator; runner uses only ctrl targets and passive friction, with no applied external driving force."
+        },
+        "basis": "original solved-step footer plus recorded native controller/runtime declarations"
+      }
+    },
+    "failed_rules": [
+      "target_hold"
+    ],
+    "unverified_rules": [],
+    "evidence_complete": true,
+    "evidence_gaps": [],
+    "sampling": {
+      "samples_scored": 90001,
+      "first_time_s": 0.0,
+      "last_time_s": 90.0,
+      "physics_dt_s": 0.001,
+      "continuous": true
+    },
+    "progress_grade": "partly_turned",
+    "progress_grade_is_not_public_pass": true,
+    "record_only": {
+      "maximum_progress_deg": 40.88229942634095,
+      "final_progress_deg": 40.88229637857019,
+      "maximum_speed_deg_s": 10.009443674850923,
+      "handle_contact_seen": true,
+      "handle_contact_parts": [
+        "left_hook_bend_1",
+        "left_hook_bend_2",
+        "left_hook_shaft_-1_10",
+        "left_hook_shaft_-1_8",
+        "left_hook_shaft_-1_9",
+        "left_hook_shaft_1_10",
+        "left_hook_shaft_1_9"
+      ],
+      "handle_peak_force_N": 58.080884851312,
+      "self_contact_peak_force_N": 0.0,
+      "contact_observations": {
+        "handle": 52684
+      }
+    },
+    "offline_only": true,
+    "physical_steps_executed": 0,
+    "original_scoring_version": "A1-v2.5"
+  },
+  "comparison_reason": "Public pass/fail unchanged; tool-specific checks and motion grade remain separate."
+}

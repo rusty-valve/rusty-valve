@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rusty-valve-runtime"
+version = "0.0.1"
+description = "Frozen OpenArm valve reference tasks, ACT inference and public exam v1"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = {text = "Apache-2.0"}
+dependencies = ["gymnasium==1.4.0", "mujoco==3.16.0", "numpy==2.2.6", "scipy==1.18.1", "Pillow==12.3.0", "imageio==2.38.1", "imageio-ffmpeg==0.7.0"]
+
+[project.optional-dependencies]
+act = ["lerobot[dataset]==0.6.1", "torch==2.11.0; sys_platform == 'darwin'", "torchvision==0.26.0; sys_platform == 'darwin'", "torch==2.7.1; sys_platform != 'darwin'", "torchvision==0.22.1; sys_platform != 'darwin'", "av==15.1.0", "pyarrow==26.0.0"]
+
+[project.scripts]
+rusty-valve = "rusty_valve.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["configs/**/*.json", "configs/*.json", "resources/**/*.json", "assets/**/*"]

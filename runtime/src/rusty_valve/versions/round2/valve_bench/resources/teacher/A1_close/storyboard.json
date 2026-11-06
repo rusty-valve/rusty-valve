@@ -1,0 +1,5194 @@
+{
+  "schema": "g1_storyboard_v1",
+  "version": 1,
+  "station": "A1",
+  "operation": "close",
+  "design_basis": "项目指挥/规程/动作执行器底层逻辑.md v1.0",
+  "conversion_only": true,
+  "physics_steps_run": 0,
+  "execution_approved": true,
+  "units": {
+    "length": "m",
+    "joint_angle": "rad",
+    "opening": "deg"
+  },
+  "coordinate_convention": {
+    "origin": "valve shaft at handle plane",
+    "x": "from shaft towards handle end at the recorded valve angle",
+    "z": "outward valve stem axis",
+    "y": "z cross x",
+    "transform": "p_world = origin + R_world_handle @ p_handle",
+    "tool": "physical S-hook body origin; local +Y sketch up, +Z shaft to tip",
+    "tcp": "existing S-tool ee_control site, distinct from surface contact point"
+  },
+  "workstation_file": "workstation.json",
+  "method": {
+    "mode": "push",
+    "working_face": "orange_push",
+    "reference_contact_fraction": 0.7000000000000001,
+    "allowed_contact_fraction_range": [
+      0.7,
+      0.875
+    ],
+    "reference_roll_deg": 0.0,
+    "required_tool_roll_deg": 0.0,
+    "original_parameters": {
+      "mode": "push",
+      "radius_m": 0.14,
+      "pitch_deg": 15.0,
+      "pitch_constant": false,
+      "tilt_deg": 15.0,
+      "roll_deg": 0.0,
+      "standby_roll_deg": 0.0,
+      "push_contact_geometry": "legacy",
+      "variant_id": "radius_tilt_15",
+      "id": "A1_close",
+      "station": "A1",
+      "task": "close",
+      "side": "left"
+    },
+    "orientation_reference": "all user-confirmed actual relative rotations, interpolated by measured valve angle",
+    "note": "Range added as approved data requirement; no execution or contact relocation occurs in V1."
+  },
+  "keyframes": [
+    {
+      "role": "standby",
+      "pose_ref": "confirmed:0",
+      "state": "present",
+      "label": "自然下垂起步"
+    },
+    {
+      "role": "chest_ready",
+      "pose_ref": "confirmed:4",
+      "state": "present",
+      "label": "准备"
+    },
+    {
+      "role": "precontact",
+      "pose_ref": "confirmed:5",
+      "state": "present",
+      "label": "接触前"
+    },
+    {
+      "role": "contact",
+      "pose_ref": "confirmed:6",
+      "state": "present",
+      "label": "接上"
+    },
+    {
+      "role": "mid_turn",
+      "pose_ref": "confirmed:7",
+      "state": "present",
+      "label": "转动中段"
+    },
+    {
+      "role": "end",
+      "pose_ref": "confirmed:8",
+      "state": "present",
+      "label": "到位"
+    },
+    {
+      "role": "release",
+      "pose_ref": "confirmed:9",
+      "state": "present",
+      "label": "松开"
+    },
+    {
+      "role": "chest_return",
+      "pose_ref": "confirmed:10",
+      "state": "present",
+      "label": "回落起点"
+    },
+    {
+      "role": "final_rest",
+      "pose_ref": "confirmed:14",
+      "state": "present"
+    }
+  ],
+  "poses": [
+    {
+      "id": "confirmed:0",
+      "label": "自然下垂起步",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 0,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        0.017832844065919572,
+        0.014516345248056249,
+        -0.013705908258732535,
+        0.2683443731333422,
+        -0.004353561667046997,
+        0.004414819202316108,
+        -0.17823315206248028,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": 0.017832844065919572,
+        "openarm_left_joint2": 0.014516345248056249,
+        "openarm_left_joint3": -0.013705908258732535,
+        "openarm_left_joint4": 0.2683443731333422,
+        "openarm_left_joint5": -0.004353561667046997,
+        "openarm_left_joint6": 0.004414819202316108,
+        "openarm_left_joint7": -0.17823315206248028,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 0.0,
+      "opening_deg": 90.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          0.2118601759008514,
+          0.12403031378479538,
+          -0.3042350365502021
+        ],
+        "rotation_matrix": [
+          [
+            -0.022131796647749016,
+            0.999752935964444,
+            -0.002061700176290471
+          ],
+          [
+            0.9093454289592456,
+            0.019273377034851824,
+            -0.4155952691845732
+          ],
+          [
+            -0.41545285461538,
+            -0.011072667616553698,
+            -0.9095473168691034
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          0.21167462288498526,
+          0.08662673955818383,
+          -0.3860942950684214
+        ],
+        "rotation_matrix": [
+          [
+            -0.022131796647749016,
+            0.999752935964444,
+            -0.002061700176290471
+          ],
+          [
+            0.9093454289592456,
+            0.019273377034851824,
+            -0.4155952691845732
+          ],
+          [
+            -0.41545285461538,
+            -0.011072667616553698,
+            -0.9095473168691034
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.4559696862152046,
+          0.21186017590085143,
+          0.879764963449798
+        ],
+        "tool_rotation_matrix": [
+          [
+            -0.9093454289592456,
+            -0.019273377034851602,
+            0.4155952691845732
+          ],
+          [
+            -0.022131796647748815,
+            0.999752935964444,
+            -0.0020617001762905634
+          ],
+          [
+            -0.41545285461538,
+            -0.011072667616553698,
+            -0.9095473168691034
+          ]
+        ],
+        "tcp_position_m": [
+          0.4933732604418162,
+          0.2116746228849853,
+          0.7979057049315788
+        ],
+        "tcp_rotation_matrix": [
+          [
+            -0.9093454289592456,
+            -0.019273377034851602,
+            0.4155952691845732
+          ],
+          [
+            -0.022131796647748815,
+            0.999752935964444,
+            -0.0020617001762905634
+          ],
+          [
+            -0.41545285461538,
+            -0.011072667616553698,
+            -0.9095473168691034
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            2.220446049250313e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            0.21167462288498526,
+            0.0866267396065538,
+            -0.3860942950684214
+          ],
+          "rotation_matrix": [
+            [
+              -0.022131796647749016,
+              0.999752935964444,
+              -0.002061700176290471
+            ],
+            [
+              0.9093454289592456,
+              0.019273377034851824,
+              -0.4155952691845732
+            ],
+            [
+              -0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              -0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              0.999752935964444,
+              -0.0020617001762905634
+            ],
+            [
+              -0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              -0.022131796647749016,
+              0.999752935964444,
+              -0.002061700176290471
+            ],
+            [
+              0.9093454289592456,
+              0.019273377034851824,
+              -0.4155952691845732
+            ],
+            [
+              -0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            0.999752935964444,
+            0.019273377034851824,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              -0.022131796647748614,
+              -0.999752935964444,
+              0.0020617001762906558
+            ],
+            [
+              -0.9093454289592456,
+              0.01927337703485138,
+              -0.4155952691845732
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.999752935964444,
+            0.01927337703485138,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 0,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:1",
+      "label": "抬手25%",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 1,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        0.15961631486676575,
+        0.030590123741662506,
+        -0.02519963238505107,
+        0.4935018735691308,
+        0.14728075045960445,
+        0.058900916017850746,
+        -0.18512540090855267,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": 0.15961631486676575,
+        "openarm_left_joint2": 0.030590123741662506,
+        "openarm_left_joint3": -0.02519963238505107,
+        "openarm_left_joint4": 0.4935018735691308,
+        "openarm_left_joint5": 0.14728075045960445,
+        "openarm_left_joint6": 0.058900916017850746,
+        "openarm_left_joint7": -0.18512540090855267,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 0.0,
+      "opening_deg": 90.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          0.20977678299838767,
+          0.1293453331522631,
+          -0.29179059963802234
+        ],
+        "rotation_matrix": [
+          [
+            0.11648528719418504,
+            0.9929384264085837,
+            0.022460169824248543
+          ],
+          [
+            0.8610858990069841,
+            -0.08969624732079644,
+            -0.5004854221132725
+          ],
+          [
+            -0.4949366145261656,
+            0.07763932365633006,
+            -0.865453570692019
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          0.21179819828257004,
+          0.08430164516206855,
+          -0.3696814210003041
+        ],
+        "rotation_matrix": [
+          [
+            0.11648528719418504,
+            0.9929384264085837,
+            0.022460169824248543
+          ],
+          [
+            0.8610858990069841,
+            -0.08969624732079644,
+            -0.5004854221132725
+          ],
+          [
+            -0.4949366145261656,
+            0.07763932365633006,
+            -0.865453570692019
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.4506546668477369,
+          0.2097767829983877,
+          0.8922094003619778
+        ],
+        "tool_rotation_matrix": [
+          [
+            -0.8610858990069841,
+            0.08969624732079666,
+            0.5004854221132725
+          ],
+          [
+            0.11648528719418523,
+            0.9929384264085837,
+            0.022460169824248432
+          ],
+          [
+            -0.4949366145261656,
+            0.07763932365633006,
+            -0.865453570692019
+          ]
+        ],
+        "tcp_position_m": [
+          0.49569835483793145,
+          0.21179819828257007,
+          0.8143185789996961
+        ],
+        "tcp_rotation_matrix": [
+          [
+            -0.8610858990069841,
+            0.08969624732079666,
+            0.5004854221132725
+          ],
+          [
+            0.11648528719418523,
+            0.9929384264085837,
+            0.022460169824248432
+          ],
+          [
+            -0.4949366145261656,
+            0.07763932365633006,
+            -0.865453570692019
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            2.220446049250313e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            0.21179819828257004,
+            0.08430164521043847,
+            -0.3696814210003041
+          ],
+          "rotation_matrix": [
+            [
+              0.11648528719418504,
+              0.9929384264085837,
+              0.022460169824248543
+            ],
+            [
+              0.8610858990069841,
+              -0.08969624732079644,
+              -0.5004854221132725
+            ],
+            [
+              -0.4949366145261656,
+              0.07763932365633006,
+              -0.865453570692019
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              -0.8610858990069841,
+              0.08969624732079666,
+              0.5004854221132725
+            ],
+            [
+              0.11648528719418523,
+              0.9929384264085837,
+              0.022460169824248432
+            ],
+            [
+              -0.4949366145261656,
+              0.07763932365633006,
+              -0.865453570692019
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.11648528719418504,
+              0.9929384264085837,
+              0.022460169824248543
+            ],
+            [
+              0.8610858990069841,
+              -0.08969624732079644,
+              -0.5004854221132725
+            ],
+            [
+              -0.4949366145261656,
+              0.07763932365633006,
+              -0.865453570692019
+            ]
+          ],
+          "profile_up_world": [
+            0.08969624732079666,
+            0.9929384264085837,
+            0.07763932365633006
+          ],
+          "profile_up_in_handle_frame": [
+            0.9929384264085837,
+            -0.08969624732079644,
+            0.07763932365633006
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              -0.022131796647748614,
+              -0.999752935964444,
+              0.0020617001762906558
+            ],
+            [
+              -0.9093454289592456,
+              0.01927337703485138,
+              -0.4155952691845732
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.999752935964444,
+            0.01927337703485138,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 1,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:2",
+      "label": "抬手50%",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 2,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        0.7026737596322711,
+        0.0921557281605695,
+        -0.0692227644160447,
+        1.3558975827854531,
+        0.7280687761522506,
+        0.26759294721697396,
+        -0.21152401441332053,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": 0.7026737596322711,
+        "openarm_left_joint2": 0.0921557281605695,
+        "openarm_left_joint3": -0.0692227644160447,
+        "openarm_left_joint4": 1.3558975827854531,
+        "openarm_left_joint5": 0.7280687761522506,
+        "openarm_left_joint6": 0.26759294721697396,
+        "openarm_left_joint7": -0.21152401441332053,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 0.0,
+      "opening_deg": 90.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          0.2207862565817161,
+          0.144402083835798,
+          -0.17871248475099488
+        ],
+        "rotation_matrix": [
+          [
+            0.6246259787901695,
+            0.7696458155909703,
+            0.1322410872752223
+          ],
+          [
+            0.5030916669902185,
+            -0.26707223118987133,
+            -0.821931382739622
+          ],
+          [
+            -0.5972781271948822,
+            0.5799290834839843,
+            -0.5540226501723553
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          0.2326879544364861,
+          0.07042825938923197,
+          -0.22857452326650685
+        ],
+        "rotation_matrix": [
+          [
+            0.6246259787901695,
+            0.7696458155909703,
+            0.1322410872752223
+          ],
+          [
+            0.5030916669902185,
+            -0.26707223118987133,
+            -0.821931382739622
+          ],
+          [
+            -0.5972781271948822,
+            0.5799290834839843,
+            -0.5540226501723553
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.435597916164202,
+          0.22078625658171613,
+          1.0052875152490053
+        ],
+        "tool_rotation_matrix": [
+          [
+            -0.5030916669902183,
+            0.2670722311898715,
+            0.821931382739622
+          ],
+          [
+            0.6246259787901696,
+            0.7696458155909702,
+            0.1322410872752221
+          ],
+          [
+            -0.5972781271948822,
+            0.5799290834839843,
+            -0.5540226501723553
+          ]
+        ],
+        "tcp_position_m": [
+          0.509571740610768,
+          0.23268795443648613,
+          0.9554254767334933
+        ],
+        "tcp_rotation_matrix": [
+          [
+            -0.5030916669902183,
+            0.2670722311898715,
+            0.821931382739622
+          ],
+          [
+            0.6246259787901696,
+            0.7696458155909702,
+            0.1322410872752221
+          ],
+          [
+            -0.5972781271948822,
+            0.5799290834839843,
+            -0.5540226501723553
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            2.220446049250313e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            0.2326879544364861,
+            0.07042825943760195,
+            -0.22857452326650685
+          ],
+          "rotation_matrix": [
+            [
+              0.6246259787901695,
+              0.7696458155909703,
+              0.1322410872752223
+            ],
+            [
+              0.5030916669902185,
+              -0.26707223118987133,
+              -0.821931382739622
+            ],
+            [
+              -0.5972781271948822,
+              0.5799290834839843,
+              -0.5540226501723553
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              -0.5030916669902183,
+              0.2670722311898715,
+              0.821931382739622
+            ],
+            [
+              0.6246259787901696,
+              0.7696458155909702,
+              0.1322410872752221
+            ],
+            [
+              -0.5972781271948822,
+              0.5799290834839843,
+              -0.5540226501723553
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.6246259787901695,
+              0.7696458155909703,
+              0.1322410872752223
+            ],
+            [
+              0.5030916669902185,
+              -0.26707223118987133,
+              -0.821931382739622
+            ],
+            [
+              -0.5972781271948822,
+              0.5799290834839843,
+              -0.5540226501723553
+            ]
+          ],
+          "profile_up_world": [
+            0.2670722311898715,
+            0.7696458155909702,
+            0.5799290834839843
+          ],
+          "profile_up_in_handle_frame": [
+            0.7696458155909703,
+            -0.26707223118987133,
+            0.5799290834839843
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              -0.022131796647748614,
+              -0.999752935964444,
+              0.0020617001762906558
+            ],
+            [
+              -0.9093454289592456,
+              0.01927337703485138,
+              -0.4155952691845732
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.999752935964444,
+            0.01927337703485138,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 2,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:3",
+      "label": "抬手75%",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 3,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        1.2457312043977762,
+        0.15372133257947646,
+        -0.11324589644703835,
+        2.2182932920017753,
+        1.3088568018448967,
+        0.4762849784160972,
+        -0.23792262791808835,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": 1.2457312043977762,
+        "openarm_left_joint2": 0.15372133257947646,
+        "openarm_left_joint3": -0.11324589644703835,
+        "openarm_left_joint4": 2.2182932920017753,
+        "openarm_left_joint5": 1.3088568018448967,
+        "openarm_left_joint6": 0.4762849784160972,
+        "openarm_left_joint7": -0.23792262791808835,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 0.0,
+      "opening_deg": 90.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          0.23034683708401038,
+          0.14799415428482043,
+          0.015498873793172052
+        ],
+        "rotation_matrix": [
+          [
+            0.9790777888531303,
+            0.1897965755846608,
+            0.07337535874393214
+          ],
+          [
+            0.08894022236819402,
+            -0.07482398588346852,
+            -0.993222536988366
+          ],
+          [
+            -0.18301999950705056,
+            0.9789681460766975,
+            -0.0901390522891857
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          0.2369506193709643,
+          0.05860412595586745,
+          0.0073863590871452445
+        ],
+        "rotation_matrix": [
+          [
+            0.9790777888531303,
+            0.1897965755846608,
+            0.07337535874393214
+          ],
+          [
+            0.08894022236819402,
+            -0.07482398588346852,
+            -0.993222536988366
+          ],
+          [
+            -0.18301999950705056,
+            0.9789681460766975,
+            -0.0901390522891857
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.4320058457151796,
+          0.2303468370840104,
+          1.1994988737931722
+        ],
+        "tool_rotation_matrix": [
+          [
+            -0.0889402223681938,
+            0.07482398588346856,
+            0.993222536988366
+          ],
+          [
+            0.9790777888531303,
+            0.18979657558466076,
+            0.07337535874393192
+          ],
+          [
+            -0.18301999950705056,
+            0.9789681460766975,
+            -0.0901390522891857
+          ]
+        ],
+        "tcp_position_m": [
+          0.5213958740441326,
+          0.2369506193709643,
+          1.1913863590871454
+        ],
+        "tcp_rotation_matrix": [
+          [
+            -0.0889402223681938,
+            0.07482398588346856,
+            0.993222536988366
+          ],
+          [
+            0.9790777888531303,
+            0.18979657558466076,
+            0.07337535874393192
+          ],
+          [
+            -0.18301999950705056,
+            0.9789681460766975,
+            -0.0901390522891857
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            2.220446049250313e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            0.2369506193709643,
+            0.05860412600423742,
+            0.0073863590871452445
+          ],
+          "rotation_matrix": [
+            [
+              0.9790777888531303,
+              0.1897965755846608,
+              0.07337535874393214
+            ],
+            [
+              0.08894022236819402,
+              -0.07482398588346852,
+              -0.993222536988366
+            ],
+            [
+              -0.18301999950705056,
+              0.9789681460766975,
+              -0.0901390522891857
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              -0.0889402223681938,
+              0.07482398588346856,
+              0.993222536988366
+            ],
+            [
+              0.9790777888531303,
+              0.18979657558466076,
+              0.07337535874393192
+            ],
+            [
+              -0.18301999950705056,
+              0.9789681460766975,
+              -0.0901390522891857
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.9790777888531303,
+              0.1897965755846608,
+              0.07337535874393214
+            ],
+            [
+              0.08894022236819402,
+              -0.07482398588346852,
+              -0.993222536988366
+            ],
+            [
+              -0.18301999950705056,
+              0.9789681460766975,
+              -0.0901390522891857
+            ]
+          ],
+          "profile_up_world": [
+            0.07482398588346856,
+            0.18979657558466076,
+            0.9789681460766975
+          ],
+          "profile_up_in_handle_frame": [
+            0.1897965755846608,
+            -0.07482398588346852,
+            0.9789681460766975
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              -0.022131796647748614,
+              -0.999752935964444,
+              0.0020617001762906558
+            ],
+            [
+              -0.9093454289592456,
+              0.01927337703485138,
+              -0.4155952691845732
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.999752935964444,
+            0.01927337703485138,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 3,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:4",
+      "label": "准备",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 4,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        0.13759728979275143,
+        -1.0016319112341558,
+        1.5707873387126388,
+        2.327303349349359,
+        1.5707287156966703,
+        0.2509126004579074,
+        1.4967688615505501,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": 0.13759728979275143,
+        "openarm_left_joint2": -1.0016319112341558,
+        "openarm_left_joint3": 1.5707873387126388,
+        "openarm_left_joint4": 2.327303349349359,
+        "openarm_left_joint5": 1.5707287156966703,
+        "openarm_left_joint6": 0.2509126004579074,
+        "openarm_left_joint7": 1.4967688615505501,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 0.0,
+      "opening_deg": 90.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          0.185872422361512,
+          0.1398135052102292,
+          0.03297716882844126
+        ],
+        "rotation_matrix": [
+          [
+            0.9972460286389092,
+            0.00579131869445543,
+            -0.07393794013700133
+          ],
+          [
+            -0.07244723614886767,
+            -0.13721856221914697,
+            -0.9878878803573308
+          ],
+          [
+            -0.01586683138858397,
+            0.9905238648363244,
+            -0.13642110119551482
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          0.1792180077491819,
+          0.05090359597806941,
+          0.020699269720845015
+        ],
+        "rotation_matrix": [
+          [
+            0.9972460286389092,
+            0.00579131869445543,
+            -0.07393794013700133
+          ],
+          [
+            -0.07244723614886767,
+            -0.13721856221914697,
+            -0.9878878803573308
+          ],
+          [
+            -0.01586683138858397,
+            0.9905238648363244,
+            -0.13642110119551482
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.4401864947897708,
+          0.18587242236151202,
+          1.2169771688284414
+        ],
+        "tool_rotation_matrix": [
+          [
+            0.07244723614886789,
+            0.13721856221914697,
+            0.9878878803573308
+          ],
+          [
+            0.9972460286389092,
+            0.0057913186944554,
+            -0.07393794013700156
+          ],
+          [
+            -0.01586683138858397,
+            0.9905238648363244,
+            -0.13642110119551482
+          ]
+        ],
+        "tcp_position_m": [
+          0.5290964040219306,
+          0.1792180077491819,
+          1.2046992697208452
+        ],
+        "tcp_rotation_matrix": [
+          [
+            0.07244723614886789,
+            0.13721856221914697,
+            0.9878878803573308
+          ],
+          [
+            0.9972460286389092,
+            0.0057913186944554,
+            -0.07393794013700156
+          ],
+          [
+            -0.01586683138858397,
+            0.9905238648363244,
+            -0.13642110119551482
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            2.220446049250313e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            0.1792180077491819,
+            0.05090359602643939,
+            0.020699269720845015
+          ],
+          "rotation_matrix": [
+            [
+              0.9972460286389092,
+              0.00579131869445543,
+              -0.07393794013700133
+            ],
+            [
+              -0.07244723614886767,
+              -0.13721856221914697,
+              -0.9878878803573308
+            ],
+            [
+              -0.01586683138858397,
+              0.9905238648363244,
+              -0.13642110119551482
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              0.07244723614886789,
+              0.13721856221914697,
+              0.9878878803573308
+            ],
+            [
+              0.9972460286389092,
+              0.0057913186944554,
+              -0.07393794013700156
+            ],
+            [
+              -0.01586683138858397,
+              0.9905238648363244,
+              -0.13642110119551482
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.9972460286389092,
+              0.00579131869445543,
+              -0.07393794013700133
+            ],
+            [
+              -0.07244723614886767,
+              -0.13721856221914697,
+              -0.9878878803573308
+            ],
+            [
+              -0.01586683138858397,
+              0.9905238648363244,
+              -0.13642110119551482
+            ]
+          ],
+          "profile_up_world": [
+            0.13721856221914697,
+            0.0057913186944554,
+            0.9905238648363244
+          ],
+          "profile_up_in_handle_frame": [
+            0.00579131869445543,
+            -0.13721856221914697,
+            0.9905238648363244
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              -0.022131796647748614,
+              -0.999752935964444,
+              0.0020617001762906558
+            ],
+            [
+              -0.9093454289592456,
+              0.01927337703485138,
+              -0.4155952691845732
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.999752935964444,
+            0.01927337703485138,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 4,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:5",
+      "label": "接触前",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 5,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        0.02968728118589207,
+        -0.8098973817549047,
+        1.4485481750996414,
+        2.111777954502189,
+        1.4795871721932796,
+        0.2641398623668064,
+        1.4624044339858793,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": 0.02968728118589207,
+        "openarm_left_joint2": -0.8098973817549047,
+        "openarm_left_joint3": 1.4485481750996414,
+        "openarm_left_joint4": 2.111777954502189,
+        "openarm_left_joint5": 1.4795871721932796,
+        "openarm_left_joint6": 0.2641398623668064,
+        "openarm_left_joint7": 1.4624044339858793,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 0.0,
+      "opening_deg": 90.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          0.16954291167169538,
+          0.09880099419828962,
+          0.004395627257593349
+        ],
+        "rotation_matrix": [
+          [
+            0.999999999926672,
+            -1.2095061978905244e-05,
+            6.041709848524525e-07
+          ],
+          [
+            2.496292861586813e-07,
+            -0.029291495721789962,
+            -0.9995709120809377
+          ],
+          [
+            1.2107569205721536e-05,
+            0.9995709120077922,
+            -0.02929149571662279
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          0.16954296604708402,
+          0.008839612111005184,
+          0.0017593926430972129
+        ],
+        "rotation_matrix": [
+          [
+            0.999999999926672,
+            -1.2095061978905244e-05,
+            6.041709848524525e-07
+          ],
+          [
+            2.496292861586813e-07,
+            -0.029291495721789962,
+            -0.9995709120809377
+          ],
+          [
+            1.2107569205721536e-05,
+            0.9995709120077922,
+            -0.02929149571662279
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.4811990058017104,
+          0.1695429116716954,
+          1.1883956272575935
+        ],
+        "tool_rotation_matrix": [
+          [
+            -2.496292859366367e-07,
+            0.029291495721789962,
+            0.9995709120809377
+          ],
+          [
+            0.999999999926672,
+            -1.2095061978911748e-05,
+            6.041709846305032e-07
+          ],
+          [
+            1.2107569205721536e-05,
+            0.9995709120077922,
+            -0.02929149571662279
+          ]
+        ],
+        "tcp_position_m": [
+          0.5711603878889948,
+          0.16954296604708402,
+          1.1857593926430974
+        ],
+        "tcp_rotation_matrix": [
+          [
+            -2.496292859366367e-07,
+            0.029291495721789962,
+            0.9995709120809377
+          ],
+          [
+            0.999999999926672,
+            -1.2095061978911748e-05,
+            6.041709846305032e-07
+          ],
+          [
+            1.2107569205721536e-05,
+            0.9995709120077922,
+            -0.02929149571662279
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            2.220446049250313e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            0.16954296604708402,
+            0.008839612159375048,
+            0.0017593926430972129
+          ],
+          "rotation_matrix": [
+            [
+              0.999999999926672,
+              -1.2095061978905244e-05,
+              6.041709848524525e-07
+            ],
+            [
+              2.496292861586813e-07,
+              -0.029291495721789962,
+              -0.9995709120809377
+            ],
+            [
+              1.2107569205721536e-05,
+              0.9995709120077922,
+              -0.02929149571662279
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              -2.496292859366367e-07,
+              0.029291495721789962,
+              0.9995709120809377
+            ],
+            [
+              0.999999999926672,
+              -1.2095061978911748e-05,
+              6.041709846305032e-07
+            ],
+            [
+              1.2107569205721536e-05,
+              0.9995709120077922,
+              -0.02929149571662279
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.999999999926672,
+              -1.2095061978905244e-05,
+              6.041709848524525e-07
+            ],
+            [
+              2.496292861586813e-07,
+              -0.029291495721789962,
+              -0.9995709120809377
+            ],
+            [
+              1.2107569205721536e-05,
+              0.9995709120077922,
+              -0.02929149571662279
+            ]
+          ],
+          "profile_up_world": [
+            0.029291495721789962,
+            -1.2095061978911748e-05,
+            0.9995709120077922
+          ],
+          "profile_up_in_handle_frame": [
+            -1.2095061978905244e-05,
+            -0.029291495721789962,
+            0.9995709120077922
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              -0.022131796647748614,
+              -0.999752935964444,
+              0.0020617001762906558
+            ],
+            [
+              -0.9093454289592456,
+              0.01927337703485138,
+              -0.4155952691845732
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.999752935964444,
+            0.01927337703485138,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 5,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:6",
+      "label": "接上",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 6,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        -0.007412604973915287,
+        -0.8418503910285414,
+        1.4875953119692322,
+        2.1643168046261057,
+        1.4188486189781488,
+        0.23911746351116117,
+        1.478543514736817,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": -0.007412604973915287,
+        "openarm_left_joint2": -0.8418503910285414,
+        "openarm_left_joint3": 1.4875953119692322,
+        "openarm_left_joint4": 2.1643168046261057,
+        "openarm_left_joint5": 1.4188486189781488,
+        "openarm_left_joint6": 0.23911746351116117,
+        "openarm_left_joint7": 1.478543514736817,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 0.0,
+      "opening_deg": 90.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          0.17263000891571448,
+          0.09909987813310427,
+          0.009120841267310054
+        ],
+        "rotation_matrix": [
+          [
+            0.9999999999503182,
+            -6.952666403974692e-06,
+            -7.143103170293555e-06
+          ],
+          [
+            -7.664974155968673e-06,
+            -0.0782073308003331,
+            -0.9969371160461101
+          ],
+          [
+            6.372728161063712e-06,
+            0.9969371160513323,
+            -0.07820733084973966
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          0.17262936603642917,
+          0.00937553768895431,
+          0.00208218149083339
+        ],
+        "rotation_matrix": [
+          [
+            0.9999999999503182,
+            -6.952666403974692e-06,
+            -7.143103170293555e-06
+          ],
+          [
+            -7.664974155968673e-06,
+            -0.0782073308003331,
+            -0.9969371160461101
+          ],
+          [
+            6.372728161063712e-06,
+            0.9969371160513323,
+            -0.07820733084973966
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.48090012186689574,
+          0.1726300089157145,
+          1.1931208412673102
+        ],
+        "tool_rotation_matrix": [
+          [
+            7.664974156190718e-06,
+            0.0782073308003331,
+            0.9969371160461101
+          ],
+          [
+            0.9999999999503182,
+            -6.952666403992058e-06,
+            -7.1431031705149195e-06
+          ],
+          [
+            6.372728161063712e-06,
+            0.9969371160513323,
+            -0.07820733084973966
+          ]
+        ],
+        "tcp_position_m": [
+          0.5706244623110457,
+          0.17262936603642917,
+          1.1860821814908336
+        ],
+        "tcp_rotation_matrix": [
+          [
+            7.664974156190718e-06,
+            0.0782073308003331,
+            0.9969371160461101
+          ],
+          [
+            0.9999999999503182,
+            -6.952666403992058e-06,
+            -7.1431031705149195e-06
+          ],
+          [
+            6.372728161063712e-06,
+            0.9969371160513323,
+            -0.07820733084973966
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            2.220446049250313e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            2.220446049250313e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            0.17262936603642917,
+            0.009375537737324174,
+            0.00208218149083339
+          ],
+          "rotation_matrix": [
+            [
+              0.9999999999503182,
+              -6.952666403974692e-06,
+              -7.143103170293555e-06
+            ],
+            [
+              -7.664974155968673e-06,
+              -0.0782073308003331,
+              -0.9969371160461101
+            ],
+            [
+              6.372728161063712e-06,
+              0.9969371160513323,
+              -0.07820733084973966
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              7.664974156190718e-06,
+              0.0782073308003331,
+              0.9969371160461101
+            ],
+            [
+              0.9999999999503182,
+              -6.952666403992058e-06,
+              -7.1431031705149195e-06
+            ],
+            [
+              6.372728161063712e-06,
+              0.9969371160513323,
+              -0.07820733084973966
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.9999999999503182,
+              -6.952666403974692e-06,
+              -7.143103170293555e-06
+            ],
+            [
+              -7.664974155968673e-06,
+              -0.0782073308003331,
+              -0.9969371160461101
+            ],
+            [
+              6.372728161063712e-06,
+              0.9969371160513323,
+              -0.07820733084973966
+            ]
+          ],
+          "profile_up_world": [
+            0.0782073308003331,
+            -6.952666403992058e-06,
+            0.9969371160513323
+          ],
+          "profile_up_in_handle_frame": [
+            -6.952666403974692e-06,
+            -0.0782073308003331,
+            0.9969371160513323
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              -0.022131796647748614,
+              -0.999752935964444,
+              0.0020617001762906558
+            ],
+            [
+              -0.9093454289592456,
+              0.01927337703485138,
+              -0.4155952691845732
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.999752935964444,
+            0.01927337703485138,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 6,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:7",
+      "label": "转动中段",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 7,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        -0.48707963186721515,
+        -1.0045001002826892,
+        1.0368917018245223,
+        1.8236751268185407,
+        0.6295304134948908,
+        0.014118974408842024,
+        -0.03076136349182965,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.7853981633974483
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": -0.48707963186721515,
+        "openarm_left_joint2": -1.0045001002826892,
+        "openarm_left_joint3": 1.0368917018245223,
+        "openarm_left_joint4": 1.8236751268185407,
+        "openarm_left_joint5": 0.6295304134948908,
+        "openarm_left_joint6": 0.014118974408842024,
+        "openarm_left_joint7": -0.03076136349182965,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 0.7853981633974483,
+      "opening_deg": 45.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          0.17857676922748505,
+          0.0937951778816146,
+          0.026966272845350803
+        ],
+        "rotation_matrix": [
+          [
+            0.999999999999447,
+            -4.7648970920054305e-07,
+            9.377397922031985e-07
+          ],
+          [
+            7.824607700419127e-07,
+            -0.25882138407586996,
+            -0.9659251995596964
+          ],
+          [
+            7.029605283426221e-07,
+            0.9659251995598958,
+            -0.258821384075354
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          0.1785768536240664,
+          0.006861909921241929,
+          0.003672348278568993
+        ],
+        "rotation_matrix": [
+          [
+            0.999999999999447,
+            -4.7648970920054305e-07,
+            9.377397922031985e-07
+          ],
+          [
+            7.824607700419127e-07,
+            -0.25882138407586996,
+            -0.9659251995596964
+          ],
+          [
+            7.029605283426221e-07,
+            0.9659251995598958,
+            -0.258821384075354
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.6399496381604517,
+          0.19259605080582803,
+          1.210966272845351
+        ],
+        "tool_rotation_matrix": [
+          [
+            0.7071062279028401,
+            0.183014018867031,
+            0.6830129218097964
+          ],
+          [
+            0.7071073344694729,
+            -0.18301469272524012,
+            -0.6830115956454644
+          ],
+          [
+            7.029605283426221e-07,
+            0.9659251995598958,
+            -0.258821384075354
+          ]
+        ],
+        "tcp_position_m": [
+          0.7014208011233334,
+          0.13112500719773623,
+          1.1876723482785692
+        ],
+        "tcp_rotation_matrix": [
+          [
+            0.7071062279028401,
+            0.183014018867031,
+            0.6830129218097964
+          ],
+          [
+            0.7071073344694729,
+            -0.18301469272524012,
+            -0.6830115956454644
+          ],
+          [
+            7.029605283426221e-07,
+            0.9659251995598958,
+            -0.258821384075354
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            0.7071067811865476,
+            -0.7071067811865475,
+            0.0
+          ],
+          [
+            0.7071067811865475,
+            0.7071067811865476,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            0.17857685358986364,
+            0.006861909955444667,
+            0.003672348278568993
+          ],
+          "rotation_matrix": [
+            [
+              0.999999999999447,
+              -4.7648970920054305e-07,
+              9.377397922031985e-07
+            ],
+            [
+              7.824607700419127e-07,
+              -0.25882138407586996,
+              -0.9659251995596964
+            ],
+            [
+              7.029605283426221e-07,
+              0.9659251995598958,
+              -0.258821384075354
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              0.7071062279028401,
+              0.183014018867031,
+              0.6830129218097964
+            ],
+            [
+              0.7071073344694729,
+              -0.18301469272524012,
+              -0.6830115956454644
+            ],
+            [
+              7.029605283426221e-07,
+              0.9659251995598958,
+              -0.258821384075354
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.999999999999447,
+              -4.7648970920054305e-07,
+              9.377397922031985e-07
+            ],
+            [
+              7.824607700419127e-07,
+              -0.25882138407586996,
+              -0.9659251995596964
+            ],
+            [
+              7.029605283426221e-07,
+              0.9659251995598958,
+              -0.258821384075354
+            ]
+          ],
+          "profile_up_world": [
+            0.183014018867031,
+            -0.18301469272524012,
+            0.9659251995598958
+          ],
+          "profile_up_in_handle_frame": [
+            -4.764897091891207e-07,
+            -0.25882138407586996,
+            0.9659251995598958
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.6273547757686077,
+              -0.7205604161293272,
+              0.29532807524488885
+            ],
+            [
+              -0.6586538627475373,
+              -0.69330374493391,
+              -0.2924123908940317
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.7205604161293271,
+            -0.69330374493391,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 7,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:8",
+      "label": "到位",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 8,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        -1.1557162961338259,
+        -0.24523222358325036,
+        1.5371308621966941,
+        0.6103754378024416,
+        0.43416370639097923,
+        0.2563175818184009,
+        -1.095405742312188,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": -1.1557162961338259,
+        "openarm_left_joint2": -0.24523222358325036,
+        "openarm_left_joint3": 1.5371308621966941,
+        "openarm_left_joint4": 0.6103754378024416,
+        "openarm_left_joint5": 0.43416370639097923,
+        "openarm_left_joint6": 0.2563175818184009,
+        "openarm_left_joint7": -1.095405742312188,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 1.5707963267948966,
+      "opening_deg": -0.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          0.16688214092902673,
+          0.09721488403466548,
+          0.02628903588238174
+        ],
+        "rotation_matrix": [
+          [
+            0.999985186453775,
+            4.136170934243698e-06,
+            0.005443055750294167
+          ],
+          [
+            0.005255775893318435,
+            -0.2607931269456421,
+            -0.9653804026173688
+          ],
+          [
+            0.00141551855089688,
+            0.9653947093913483,
+            -0.26078928541338847
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          0.16737201594655327,
+          0.010330647799102297,
+          0.002818000195176751
+        ],
+        "rotation_matrix": [
+          [
+            0.999985186453775,
+            4.136170934243698e-06,
+            0.005443055750294167
+          ],
+          [
+            0.005255775893318435,
+            -0.2607931269456421,
+            -0.9653804026173688
+          ],
+          [
+            0.00141551855089688,
+            0.9653947093913483,
+            -0.26078928541338847
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.7468821409290267,
+          0.09721488403466545,
+          1.210289035882382
+        ],
+        "tool_rotation_matrix": [
+          [
+            0.999985186453775,
+            4.136170934201759e-06,
+            0.005443055750294011
+          ],
+          [
+            0.005255775893318274,
+            -0.2607931269456421,
+            -0.9653804026173688
+          ],
+          [
+            0.00141551855089688,
+            0.9653947093913483,
+            -0.26078928541338847
+          ]
+        ],
+        "tcp_position_m": [
+          0.7473720159465532,
+          0.010330647799102269,
+          1.186818000195177
+        ],
+        "tcp_rotation_matrix": [
+          [
+            0.999985186453775,
+            4.136170934201759e-06,
+            0.005443055750294011
+          ],
+          [
+            0.005255775893318274,
+            -0.2607931269456421,
+            -0.9653804026173688
+          ],
+          [
+            0.00141551855089688,
+            0.9653947093913483,
+            -0.26078928541338847
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            1.6081226496766364e-16,
+            0.0
+          ],
+          [
+            -1.6081226496766364e-16,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            0.1673720158981833,
+            0.010330647799102297,
+            0.002818000195176751
+          ],
+          "rotation_matrix": [
+            [
+              0.999985186453775,
+              4.136170934243698e-06,
+              0.005443055750294167
+            ],
+            [
+              0.005255775893318435,
+              -0.2607931269456421,
+              -0.9653804026173688
+            ],
+            [
+              0.00141551855089688,
+              0.9653947093913483,
+              -0.26078928541338847
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              0.999985186453775,
+              4.136170934201759e-06,
+              0.005443055750294011
+            ],
+            [
+              0.005255775893318274,
+              -0.2607931269456421,
+              -0.9653804026173688
+            ],
+            [
+              0.00141551855089688,
+              0.9653947093913483,
+              -0.26078928541338847
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.999985186453775,
+              4.136170934243698e-06,
+              0.005443055750294167
+            ],
+            [
+              0.005255775893318435,
+              -0.2607931269456421,
+              -0.9653804026173688
+            ],
+            [
+              0.00141551855089688,
+              0.9653947093913483,
+              -0.26078928541338847
+            ]
+          ],
+          "profile_up_world": [
+            4.136170934201759e-06,
+            -0.2607931269456421,
+            0.9653947093913483
+          ],
+          "profile_up_in_handle_frame": [
+            4.136170934243698e-06,
+            -0.2607931269456421,
+            0.9653947093913483
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.9093454289592456,
+              -0.019273377034851442,
+              0.4155952691845732
+            ],
+            [
+              -0.02213179664774867,
+              -0.999752935964444,
+              0.00206170017629063
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.019273377034851442,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 8,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:9",
+      "label": "松开",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 9,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        -1.2012467797417865,
+        -0.2039399885282719,
+        1.3956431441539616,
+        0.2370325826821512,
+        0.45663897645387097,
+        0.30881838024507874,
+        -1.4529081225975928,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": -1.2012467797417865,
+        "openarm_left_joint2": -0.2039399885282719,
+        "openarm_left_joint3": 1.3956431441539616,
+        "openarm_left_joint4": 0.2370325826821512,
+        "openarm_left_joint5": 0.45663897645387097,
+        "openarm_left_joint6": 0.30881838024507874,
+        "openarm_left_joint7": -1.4529081225975928,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 1.5707963267948966,
+      "opening_deg": -0.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          0.1899999879712961,
+          0.15897997487824125,
+          0.042598560063415336
+        ],
+        "rotation_matrix": [
+          [
+            0.9999999999999847,
+            2.2630583331397696e-09,
+            1.7480762477608248e-07
+          ],
+          [
+            1.6943691920977566e-07,
+            -0.2588191077024366,
+            -0.9659258095154543
+          ],
+          [
+            4.3057607011709295e-08,
+            0.9659258095154691,
+            -0.25881910770243305
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          0.1900000037039824,
+          0.07204665202185037,
+          0.019304840370196308
+        ],
+        "rotation_matrix": [
+          [
+            0.9999999999999847,
+            2.2630583331397696e-09,
+            1.7480762477608248e-07
+          ],
+          [
+            1.6943691920977566e-07,
+            -0.2588191077024366,
+            -0.9659258095154543
+          ],
+          [
+            4.3057607011709295e-08,
+            0.9659258095154691,
+            -0.25881910770243305
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.7699999879712961,
+          0.15897997487824123,
+          1.2265985600634155
+        ],
+        "tool_rotation_matrix": [
+          [
+            0.9999999999999847,
+            2.2630582915184826e-09,
+            1.7480762462074976e-07
+          ],
+          [
+            1.6943691904896338e-07,
+            -0.2588191077024366,
+            -0.9659258095154543
+          ],
+          [
+            4.3057607011709295e-08,
+            0.9659258095154691,
+            -0.25881910770243305
+          ]
+        ],
+        "tcp_position_m": [
+          0.7700000037039824,
+          0.07204665202185034,
+          1.2033048403701965
+        ],
+        "tcp_rotation_matrix": [
+          [
+            0.9999999999999847,
+            2.2630582915184826e-09,
+            1.7480762462074976e-07
+          ],
+          [
+            1.6943691904896338e-07,
+            -0.2588191077024366,
+            -0.9659258095154543
+          ],
+          [
+            4.3057607011709295e-08,
+            0.9659258095154691,
+            -0.25881910770243305
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            1.6081226496766364e-16,
+            0.0
+          ],
+          [
+            -1.6081226496766364e-16,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            0.19000000365561265,
+            0.07204665202185037,
+            0.019304840370196308
+          ],
+          "rotation_matrix": [
+            [
+              0.9999999999999847,
+              2.2630583331397696e-09,
+              1.7480762477608248e-07
+            ],
+            [
+              1.6943691920977566e-07,
+              -0.2588191077024366,
+              -0.9659258095154543
+            ],
+            [
+              4.3057607011709295e-08,
+              0.9659258095154691,
+              -0.25881910770243305
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              0.9999999999999847,
+              2.2630582915184826e-09,
+              1.7480762462074976e-07
+            ],
+            [
+              1.6943691904896338e-07,
+              -0.2588191077024366,
+              -0.9659258095154543
+            ],
+            [
+              4.3057607011709295e-08,
+              0.9659258095154691,
+              -0.25881910770243305
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.9999999999999847,
+              2.2630583331397696e-09,
+              1.7480762477608248e-07
+            ],
+            [
+              1.6943691920977566e-07,
+              -0.2588191077024366,
+              -0.9659258095154543
+            ],
+            [
+              4.3057607011709295e-08,
+              0.9659258095154691,
+              -0.25881910770243305
+            ]
+          ],
+          "profile_up_world": [
+            2.2630582915184826e-09,
+            -0.2588191077024366,
+            0.9659258095154691
+          ],
+          "profile_up_in_handle_frame": [
+            2.2630583331397696e-09,
+            -0.2588191077024366,
+            0.9659258095154691
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.9093454289592456,
+              -0.019273377034851442,
+              0.4155952691845732
+            ],
+            [
+              -0.02213179664774867,
+              -0.999752935964444,
+              0.00206170017629063
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.019273377034851442,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 9,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:10",
+      "label": "回落起点",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 10,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        1.0971400953096406,
+        0.1333674933453481,
+        -0.12336930018823396,
+        2.085047931044656,
+        1.4728668120596664,
+        0.7233729337175728,
+        -0.2319757277407815,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": 1.0971400953096406,
+        "openarm_left_joint2": 0.1333674933453481,
+        "openarm_left_joint3": -0.12336930018823396,
+        "openarm_left_joint4": 2.085047931044656,
+        "openarm_left_joint5": 1.4728668120596664,
+        "openarm_left_joint6": 0.7233729337175728,
+        "openarm_left_joint7": -0.2319757277407815,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 1.5707963267948966,
+      "opening_deg": -0.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          -0.13407738421028695,
+          0.22522010361274777,
+          0.011124048667339848
+        ],
+        "rotation_matrix": [
+          [
+            0.0009060305540066262,
+            -0.14027448435878642,
+            0.9901122401760881
+          ],
+          [
+            0.9999995895246401,
+            0.00011947581845798104,
+            -0.0008981514793894935
+          ],
+          [
+            7.693265387187509e-06,
+            0.9901126475120925,
+            0.14027453502830897
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          -0.044967282594439086,
+          0.22513926997960274,
+          0.02374875681988775
+        ],
+        "rotation_matrix": [
+          [
+            0.0009060305540066262,
+            -0.14027448435878642,
+            0.9901122401760881
+          ],
+          [
+            0.9999995895246401,
+            0.00011947581845798104,
+            -0.0008981514793894935
+          ],
+          [
+            7.693265387187509e-06,
+            0.9901126475120925,
+            0.14027453502830897
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.44592261578971304,
+          0.2252201036127478,
+          1.19512404866734
+        ],
+        "tool_rotation_matrix": [
+          [
+            0.000906030554006787,
+            -0.14027448435878642,
+            0.9901122401760881
+          ],
+          [
+            0.9999995895246401,
+            0.00011947581845800359,
+            -0.0008981514793896528
+          ],
+          [
+            7.693265387187509e-06,
+            0.9901126475120925,
+            0.14027453502830897
+          ]
+        ],
+        "tcp_position_m": [
+          0.5350327174055609,
+          0.22513926997960274,
+          1.207748756819888
+        ],
+        "tcp_rotation_matrix": [
+          [
+            0.000906030554006787,
+            -0.14027448435878642,
+            0.9901122401760881
+          ],
+          [
+            0.9999995895246401,
+            0.00011947581845800359,
+            -0.0008981514793896528
+          ],
+          [
+            7.693265387187509e-06,
+            0.9901126475120925,
+            0.14027453502830897
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            1.6081226496766364e-16,
+            0.0
+          ],
+          [
+            -1.6081226496766364e-16,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            -0.04496728264280884,
+            0.22513926997960274,
+            0.02374875681988775
+          ],
+          "rotation_matrix": [
+            [
+              0.0009060305540066262,
+              -0.14027448435878642,
+              0.9901122401760881
+            ],
+            [
+              0.9999995895246401,
+              0.00011947581845798104,
+              -0.0008981514793894935
+            ],
+            [
+              7.693265387187509e-06,
+              0.9901126475120925,
+              0.14027453502830897
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              0.000906030554006787,
+              -0.14027448435878642,
+              0.9901122401760881
+            ],
+            [
+              0.9999995895246401,
+              0.00011947581845800359,
+              -0.0008981514793896528
+            ],
+            [
+              7.693265387187509e-06,
+              0.9901126475120925,
+              0.14027453502830897
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.0009060305540066262,
+              -0.14027448435878642,
+              0.9901122401760881
+            ],
+            [
+              0.9999995895246401,
+              0.00011947581845798104,
+              -0.0008981514793894935
+            ],
+            [
+              7.693265387187509e-06,
+              0.9901126475120925,
+              0.14027453502830897
+            ]
+          ],
+          "profile_up_world": [
+            -0.14027448435878642,
+            0.00011947581845800359,
+            0.9901126475120925
+          ],
+          "profile_up_in_handle_frame": [
+            -0.14027448435878642,
+            0.00011947581845798104,
+            0.9901126475120925
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.9093454289592456,
+              -0.019273377034851442,
+              0.4155952691845732
+            ],
+            [
+              -0.02213179664774867,
+              -0.999752935964444,
+              0.00206170017629063
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.019273377034851442,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 10,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:11",
+      "label": "放下25%",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 11,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        1.24554642277829,
+        0.15516901270075423,
+        -0.1138503714614775,
+        2.2182931767674887,
+        1.3084888571917754,
+        0.4761212798382675,
+        -0.23963524782980214,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": 1.24554642277829,
+        "openarm_left_joint2": 0.15516901270075423,
+        "openarm_left_joint3": -0.1138503714614775,
+        "openarm_left_joint4": 2.2182931767674887,
+        "openarm_left_joint5": 1.3084888571917754,
+        "openarm_left_joint6": 0.4761212798382675,
+        "openarm_left_joint7": -0.23963524782980214,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 1.5707963267948966,
+      "opening_deg": -0.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          -0.1479826852927593,
+          0.23031982908877263,
+          0.015526653165748971
+        ],
+        "rotation_matrix": [
+          [
+            -0.08894641374977254,
+            0.07448682365604489,
+            0.9932473249813901
+          ],
+          [
+            0.9790033597405248,
+            0.1901668981738591,
+            0.0734096210022725
+          ],
+          [
+            -0.1834147134169407,
+            0.978921990732952,
+            -0.08983751422215089
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          -0.05859042604443424,
+          0.23692669497897717,
+          0.007441276885755466
+        ],
+        "rotation_matrix": [
+          [
+            -0.08894641374977254,
+            0.07448682365604489,
+            0.9932473249813901
+          ],
+          [
+            0.9790033597405248,
+            0.1901668981738591,
+            0.0734096210022725
+          ],
+          [
+            -0.1834147134169407,
+            0.978921990732952,
+            -0.08983751422215089
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.4320173147072407,
+          0.23031982908877266,
+          1.1995266531657491
+        ],
+        "tool_rotation_matrix": [
+          [
+            -0.08894641374977239,
+            0.07448682365604492,
+            0.9932473249813901
+          ],
+          [
+            0.9790033597405248,
+            0.1901668981738591,
+            0.07340962100227233
+          ],
+          [
+            -0.1834147134169407,
+            0.978921990732952,
+            -0.08983751422215089
+          ]
+        ],
+        "tcp_position_m": [
+          0.5214095739555658,
+          0.23692669497897717,
+          1.1914412768857556
+        ],
+        "tcp_rotation_matrix": [
+          [
+            -0.08894641374977239,
+            0.07448682365604492,
+            0.9932473249813901
+          ],
+          [
+            0.9790033597405248,
+            0.1901668981738591,
+            0.07340962100227233
+          ],
+          [
+            -0.1834147134169407,
+            0.978921990732952,
+            -0.08983751422215089
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            1.6081226496766364e-16,
+            0.0
+          ],
+          [
+            -1.6081226496766364e-16,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            -0.05859042609280422,
+            0.23692669497897717,
+            0.007441276885755466
+          ],
+          "rotation_matrix": [
+            [
+              -0.08894641374977254,
+              0.07448682365604489,
+              0.9932473249813901
+            ],
+            [
+              0.9790033597405248,
+              0.1901668981738591,
+              0.0734096210022725
+            ],
+            [
+              -0.1834147134169407,
+              0.978921990732952,
+              -0.08983751422215089
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              -0.08894641374977239,
+              0.07448682365604492,
+              0.9932473249813901
+            ],
+            [
+              0.9790033597405248,
+              0.1901668981738591,
+              0.07340962100227233
+            ],
+            [
+              -0.1834147134169407,
+              0.978921990732952,
+              -0.08983751422215089
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              -0.08894641374977254,
+              0.07448682365604489,
+              0.9932473249813901
+            ],
+            [
+              0.9790033597405248,
+              0.1901668981738591,
+              0.0734096210022725
+            ],
+            [
+              -0.1834147134169407,
+              0.978921990732952,
+              -0.08983751422215089
+            ]
+          ],
+          "profile_up_world": [
+            0.07448682365604492,
+            0.1901668981738591,
+            0.978921990732952
+          ],
+          "profile_up_in_handle_frame": [
+            0.07448682365604489,
+            0.1901668981738591,
+            0.978921990732952
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.9093454289592456,
+              -0.019273377034851442,
+              0.4155952691845732
+            ],
+            [
+              -0.02213179664774867,
+              -0.999752935964444,
+              0.00206170017629063
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.019273377034851442,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 11,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:12",
+      "label": "放下50%",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 12,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        0.7025707006026665,
+        0.09296314888180503,
+        -0.06955990080754018,
+        1.35589751851535,
+        0.7278635608337342,
+        0.2675016469208424,
+        -0.21247920111789292,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": 0.7025707006026665,
+        "openarm_left_joint2": 0.09296314888180503,
+        "openarm_left_joint3": -0.06955990080754018,
+        "openarm_left_joint4": 1.35589751851535,
+        "openarm_left_joint5": 0.7278635608337342,
+        "openarm_left_joint6": 0.2675016469208424,
+        "openarm_left_joint7": -0.21247920111789292,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 1.5707963267948966,
+      "opening_deg": -0.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          -0.1443321270777623,
+          0.2206238500000462,
+          -0.17865753919911342
+        ],
+        "rotation_matrix": [
+          [
+            -0.5028504525850688,
+            0.26636377821070145,
+            0.8223087984402895
+          ],
+          [
+            0.6239513384155339,
+            0.77022383837934,
+            0.13206046373408273
+          ],
+          [
+            -0.5981857149953149,
+            0.5794873393349653,
+            -0.5535054416408454
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          -0.07032433521813623,
+          0.23250929173611365,
+          -0.22847302894678956
+        ],
+        "rotation_matrix": [
+          [
+            -0.5028504525850688,
+            0.26636377821070145,
+            0.8223087984402895
+          ],
+          [
+            0.6239513384155339,
+            0.77022383837934,
+            0.13206046373408273
+          ],
+          [
+            -0.5981857149953149,
+            0.5794873393349653,
+            -0.5535054416408454
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.4356678729222377,
+          0.22062385000004622,
+          1.0053424608008867
+        ],
+        "tool_rotation_matrix": [
+          [
+            -0.5028504525850687,
+            0.26636377821070156,
+            0.8223087984402895
+          ],
+          [
+            0.623951338415534,
+            0.77022383837934,
+            0.1320604637340826
+          ],
+          [
+            -0.5981857149953149,
+            0.5794873393349653,
+            -0.5535054416408454
+          ]
+        ],
+        "tcp_position_m": [
+          0.5096756647818638,
+          0.23250929173611365,
+          0.9555269710532106
+        ],
+        "tcp_rotation_matrix": [
+          [
+            -0.5028504525850687,
+            0.26636377821070156,
+            0.8223087984402895
+          ],
+          [
+            0.623951338415534,
+            0.77022383837934,
+            0.1320604637340826
+          ],
+          [
+            -0.5981857149953149,
+            0.5794873393349653,
+            -0.5535054416408454
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            1.6081226496766364e-16,
+            0.0
+          ],
+          [
+            -1.6081226496766364e-16,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            -0.07032433526650621,
+            0.23250929173611365,
+            -0.22847302894678956
+          ],
+          "rotation_matrix": [
+            [
+              -0.5028504525850688,
+              0.26636377821070145,
+              0.8223087984402895
+            ],
+            [
+              0.6239513384155339,
+              0.77022383837934,
+              0.13206046373408273
+            ],
+            [
+              -0.5981857149953149,
+              0.5794873393349653,
+              -0.5535054416408454
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              -0.5028504525850687,
+              0.26636377821070156,
+              0.8223087984402895
+            ],
+            [
+              0.623951338415534,
+              0.77022383837934,
+              0.1320604637340826
+            ],
+            [
+              -0.5981857149953149,
+              0.5794873393349653,
+              -0.5535054416408454
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              -0.5028504525850688,
+              0.26636377821070145,
+              0.8223087984402895
+            ],
+            [
+              0.6239513384155339,
+              0.77022383837934,
+              0.13206046373408273
+            ],
+            [
+              -0.5981857149953149,
+              0.5794873393349653,
+              -0.5535054416408454
+            ]
+          ],
+          "profile_up_world": [
+            0.26636377821070156,
+            0.77022383837934,
+            0.5794873393349653
+          ],
+          "profile_up_in_handle_frame": [
+            0.26636377821070145,
+            0.77022383837934,
+            0.5794873393349653
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.9093454289592456,
+              -0.019273377034851442,
+              0.4155952691845732
+            ],
+            [
+              -0.02213179664774867,
+              -0.999752935964444,
+              0.00206170017629063
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.019273377034851442,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 12,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:13",
+      "label": "放下75%",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 13,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        0.15959497842704293,
+        0.0307572850628558,
+        -0.02526943015360287,
+        0.49350186026321097,
+        0.14723826447569283,
+        0.05888201400341725,
+        -0.18532315440598368,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": 0.15959497842704293,
+        "openarm_left_joint2": 0.0307572850628558,
+        "openarm_left_joint3": -0.02526943015360287,
+        "openarm_left_joint4": 0.49350186026321097,
+        "openarm_left_joint5": 0.14723826447569283,
+        "openarm_left_joint6": 0.05888201400341725,
+        "openarm_left_joint7": -0.18532315440598368,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 1.5707963267948966,
+      "opening_deg": -0.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          -0.1293181169706504,
+          0.20970346546226362,
+          -0.2917781654984335
+        ],
+        "rotation_matrix": [
+          [
+            -0.8609938209938998,
+            0.08956648645857303,
+            0.5006670397717334
+          ],
+          [
+            0.1162864185376125,
+            0.9929644178268578,
+            0.02234130241199922
+          ],
+          [
+            -0.49514352371208437,
+            0.07745650026457072,
+            -0.8653515941469946
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          -0.08425808339119437,
+          0.21171418267934358,
+          -0.36965980897166295
+        ],
+        "rotation_matrix": [
+          [
+            -0.8609938209938998,
+            0.08956648645857303,
+            0.5006670397717334
+          ],
+          [
+            0.1162864185376125,
+            0.9929644178268578,
+            0.02234130241199922
+          ],
+          [
+            -0.49514352371208437,
+            0.07745650026457072,
+            -0.8653515941469946
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.4506818830293496,
+          0.20970346546226365,
+          0.8922218345015667
+        ],
+        "tool_rotation_matrix": [
+          [
+            -0.8609938209938998,
+            0.0895664864585732,
+            0.5006670397717334
+          ],
+          [
+            0.11628641853761264,
+            0.9929644178268578,
+            0.02234130241199914
+          ],
+          [
+            -0.49514352371208437,
+            0.07745650026457072,
+            -0.8653515941469946
+          ]
+        ],
+        "tcp_position_m": [
+          0.4957419166088056,
+          0.21171418267934358,
+          0.8143401910283372
+        ],
+        "tcp_rotation_matrix": [
+          [
+            -0.8609938209938998,
+            0.0895664864585732,
+            0.5006670397717334
+          ],
+          [
+            0.11628641853761264,
+            0.9929644178268578,
+            0.02234130241199914
+          ],
+          [
+            -0.49514352371208437,
+            0.07745650026457072,
+            -0.8653515941469946
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            1.6081226496766364e-16,
+            0.0
+          ],
+          [
+            -1.6081226496766364e-16,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            -0.08425808343956434,
+            0.21171418267934358,
+            -0.36965980897166295
+          ],
+          "rotation_matrix": [
+            [
+              -0.8609938209938998,
+              0.08956648645857303,
+              0.5006670397717334
+            ],
+            [
+              0.1162864185376125,
+              0.9929644178268578,
+              0.02234130241199922
+            ],
+            [
+              -0.49514352371208437,
+              0.07745650026457072,
+              -0.8653515941469946
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              -0.8609938209938998,
+              0.0895664864585732,
+              0.5006670397717334
+            ],
+            [
+              0.11628641853761264,
+              0.9929644178268578,
+              0.02234130241199914
+            ],
+            [
+              -0.49514352371208437,
+              0.07745650026457072,
+              -0.8653515941469946
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              -0.8609938209938998,
+              0.08956648645857303,
+              0.5006670397717334
+            ],
+            [
+              0.1162864185376125,
+              0.9929644178268578,
+              0.02234130241199922
+            ],
+            [
+              -0.49514352371208437,
+              0.07745650026457072,
+              -0.8653515941469946
+            ]
+          ],
+          "profile_up_world": [
+            0.0895664864585732,
+            0.9929644178268578,
+            0.07745650026457072
+          ],
+          "profile_up_in_handle_frame": [
+            0.08956648645857303,
+            0.9929644178268578,
+            0.07745650026457072
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.9093454289592456,
+              -0.019273377034851442,
+              0.4155952691845732
+            ],
+            [
+              -0.02213179664774867,
+              -0.999752935964444,
+              0.00206170017629063
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.019273377034851442,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 13,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    },
+    {
+      "id": "confirmed:14",
+      "label": "结束自然下垂",
+      "provenance": {
+        "source_file": "sequence.json",
+        "source_index": 14,
+        "source_id": null,
+        "source_phase": null,
+        "source_scene": "provenance/recorded_sources.json#source_00033",
+        "approval_scope": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "source_document_status": null,
+        "source_row_status": null,
+        "source_row_approval_status": null,
+        "user_utterance_time": null,
+        "note": "Source joints unchanged; source status retained, later approval evidence is separate."
+      },
+      "full_qpos": [
+        0.017832844065919572,
+        0.014516345248056249,
+        -0.013705908258732535,
+        0.2683443731333422,
+        -0.004353561667046997,
+        0.004414819202316108,
+        -0.17823315206248028,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "qpos_joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7",
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7",
+        "A1_valve_hinge"
+      ],
+      "robot_joint_angles_rad": {
+        "openarm_left_joint1": 0.017832844065919572,
+        "openarm_left_joint2": 0.014516345248056249,
+        "openarm_left_joint3": -0.013705908258732535,
+        "openarm_left_joint4": 0.2683443731333422,
+        "openarm_left_joint5": -0.004353561667046997,
+        "openarm_left_joint6": 0.004414819202316108,
+        "openarm_left_joint7": -0.17823315206248028,
+        "openarm_right_joint1": -0.017832844065919572,
+        "openarm_right_joint2": -0.014516345248056249,
+        "openarm_right_joint3": 0.013705908258732535,
+        "openarm_right_joint4": 0.2683443731333422,
+        "openarm_right_joint5": 0.004353561667046997,
+        "openarm_right_joint6": -0.004414819202316108,
+        "openarm_right_joint7": 0.17823315206248028
+      },
+      "valve_joint_angle_rad": 1.5707963267948966,
+      "opening_deg": -0.0,
+      "tool_in_handle_frame": {
+        "position_m": [
+          -0.12403031378479537,
+          0.2118601759008514,
+          -0.3042350365502021
+        ],
+        "rotation_matrix": [
+          [
+            -0.9093454289592456,
+            -0.01927337703485176,
+            0.4155952691845732
+          ],
+          [
+            -0.02213179664774896,
+            0.999752935964444,
+            -0.0020617001762904966
+          ],
+          [
+            -0.41545285461538,
+            -0.011072667616553698,
+            -0.9095473168691034
+          ]
+        ]
+      },
+      "tcp_in_handle_frame": {
+        "position_m": [
+          -0.08662673955818381,
+          0.21167462288498526,
+          -0.3860942950684214
+        ],
+        "rotation_matrix": [
+          [
+            -0.9093454289592456,
+            -0.01927337703485176,
+            0.4155952691845732
+          ],
+          [
+            -0.02213179664774896,
+            0.999752935964444,
+            -0.0020617001762904966
+          ],
+          [
+            -0.41545285461538,
+            -0.011072667616553698,
+            -0.9095473168691034
+          ]
+        ]
+      },
+      "actual_world": {
+        "tool_position_m": [
+          0.4559696862152046,
+          0.21186017590085143,
+          0.879764963449798
+        ],
+        "tool_rotation_matrix": [
+          [
+            -0.9093454289592456,
+            -0.019273377034851602,
+            0.4155952691845732
+          ],
+          [
+            -0.022131796647748815,
+            0.999752935964444,
+            -0.0020617001762905634
+          ],
+          [
+            -0.41545285461538,
+            -0.011072667616553698,
+            -0.9095473168691034
+          ]
+        ],
+        "tcp_position_m": [
+          0.4933732604418162,
+          0.2116746228849853,
+          0.7979057049315788
+        ],
+        "tcp_rotation_matrix": [
+          [
+            -0.9093454289592456,
+            -0.019273377034851602,
+            0.4155952691845732
+          ],
+          [
+            -0.022131796647748815,
+            0.999752935964444,
+            -0.0020617001762905634
+          ],
+          [
+            -0.41545285461538,
+            -0.011072667616553698,
+            -0.9095473168691034
+          ]
+        ]
+      },
+      "handle_frame_at_capture": {
+        "origin_world_m": [
+          0.58,
+          0.0,
+          1.1840000000000002
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            1.6081226496766364e-16,
+            0.0
+          ],
+          [
+            -1.6081226496766364e-16,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0
+          ]
+        ]
+      },
+      "original_target_fields": {
+        "actual_in_handle_frame": {
+          "position_m": [
+            -0.08662673960655379,
+            0.21167462288498526,
+            -0.3860942950684214
+          ],
+          "rotation_matrix": [
+            [
+              -0.9093454289592456,
+              -0.01927337703485176,
+              0.4155952691845732
+            ],
+            [
+              -0.02213179664774896,
+              0.999752935964444,
+              -0.0020617001762904966
+            ],
+            [
+              -0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "source_target_differences": {
+        "stored_opening_vs_joint_deg": 0.0
+      },
+      "orientation_observation": {
+        "left": {
+          "tool_rotation_world": [
+            [
+              -0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              0.999752935964444,
+              -0.0020617001762905634
+            ],
+            [
+              -0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              -0.9093454289592456,
+              -0.01927337703485176,
+              0.4155952691845732
+            ],
+            [
+              -0.02213179664774896,
+              0.999752935964444,
+              -0.0020617001762904966
+            ],
+            [
+              -0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.01927337703485176,
+            0.999752935964444,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        },
+        "right": {
+          "tool_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "tool_rotation_in_handle_frame": [
+            [
+              0.9093454289592456,
+              -0.019273377034851442,
+              0.4155952691845732
+            ],
+            [
+              -0.02213179664774867,
+              -0.999752935964444,
+              0.00206170017629063
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ],
+          "profile_up_world": [
+            -0.019273377034851602,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "profile_up_in_handle_frame": [
+            -0.019273377034851442,
+            -0.999752935964444,
+            -0.011072667616553698
+          ],
+          "assessment_status": "not_evaluated_by_conversion",
+          "check_kind": "physical_orientation_measurement_only_not_a_pass_label",
+          "note": "Local +Y is the physical tool profile-up direction. This measurement is not its own correctness reference. Assess working stages against independently user-confirmed G1 tool/handle references and actual contact state; rest and idle arms have no blue/orange height gate."
+        }
+      },
+      "source_images": {},
+      "source_images_base": "provenance/recorded_sources.json#source_00034",
+      "data_kind": "converted_saved_geometric_pose",
+      "physics_steps_run": 0,
+      "joints_modified": false,
+      "reviewed_sequence_file": "sequence.json",
+      "reviewed_sequence_frame_index": 14,
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+      "approval": {
+        "user_confirmed": true,
+        "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+        "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+        "model_revision": "left_hook_mount_z180_review_v1",
+        "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+        "confirmation_record": "provenance/recorded_sources.json#source_00002",
+        "geometry_confirmation_not_physics_success": true
+      }
+    }
+  ],
+  "supplementary_pose_refs": [
+    "confirmed:1",
+    "confirmed:2",
+    "confirmed:3",
+    "confirmed:11",
+    "confirmed:12",
+    "confirmed:13",
+    "confirmed:14"
+  ],
+  "route": {
+    "coordinate_system": "body-relative; left means robot/user anatomical left, not camera screen left",
+    "approach": {
+      "side": null,
+      "status": "not_explicitly_recorded",
+      "reference_pose_refs": [
+        "reviewed:1",
+        "reviewed:2"
+      ],
+      "note": "旧G1未记录固定绕行侧；旧执行器会另选路线，不能自行补成左侧。"
+    },
+    "return": {
+      "side": null,
+      "status": "not_explicitly_recorded",
+      "reference_pose_refs": [
+        "reviewed:6",
+        "reviewed:7",
+        "reviewed:8"
+      ]
+    }
+  },
+  "approval": {
+    "user_confirmed": true,
+    "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+    "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+    "model_revision": "left_hook_mount_z180_review_v1",
+    "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+    "confirmation_record": "provenance/recorded_sources.json#source_00002",
+    "geometry_confirmation_not_physics_success": true
+  },
+  "migration_findings": {
+    "missing_roles": [],
+    "active_tool_orientation_conflict_pose_ids": [
+      "reviewed:0",
+      "reviewed:8"
+    ],
+    "idle_tool_orientation_conflict_pose_ids": [
+      "reviewed:0",
+      "reviewed:1",
+      "reviewed:2",
+      "reviewed:3",
+      "reviewed:4",
+      "reviewed:5",
+      "reviewed:6",
+      "reviewed:7",
+      "reviewed:8"
+    ],
+    "stored_tcp_vs_actual_m": {},
+    "known_issues": [
+      "旧自然下垂姿态与新工具全程正拿要求存在冲突，V1不修姿态。",
+      "绕行侧尚无明确旧批准字段。"
+    ],
+    "changes_made_to_resolve_issues": false
+  },
+  "reviewed_sequence_file": "sequence.json",
+  "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+  "model_revision": "left_hook_mount_z180_review_v1",
+  "shared_natural_rest_file": "rest.json",
+  "reviewed_connections_file": "sequence_reference.json",
+  "execution_approval_scope": "latest_user_confirmed_sequences_local_standard_once",
+  "supplementary_pose_roles": {
+    "final_rest": "confirmed:14"
+  },
+  "confirmed_sequence_reference_file": "sequence_reference.json",
+  "source_method_parameters_are_legacy_metadata": true
+}

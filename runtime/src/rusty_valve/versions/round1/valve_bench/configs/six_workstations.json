@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "purpose": "Six real MuJoCo workstations matching the agreed A1-C2 diagrams; static preparation only",
+  "coordinate_convention": {
+    "world": "+X robot facing forward / 后; -X toward robot / 前; +Y 左; -Y 右; +Z 上",
+    "angles": "radians in MJCF and reset state; degrees in page and *_deg fields",
+    "valve": "local pipe +X, stem +Z; clockwise closing about stem uses axis 0 0 -1; q=0 open, q=pi/2 closed",
+    "workstation_layout": "A/B/C three rows at X=0.58/2.13/3.68 m; case 1/2 at Y=0/-1.30 m; all face -X"
+  },
+  "robot": {
+    "model": "OpenArm v1 official bimanual fixed upper body",
+    "shoulder_height_m": 1.4,
+    "base_position_xy_m": [0, 0],
+    "facing_world": [1, 0, 0],
+    "tool": "two user-corrected fixed S hooks",
+    "ready_pose": "official arm home posture; both arms in front, no contact with A1; pedestal support, no legs or climbing"
+  },
+  "valve": {
+    "type": "Bray-reference generic DN25 ball valve",
+    "body_length_m": 0.092,
+    "handle_reach_m": 0.2,
+    "handle_contact_width_m": 0.02,
+    "handle_contact_thickness_m": 0.006,
+    "pipe_outside_diameter_m": 0.0337,
+    "pipe_length_m": 0.7,
+    "initial_relative_angle_deg": 0,
+    "closing_limit_deg": 90,
+    "breakaway_reference_Nm": 14,
+    "provenance": "Bray catalogue size and torque references retained; handle cross section, bends, inertia, friction, installation height and station spacing are task assumptions. No real measurement or force trial this run."
+  },
+  "stations": [
+    {"case":"A1","title":"横管上装","stem":"朝上","open_direction":"左","closed_direction":"后","position_m":[0.58,0,1.10],"installation_quaternion_wxyz":[0.7071067811865476,0,0,0.7071067811865475],"handle_phase_deg":0},
+    {"case":"A2","title":"横管上装","stem":"朝上","open_direction":"右","closed_direction":"前","position_m":[0.58,-1.30,1.10],"installation_quaternion_wxyz":[0.7071067811865476,0,0,0.7071067811865475],"handle_phase_deg":180},
+    {"case":"B1","title":"横管侧装","stem":"朝人","open_direction":"左","closed_direction":"上","position_m":[2.13,0,1.10],"installation_quaternion_wxyz":[0.5,-0.5,-0.5,0.5],"handle_phase_deg":0},
+    {"case":"B2","title":"横管侧装","stem":"朝人","open_direction":"右","closed_direction":"下","position_m":[2.13,-1.30,1.10],"installation_quaternion_wxyz":[0.5,-0.5,-0.5,0.5],"handle_phase_deg":180},
+    {"case":"C1","title":"竖管侧装","stem":"朝人","open_direction":"上","closed_direction":"右","position_m":[3.68,0,1.10],"installation_quaternion_wxyz":[0.7071067811865476,0,-0.7071067811865475,0],"handle_phase_deg":0},
+    {"case":"C2","title":"竖管侧装","stem":"朝人","open_direction":"下","closed_direction":"左","position_m":[3.68,-1.30,1.10],"installation_quaternion_wxyz":[0.7071067811865476,0,-0.7071067811865475,0],"handle_phase_deg":180}
+  ]
+}

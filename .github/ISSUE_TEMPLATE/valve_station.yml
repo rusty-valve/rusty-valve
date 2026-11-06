@@ -1,0 +1,38 @@
+name: Share a valve station
+description: Share a valve operation in a chemical plant using photos, videos, sketches, or text.
+title: "Valve station submission"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share a valve you least want to operate in a chemical plant. Give its nominal size or model, and use photos or videos to explain the work, adding text only for what the images cannot show.
+  - type: input
+    id: valve-spec
+    attributes:
+      label: Nominal size / model
+      placeholder: "For example: DN25 ball valve"
+    validations:
+      required: true
+  - type: textarea
+    id: station
+    attributes:
+      label: Photos, videos, or a written description
+      description: Add photos, videos, sketches, or links showing where the valve is, how people operate it, and what makes the work difficult or dangerous. No need to repeat what the media already shows; if you have no media, describe the station in words.
+      placeholder: Add media or a description. Photos or videos do not need additional text.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: Submissions are discussed publicly on GitHub. Remove plant names, equipment tags, and faces before attaching files. You do not need to leave a phone number or email address; we can follow up in the submission thread.
+  - type: checkboxes
+    id: sharing
+    attributes:
+      label: Before submitting
+      description: Submitting photos or videos does not require releasing them under CC BY. For use in other project presentations or open datasets, we will separately agree on the use, attribution, and license.
+      options:
+        - label: I can share this content publicly and have removed plant names, equipment tags, and faces.
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        **What happens next:** We will discuss which operations could become robot tasks. A complex station may be split into independent actions; once a task is defined, we can gradually add field references, simulation environments, demonstrations, and test methods.

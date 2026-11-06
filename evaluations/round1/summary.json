@@ -1,0 +1,23 @@
+{
+  "seen_valve_positions": {
+    "total": 4,
+    "frozen_review_passed": 1,
+    "original_passed": 1,
+    "original_unresolved": 0,
+    "full_return": 1
+  },
+  "unseen_valve_positions": {
+    "total": 4,
+    "frozen_review_passed": 0,
+    "original_passed": 0,
+    "original_unresolved": 0,
+    "full_return": 0
+  },
+  "unseen_appearance": {
+    "total": 8,
+    "frozen_review_passed": 0,
+    "original_passed": 0,
+    "original_unresolved": 0,
+    "full_return": 0
+  }
+}

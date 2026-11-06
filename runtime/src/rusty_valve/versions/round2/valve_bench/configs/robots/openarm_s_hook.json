@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "adapter_id": "openarm_s_hook",
+  "model_file": "../../assets/openarm_v1/openarm_bimanual.xml",
+  "tool_adapter": "s_hook",
+  "active_side": "left",
+  "placement": {
+    "root_body": "openarm_body_link0",
+    "base_position_m": [
+      0.3,
+      0.0,
+      0.703
+    ],
+    "base_yaw_deg": 0.0,
+    "base_quaternion_wxyz": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "shoulder_height_m": 1.4,
+    "shoulder_reference_offset_m": 0.697
+  },
+  "initial_keyframe": "home",
+  "mount_support": true,
+  "robot_scope": {
+    "root_bodies": [
+      "openarm_body_link0"
+    ],
+    "geom_names": [
+      "robot_mount_stand",
+      "robot_mount_foot"
+    ]
+  },
+  "geometry_groups": {
+    "operation_end": {
+      "body_names": [
+        "openarm_left_hook"
+      ]
+    },
+    "idle_hand": {
+      "body_names": [
+        "openarm_right_link0"
+      ]
+    },
+    "robot_other": {
+      "remaining_robot_collision_geoms": true
+    }
+  },
+  "control": {
+    "mode": "joint_position",
+    "units": "rad for arm hinges; m for stock gripper sliders",
+    "actuator_names": [
+      "left_joint1_ctrl",
+      "left_joint2_ctrl",
+      "left_joint3_ctrl",
+      "left_joint4_ctrl",
+      "left_joint5_ctrl",
+      "left_joint6_ctrl",
+      "left_joint7_ctrl",
+      "right_joint1_ctrl",
+      "right_joint2_ctrl",
+      "right_joint3_ctrl",
+      "right_joint4_ctrl",
+      "right_joint5_ctrl",
+      "right_joint6_ctrl",
+      "right_joint7_ctrl"
+    ],
+    "controlled_joint_names": [
+      "openarm_left_joint1",
+      "openarm_left_joint2",
+      "openarm_left_joint3",
+      "openarm_left_joint4",
+      "openarm_left_joint5",
+      "openarm_left_joint6",
+      "openarm_left_joint7",
+      "openarm_right_joint1",
+      "openarm_right_joint2",
+      "openarm_right_joint3",
+      "openarm_right_joint4",
+      "openarm_right_joint5",
+      "openarm_right_joint6",
+      "openarm_right_joint7"
+    ],
+    "robot_joint_names": [
+      "openarm_left_joint1",
+      "openarm_left_joint2",
+      "openarm_left_joint3",
+      "openarm_left_joint4",
+      "openarm_left_joint5",
+      "openarm_left_joint6",
+      "openarm_left_joint7",
+      "openarm_right_joint1",
+      "openarm_right_joint2",
+      "openarm_right_joint3",
+      "openarm_right_joint4",
+      "openarm_right_joint5",
+      "openarm_right_joint6",
+      "openarm_right_joint7"
+    ],
+    "active_joint_names": [
+      "openarm_left_joint1",
+      "openarm_left_joint2",
+      "openarm_left_joint3",
+      "openarm_left_joint4",
+      "openarm_left_joint5",
+      "openarm_left_joint6",
+      "openarm_left_joint7"
+    ],
+    "active_actuator_names": [
+      "left_joint1_ctrl",
+      "left_joint2_ctrl",
+      "left_joint3_ctrl",
+      "left_joint4_ctrl",
+      "left_joint5_ctrl",
+      "left_joint6_ctrl",
+      "left_joint7_ctrl"
+    ],
+    "idle_joint_names": [
+      "openarm_right_joint1",
+      "openarm_right_joint2",
+      "openarm_right_joint3",
+      "openarm_right_joint4",
+      "openarm_right_joint5",
+      "openarm_right_joint6",
+      "openarm_right_joint7"
+    ],
+    "idle_actuator_names": [
+      "right_joint1_ctrl",
+      "right_joint2_ctrl",
+      "right_joint3_ctrl",
+      "right_joint4_ctrl",
+      "right_joint5_ctrl",
+      "right_joint6_ctrl",
+      "right_joint7_ctrl"
+    ],
+    "ee_site_name": "left_ee_control",
+    "operation_body_name": "openarm_left_hook"
+  },
+  "additional_sites": [],
+  "cameras": [
+    {
+      "name": "robot_head",
+      "parent_body": "openarm_body_link0",
+      "position_local_m": [
+        0.06,
+        0.0,
+        0.897
+      ],
+      "forward_direction_local": [
+        0.46947156278589086,
+        0.0,
+        -0.8829475928589269
+      ],
+      "vertical_fov_deg": 60.0,
+      "profile": "motion",
+      "recommended_image_size_px": [
+        1280,
+        720
+      ],
+      "role": "robot visual observation; fixed virtual eye above the shoulders",
+      "camera_profile_revision": "head_v2",
+      "downward_tilt_deg": 62.0,
+      "yaw_relative_to_torso_deg": 0.0,
+      "above_shoulder_m": 0.2,
+      "forward_from_root_axis_m": 0.06,
+      "shoulder_reference_offset_m": 0.697,
+      "mode": "fixed to torso; no target tracking, zoom or cropping",
+      "approximation": "OpenArm has no head. Eye mount is a declared adapter design assumption, informed by but not copied from Reachy reference coordinates.",
+      "coordinates": {
+        "mujoco_camera": "-Z forward, +X image-right, +Y image-up",
+        "ros_optical": "Conversion uses diag(1,-1,-1): +Z forward, +X right, +Y down"
+      },
+      "references": [
+        {
+          "title": "Reachy 2 official head and torso camera specifications",
+          "url": "https://docs.pollen-robotics.com/hardware-guide/specifications/vision/",
+          "observation": "Official localisation drawing shows the eye 62 mm above its neck reference and that reference 115 mm above the upper-body origin; forward offset is 35.31 mm. These are Reachy coordinates, not OpenArm shoulder coordinates."
+        },
+        {
+          "title": "Unitree official head-perspective camera example",
+          "url": "https://oss-global-cdn.unitree.com/static/fdeee4e5197f416290d8fa9ecc0b28e6_2480x1286.png",
+          "observation": "Actual image inspected: hands and tabletop dominate the working area; forearms and a chest edge remain visible at the bottom. Visible body parts alone do not make a view third-person."
+        },
+        {
+          "title": "Unitree official XR camera hardware and mounting",
+          "url": "https://github.com/unitreerobotics/xr_teleoperate/blob/main/Device.md",
+          "observation": "Distinguishes head-mounted cameras from wrist cameras. The optional wide-angle stereo hardware does not prescribe a universal vertical FOV or tilt."
+        },
+        {
+          "title": "MuJoCo camera and plane definitions",
+          "url": "https://mujoco.readthedocs.io/en/latest/XMLreference.html",
+          "observation": "Fixed cameras look along local -Z, image up is +Y, fovy is vertical angle. A plane has infinite collision extent; its first two sizes control only the rendered rectangle. Zero values render an infinite plane."
+        },
+        {
+          "title": "ROS REP 103 camera optical frame",
+          "url": "https://www.ros.org/reps/rep-0103.html",
+          "observation": "Optical convention is +Z forward, +X right, +Y down. Converting from MuJoCo requires changing Y/Z signs; no image mirroring is used."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "model": "Official OpenArm v1 bimanual MJCF already in repository",
+    "source_commit": "a3c8a57ec15d385e3c1dbd3fd090ee486b7f258c",
+    "reference": "Same unmodified arm inertias, joint limits, arm actuator gains and force caps as existing bimanual_robot.py; only declared fixed base placement, camera/sites and selected end tool differ."
+  },
+  "category_note": "operation_end includes every collision part of the active S end-effector; idle_hand is the complete unused arm and tool; robot_other is the rest. Legacy v2.1 did not qualify by working face. Current S-tool v2.2 additionally identifies true blue pulling or orange pushing surfaces from solved contact geometry and wrench; the operation_end group must not be narrowed to hide back-side contacts.",
+  "camera_profiles": {
+    "legacy_motion": {
+      "name": "robot_head",
+      "parent_body": "openarm_body_link0",
+      "position_local_m": [
+        0.15,
+        0.0,
+        1.0
+      ],
+      "forward_direction_local": [
+        0.27563735581699916,
+        0.0,
+        -0.9612616959383189
+      ],
+      "vertical_fov_deg": 60.0,
+      "profile": "legacy_motion",
+      "recommended_image_size_px": [
+        1280,
+        720
+      ],
+      "role": "Archived prior camera; explicit reproduction only, inactive by default"
+    }
+  },
+  "camera_rig": {
+    "profile": "visual_only",
+    "config": "valve_bench/configs/openarm_camera_rig.json"
+  }
+}

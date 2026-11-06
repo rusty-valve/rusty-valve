@@ -1,0 +1,13 @@
+Stereolabs ZED Mini official visual mesh and reference URDF
+Source repository: https://github.com/stereolabs/zed-ros2-description
+Files: meshes/zedm.stl, urdf/zed_macro.urdf.xacro, LICENSE
+Retrieved: 2026-10-28
+STL units are metres; do not recenter it. Original mesh bounds are approximately
+X [-.00769,.02181], Y [-.05483,.07037], Z [-.01334,.01330].
+The official URDF uses a camera-center frame with +X forward, +Y left, +Z up;
+left/right optical centers are Y=+/- .0315 m. The camera-center is .01325 m
+above the bottom mount reference. Our adapter uses a project-designed head
+post, rotates the manufacturer's body frame into MuJoCo's camera axes, and
+keeps the source optical centers. It does not claim the post is official CAD.
+Own camera housing is hidden only in its optical image to represent the
+through-lens optical path; robot/tool/environment occlusion stays visible.

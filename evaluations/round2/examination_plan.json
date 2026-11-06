@@ -1,0 +1,902 @@
+[
+  {
+    "suite": "seen_valve_positions",
+    "source": "fixtures/v0_train_A2_close_c00_p00_20261028",
+    "episode_id": "v0_train_A2_close_c00_p00_20261028",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "seen_valve_positions",
+    "source": "fixtures/v0_train_A2_close_c01_p00_20261028",
+    "episode_id": "v0_train_A2_close_c01_p00_20261028",
+    "profile": {
+      "id": "train_episode_0193",
+      "pipe": [
+        0.6082345026578033,
+        0.2872408264737168,
+        0.44047814930264656
+      ],
+      "background": [
+        0.4539180620584611,
+        0.7234857282373689,
+        0.5555735302504596
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.47395733685812436,
+      "diffuse": 0.5827621852844616
+    }
+  },
+  {
+    "suite": "seen_valve_positions",
+    "source": "fixtures/v0_train_A2_close_c02_p00_20261028",
+    "episode_id": "v0_train_A2_close_c02_p00_20261028",
+    "profile": {
+      "id": "train_episode_0225",
+      "pipe": [
+        0.5628518765227191,
+        0.46723178824209227,
+        0.6826001478615539
+      ],
+      "background": [
+        0.6407152080734762,
+        0.6795918369870548,
+        0.35753021297623244
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.559043813843348,
+      "diffuse": 0.5793868092443534
+    }
+  },
+  {
+    "suite": "seen_valve_positions",
+    "source": "fixtures/v0_train_A2_close_c03_p00_20261028",
+    "episode_id": "v0_train_A2_close_c03_p00_20261028",
+    "profile": {
+      "id": "train_episode_0257",
+      "pipe": [
+        0.42034698113234903,
+        0.32292112576419274,
+        0.5062371395199482
+      ],
+      "background": [
+        0.6597673366249087,
+        0.6477162343681397,
+        0.6198044966207901
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5457273419033268,
+      "diffuse": 0.5936827769601987
+    }
+  },
+  {
+    "suite": "unseen_valve_positions",
+    "source": "fixtures/v0_test_A2_close_c00_p00_20261029",
+    "episode_id": "v0_test_A2_close_c00_p00_20261029",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "unseen_valve_positions",
+    "source": "fixtures/v0_test_A2_close_c01_p00_20261029",
+    "episode_id": "v0_test_A2_close_c01_p00_20261029",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "unseen_valve_positions",
+    "source": "fixtures/v0_test_A2_close_c02_p00_20261029",
+    "episode_id": "v0_test_A2_close_c02_p00_20261029",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "unseen_valve_positions",
+    "source": "fixtures/v0_test_A2_close_c03_p00_20261029",
+    "episode_id": "v0_test_A2_close_c03_p00_20261029",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "unseen_appearance",
+    "source": "fixtures/v0_test_A2_close_c00_p00_20261029",
+    "episode_id": "v0_test_A2_close_c00_p00_20261029",
+    "profile": {
+      "id": "test_only_01",
+      "pipe": [
+        0.2,
+        0.29,
+        0.38
+      ],
+      "background": [
+        0.68,
+        0.64,
+        0.52
+      ],
+      "handle": [
+        0.65,
+        0.07,
+        0.13
+      ],
+      "ambient": 0.42,
+      "diffuse": 0.68
+    }
+  },
+  {
+    "suite": "unseen_appearance",
+    "source": "fixtures/v0_test_A2_close_c00_p00_20261029",
+    "episode_id": "v0_test_A2_close_c00_p00_20261029",
+    "profile": {
+      "id": "test_only_02",
+      "pipe": [
+        0.55,
+        0.5,
+        0.33
+      ],
+      "background": [
+        0.28,
+        0.35,
+        0.43
+      ],
+      "handle": [
+        0.88,
+        0.73,
+        0.12
+      ],
+      "ambient": 0.61,
+      "diffuse": 0.43
+    }
+  },
+  {
+    "suite": "unseen_appearance",
+    "source": "fixtures/v0_test_A2_close_c01_p00_20261029",
+    "episode_id": "v0_test_A2_close_c01_p00_20261029",
+    "profile": {
+      "id": "test_only_01",
+      "pipe": [
+        0.2,
+        0.29,
+        0.38
+      ],
+      "background": [
+        0.68,
+        0.64,
+        0.52
+      ],
+      "handle": [
+        0.65,
+        0.07,
+        0.13
+      ],
+      "ambient": 0.42,
+      "diffuse": 0.68
+    }
+  },
+  {
+    "suite": "unseen_appearance",
+    "source": "fixtures/v0_test_A2_close_c01_p00_20261029",
+    "episode_id": "v0_test_A2_close_c01_p00_20261029",
+    "profile": {
+      "id": "test_only_02",
+      "pipe": [
+        0.55,
+        0.5,
+        0.33
+      ],
+      "background": [
+        0.28,
+        0.35,
+        0.43
+      ],
+      "handle": [
+        0.88,
+        0.73,
+        0.12
+      ],
+      "ambient": 0.61,
+      "diffuse": 0.43
+    }
+  },
+  {
+    "suite": "unseen_appearance",
+    "source": "fixtures/v0_test_A2_close_c02_p00_20261029",
+    "episode_id": "v0_test_A2_close_c02_p00_20261029",
+    "profile": {
+      "id": "test_only_01",
+      "pipe": [
+        0.2,
+        0.29,
+        0.38
+      ],
+      "background": [
+        0.68,
+        0.64,
+        0.52
+      ],
+      "handle": [
+        0.65,
+        0.07,
+        0.13
+      ],
+      "ambient": 0.42,
+      "diffuse": 0.68
+    }
+  },
+  {
+    "suite": "unseen_appearance",
+    "source": "fixtures/v0_test_A2_close_c02_p00_20261029",
+    "episode_id": "v0_test_A2_close_c02_p00_20261029",
+    "profile": {
+      "id": "test_only_02",
+      "pipe": [
+        0.55,
+        0.5,
+        0.33
+      ],
+      "background": [
+        0.28,
+        0.35,
+        0.43
+      ],
+      "handle": [
+        0.88,
+        0.73,
+        0.12
+      ],
+      "ambient": 0.61,
+      "diffuse": 0.43
+    }
+  },
+  {
+    "suite": "unseen_appearance",
+    "source": "fixtures/v0_test_A2_close_c03_p00_20261029",
+    "episode_id": "v0_test_A2_close_c03_p00_20261029",
+    "profile": {
+      "id": "test_only_01",
+      "pipe": [
+        0.2,
+        0.29,
+        0.38
+      ],
+      "background": [
+        0.68,
+        0.64,
+        0.52
+      ],
+      "handle": [
+        0.65,
+        0.07,
+        0.13
+      ],
+      "ambient": 0.42,
+      "diffuse": 0.68
+    }
+  },
+  {
+    "suite": "unseen_appearance",
+    "source": "fixtures/v0_test_A2_close_c03_p00_20261029",
+    "episode_id": "v0_test_A2_close_c03_p00_20261029",
+    "profile": {
+      "id": "test_only_02",
+      "pipe": [
+        0.55,
+        0.5,
+        0.33
+      ],
+      "background": [
+        0.28,
+        0.35,
+        0.43
+      ],
+      "handle": [
+        0.88,
+        0.73,
+        0.12
+      ],
+      "ambient": 0.61,
+      "diffuse": 0.43
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_00",
+    "episode_id": "coverage_test_A2_close_00",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_01",
+    "episode_id": "coverage_test_A2_close_01",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_02",
+    "episode_id": "coverage_test_A2_close_02",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_03",
+    "episode_id": "coverage_test_A2_close_03",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_04",
+    "episode_id": "coverage_test_A2_close_04",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_05",
+    "episode_id": "coverage_test_A2_close_05",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_06",
+    "episode_id": "coverage_test_A2_close_06",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_07",
+    "episode_id": "coverage_test_A2_close_07",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_08",
+    "episode_id": "coverage_test_A2_close_08",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_09",
+    "episode_id": "coverage_test_A2_close_09",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_10",
+    "episode_id": "coverage_test_A2_close_10",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_11",
+    "episode_id": "coverage_test_A2_close_11",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_12",
+    "episode_id": "coverage_test_A2_close_12",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_13",
+    "episode_id": "coverage_test_A2_close_13",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_14",
+    "episode_id": "coverage_test_A2_close_14",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_15",
+    "episode_id": "coverage_test_A2_close_15",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_16",
+    "episode_id": "coverage_test_A2_close_16",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_17",
+    "episode_id": "coverage_test_A2_close_17",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_18",
+    "episode_id": "coverage_test_A2_close_18",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  },
+  {
+    "suite": "new_unseen_positions",
+    "source": "fixtures/coverage_test_A2_close_19",
+    "episode_id": "coverage_test_A2_close_19",
+    "profile": {
+      "id": "train_episode_0161",
+      "pipe": [
+        0.5351458614042883,
+        0.5706793894766813,
+        0.4463906221866051
+      ],
+      "background": [
+        0.3177504013055461,
+        0.6922418247125355,
+        0.508289271953626
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41485097787764535,
+      "diffuse": 0.5973681968775961
+    }
+  }
+]

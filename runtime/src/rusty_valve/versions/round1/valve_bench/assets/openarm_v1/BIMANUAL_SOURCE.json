@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/enactic/openarm_mujoco",
+  "commit": "a3c8a57ec15d385e3c1dbd3fd090ee486b7f258c",
+  "source_model": "v1/openarm_bimanual.xml",
+  "license": "Apache-2.0",
+  "additional_assets": [
+    "collision/arm/link0_left.stl",
+    "collision/arm/link1_left.stl",
+    "collision/arm/link2_left.stl",
+    "collision/arm/link5_left.stl",
+    "collision/arm/link6_left.stl",
+    "collision/arm/link7_left.stl",
+    "collision/body/body_link0.stl",
+    "visual/body/body_link0_0.obj",
+    "visual/body/body_link0_1.obj",
+    "visual/body/body_link0_2.obj",
+    "visual/body/body_link0_3.obj",
+    "visual/body/body_link0_4.obj",
+    "visual/body/body_link0_5.obj"
+  ],
+  "note": "Official upstream bimanual XML and body meshes downloaded unchanged; adapter elevates fixed torso and adds task/cameras."
+}

@@ -1,0 +1,3076 @@
+{
+  "schema": "valve_pose_sequence_v2",
+  "station": "A2",
+  "task": "close",
+  "placement": {
+    "base_position_xy_m": [
+      0.16475009055163012,
+      -1.43
+    ],
+    "base_yaw_deg": 0,
+    "shoulder_height_m": 1.4
+  },
+  "layout": {
+    "robot_position_m": [
+      0.16475009055163012,
+      -1.43,
+      0.703
+    ],
+    "robot_yaw_deg": 0.0,
+    "valve_offset_m": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "qpos_joint_names": [
+    "openarm_left_joint1",
+    "openarm_left_joint2",
+    "openarm_left_joint3",
+    "openarm_left_joint4",
+    "openarm_left_joint5",
+    "openarm_left_joint6",
+    "openarm_left_joint7",
+    "openarm_right_joint1",
+    "openarm_right_joint2",
+    "openarm_right_joint3",
+    "openarm_right_joint4",
+    "openarm_right_joint5",
+    "openarm_right_joint6",
+    "openarm_right_joint7",
+    "A2_valve_hinge"
+  ],
+  "keyposes": [
+    {
+      "label": "自然下垂起步（已确认）",
+      "qpos": [
+        0.017832844065919572,
+        0.014516345248056249,
+        -0.013705908258732535,
+        0.2683443731333422,
+        -0.004353561667046997,
+        0.004414819202316108,
+        -0.17823315206248028,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "opening_deg": 90.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.2833253771150146,
+            0.7979057049315788
+          ],
+          "actual_rotation_world": [
+            [
+              -0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              0.999752935964444,
+              -0.0020617001762905634
+            ],
+            [
+              -0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 0.0,
+      "actual_tcp_world_m": [
+        0.29337326039344624,
+        -1.2833253771150146,
+        0.7979057049315788
+      ],
+      "actual_rotation_world": [
+        [
+          -0.9093454289592456,
+          -0.019273377034851602,
+          0.4155952691845732
+        ],
+        [
+          -0.022131796647748815,
+          0.999752935964444,
+          -0.0020617001762905634
+        ],
+        [
+          -0.41545285461538,
+          -0.011072667616553698,
+          -0.9095473168691034
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          -0.01667462288498535,
+          -0.2866267396065537,
+          -0.3860942950684214
+        ],
+        "rotation_matrix": [
+          [
+            0.022131796647749127,
+            -0.999752935964444,
+            0.0020617001762904203
+          ],
+          [
+            -0.9093454289592456,
+            -0.019273377034851946,
+            0.4155952691845732
+          ],
+          [
+            -0.41545285461538,
+            -0.011072667616553698,
+            -0.9095473168691034
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -3.4450928483976665e-16,
+            1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            -3.4450928483976665e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-27T22:59:19.324346+08:00",
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "index": 0,
+      "source_provenance": {
+        "file": "provenance/recorded_sources.json#source_00052",
+        "index": 0
+      },
+      "review_status": "reference_already_confirmed_rest",
+      "connection_candidate": "A",
+      "connection_kind": "lift",
+      "connection_policy": "quintic_joint_endpoints",
+      "geometry_only": true,
+      "physics_steps_run": 0,
+      "source_original_keyframe_index": 0,
+      "original_source_provenance": {
+        "file": "provenance/recorded_sources.json#source_00020",
+        "container": "keyposes",
+        "index": 0,
+        "saved_at": "2026-10-27T21:45:53.833460+08:00",
+        "preserve_user_saved_qpos_and_tool_target": true
+      },
+      "manual_user_edit_preserved": false,
+      "source_tool_target_world": null,
+      "source_original_review_label": "01 · 自然垂放起步（共同下垂已确认）",
+      "review_prompt": "The confirmed shared natural rest pose is the start reference only.",
+      "source": "provenance/recorded_sources.json#source_00053",
+      "source_keyframe": 0
+    },
+    {
+      "label": "抬手25%",
+      "qpos": [
+        -0.0018420016292514559,
+        -0.03844380657291615,
+        0.09536558983192336,
+        0.4545722174954149,
+        0.12582771332725426,
+        0.005644229477050102,
+        -0.2020262777414226,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "opening_deg": 90.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.37520593918518524,
+            -1.2795732386999883,
+            0.8351791325724792
+          ],
+          "actual_rotation_world": [
+            [
+              -0.7685031766079028,
+              0.2040571195243169,
+              0.6064351239126915
+            ],
+            [
+              0.2214303294622111,
+              0.9740360168365947,
+              -0.04714283720097784
+            ],
+            [
+              -0.60030948413116,
+              0.09805370914218342,
+              -0.7937342082748109
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 0.0,
+      "actual_tcp_world_m": [
+        0.37520593918518524,
+        -1.2795732386999883,
+        0.8351791325724792
+      ],
+      "actual_rotation_world": [
+        [
+          -0.7685031766079028,
+          0.2040571195243169,
+          0.6064351239126915
+        ],
+        [
+          0.2214303294622111,
+          0.9740360168365947,
+          -0.04714283720097784
+        ],
+        [
+          -0.60030948413116,
+          0.09805370914218342,
+          -0.7937342082748109
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          -0.020426761300011684,
+          -0.20479406081481472,
+          -0.34882086742752094
+        ],
+        "rotation_matrix": [
+          [
+            -0.22143032946221083,
+            -0.9740360168365948,
+            0.04714283720097763
+          ],
+          [
+            -0.7685031766079029,
+            0.20405711952431657,
+            0.6064351239126915
+          ],
+          [
+            -0.60030948413116,
+            0.09805370914218342,
+            -0.7937342082748109
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -3.4450928483976665e-16,
+            1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            -3.4450928483976665e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-27T23:01:34.136015+08:00",
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "connection_candidate": "A",
+      "connection_kind": "lift",
+      "connection_fraction": 0.25,
+      "geometry_only": true,
+      "physics_steps_run": 0,
+      "review_status": "pending_current_user_confirmation",
+      "actual_target_status": "free_arm_connection_sample_not_seating",
+      "index": 1,
+      "source_original_review_label": "抬手25%｜候选A（待确认）",
+      "review_prompt": "Review criterion: natural motion in the first quarter of the left-arm lift.",
+      "source": "provenance/recorded_sources.json#source_00053",
+      "source_keyframe": 1
+    },
+    {
+      "label": "抬手50%",
+      "qpos": [
+        -0.15907208137743942,
+        -0.34935209129888123,
+        0.7422827416612645,
+        1.1678599365948434,
+        0.597324548562957,
+        -0.5597334954314473,
+        -0.26409594966852973,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "opening_deg": 90.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.4100604860531613,
+            -1.4367386083626434,
+            0.9727890108826146
+          ],
+          "actual_rotation_world": [
+            [
+              0.29458816311834013,
+              0.9215203159399659,
+              0.2530180259595492
+            ],
+            [
+              0.6911008832374976,
+              -0.02258065270914405,
+              -0.7224054839988268
+            ],
+            [
+              -0.6599980176780171,
+              0.3876730857734825,
+              -0.6435154972710083
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 0.0,
+      "actual_tcp_world_m": [
+        0.4100604860531613,
+        -1.4367386083626434,
+        0.9727890108826146
+      ],
+      "actual_rotation_world": [
+        [
+          0.29458816311834013,
+          0.9215203159399659,
+          0.2530180259595492
+        ],
+        [
+          0.6911008832374976,
+          -0.02258065270914405,
+          -0.7224054839988268
+        ],
+        [
+          -0.6599980176780171,
+          0.3876730857734825,
+          -0.6435154972710083
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          0.13673860836264345,
+          -0.1699395139468386,
+          -0.21121098911738556
+        ],
+        "rotation_matrix": [
+          [
+            -0.6911008832374977,
+            0.02258065270914373,
+            0.7224054839988266
+          ],
+          [
+            0.2945881631183399,
+            0.9215203159399659,
+            0.2530180259595494
+          ],
+          [
+            -0.6599980176780171,
+            0.3876730857734825,
+            -0.6435154972710083
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -3.4450928483976665e-16,
+            1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            -3.4450928483976665e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-28T10:54:00.351496+08:00",
+      "thumbnail_jpeg_base64": "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",
+      "index": 2
+    },
+    {
+      "label": "抬手75%",
+      "qpos": [
+        -0.15255874412433518,
+        -0.44413855448451606,
+        0.9308944242622309,
+        1.881147779967141,
+        1.123065404793034,
+        0.01506197610991806,
+        -0.38429059898011275,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "opening_deg": 90.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.36005221145920363,
+            -1.5452274045126266,
+            1.2243143789304236
+          ],
+          "actual_rotation_world": [
+            [
+              0.9750119265834959,
+              0.023088971000511813,
+              0.22094941149067807
+            ],
+            [
+              0.21864260803408236,
+              0.07636421675711975,
+              -0.9728123746905804
+            ],
+            [
+              -0.03933386545960202,
+              0.9968126232232459,
+              0.0694077892660238
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 0.0,
+      "actual_tcp_world_m": [
+        0.36005221145920363,
+        -1.5452274045126266,
+        1.2243143789304236
+      ],
+      "actual_rotation_world": [
+        [
+          0.9750119265834959,
+          0.023088971000511813,
+          0.22094941149067807
+        ],
+        [
+          0.21864260803408236,
+          0.07636421675711975,
+          -0.9728123746905804
+        ],
+        [
+          -0.03933386545960202,
+          0.9968126232232459,
+          0.0694077892660238
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          0.24522740451262667,
+          -0.21994778854079625,
+          0.040314378930423445
+        ],
+        "rotation_matrix": [
+          [
+            -0.2186426080340827,
+            -0.07636421675711977,
+            0.9728123746905802
+          ],
+          [
+            0.9750119265834958,
+            0.023088971000511785,
+            0.2209494114906784
+          ],
+          [
+            -0.03933386545960202,
+            0.9968126232232459,
+            0.0694077892660238
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -3.4450928483976665e-16,
+            1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            -3.4450928483976665e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-27T23:01:34.137472+08:00",
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "connection_candidate": "A",
+      "connection_kind": "lift",
+      "connection_fraction": 0.75,
+      "geometry_only": true,
+      "physics_steps_run": 0,
+      "review_status": "pending_current_user_confirmation",
+      "actual_target_status": "free_arm_connection_sample_not_seating",
+      "index": 3,
+      "source_original_review_label": "抬手75%｜候选A（待确认）",
+      "review_prompt": "Review criterion: no wrist twist while approaching the preparation pose.",
+      "source": "provenance/recorded_sources.json#source_00053",
+      "source_keyframe": 3
+    },
+    {
+      "label": "准备姿态2",
+      "qpos": [
+        -0.1722335898195062,
+        -0.49709870630548847,
+        1.0399659223528868,
+        2.067375624329214,
+        1.2532466797873352,
+        0.016291386384652055,
+        -0.40808372465905507,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "opening_deg": 90.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.2974832880060128,
+            -1.554551633889192,
+            1.2579473159609835
+          ],
+          "actual_rotation_world": [
+            [
+              0.9897410100070512,
+              -0.13806179712554806,
+              0.036765109610692626
+            ],
+            [
+              0.050623980632633556,
+              0.09825146613458186,
+              -0.9938731619212342
+            ],
+            [
+              0.13360368892784727,
+              0.9855382232957122,
+              0.10423274307050495
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 0.0,
+      "actual_tcp_world_m": [
+        0.2974832880060128,
+        -1.554551633889192,
+        1.2579473159609835
+      ],
+      "actual_rotation_world": [
+        [
+          0.9897410100070512,
+          -0.13806179712554806,
+          0.036765109610692626
+        ],
+        [
+          0.050623980632633556,
+          0.09825146613458186,
+          -0.9938731619212342
+        ],
+        [
+          0.13360368892784727,
+          0.9855382232957122,
+          0.10423274307050495
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          0.2545516338891921,
+          -0.28251671199398704,
+          0.07394731596098336
+        ],
+        "rotation_matrix": [
+          [
+            -0.050623980632633896,
+            -0.09825146613458181,
+            0.9938731619212342
+          ],
+          [
+            0.9897410100070512,
+            -0.13806179712554809,
+            0.036765109610692966
+          ],
+          [
+            0.13360368892784727,
+            0.9855382232957122,
+            0.10423274307050495
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -3.4450928483976665e-16,
+            1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            -3.4450928483976665e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-27T22:59:18.169416+08:00",
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "source_provenance": {
+        "file": "provenance/recorded_sources.json#source_00052",
+        "index": 1,
+        "label": "02 · 左侧准备：准备姿态2"
+      },
+      "review_status": "pending_current_user_confirmation",
+      "conversion_observation": {
+        "target_position_world_m": [
+          0.2941744281410509,
+          -1.4651030493162838,
+          1.2485663690846365
+        ],
+        "target_rotation_world": [
+          [
+            0.9897410100070493,
+            -0.1380617971255583,
+            0.03676510961069698
+          ],
+          [
+            0.05062398063263789,
+            0.0982514661345735,
+            -0.9938731619212345
+          ],
+          [
+            0.1336036889278574,
+            0.9855382232957114,
+            0.10423274307049765
+          ]
+        ],
+        "position_error_m": 3.3013970893057145e-15,
+        "rotation_error_rad": 1.3633788503323998e-14,
+        "target_reached": true,
+        "native_joint_and_actuator_ranges": true,
+        "attempts": 4,
+        "reference_frame_fraction": 1.0,
+        "source_tool_rotation_preserved": true,
+        "lift_lower_twist_weight": 0.0,
+        "max_joint_change_from_previous_deg": 103.07689790566329,
+        "geometry_issues": [],
+        "source_geometry_issues": [],
+        "physics_steps_run": 0
+      },
+      "geometry_only": true,
+      "physics_steps_run": 0,
+      "index": 4,
+      "role": "preparation",
+      "connection_endpoint": true,
+      "source_original_keyframe_index": 1,
+      "original_source_provenance": {
+        "file": "provenance/recorded_sources.json#source_00020",
+        "container": "keyposes",
+        "index": 1,
+        "saved_at": "2026-10-27T21:46:28.284309+08:00",
+        "preserve_user_saved_qpos_and_tool_target": true
+      },
+      "manual_user_edit_preserved": false,
+      "source_tool_target_world": {
+        "tool_body_origin_world_m": [
+          0.2941744281410509,
+          -1.4651030493162838,
+          1.2485663690846365
+        ],
+        "tool_rotation_world": [
+          [
+            0.9897410100070493,
+            -0.1380617971255583,
+            0.03676510961069698
+          ],
+          [
+            0.05062398063263789,
+            0.0982514661345735,
+            -0.9938731619212345
+          ],
+          [
+            0.1336036889278574,
+            0.9855382232957114,
+            0.10423274307049765
+          ]
+        ],
+        "tcp_world_m": [
+          0.2974832880060136,
+          -1.554551633889195,
+          1.2579473159609813
+        ],
+        "tcp_local_in_hook_m": [
+          0,
+          0,
+          0.09
+        ],
+        "derivation": "saved actual TCP minus saved actual tool rotation times fixed local TCP offset; no new IK or FK"
+      },
+      "source_original_review_label": "02 · 左侧准备：准备姿态2",
+      "review_prompt": "Review criterion: suitable left-arm alignment in the converted preparation pose 2.",
+      "source": "provenance/recorded_sources.json#source_00053",
+      "source_keyframe": 4
+    },
+    {
+      "label": "接触前（本帧有小幅转换差异）",
+      "qpos": [
+        -0.7071135357997738,
+        -0.35995044503642687,
+        1.2223475028093882,
+        1.4594342280443586,
+        0.830927202356781,
+        0.3070317261977711,
+        0.4092054768153918,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "opening_deg": 90.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.5694718171085451,
+            -1.48460743094027,
+            1.257567408406667
+          ],
+          "actual_rotation_world": [
+            [
+              0.565192224885892,
+              -0.14224242750831695,
+              0.8126037415278593
+            ],
+            [
+              0.8240923863668604,
+              0.14249448259080694,
+              -0.5482399667694349
+            ],
+            [
+              -0.037808565970002705,
+              0.9795215231161176,
+              0.19775767517740633
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 0.0,
+      "actual_tcp_world_m": [
+        0.5694718171085451,
+        -1.48460743094027,
+        1.257567408406667
+      ],
+      "actual_rotation_world": [
+        [
+          0.565192224885892,
+          -0.14224242750831695,
+          0.8126037415278593
+        ],
+        [
+          0.8240923863668604,
+          0.14249448259080694,
+          -0.5482399667694349
+        ],
+        [
+          -0.037808565970002705,
+          0.9795215231161176,
+          0.19775767517740633
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          0.18460743094026988,
+          -0.010528182891454787,
+          0.07356740840666687
+        ],
+        "rotation_matrix": [
+          [
+            -0.8240923863668607,
+            -0.14249448259080688,
+            0.5482399667694345
+          ],
+          [
+            0.5651922248858917,
+            -0.142242427508317,
+            0.8126037415278595
+          ],
+          [
+            -0.037808565970002705,
+            0.9795215231161176,
+            0.19775767517740633
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -3.4450928483976665e-16,
+            1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            -3.4450928483976665e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-28T10:54:41.269906+08:00",
+      "thumbnail_jpeg_base64": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAC0ASADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD6pooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACvmv9pHwe9lqEOt6RcpCNQZluY5AzYcDO9WGcAjt2xxX0pXmXxYYxG1uNaksY9KScLA7tcRurFPmy0TdeGwMUID5IWzNjBMf7RimaRQrRxo3POerY9KgWeRfuyN+dfQccHhTXdQl0+xks7rT2ZHkikvLzdsGNzctjIY8Vw9v4P1y08Bya21k8eny2iNIXkj2lGK7SF79c+vrVAeew6lcxMpEh4rtPDt5cNdalb24zLfae/kdwzjqnPGTXH3MMflEhQCFzxV7TNUt4LKJppgk0Dh42/iUjoRTAj0vxFNFGZ1n8h1bbv7N378f5Fbk1/rFxB5ssF9cr1CxwnDfkMU3TwniLVUvIYEibduklhtyqg/3m+XZvPrz2zmvbF8DaPD4U+3XRv2vPs3meYb6ZfmI+X5Q23uOMUAfOq6pez6qrXcMkWzG2FlIKjt1r61+BsF1F4IR7reElmZ4lbsuAP5g147pfg+18VeKtK029dpIDKzSM/wB7y1UsVBA77cc/rX07Y2kFhZwWlnEsNvAgjjjXoqjgCkwLFFFFSAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRQSAMmgBDXmXxkhj8S/D7xFHZurXOiyfaMcH5o03N3/us4+oPWtfVfiDYQag1hpVrdatfKSGS1TIUjrk/1AIrzo+Kru0Pim3n0vyZNVaSJw83MDEMOmOcbj6VtRpe0ulv0Na2FrUYKpNWj5tJ29Nzxb4V6wU8XwxzBk89Hi6e2R+oFfQPiK6A/Z/1SIAk2p+y4PoLhQv8A46y15XpHgeVNVtL+1QCC3nRml3DHBB2+uceleo+Oozb/AAQ1UgcXM8bHPtIg4/74/nUNWMr3PnCQfIQem2u7/Z98NaTrXj6WPU9Nt723hs5JvLnXegIZFBKng/erh5R8rfQV65+y5Fnxbq0u0fLZbd3pmReP/Hf0oYHofxquoLGw0TT4ljiiaV5AifKF2gAcD/fNaGpL9o8Enyx8ptUcY9AAazfj54H1PxVotrf6BI39pacHItwceejbSQD/AHht49cn2q14H82XwJpr36FLj7Myyb12svXI9un6UkBznwkt1m8cyOwB+z2ruPZiyr/JjXt9eU/A+1d5fEGouvyGZLWNj1+Vdzfh86/lXq1J7gFFFFIAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAFFFRT+YYJBCVEu07N3TPbNICouowreXFtORA8YDAyMAHU9x+PFXUdXGUZWHqDmuU8NxWl/LeLqIkk1aM7LiKZvue6f7J45rZGiWSgeUJo8dNszY/ImnZr4tGJNPWJoyuI42duijNeV+O/GJ1C9TQbNprSFmxezr98R/3VHv/APW9a7LX7Sew0ma5gvZ5Ehw7pMVK7Aw3HhQcgZP1rwZdWsPFN3fzaHcR/wBqxzSeZE74MyBvlZfbGP6+tDaWrOjD4inhpOpUV7beT6Nnr+h61oujaZHFounOkbKGBYBWf3c9c/nXkHiyb7Z4oublS0e6eVzH1Bzjv/n/AA321qLTdJsY7kO94E2vCFZSOSc5IxisK7jivnW8hlCzzylfs5HK57k/l2713ZZJ88u2n5nl4mNZz9vi/glez7tp2fc1vC91eL4RtUvIjBKDJtnC7kkJY/Mv0wBz/d/O/wCIL86r4Fl8PKAhllVzcM2eAc/dHuB3rh/GVrfafZ2dtcyNJbJCdhhz5auZCTuz14PtXN2epT2Kj7LK6kk7lPKkduK5LpnoVfZ+0kqLvG+h0Gm/DDWdUsPtUDRLExIXJGTtJB7+oNd58FdLm8C6xqcOuMF+2JGiMisQpUueeOnPGM1geH/iTLoem2lrKLKS3ALYCsHGWJbcd2OpPavRdI+IPh/UoY2a8jt2bqJWAUf8C6UEHY+INftdNsJrq6uFtrKPAeZsjG4hR7jkgVl3d3b2egzXkMfnWsVuZVSMZ3qFzgfUVhXfxF8KW9w9vJrdssgXdkHIP0PQ1zUvxD03xP4q07w1okvmw38rRTzRk7thRs9scYHekFj0X4RIR8PtLmKFGufMucHjh5GZf/HSK7KqGhabDo2iWGmWxJgs4Et0J6kKoXJ9+Kv1IBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVBd3EdpazXFw2yGJDI7YzhQMk1zVn4pW5mdozE8YYjYDyPxrobO+gvF/dth/7jcGna25N77GLo/iTQdTvWms5YhcSAIJWXb5q9sN3rpB9a5LX/Aul6m73Fpu06+bkzW4AVz/tp91vrwfeuZiHjDwo4R4G1CxUgLJbKZVx0GY/vr/wHI966vZU6i9yVn2f+Zxe3rUXarG67r/I9PmjEsLxsqsrKVIZcg/Ud64G3+FOhJq82oTea8sr7ysQWFc8f3AD2A611uh6qdRgDTQ/Z5+8e9Xz7gg1q1ySVnZnp0cROmm6btc5q+8G6VcxbEjaPjuS4P13ZrwW+1LTzqCvZ2xjSKY84DCRAeOM4/D3619P18+eKfA8YlkGkaha28sis0MN3uTcd3A3dOhx26dK0o1JUneDscU8JSqNNrYwNK1vX/EPjC30nS5bLz5I3+ScFYn2qWPQEg9v8KZ8UvCGt6N4fh1G6ttKsS90IAlsSxYsrEsfl4HycDPfpXU/BT4c6rYeLW1/XLy33WgdIoLZWKszqVyWIHADNxj0Oa3f2lSR4R0xQTtN8CR/wBqzsr3RqqUYy5ktT5c1CDUpVRTMkiKME/d5/wAn9TVnS/Afi7WtJa80nSLm9sDP5RaAq37wAfw5z0Yc4x+VXJR8v419P/s6wGH4bxPgjzrqWT+S/wDstUzW54f4N+BOueINHu01aO40XULeVfJN0uY5I26gAdwQf++vy9b+EPwUt/BGpDV9VvI9R1RVIhCRlY7ckYJGT8xwepAr2SipC4UUUUCCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDB1rwzY6nIZ03Wl7nP2iAAMx/wBodGH159CK8zg8YRaf4gudG1OTZd20rR+YAVVsHqPTjmvaq+c/FyrpP7QllM4Hkz3ducAgcSKqNn2yW/CqiyWew6Z4icoC7CeL1B+b/wCvXRWt5BdrmFwT3U9R+FczrHg6NpPtOhSiwuB1hx+4f/gI+6fcfkawDqVxpeoLaarG9pdfwPn5ZPdW7/zp2T2DVHW6vC1pqEd1EDhzn/gQ/wAR/WtmC5imC7XXcRnbnmuUl1OW9t1hMqs4OQpX731/xH61jveIurCKCOZ7rkOw28DqfTPT2zx1o5R3PRLzJtJsNsO04bOMV8/avrP2nxA0fiTT7/TLRbdmjEyfJNgc4dW+YZOflOflGeuK9P8AF2svp/gu7lsrqWa6Mix5ZMNBkgkFTyOAevc1wXg/xrf6x4nsdFvIYZkuXGSIsghfmbcOmNobnHXFJaAdj8CNP1DTvh/ANT3r58zTwRvwUiIXb+ZDN9Grnv2mGP8AYGjLk7TdMcdvu17NXiP7Tn/Hj4f/AOus38kpdRnz/N92vrD4GQCD4XaKMDL+a5I95Xx+mK+T5eg/GvsD4TwrB8OfD6RnKm1Dn6sSx/UmmwOuoooqQCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK+e/2iI20/xno2qpnIgRhjP3o5C39RX0JXi/7S1l5mj6Pe7TiKaSEnH99QR/6Af1qo7iZ7MjB1DIQVIyCOc1DeWlvewNBdwxzwt1SRQwrN8E3P2zwdoVyQoaWxgchTkAmNcitqpGeV6/J/Y2qPZ3sLLaD5reZOQi9uf4T25649Ku2V8I4RO0sc8AHzSNw+Meww3OPSu7vtOt7zDSJtmA2rMnDqPTPp7dK4bVfBt3HcP/AGaBsmb5tmFQ/Vc/KfdeD6CrUu4rFOQ381wL6KO23FSqxFQW2kY5Prg11Xhrwzpdm9vqi2sB1YxYkuFAzlgNw447VwV02s+Gdp1a3Z7RpBGsinJBPQY/i/D8q3tE1+K4RZrG5BDf3TwapxutCU9bHo1eFftP/wDMs/8Abz/7Sr1uw1pJcJcgI398fd/+tXjn7TLBr3w8ykEGObkfVKhKzKR4dL0FfU3wY1QHw/a6TI4LQ28ckRHdSoz+v9a+V5egr23wVqUmkX9rJhlktiFdM43IcBh/Wmxn0HRUcMiTRJLGwaN1DKw7g1JUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAnSvOvj1Z/avh5cSAA/Zp4pee3Oz/ANnr0aub+I9ob7wJrsI5ItXkHuUG7/2WmtxMy/grdfavhro7YCmNZISBn+GRgP0wfxruK8p/Z0uxN4KvLYsDJb3rjb6KyqQfz3flXq1D3BBRRRSGVb+xtdQg8i+gjuIc5Mci7lP1HesTXfCGn6mfOtwbC+VQqTwDHA7MvRh+voRXS1Dco0sLIkhjZujAZxRcDy6+l1Hw5ceTrCCS26JeRcxn/e7ofr+Gaj1fSdH8VWiC+iWUqP3cqHDp9D/kVY8OePtG127uLAzrBfRyvC1vMcF8EjK885qe+8Lqs7XGiT/Y5W5aBvmiY/T+H8OPatb9ybdjym/+FNxb3UkgvfO09F3Dy48zN/shen/As/hXqGoeFrS9lF9p7fZ5nGWXB2P9R9Mj+lVLXWpbaf7Lq0D2txnA3/df3VuhrftbpWCmNgR1AosFzb8PynTtPhtJS0qIMK3cVvwypNGJImDIehFc5piwXcuLqYKOgi5Xd9W7/SulVQqgAAAcACs2MdRRRSGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABUN5ALm0ngYlRKjISO2RipqKAPD/ANnCd4bvxHp03ysjRSBT1BG9W/8AZa9wrwz4Zj+yfjX4j045CTLOEHXpIrLn/gOa9zpy3EgooopDCiiigD4I8RMyeJNSdGKut3KQQeQd5r0LwN8XtR0oLa6+Hv7PoJAf3qfj/EK831mQzateysBl53Y492NVAK6LXMrn0d42+KPh1dFSGxK6nPeIfLjC/LETwC+eh9utcPpnj6XSCPtAd7bIHL7iv/1q8thXN5bj/bH86va0f3Kj1alaw73PpjQvEtrqUEbo+C6hgG4JU9DV3VviJa+FrzSrG4Ml1cajOkENug3N8zBd30ya39I8K6dqXgTQLK+gxJb2ECJMhCyxEIudrD3HPY1jaX8J7CDxvbeI9Tvp9QlsowtpFIoCowJIYjuRnj35rPmRSR6XRRRUFBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAeHXw/sn9o21kQ7YrvG5V4zvhK8/8CGa9xrxH4x/8S/4l+EtUVScPDuUD7wSbJ/HDY/Kvbu9OQkFFFFIYUUUUAfAGpf8AIQuf+urfzpiJ0qe/XOpXX/XVv50qJXSjES2TN9B9c1Y1OMzTW0KkbpH2jP8An3pbJc3qHrgH+VbHh+2N5438PWwXd5l9CpHsZF9KTGj7WgjEUMca5KooUZ9qkoornNQooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDxz9pK1L6HpF2oYNDO8YcHpuXP/sn6V63Y3Au7K3uVUqJo1kCnqMgGuF+OtoLn4eXchGTbyxSj2O7b/wCzVufDW6+2eAdAlzuIs44yfdBtP/oNPoJbnTUUUUhhRRXmHj34lRaf59hoLeZeqdrXO0NGnrt/vH8MfWnGLlsJux8uXqf6fc/9dW/nTAKkmJeeR25ZmJNNxXQYk1gM3LH0Wut+F1t9r+Knh6MgnbN5nA/uKz/+y1ymnj99If8AZr0T4EW/nfFW2k4/cW8snP8AubeP++qmWxSPqeiiisDUKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA534hWv2zwPrsONx+ySOB6lRuH8q5/wCBN0bj4d2kbY/0eaWLOcn75bn/AL6/lXe3UK3FrLC/3ZEKH6EYryj9neRotI1ywkBV4LwOynsWUL/7Tp9BdT1yqep6jaaVZvdX86wwJ1dv5ADkn2q5Xnvxh8K6n4i0q0uNDkU3lgzyC2fgTqwGVB7N8vFCWuoM47xx45udeWWysgbfTSfpJKP9r29q4SSBccVFY3y3CurK0c0bFJIpBho2HVWHY1cHNdcUktDnbvuebSD9431NJW/ruiNAzXFqC8R5ZO6//WrBqSixpw5lP0rZ8Is8euTzwsyPGvyupwVOR3/CsnTx+7kPvXSeGbGW3We4mGDMRtHfHPP60luN7HuXg74jLKY7TxAVR/urdAYBP+2O31HH0616YjK6BkIZWGQQeCK+Xq6nwn43u/DamOY+fp33mjdsbPUqe306VM6fVDjPue90VBaTrdWkNwiuqSorhXXawBGcEdjU9YGoUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAAK8f8AhK/2f4l+OLOEKsBmZtoHTZK4XHthjRRTWzEz2CiiikM8U/aK0aysNHt/EtnEIdVE628jpgLMhVj847kbeD15+mPPLVy0YJ9KKK6aXwmM9yzXH+KLOG2uongXZ5oyyjoPpRRVvYlFDT/9Q3+9XfxjCIB0wKKKmI5C1peA9LtfEPxAh03VEMtjBbm6MOcLKwZQA/qvOce1FFOXwhHc+kEUKihQAAMADtTqKK5DcKKKKACiiigAooooAKKKKACiiigD/9k=",
+      "role": "precontact_candidate",
+      "index": 5
+    },
+    {
+      "label": "蓝钩接上",
+      "qpos": [
+        -0.6532135851030808,
+        -0.17964386201569543,
+        1.2083568242640486,
+        1.3495645297785077,
+        0.88795825666741,
+        0.0779615438228796,
+        0.77615229124927,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.0
+      ],
+      "opening_deg": 90.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.5889691573155378,
+            -1.4727904267431047,
+            1.2050969150566528
+          ],
+          "actual_rotation_world": [
+            [
+              0.25882085793916626,
+              0.01737952956763339,
+              0.9657689762296371
+            ],
+            [
+              0.9659253405315058,
+              -0.004652893433130995,
+              -0.2587790314183009
+            ],
+            [
+              -3.837700597419946e-06,
+              0.9998381381677273,
+              -0.01799159388615615
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 0.0,
+      "actual_tcp_world_m": [
+        0.5889691573155378,
+        -1.4727904267431047,
+        1.2050969150566528
+      ],
+      "actual_rotation_world": [
+        [
+          0.25882085793916626,
+          0.01737952956763339,
+          0.9657689762296371
+        ],
+        [
+          0.9659253405315058,
+          -0.004652893433130995,
+          -0.2587790314183009
+        ],
+        [
+          -3.837700597419946e-06,
+          0.9998381381677273,
+          -0.01799159388615615
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          0.17279042674310463,
+          0.008969157315537882,
+          0.021096915056652676
+        ],
+        "rotation_matrix": [
+          [
+            -0.9659253405315059,
+            0.0046528934331309885,
+            0.25877903141830055
+          ],
+          [
+            0.2588208579391659,
+            0.01737952956763339,
+            0.9657689762296372
+          ],
+          [
+            -3.837700597419946e-06,
+            0.9998381381677273,
+            -0.01799159388615615
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -3.4450928483976665e-16,
+            1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            -3.4450928483976665e-16,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-28T10:55:11.817387+08:00",
+      "thumbnail_jpeg_base64": "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",
+      "index": 6
+    },
+    {
+      "label": "关到一半45°",
+      "qpos": [
+        -0.42551977922920875,
+        -0.7739024338872117,
+        1.349751258728299,
+        1.717744230754903,
+        1.031915272897727,
+        0.636386191823755,
+        0.35197948822700625,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        0.7853981633974483
+      ],
+      "opening_deg": 45.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.4558368798890188,
+            -1.4251488063374096,
+            1.203732642384599
+          ],
+          "actual_rotation_world": [
+            [
+              0.696584828787485,
+              -0.16675956772635725,
+              0.6978257826096916
+            ],
+            [
+              0.7170667862178973,
+              0.129030100571462,
+              -0.6849572667324982
+            ],
+            [
+              0.024182646799850882,
+              0.9775185316495217,
+              0.20945815781562863
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 0.7853981633974483,
+      "actual_tcp_world_m": [
+        0.4558368798890188,
+        -1.4251488063374096,
+        1.203732642384599
+      ],
+      "actual_rotation_world": [
+        [
+          0.696584828787485,
+          -0.16675956772635725,
+          0.6978257826096916
+        ],
+        [
+          0.7170667862178973,
+          0.129030100571462,
+          -0.6849572667324982
+        ],
+        [
+          0.024182646799850882,
+          0.9775185316495217,
+          0.20945815781562863
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          0.17629015382233887,
+          0.0006969854148297233,
+          0.01973264238459893
+        ],
+        "rotation_matrix": [
+          [
+            -0.9996026432056203,
+            0.0266787620757816,
+            -0.009099414840570414
+          ],
+          [
+            -0.014482930991019003,
+            -0.20915488025830753,
+            0.9777752710996748
+          ],
+          [
+            0.024182646799850882,
+            0.9775185316495217,
+            0.20945815781562863
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -0.7071067811865477,
+            0.7071067811865474,
+            0.0
+          ],
+          [
+            -0.7071067811865474,
+            -0.7071067811865477,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-27T22:59:18.254182+08:00",
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "source_provenance": {
+        "file": "provenance/recorded_sources.json#source_00052",
+        "index": 4,
+        "label": "04 · 关到一半45°：看工具与转动面的关系"
+      },
+      "review_status": "pending_current_user_confirmation",
+      "conversion_observation": {
+        "target_position_world_m": [
+          0.3930325594542005,
+          -1.363502652331518,
+          1.1848814081811097
+        ],
+        "target_rotation_world": [
+          [
+            0.6965848287885483,
+            -0.1667595677261347,
+            0.6978257826086831
+          ],
+          [
+            0.7170667862168778,
+            0.1290301005722327,
+            -0.6849572667334198
+          ],
+          [
+            0.024182646799444485,
+            0.9775185316494577,
+            0.20945815781597316
+          ]
+        ],
+        "position_error_m": 1.0423782225987521e-13,
+        "rotation_error_rad": 1.5760730084073138e-12,
+        "target_reached": true,
+        "native_joint_and_actuator_ranges": true,
+        "attempts": 4,
+        "reference_frame_fraction": 4.0,
+        "source_tool_rotation_preserved": true,
+        "lift_lower_twist_weight": 0.0,
+        "max_joint_change_from_previous_deg": 38.45020145110645,
+        "geometry_issues": [],
+        "source_geometry_issues": [],
+        "physics_steps_run": 0
+      },
+      "geometry_only": true,
+      "physics_steps_run": 0,
+      "index": 7,
+      "source_original_keyframe_index": 4,
+      "original_source_provenance": {
+        "file": "provenance/recorded_sources.json#source_00020",
+        "container": "keyposes",
+        "index": 3,
+        "saved_at": "2026-10-27T21:14:36.896214+08:00",
+        "preserve_user_saved_qpos_and_tool_target": true
+      },
+      "manual_user_edit_preserved": false,
+      "source_tool_target_world": {
+        "tool_body_origin_world_m": [
+          0.3930325594542005,
+          -1.363502652331518,
+          1.1848814081811097
+        ],
+        "tool_rotation_world": [
+          [
+            0.6965848287885483,
+            -0.1667595677261347,
+            0.6978257826086831
+          ],
+          [
+            0.7170667862168778,
+            0.1290301005722327,
+            -0.6849572667334198
+          ],
+          [
+            0.024182646799444485,
+            0.9775185316494577,
+            0.20945815781597316
+          ]
+        ],
+        "tcp_world_m": [
+          0.45583687988898197,
+          -1.4251488063375257,
+          1.2037326423845471
+        ],
+        "tcp_local_in_hook_m": [
+          0,
+          0,
+          0.09
+        ],
+        "derivation": "saved actual TCP minus saved actual tool rotation times fixed local TCP offset; no new IK or FK"
+      },
+      "source_original_review_label": "04 · 关到一半45°：看工具与转动面的关系",
+      "review_prompt": "Review criterion: tool alignment with the handle rotation plane halfway through closing.",
+      "source": "provenance/recorded_sources.json#source_00053",
+      "source_keyframe": 7
+    },
+    {
+      "label": "关到位0°",
+      "qpos": [
+        -0.49067770792267706,
+        -1.2574627971957437,
+        1.0989623514910096,
+        1.5776543875574853,
+        0.44659413642140927,
+        0.5066787928859291,
+        -0.9572802298213348,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "opening_deg": -0.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.4100310093219161,
+            -1.3133881717307665,
+            1.204115757319802
+          ],
+          "actual_rotation_world": [
+            [
+              0.9767049310702409,
+              0.014138572948215258,
+              0.21412047631663575
+            ],
+            [
+              0.21434486930363778,
+              -0.11164489148142058,
+              -0.9703564784187857
+            ],
+            [
+              0.010186001486423624,
+              0.9936475828789042,
+              -0.11207464660943063
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 1.5707963267948966,
+      "actual_tcp_world_m": [
+        0.4100310093219161,
+        -1.3133881717307665,
+        1.204115757319802
+      ],
+      "actual_rotation_world": [
+        [
+          0.9767049310702409,
+          0.014138572948215258,
+          0.21412047631663575
+        ],
+        [
+          0.21434486930363778,
+          -0.11164489148142058,
+          -0.9703564784187857
+        ],
+        [
+          0.010186001486423624,
+          0.9936475828789042,
+          -0.11207464660943063
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          0.16996899067808385,
+          0.0133881717307665,
+          0.020115757319801864
+        ],
+        "rotation_matrix": [
+          [
+            -0.9767049310702408,
+            -0.01413857294821529,
+            -0.21412047631663603
+          ],
+          [
+            -0.21434486930363805,
+            0.11164489148142058,
+            0.9703564784187856
+          ],
+          [
+            0.010186001486423624,
+            0.9936475828789042,
+            -0.11207464660943063
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -1.0,
+            -2.83276944882399e-16,
+            0.0
+          ],
+          [
+            2.83276944882399e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-28T10:56:08.387619+08:00",
+      "thumbnail_jpeg_base64": "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",
+      "index": 8
+    },
+    {
+      "label": "退勾移开（用户手调来源）",
+      "qpos": [
+        -0.6282097516308219,
+        -1.1622261214692005,
+        1.2117729759259428,
+        1.7179810317421034,
+        0.6999280777319412,
+        0.5018394919340483,
+        -0.7310254524281263,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "opening_deg": -0.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.4042439455534995,
+            -1.3708960889913555,
+            1.211768106767314
+          ],
+          "actual_rotation_world": [
+            [
+              0.9745334016178585,
+              -0.1739792812828612,
+              0.14147741450642978
+            ],
+            [
+              0.11645637583137726,
+              -0.14649570974291187,
+              -0.9823323875120584
+            ],
+            [
+              0.19163131701093664,
+              0.9737916700769313,
+              -0.12250396577023263
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 1.5707963267948966,
+      "actual_tcp_world_m": [
+        0.4042439455534995,
+        -1.3708960889913555,
+        1.211768106767314
+      ],
+      "actual_rotation_world": [
+        [
+          0.9745334016178585,
+          -0.1739792812828612,
+          0.14147741450642978
+        ],
+        [
+          0.11645637583137726,
+          -0.14649570974291187,
+          -0.9823323875120584
+        ],
+        [
+          0.19163131701093664,
+          0.9737916700769313,
+          -0.12250396577023263
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          0.17575605444650041,
+          0.07089608899135552,
+          0.027768106767313894
+        ],
+        "rotation_matrix": [
+          [
+            -0.9745334016178585,
+            0.17397928128286116,
+            -0.14147741450643006
+          ],
+          [
+            -0.11645637583137754,
+            0.14649570974291193,
+            0.9823323875120584
+          ],
+          [
+            0.19163131701093664,
+            0.9737916700769313,
+            -0.12250396577023263
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -1.0,
+            -2.83276944882399e-16,
+            0.0
+          ],
+          [
+            2.83276944882399e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-28T10:56:19.937072+08:00",
+      "thumbnail_jpeg_base64": "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",
+      "index": 9
+    },
+    {
+      "label": "沿左侧放下（用户手调来源）",
+      "qpos": [
+        -0.07758353274958765,
+        -1.2943899989315906,
+        0.7364270205360289,
+        1.8223611012518384,
+        0.09001514142334259,
+        0.6499252724616106,
+        -0.020894420032008327,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "opening_deg": -0.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.5151132600183149,
+            -1.2085976925058544,
+            1.2492104042074943
+          ],
+          "actual_rotation_world": [
+            [
+              0.29121524203100424,
+              0.012560723065594193,
+              0.9565750943051429
+            ],
+            [
+              0.8951284867832875,
+              0.34923293376067843,
+              -0.2770944786999034
+            ],
+            [
+              -0.3375480335565374,
+              0.9369517523399904,
+              0.09045849229970437
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 1.5707963267948966,
+      "actual_tcp_world_m": [
+        0.5151132600183149,
+        -1.2085976925058544,
+        1.2492104042074943
+      ],
+      "actual_rotation_world": [
+        [
+          0.29121524203100424,
+          0.012560723065594193,
+          0.9565750943051429
+        ],
+        [
+          0.8951284867832875,
+          0.34923293376067843,
+          -0.2770944786999034
+        ],
+        [
+          -0.3375480335565374,
+          0.9369517523399904,
+          0.09045849229970437
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          0.06488673998168507,
+          -0.09140230749414567,
+          0.06521040420749413
+        ],
+        "rotation_matrix": [
+          [
+            -0.29121524203100396,
+            -0.012560723065594094,
+            -0.956575094305143
+          ],
+          [
+            -0.8951284867832876,
+            -0.34923293376067843,
+            0.2770944786999031
+          ],
+          [
+            -0.3375480335565374,
+            0.9369517523399904,
+            0.09045849229970437
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -1.0,
+            -2.83276944882399e-16,
+            0.0
+          ],
+          [
+            2.83276944882399e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-28T10:57:28.501381+08:00",
+      "thumbnail_jpeg_base64": "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",
+      "index": 10
+    },
+    {
+      "label": "放下25%",
+      "qpos": [
+        0.061733727190073445,
+        -1.030773636487696,
+        0.4654338171899893,
+        1.4027325204334178,
+        -1.5701870622602372,
+        -0.19439979313208847,
+        0.5394574515159802,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "opening_deg": -0.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.43481907602076375,
+            -1.1930904228626267,
+            1.033531332177246
+          ],
+          "actual_rotation_world": [
+            [
+              -0.8712044580961555,
+              -0.008551871271725908,
+              0.49084585940102987
+            ],
+            [
+              -0.2636308441790555,
+              0.8515956183451137,
+              -0.45308242165509083
+            ],
+            [
+              -0.41412748060328275,
+              -0.5241295339066048,
+              -0.7441684362400911
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 1.5707963267948966,
+      "actual_tcp_world_m": [
+        0.43481907602076375,
+        -1.1930904228626267,
+        1.033531332177246
+      ],
+      "actual_rotation_world": [
+        [
+          -0.8712044580961555,
+          -0.008551871271725908,
+          0.49084585940102987
+        ],
+        [
+          -0.2636308441790555,
+          0.8515956183451137,
+          -0.45308242165509083
+        ],
+        [
+          -0.41412748060328275,
+          -0.5241295339066048,
+          -0.7441684362400911
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          0.14518092397923624,
+          -0.10690957713737333,
+          -0.15046866782275425
+        ],
+        "rotation_matrix": [
+          [
+            0.8712044580961554,
+            0.00855187127172615,
+            -0.49084585940103
+          ],
+          [
+            0.26363084417905575,
+            -0.8515956183451137,
+            0.45308242165509066
+          ],
+          [
+            -0.41412748060328275,
+            -0.5241295339066048,
+            -0.7441684362400911
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -1.0,
+            -2.83276944882399e-16,
+            0.0
+          ],
+          [
+            2.83276944882399e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-28T10:57:47.958573+08:00",
+      "thumbnail_jpeg_base64": "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",
+      "index": 11
+    },
+    {
+      "label": "放下50%",
+      "qpos": [
+        -0.14763184070451235,
+        -0.2937883291037422,
+        0.39098981911602143,
+        0.33110581459352684,
+        -0.6844873807839934,
+        -0.3904850144242373,
+        0.06344731210066683,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "opening_deg": -0.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.3751236501758174,
+            -1.2252181503141768,
+            0.8363739494065476
+          ],
+          "actual_rotation_world": [
+            [
+              -0.8901128671833809,
+              -0.08015432071951062,
+              0.4486361204189585
+            ],
+            [
+              -0.2047401691028336,
+              0.9498109360017919,
+              -0.23651775621957527
+            ],
+            [
+              -0.40716157337146086,
+              -0.30238133328860295,
+              -0.8618497447051212
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 1.5707963267948966,
+      "actual_tcp_world_m": [
+        0.3751236501758174,
+        -1.2252181503141768,
+        0.8363739494065476
+      ],
+      "actual_rotation_world": [
+        [
+          -0.8901128671833809,
+          -0.08015432071951062,
+          0.4486361204189585
+        ],
+        [
+          -0.2047401691028336,
+          0.9498109360017919,
+          -0.23651775621957527
+        ],
+        [
+          -0.40716157337146086,
+          -0.30238133328860295,
+          -0.8618497447051212
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          0.2048763498241826,
+          -0.07478184968582319,
+          -0.34762605059345253
+        ],
+        "rotation_matrix": [
+          [
+            0.8901128671833808,
+            0.08015432071951088,
+            -0.44863612041895856
+          ],
+          [
+            0.20474016910283385,
+            -0.9498109360017919,
+            0.23651775621957513
+          ],
+          [
+            -0.40716157337146086,
+            -0.30238133328860295,
+            -0.8618497447051212
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -1.0,
+            -2.83276944882399e-16,
+            0.0
+          ],
+          [
+            2.83276944882399e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-27T23:01:34.138838+08:00",
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "connection_candidate": "A",
+      "connection_kind": "lower",
+      "connection_fraction": 0.5,
+      "geometry_only": true,
+      "physics_steps_run": 0,
+      "review_status": "pending_current_user_confirmation",
+      "actual_target_status": "free_arm_connection_sample_not_seating",
+      "index": 12,
+      "source_original_review_label": "放下50%｜候选A（待确认）",
+      "review_prompt": "Review criterion: no wrist twist or shoulder flip halfway through lowering.",
+      "source": "provenance/recorded_sources.json#source_00053",
+      "source_keyframe": 12
+    },
+    {
+      "label": "放下75%",
+      "qpos": [
+        -0.01642351645295891,
+        -0.04931235686383952,
+        0.070078754049322,
+        0.28133795281064605,
+        -0.14516251640610234,
+        -0.07734178697818128,
+        -0.12819774346620372,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "opening_deg": -0.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.31079105581441135,
+            -1.2683458330718966,
+            0.8012055730795942
+          ],
+          "actual_rotation_world": [
+            [
+              -0.9078572754452144,
+              -0.046656147681651695,
+              0.4166753788078912
+            ],
+            [
+              -0.0698693907984404,
+              0.9967285404352881,
+              -0.040626160428902484
+            ],
+            [
+              -0.41341678201380083,
+              -0.06599561019680035,
+              -0.9081470936935852
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 1.5707963267948966,
+      "actual_tcp_world_m": [
+        0.31079105581441135,
+        -1.2683458330718966,
+        0.8012055730795942
+      ],
+      "actual_rotation_world": [
+        [
+          -0.9078572754452144,
+          -0.046656147681651695,
+          0.4166753788078912
+        ],
+        [
+          -0.0698693907984404,
+          0.9967285404352881,
+          -0.040626160428902484
+        ],
+        [
+          -0.41341678201380083,
+          -0.06599561019680035,
+          -0.9081470936935852
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          0.2692089441855886,
+          -0.031654166928103335,
+          -0.382794426920406
+        ],
+        "rotation_matrix": [
+          [
+            0.9078572754452144,
+            0.04665614768165198,
+            -0.4166753788078912
+          ],
+          [
+            0.06986939079844066,
+            -0.9967285404352881,
+            0.040626160428902366
+          ],
+          [
+            -0.41341678201380083,
+            -0.06599561019680035,
+            -0.9081470936935852
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -1.0,
+            -2.83276944882399e-16,
+            0.0
+          ],
+          [
+            2.83276944882399e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-27T23:01:34.139529+08:00",
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "connection_candidate": "A",
+      "connection_kind": "lower",
+      "connection_fraction": 0.75,
+      "geometry_only": true,
+      "physics_steps_run": 0,
+      "review_status": "pending_current_user_confirmation",
+      "actual_target_status": "free_arm_connection_sample_not_seating",
+      "index": 13,
+      "source_original_review_label": "放下75%｜候选A（待确认）",
+      "review_prompt": "Review criterion: smooth motion into the natural rest pose.",
+      "source": "provenance/recorded_sources.json#source_00053",
+      "source_keyframe": 13
+    },
+    {
+      "label": "自然下垂结束（已确认）",
+      "qpos": [
+        0.017832844065919572,
+        0.014516345248056249,
+        -0.013705908258732535,
+        0.2683443731333422,
+        -0.004353561667046997,
+        0.004414819202316108,
+        -0.17823315206248028,
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028,
+        1.5707963267948966
+      ],
+      "opening_deg": -0.0,
+      "active_side": "left",
+      "arms": {
+        "left": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.2833253771150146,
+            0.7979057049315788
+          ],
+          "actual_rotation_world": [
+            [
+              -0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              0.999752935964444,
+              -0.0020617001762905634
+            ],
+            [
+              -0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        },
+        "right": {
+          "actual_tcp_world_m": [
+            0.29337326039344624,
+            -1.5766746228849853,
+            0.7979057049315785
+          ],
+          "actual_rotation_world": [
+            [
+              0.9093454289592456,
+              -0.019273377034851602,
+              0.4155952691845732
+            ],
+            [
+              -0.022131796647748815,
+              -0.999752935964444,
+              0.0020617001762905634
+            ],
+            [
+              0.41545285461538,
+              -0.011072667616553698,
+              -0.9095473168691034
+            ]
+          ]
+        }
+      },
+      "valve_angle_rad": 1.5707963267948966,
+      "actual_tcp_world_m": [
+        0.29337326039344624,
+        -1.2833253771150146,
+        0.7979057049315788
+      ],
+      "actual_rotation_world": [
+        [
+          -0.9093454289592456,
+          -0.019273377034851602,
+          0.4155952691845732
+        ],
+        [
+          -0.022131796647748815,
+          0.999752935964444,
+          -0.0020617001762905634
+        ],
+        [
+          -0.41545285461538,
+          -0.011072667616553698,
+          -0.9095473168691034
+        ]
+      ],
+      "actual_in_handle_frame": {
+        "position_m": [
+          0.2866267396065537,
+          -0.016674622884985366,
+          -0.3860942950684214
+        ],
+        "rotation_matrix": [
+          [
+            0.9093454289592456,
+            0.019273377034851887,
+            -0.4155952691845732
+          ],
+          [
+            0.022131796647749072,
+            -0.999752935964444,
+            0.002061700176290446
+          ],
+          [
+            -0.41545285461538,
+            -0.011072667616553698,
+            -0.9095473168691034
+          ]
+        ]
+      },
+      "handle_frame": {
+        "origin_world_m": [
+          0.58,
+          -1.3,
+          1.1840000000000002
+        ],
+        "rotation_world": [
+          [
+            -1.0,
+            -2.83276944882399e-16,
+            0.0
+          ],
+          [
+            2.83276944882399e-16,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "axes": "x沿手柄；y为阀杆方向叉乘x；z沿阀杆"
+      },
+      "data_kind": "geometric_pose_not_physics",
+      "layout": {
+        "robot_position_m": [
+          0.16475009055163012,
+          -1.43,
+          0.703
+        ],
+        "robot_yaw_deg": 0.0,
+        "valve_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "camera": {
+        "tilt": 52.0,
+        "yaw": 0.0,
+        "fov": 85.0,
+        "forward": 8.0,
+        "height": 22.0
+      },
+      "coupling": {
+        "connected": false,
+        "side": "left"
+      },
+      "saved_at": "2026-10-27T22:59:19.395018+08:00",
+      "model_revision": "left_hook_mount_z180_review_v1",
+      "index": 14,
+      "source_provenance": {
+        "file": "provenance/recorded_sources.json#source_00052",
+        "index": 8
+      },
+      "review_status": "reference_already_confirmed_rest",
+      "connection_candidate": "A",
+      "connection_kind": "lower",
+      "connection_policy": "quintic_joint_endpoints",
+      "geometry_only": true,
+      "physics_steps_run": 0,
+      "source_original_keyframe_index": 8,
+      "original_source_provenance": {
+        "file": "provenance/recorded_sources.json#source_00020",
+        "container": "keyposes",
+        "index": 7,
+        "saved_at": "2026-10-27T21:47:00.021833+08:00",
+        "preserve_user_saved_qpos_and_tool_target": true
+      },
+      "manual_user_edit_preserved": false,
+      "source_tool_target_world": null,
+      "source_original_review_label": "15 · 自然垂放结束（共同下垂已确认）",
+      "review_prompt": "The confirmed shared natural rest pose is the end reference only.",
+      "source": "provenance/recorded_sources.json#source_00053",
+      "source_keyframe": 14
+    }
+  ],
+  "active_side": "left",
+  "source_storyboard_schema": "g1_storyboard_v1",
+  "source_approval": {
+    "historical_evidence": [
+      {
+        "file": "provenance/recorded_sources.json#source_00054",
+        "recorded_at": "2026-10-26T23:35:15.326971+08:00",
+        "user_utterance_time": null,
+        "user_text": "The 35 cm opening and closing batch was approved for GPU execution.",
+        "scope": "35厘米开关批次整体授权，不等于后续派生姿态逐张看图确认",
+        "timestamp_kind": "file_record_not_verified_user_message_time"
+      },
+      {
+        "file": "provenance/recorded_sources.json#source_00001",
+        "user_text": "Review feedback focused on opening: pushing began before the tool reached the expected 17.5 cm contact position. No closing issue was identified in that review.",
+        "recorded_at": null,
+        "user_utterance_time": null,
+        "scope": "当前对话中的35厘米关阀反馈；精确发言时间未提供",
+        "evidence_kind": "user_message_in_current_thread_plus_later_frozen_setup"
+      }
+    ],
+    "historical_source_statuses": [
+      {
+        "key": "reviewed",
+        "file": "provenance/recorded_sources.json#source_00055",
+        "scene": "provenance/recorded_sources.json#source_00056",
+        "rows": 8,
+        "original_approval_status": "pending_user_image_review",
+        "approval_scope": "用户已展示35厘米关阀8姿态；随后总批授权，原文pending状态保留。"
+      }
+    ],
+    "drag_edit_history": {
+      "status": "not_documented_in_these_sources",
+      "edits": []
+    },
+    "converted_file_user_approval": false,
+    "v2_execution_authorized": false,
+    "note": "Historical batch authorization does not mean every derived pose was individually reviewed."
+  },
+  "source_method": {
+    "mode": "pull",
+    "working_face": "blue_pull",
+    "reference_contact_fraction": 0.8749999999999999,
+    "allowed_contact_fraction_range": [
+      0.7,
+      0.875
+    ],
+    "reference_roll_deg": 0.0,
+    "required_tool_roll_deg": 0.0,
+    "original_parameters": {
+      "id": "A2_forehand35_close_T2",
+      "station": "A2",
+      "task": "close",
+      "side": "left",
+      "mode": "pull",
+      "radius_m": 0.175,
+      "pitch_deg": 14.0,
+      "pitch_constant": false,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0,
+      "standby_roll_deg": 0.0,
+      "push_contact_geometry": "support_planes",
+      "target_source": "approved_pose_path_actual_tool_orientation",
+      "structure": "user_approved_forehand"
+    },
+    "orientation_reference": "actual relative rotations in poses; source pitch/tilt values preserved separately",
+    "note": "Range added as approved data requirement; no execution or contact relocation occurs in V1."
+  },
+  "name": "A2关阀｜新安装整组待确认",
+  "source": "provenance/recorded_sources.json#source_00057",
+  "import_source": "provenance/recorded_sources.json#source_00052",
+  "execution_approved": false,
+  "physics_steps_run": 0,
+  "data_kind": "geometric_mount_conversion_pending_user_confirmation",
+  "approval": {
+    "user_confirmed": false,
+    "scope": "left_fixed_tool_mount_and_affected_geometry_review"
+  },
+  "reference_kind": "existing_G1_geometry_not_shared_executor_output",
+  "nominal_chest_distance_m": 0.35,
+  "shared_natural_rest_file": "provenance/recorded_sources.json#source_00017",
+  "note": "新安装下的几何分镜，等待整组确认；站位35厘米、左手操作、右手下垂，原头部镜头不变。",
+  "saved_at": "2026-10-28T10:57:48.254461+08:00",
+  "preparation_policy": {
+    "data_kind": "pending_review_source_geometry_not_physics",
+    "physics_steps_run": 0,
+    "execution_approved": false,
+    "user_confirmed_complete_g1": false,
+    "formal_model_changed": false,
+    "formal_config_changed": false,
+    "executor_changed": false,
+    "viser_original_groups_changed": false,
+    "source_left_hook_body_quat_wxyz": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "requires_shared_installation_conversion_before_current_review": false,
+    "source_left_work_tool_targets_must_be_preserved": true,
+    "shared_rest_replacement_pending": false,
+    "active_side": "left",
+    "idle_right_joint_angles_rad": [
+      -0.017832844065919572,
+      -0.014516345248056249,
+      0.013705908258732535,
+      0.2683443731333422,
+      0.004353561667046997,
+      -0.004414819202316108,
+      0.17823315206248028
+    ],
+    "body_yaw_deg": 0,
+    "nominal_chest_distance_m": 0.35,
+    "allowed_contact_fraction_range": [
+      0.7,
+      0.875
+    ],
+    "contact_fraction_definition": "fraction of effective handle length measured from valve shaft toward usable handle end",
+    "reference_contact_fraction": 0.875,
+    "camera": {
+      "tilt": 52.0,
+      "yaw": 0.0,
+      "fov": 85.0,
+      "forward": 8.0,
+      "height": 22.0
+    },
+    "approved_common_rest_source": "provenance/recorded_sources.json#source_00026",
+    "right_arm_joint_angles_rad": [
+      -0.017832844065919572,
+      -0.014516345248056249,
+      0.013705908258732535,
+      0.2683443731333422,
+      0.004353561667046997,
+      -0.004414819202316108,
+      0.17823315206248028
+    ]
+  },
+  "approved_common_rest_source": "provenance/recorded_sources.json#source_00026",
+  "shared_rest_user_confirmed": true,
+  "model_revision": "left_hook_mount_z180_review_v1",
+  "connection_candidate": "A",
+  "connection_note": "仅抬手和放下为此候选；工作关键帧工具位姿保持，但关键帧间实际工作路线尚未执行。",
+  "dense_connection_file": "provenance/recorded_sources.json#source_00058",
+  "full_sequence_ready_for_execution": false,
+  "unresolved_source_keyframes": [
+    {
+      "original_index": 2,
+      "ui_index": 5,
+      "label": "03 · 旧接近／接触前候选（待确认，不能当已入位）",
+      "position_error_m": 0.0011169840414949714,
+      "rotation_error_rad": 0.10053414272255091
+    }
+  ],
+  "valid_free_connection_sections": [
+    "lift",
+    "lower"
+  ],
+  "free_connections_only": true,
+  "work_between_keyframes_not_evaluated": true,
+  "requires_review_model_revision": "left_hook_mount_z180_review_v1",
+  "open_uses_oct27_selected_15deg": false,
+  "source_pose_difference_policy": {
+    "kind": "G1_geometry_review_not_simulation_result",
+    "is_scoring_failure": false,
+    "new_mm_angle_pass_fail_limits_added": false,
+    "meaning": "新安装转换后未完全保留旧工具位姿的项，单列待用户审图；不是仿真失败或自动判废。"
+  },
+  "review_source_sequence_file": "provenance/recorded_sources.json#source_00059",
+  "review_work_package": "W3_2026-10-28",
+  "review_requires_user_confirmation": true,
+  "source_original_note_preserved": "独立模型：左S钩固定安装局部Z转180°，右侧不变；工作工具位姿保持，抬放仅做几何连续转换。不是受力成功，不更新正式模型。",
+  "loaded_from": "provenance/recorded_sources.json#source_00053"
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "user_confirmed_sequence_reference_v1",
+  "sequence_file": "sequence.json",
+  "source_sequence_file": "sequence.json",
+  "roles": {
+    "standby": 0,
+    "chest_ready": 4,
+    "precontact": 5,
+    "contact": 6,
+    "mid_turn": 7,
+    "end": 8,
+    "release": 9,
+    "chest_return": 10
+  },
+  "final_rest_index": 14,
+  "station": "A2",
+  "operation": "close",
+  "side": "left",
+  "model_revision": "left_hook_mount_z180_review_v1",
+  "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+  "approval": {
+    "user_confirmed": true,
+    "user_original_text": "The adjusted A1 and A2 reference poses were confirmed for review and local simulation.",
+    "recorded_at": "2026-10-28T11:42:32.498473+08:00",
+    "model_revision": "left_hook_mount_z180_review_v1",
+    "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+    "confirmation_record": "provenance/recorded_sources.json#source_00002",
+    "geometry_confirmation_not_physics_success": true
+  },
+  "reference_contact_radius_m": 0.1714742188082028,
+  "preferred_contact_radius_m": 0.1714742188082028,
+  "radius_reference_basis": "saved physical recess-prism centroid projected on handle radial",
+  "full_source_pose_count": 15,
+  "reference_pose_kind": "user_saved_geometry_not_physical_success"
+}

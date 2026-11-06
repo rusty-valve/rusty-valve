@@ -1,0 +1,13 @@
+{
+  "episode_id": "coverage_test_A2_close_05",
+  "task": "A2_close",
+  "seed": 202611049005,
+  "offset_m": [
+    -0.01713729553736635,
+    0.008101976380587706,
+    -0.0025318397974622656
+  ],
+  "resistance_scale": 1.1883129131254977,
+  "used_for_training": false,
+  "fixture_only": true
+}

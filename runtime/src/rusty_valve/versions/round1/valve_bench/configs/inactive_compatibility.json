@@ -1,0 +1,12 @@
+{
+  "policy_version": "2.3",
+  "pause_angles_deg": [
+    18.0,
+    45.0
+  ],
+  "pause_s": 5.0,
+  "pause_angle_tolerance_deg": 2.0,
+  "pause_speed_deg_s": 2.0,
+  "order_required": true,
+  "angle_reference": "opening from fully closed: 0 degrees closed, 90 degrees open"
+}

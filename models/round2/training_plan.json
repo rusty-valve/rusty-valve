@@ -1,0 +1,20 @@
+{
+  "task": "A2_close",
+  "head_only": false,
+  "target_updates": 100000,
+  "architecture_and_optimizer": "LeRobot0.6.1ACTdefaults",
+  "batch_size": 8,
+  "seed": 1000,
+  "n_action_steps": 1,
+  "temporal_ensemble_coeff": 0.01,
+  "control_fps": 100,
+  "camera_fps": 20,
+  "validation_frames": 1024,
+  "validation_seed": 1000,
+  "validation_every_updates": 20000,
+  "training_root": "provenance/recorded_sources.json#source_01690",
+  "training_frames": 985095,
+  "training_episodes": 240,
+  "exams_used_for_tuning": false,
+  "no_elapsed_time_stop": true
+}

@@ -1,0 +1,4790 @@
+[
+  {
+    "episode_id": "v0_train_A2_open_c03_p00_20261028",
+    "dataset_episode_index": 0,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 6638,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0449",
+      "pipe": [
+        0.6074747518541438,
+        0.4048973262316347,
+        0.27590651341166655
+      ],
+      "background": [
+        0.6567605643807254,
+        0.6224919099896296,
+        0.5664489842443156
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4839046634537632,
+      "diffuse": 0.5679488675319093
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00971",
+    "wall_seconds": 134.27
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p01_20261028",
+    "dataset_episode_index": 1,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8746,
+    "condition_index": 0,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0418",
+      "pipe": [
+        0.6203201188674389,
+        0.27252123143978174,
+        0.38568808379797664
+      ],
+      "background": [
+        0.6414047796783638,
+        0.39769255625442845,
+        0.3647610139926425
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5425241949226886,
+      "diffuse": 0.7380550323338662
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00909",
+    "wall_seconds": 176.22
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p02_20261028",
+    "dataset_episode_index": 2,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8916,
+    "condition_index": 0,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0419",
+      "pipe": [
+        0.403816561749335,
+        0.691675832005633,
+        0.36289987981347077
+      ],
+      "background": [
+        0.7041056486588343,
+        0.3173937835412535,
+        0.47567478450633616
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5035651983611343,
+      "diffuse": 0.7543316344273193
+    },
+    "max_time_alignment_error_s": 6.161826604511589e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00911",
+    "wall_seconds": 178.36
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p04_20261028",
+    "dataset_episode_index": 3,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 7821,
+    "condition_index": 0,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0420",
+      "pipe": [
+        0.4835621661121191,
+        0.602624409369876,
+        0.6172715710285865
+      ],
+      "background": [
+        0.3833862177237488,
+        0.39883964964702595,
+        0.46826099541748645
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.4521979356455794,
+      "diffuse": 0.7239589720997885
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00913",
+    "wall_seconds": 156.22
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p09_20261028",
+    "dataset_episode_index": 4,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8067,
+    "condition_index": 0,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0422",
+      "pipe": [
+        0.5989888891815055,
+        0.6334532179935192,
+        0.452827702077735
+      ],
+      "background": [
+        0.44652817709971276,
+        0.6309440845307006,
+        0.4421287293915128
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4639681601396131,
+      "diffuse": 0.7281386408801604
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00917",
+    "wall_seconds": 163.49
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p13_20261028",
+    "dataset_episode_index": 5,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8637,
+    "condition_index": 0,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0423",
+      "pipe": [
+        0.6898645293516075,
+        0.3355032769118467,
+        0.28835991078325185
+      ],
+      "background": [
+        0.5860583821591824,
+        0.6134757126457231,
+        0.5775173437550805
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.4345830200839599,
+      "diffuse": 0.7512577170327673
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00919",
+    "wall_seconds": 172.38
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p14_20261028",
+    "dataset_episode_index": 6,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 7819,
+    "condition_index": 0,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0424",
+      "pipe": [
+        0.32457492491808365,
+        0.5652100707366543,
+        0.37611438443100426
+      ],
+      "background": [
+        0.6872433439248645,
+        0.4996998614839088,
+        0.44136385907309567
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.5544786444008246,
+      "diffuse": 0.5572433937729433
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00921",
+    "wall_seconds": 157.89
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p17_20261028",
+    "dataset_episode_index": 7,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8298,
+    "condition_index": 0,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0427",
+      "pipe": [
+        0.6298504364405237,
+        0.5358846906673079,
+        0.3523877673218171
+      ],
+      "background": [
+        0.6995168104311523,
+        0.6474862192824831,
+        0.7064740194305485
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.4493746839817466,
+      "diffuse": 0.5369302729618028
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00927",
+    "wall_seconds": 165.44
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p20_20261028",
+    "dataset_episode_index": 8,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8314,
+    "condition_index": 0,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0429",
+      "pipe": [
+        0.4837608307029504,
+        0.49561613118678194,
+        0.6439867440624202
+      ],
+      "background": [
+        0.7046614254345601,
+        0.5723143033879351,
+        0.3551748954602377
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.4380068813374614,
+      "diffuse": 0.6021890201180824
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00931",
+    "wall_seconds": 166.93
+  },
+  {
+    "episode_id": "v0_train_A2_open_c01_p01_20261028",
+    "dataset_episode_index": 9,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8809,
+    "condition_index": 1,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0436",
+      "pipe": [
+        0.5267911070419312,
+        0.6307867420803832,
+        0.44343909208452786
+      ],
+      "background": [
+        0.6995177228010505,
+        0.559228447331482,
+        0.5314658026857683
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.5127640705664024,
+      "diffuse": 0.6594262599424889
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00945",
+    "wall_seconds": 180.6
+  },
+  {
+    "episode_id": "v0_train_A2_open_c01_p04_20261028",
+    "dataset_episode_index": 10,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8856,
+    "condition_index": 1,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0437",
+      "pipe": [
+        0.48421649827548313,
+        0.3082107733812891,
+        0.6399571860474295
+      ],
+      "background": [
+        0.49603218278521616,
+        0.7003723883785338,
+        0.5554446484699855
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4012731927693225,
+      "diffuse": 0.5352073377671162
+    },
+    "max_time_alignment_error_s": 5.876188424736029e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00947",
+    "wall_seconds": 177.26
+  },
+  {
+    "episode_id": "v0_train_A2_open_c01_p09_20261028",
+    "dataset_episode_index": 11,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8128,
+    "condition_index": 1,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0439",
+      "pipe": [
+        0.37547005973530495,
+        0.34561230184935715,
+        0.33262948845382495
+      ],
+      "background": [
+        0.30669811308541156,
+        0.3354434284458331,
+        0.38008943791166505
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.3921193315574736,
+      "diffuse": 0.7520050844093882
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00951",
+    "wall_seconds": 161.94
+  },
+  {
+    "episode_id": "v0_train_A2_open_c01_p13_20261028",
+    "dataset_episode_index": 12,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8101,
+    "condition_index": 1,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0440",
+      "pipe": [
+        0.2757499622463012,
+        0.46737496338856543,
+        0.544827747987138
+      ],
+      "background": [
+        0.6922336831202996,
+        0.3780591879616184,
+        0.359414538517524
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.3869841239645333,
+      "diffuse": 0.6298554614951059
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00953",
+    "wall_seconds": 162.22
+  },
+  {
+    "episode_id": "v0_train_A2_open_c01_p20_20261028",
+    "dataset_episode_index": 13,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8450,
+    "condition_index": 1,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0443",
+      "pipe": [
+        0.6680287374077374,
+        0.6693957053058334,
+        0.5120284572108038
+      ],
+      "background": [
+        0.44389674648924626,
+        0.4009181945221821,
+        0.6534066777143556
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.4909166729549566,
+      "diffuse": 0.650049631375605
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00959",
+    "wall_seconds": 170.43
+  },
+  {
+    "episode_id": "v0_train_A2_open_c02_p09_20261028",
+    "dataset_episode_index": 14,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8800,
+    "condition_index": 2,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0446",
+      "pipe": [
+        0.5185528008178767,
+        0.49724669729728477,
+        0.6983566272278771
+      ],
+      "background": [
+        0.38170069541091084,
+        0.6256577441660289,
+        0.422394249334859
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.514793867625354,
+      "diffuse": 0.5547717947874784
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00965",
+    "wall_seconds": 177.08
+  },
+  {
+    "episode_id": "v0_train_A2_open_c02_p13_20261028",
+    "dataset_episode_index": 15,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8901,
+    "condition_index": 2,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0447",
+      "pipe": [
+        0.6787208631674092,
+        0.48128006744280327,
+        0.6779032725566914
+      ],
+      "background": [
+        0.5166524131796578,
+        0.3728562195066829,
+        0.3048101935170616
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.4782376875662912,
+      "diffuse": 0.7115543455731119
+    },
+    "max_time_alignment_error_s": 6.090772330935579e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00967",
+    "wall_seconds": 178.79
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p01_20261028",
+    "dataset_episode_index": 16,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4803,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0450",
+      "pipe": [
+        0.3773072757094269,
+        0.2955831142914426,
+        0.6409272716989208
+      ],
+      "background": [
+        0.4270726613709809,
+        0.45628769800668745,
+        0.6435040496477555
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.4897973974507923,
+      "diffuse": 0.5695495110278698
+    },
+    "max_time_alignment_error_s": 2.121680608979659e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00973",
+    "wall_seconds": 99.37
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p02_20261028",
+    "dataset_episode_index": 17,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5916,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0451",
+      "pipe": [
+        0.3708649806237327,
+        0.371816660692348,
+        0.5125357902535497
+      ],
+      "background": [
+        0.3889873805821882,
+        0.5753341413912221,
+        0.5025009898684125
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.42431880650048204,
+      "diffuse": 0.6205448151452262
+    },
+    "max_time_alignment_error_s": 4.715161594504025e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00975",
+    "wall_seconds": 119.13
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p04_20261028",
+    "dataset_episode_index": 18,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5863,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0453",
+      "pipe": [
+        0.31356346725081163,
+        0.6890991776903168,
+        0.6485434106379503
+      ],
+      "background": [
+        0.6906494436089629,
+        0.3399179762609924,
+        0.48420656014272784
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.43328228969410504,
+      "diffuse": 0.7360715107966209
+    },
+    "max_time_alignment_error_s": 4.5915271584817674e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00979",
+    "wall_seconds": 117.75
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p05_20261028",
+    "dataset_episode_index": 19,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 7148,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0454",
+      "pipe": [
+        0.551998793034541,
+        0.39540887028147353,
+        0.45089083023660476
+      ],
+      "background": [
+        0.4699144427094004,
+        0.6203821295209038,
+        0.5369072015615307
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.42170503757756206,
+      "diffuse": 0.7071322783779669
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00981",
+    "wall_seconds": 146.1
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p06_20261028",
+    "dataset_episode_index": 20,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 7425,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0455",
+      "pipe": [
+        0.3271154051902198,
+        0.5121150094711787,
+        0.6380128700504957
+      ],
+      "background": [
+        0.7137132705641885,
+        0.4308465507941748,
+        0.347169644205188
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.4384731550808067,
+      "diffuse": 0.6094835277444863
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00983",
+    "wall_seconds": 150.03
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p07_20261028",
+    "dataset_episode_index": 21,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8936,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0456",
+      "pipe": [
+        0.55340386110147,
+        0.2711015069962756,
+        0.4806309574907065
+      ],
+      "background": [
+        0.5671743558132312,
+        0.4583486578096894,
+        0.6484896242853896
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5130187771880433,
+      "diffuse": 0.5359539577562841
+    },
+    "max_time_alignment_error_s": 6.258460416574962e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00985",
+    "wall_seconds": 181.37
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p08_20261028",
+    "dataset_episode_index": 22,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4937,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0457",
+      "pipe": [
+        0.45587007052091505,
+        0.5005141848544287,
+        0.40978360367801225
+      ],
+      "background": [
+        0.523191291425454,
+        0.4512040868472468,
+        0.5163762514130694
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5370551559463986,
+      "diffuse": 0.6480989583005894
+    },
+    "max_time_alignment_error_s": 2.433608869978343e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00987",
+    "wall_seconds": 100.01
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p09_20261028",
+    "dataset_episode_index": 23,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4574,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0458",
+      "pipe": [
+        0.5858364659444897,
+        0.487381020754113,
+        0.3837838815253877
+      ],
+      "background": [
+        0.375947500039634,
+        0.3004976348830462,
+        0.36662822933551276
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5395955589438857,
+      "diffuse": 0.5557896828352872
+    },
+    "max_time_alignment_error_s": 1.6122214674396673e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00989",
+    "wall_seconds": 95.98
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p10_20261028",
+    "dataset_episode_index": 24,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 7022,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0459",
+      "pipe": [
+        0.5726013331996784,
+        0.533752082914144,
+        0.4676389819277704
+      ],
+      "background": [
+        0.4505157706194276,
+        0.6786516731841598,
+        0.4559800298555939
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.48466317196187453,
+      "diffuse": 0.5454733589849586
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00991",
+    "wall_seconds": 140.89
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p11_20261028",
+    "dataset_episode_index": 25,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8743,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0460",
+      "pipe": [
+        0.46822668020362296,
+        0.6398445267882924,
+        0.4151549221759382
+      ],
+      "background": [
+        0.5053494898745065,
+        0.6387186670248677,
+        0.3032090971248241
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5435839411995429,
+      "diffuse": 0.7592654618309713
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00993",
+    "wall_seconds": 177.8
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p13_20261028",
+    "dataset_episode_index": 26,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4722,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0461",
+      "pipe": [
+        0.3599875267352413,
+        0.5107986405287025,
+        0.3272992891927147
+      ],
+      "background": [
+        0.4754052493647851,
+        0.4096944816416156,
+        0.46348217171618206
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.5413849196984248,
+      "diffuse": 0.6684585016251318
+    },
+    "max_time_alignment_error_s": 1.9326762412674725e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00995",
+    "wall_seconds": 98.77
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p14_20261028",
+    "dataset_episode_index": 27,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5644,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0462",
+      "pipe": [
+        0.4241621706111056,
+        0.6290592295498734,
+        0.27872869671144845
+      ],
+      "background": [
+        0.3580653225526435,
+        0.6726217797561254,
+        0.405132436495654
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5198599011026251,
+      "diffuse": 0.5586831848431688
+    },
+    "max_time_alignment_error_s": 4.0813574742060155e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00997",
+    "wall_seconds": 114.69
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p15_20261028",
+    "dataset_episode_index": 28,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 6112,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0463",
+      "pipe": [
+        0.4493028240524385,
+        0.3859069833364332,
+        0.5714934173876214
+      ],
+      "background": [
+        0.31097149847120975,
+        0.39178003666640326,
+        0.36556406921724816
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5206867446262352,
+      "diffuse": 0.5491318369787167
+    },
+    "max_time_alignment_error_s": 5.172040573597769e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00999",
+    "wall_seconds": 123.95
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p16_20261028",
+    "dataset_episode_index": 29,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5603,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0464",
+      "pipe": [
+        0.669366632355011,
+        0.5232311842257074,
+        0.34411852710173835
+      ],
+      "background": [
+        0.4522421029405081,
+        0.30147322101346563,
+        0.44170410990872705
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.4506900287113008,
+      "diffuse": 0.6322406980038333
+    },
+    "max_time_alignment_error_s": 3.986144747614162e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01001",
+    "wall_seconds": 114.41
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p17_20261028",
+    "dataset_episode_index": 30,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5599,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0465",
+      "pipe": [
+        0.3026737294055596,
+        0.28029001965973044,
+        0.6764856324340236
+      ],
+      "background": [
+        0.4743746368967191,
+        0.5596755654973363,
+        0.580687253319215
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5367574661630806,
+      "diffuse": 0.6563627382572832
+    },
+    "max_time_alignment_error_s": 3.9761971493135206e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01003",
+    "wall_seconds": 115.29
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p18_20261028",
+    "dataset_episode_index": 31,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 6182,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0466",
+      "pipe": [
+        0.628738767243848,
+        0.44737682191726263,
+        0.5667286240328872
+      ],
+      "background": [
+        0.5659291198427367,
+        0.5270147286423063,
+        0.3605872780062643
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.42206716680273587,
+      "diffuse": 0.7445790460232593
+    },
+    "max_time_alignment_error_s": 5.335465402822592e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01005",
+    "wall_seconds": 126.7
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p19_20261028",
+    "dataset_episode_index": 32,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4935,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0467",
+      "pipe": [
+        0.6813655544794762,
+        0.305601358717092,
+        0.4133975814242103
+      ],
+      "background": [
+        0.46805569503603334,
+        0.6155195258026567,
+        0.6153208737263234
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.48621272506856755,
+      "diffuse": 0.5755725692619131
+    },
+    "max_time_alignment_error_s": 2.4293456135637825e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01007",
+    "wall_seconds": 98.73
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p20_20261028",
+    "dataset_episode_index": 33,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4600,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0468",
+      "pipe": [
+        0.39611793499317693,
+        0.6222437721332026,
+        0.5733834640276806
+      ],
+      "background": [
+        0.7073954790774546,
+        0.6161652996223074,
+        0.41654248772262764
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.3817733364733819,
+      "diffuse": 0.625173123043699
+    },
+    "max_time_alignment_error_s": 1.6484591469634324e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01009",
+    "wall_seconds": 94.41
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p21_20261028",
+    "dataset_episode_index": 34,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 7348,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0469",
+      "pipe": [
+        0.6958107530551477,
+        0.5158103014729806,
+        0.4632554304324441
+      ],
+      "background": [
+        0.7290870324813693,
+        0.7034295734749666,
+        0.588181163774032
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.46354713992329233,
+      "diffuse": 0.7150289992825887
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01011",
+    "wall_seconds": 147.71
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p22_20261028",
+    "dataset_episode_index": 35,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 7389,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0470",
+      "pipe": [
+        0.665309066090685,
+        0.598036336053555,
+        0.5074810858468062
+      ],
+      "background": [
+        0.4205215752960808,
+        0.4239639431885709,
+        0.4760833566426396
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.39760361764592417,
+      "diffuse": 0.5520510060874728
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01013",
+    "wall_seconds": 150.26
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p23_20261028",
+    "dataset_episode_index": 36,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 6661,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0471",
+      "pipe": [
+        0.6421413747206777,
+        0.6191908176931944,
+        0.5773052737843956
+      ],
+      "background": [
+        0.37840000240606425,
+        0.5705034667465665,
+        0.39151290428724544
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5223801902079781,
+      "diffuse": 0.6333256899587967
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01015",
+    "wall_seconds": 134.0
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p24_20261028",
+    "dataset_episode_index": 37,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8144,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0472",
+      "pipe": [
+        0.6310170727231751,
+        0.6768843363092557,
+        0.6503579256739936
+      ],
+      "background": [
+        0.42865369454741536,
+        0.5153054552608817,
+        0.4801761731832071
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.45317167963200683,
+      "diffuse": 0.5401454857755151
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01017",
+    "wall_seconds": 163.46
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p25_20261028",
+    "dataset_episode_index": 38,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 6896,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0473",
+      "pipe": [
+        0.5306806193640806,
+        0.41118498029066125,
+        0.3193937900007426
+      ],
+      "background": [
+        0.4680452325087188,
+        0.6845574711947155,
+        0.4136447645246373
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4113423998884109,
+      "diffuse": 0.7509752161400984
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01019",
+    "wall_seconds": 139.93
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p26_20261028",
+    "dataset_episode_index": 39,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 6365,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0474",
+      "pipe": [
+        0.6713289194543778,
+        0.45905999121618674,
+        0.6662585888848762
+      ],
+      "background": [
+        0.36519187841829365,
+        0.6544364212788484,
+        0.6047497841867309
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4072328813086367,
+      "diffuse": 0.5475286625828718
+    },
+    "max_time_alignment_error_s": 5.7617910442786524e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01021",
+    "wall_seconds": 131.49
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p27_20261028",
+    "dataset_episode_index": 40,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8636,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0475",
+      "pipe": [
+        0.5057831287869136,
+        0.3919716680671885,
+        0.6281548917508643
+      ],
+      "background": [
+        0.7195816945433197,
+        0.5850883498426578,
+        0.6623235325063017
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.43193936689944057,
+      "diffuse": 0.7732809063020653
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01023",
+    "wall_seconds": 175.11
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p28_20261028",
+    "dataset_episode_index": 41,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 6923,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0476",
+      "pipe": [
+        0.39207909308764816,
+        0.2916191591232872,
+        0.40341048107856625
+      ],
+      "background": [
+        0.34101868694410015,
+        0.6280994186580762,
+        0.48753934271867766
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.5323024736756359,
+      "diffuse": 0.6138664691465279
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01025",
+    "wall_seconds": 134.37
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p29_20261028",
+    "dataset_episode_index": 42,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8545,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0477",
+      "pipe": [
+        0.31500292208298714,
+        0.6987645293395547,
+        0.36873313649240214
+      ],
+      "background": [
+        0.4041052389971895,
+        0.5523974918603062,
+        0.6927118437379561
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.47675894648567146,
+      "diffuse": 0.6531793596521153
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01027",
+    "wall_seconds": 160.45
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p30_20261028",
+    "dataset_episode_index": 43,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 7438,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0478",
+      "pipe": [
+        0.6017339609485861,
+        0.3431844737292283,
+        0.4231300196973454
+      ],
+      "background": [
+        0.3780488588764533,
+        0.30013581774543596,
+        0.6237525981756337
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.4994101927545523,
+      "diffuse": 0.6824174358880456
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01029",
+    "wall_seconds": 141.06
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p31_20261028",
+    "dataset_episode_index": 44,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 7165,
+    "condition_index": 3,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0479",
+      "pipe": [
+        0.2784618387588402,
+        0.6284730137821388,
+        0.5609389205180328
+      ],
+      "background": [
+        0.5787264356351068,
+        0.6934421954926612,
+        0.6448363192241092
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.4940821832356062,
+      "diffuse": 0.5312352402785926
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01031",
+    "wall_seconds": 137.17
+  },
+  {
+    "episode_id": "v0_train_A2_open_c04_p09_20261028",
+    "dataset_episode_index": 45,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8753,
+    "condition_index": 4,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0480",
+      "pipe": [
+        0.5517235198894214,
+        0.4433649736014205,
+        0.3239647825734031
+      ],
+      "background": [
+        0.5017376894701946,
+        0.5146427118708112,
+        0.46278319516030225
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.545065014446622,
+      "diffuse": 0.5927656969960516
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01033",
+    "wall_seconds": 165.04
+  },
+  {
+    "episode_id": "v0_train_A2_open_c04_p13_20261028",
+    "dataset_episode_index": 46,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8961,
+    "condition_index": 4,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0481",
+      "pipe": [
+        0.3977396934790416,
+        0.2871714830505256,
+        0.2802640826672827
+      ],
+      "background": [
+        0.3777656992272212,
+        0.41236898415180784,
+        0.3843341869177539
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.48393358321668417,
+      "diffuse": 0.6737449498907204
+    },
+    "max_time_alignment_error_s": 6.377831596182659e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01035",
+    "wall_seconds": 168.63
+  },
+  {
+    "episode_id": "v0_train_A2_open_c05_p09_20261028",
+    "dataset_episode_index": 47,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8417,
+    "condition_index": 5,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0485",
+      "pipe": [
+        0.6807307590233672,
+        0.28757663304862024,
+        0.40621809070585013
+      ],
+      "background": [
+        0.5295835299989191,
+        0.39117284058725743,
+        0.6444234215046624
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.42626819813884625,
+      "diffuse": 0.7077178333517526
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01043",
+    "wall_seconds": 159.77
+  },
+  {
+    "episode_id": "v0_train_A2_open_c05_p13_20261028",
+    "dataset_episode_index": 48,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8199,
+    "condition_index": 5,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0486",
+      "pipe": [
+        0.6372310792962756,
+        0.5796798115103153,
+        0.6915194621105107
+      ],
+      "background": [
+        0.6722004879295128,
+        0.5101885380536624,
+        0.42692855195118695
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.4890663501578554,
+      "diffuse": 0.7590687940035519
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01045",
+    "wall_seconds": 155.95
+  },
+  {
+    "episode_id": "v0_train_A2_open_c05_p20_20261028",
+    "dataset_episode_index": 49,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8660,
+    "condition_index": 5,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0487",
+      "pipe": [
+        0.5200402970904744,
+        0.5089490025322998,
+        0.5943635001095386
+      ],
+      "background": [
+        0.702872169262068,
+        0.4724965039927939,
+        0.4589479285900551
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5249700458374434,
+      "diffuse": 0.6709968268175951
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01047",
+    "wall_seconds": 163.56
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p00_20261028",
+    "dataset_episode_index": 50,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5142,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0488",
+      "pipe": [
+        0.4550485868496245,
+        0.5066660591334791,
+        0.5012499694082203
+      ],
+      "background": [
+        0.5732791215878634,
+        0.5724096183169707,
+        0.3905177601615229
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5144415327274305,
+      "diffuse": 0.6452671576765449
+    },
+    "max_time_alignment_error_s": 2.9110935884091305e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01049",
+    "wall_seconds": 99.46
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p01_20261028",
+    "dataset_episode_index": 51,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 3933,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0489",
+      "pipe": [
+        0.49054365507574094,
+        0.4281573804416697,
+        0.6270768545944347
+      ],
+      "background": [
+        0.6734800333353786,
+        0.5251658116512573,
+        0.6073586763490539
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4340334144548728,
+      "diffuse": 0.6421248781445971
+    },
+    "max_time_alignment_error_s": 1.6122214674396673e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01051",
+    "wall_seconds": 78.32
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p02_20261028",
+    "dataset_episode_index": 52,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4783,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0490",
+      "pipe": [
+        0.30918906790942996,
+        0.6107571513770056,
+        0.36303338317197636
+      ],
+      "background": [
+        0.6932905493198295,
+        0.6502484070771869,
+        0.6553246871580511
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.45241988523626797,
+      "diffuse": 0.5464210807317544
+    },
+    "max_time_alignment_error_s": 2.0747847884194925e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01053",
+    "wall_seconds": 92.37
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p03_20261028",
+    "dataset_episode_index": 53,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8095,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0491",
+      "pipe": [
+        0.5782948518460206,
+        0.4770177491187608,
+        0.5429024492785527
+      ],
+      "background": [
+        0.5944724951128492,
+        0.6525292428536893,
+        0.6969689639780207
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4523519789527118,
+      "diffuse": 0.7756053194913272
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01055",
+    "wall_seconds": 155.61
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p04_20261028",
+    "dataset_episode_index": 54,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4619,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0492",
+      "pipe": [
+        0.5964835775941187,
+        0.3352807138565227,
+        0.28715036969523944
+      ],
+      "background": [
+        0.6125223202678813,
+        0.5843022543781129,
+        0.36486751878767126
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.42128370259992487,
+      "diffuse": 0.633000313792426
+    },
+    "max_time_alignment_error_s": 1.6925127965805586e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01057",
+    "wall_seconds": 89.27
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p05_20261028",
+    "dataset_episode_index": 55,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5079,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0493",
+      "pipe": [
+        0.5766967204499873,
+        0.4422560376220804,
+        0.3710041782909245
+      ],
+      "background": [
+        0.43932875100995467,
+        0.37692753065062484,
+        0.6655210138033569
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.48676925173599617,
+      "diffuse": 0.5347336254842316
+    },
+    "max_time_alignment_error_s": 2.7647217848425498e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01059",
+    "wall_seconds": 98.72
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p06_20261028",
+    "dataset_episode_index": 56,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5665,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0494",
+      "pipe": [
+        0.6665534875045654,
+        0.5874614633526084,
+        0.6815672304059613
+      ],
+      "background": [
+        0.48442581028009324,
+        0.44624539849032135,
+        0.3792488560874227
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.4707053685574971,
+      "diffuse": 0.6037733674021574
+    },
+    "max_time_alignment_error_s": 4.1303849229734624e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01061",
+    "wall_seconds": 109.77
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p07_20261028",
+    "dataset_episode_index": 57,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 7367,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0495",
+      "pipe": [
+        0.31922653720878347,
+        0.4288378047413272,
+        0.41276572132664174
+      ],
+      "background": [
+        0.3931553040442452,
+        0.7247322780704015,
+        0.4800946317173872
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5200167357071134,
+      "diffuse": 0.7320207614225621
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01063",
+    "wall_seconds": 141.07
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p08_20261028",
+    "dataset_episode_index": 58,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4005,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0496",
+      "pipe": [
+        0.6808547981574232,
+        0.44669938924421787,
+        0.4487824755376553
+      ],
+      "background": [
+        0.48797750723337147,
+        0.6672291028056232,
+        0.5516136114141241
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.45350666725375366,
+      "diffuse": 0.6051275696341659
+    },
+    "max_time_alignment_error_s": 1.6122214674396673e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01065",
+    "wall_seconds": 77.06
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p09_20261028",
+    "dataset_episode_index": 59,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 3729,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0497",
+      "pipe": [
+        0.46789992511237855,
+        0.4185084499529497,
+        0.5160233928493574
+      ],
+      "background": [
+        0.7139243085076262,
+        0.5957568273862602,
+        0.7082340208604581
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.4325601633958365,
+      "diffuse": 0.5550274291736096
+    },
+    "max_time_alignment_error_s": 1.6122214674396673e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01067",
+    "wall_seconds": 72.79
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p10_20261028",
+    "dataset_episode_index": 60,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 6190,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0498",
+      "pipe": [
+        0.6552503994016116,
+        0.6409129739191214,
+        0.6680297506867202
+      ],
+      "background": [
+        0.37344172897707345,
+        0.6853104067676469,
+        0.676386770859482
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4430986956357643,
+      "diffuse": 0.7025182774097773
+    },
+    "max_time_alignment_error_s": 5.353939513952355e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01069",
+    "wall_seconds": 120.32
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p11_20261028",
+    "dataset_episode_index": 61,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 6588,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0499",
+      "pipe": [
+        0.5093738460271677,
+        0.6762194257320391,
+        0.6647734452774753
+      ],
+      "background": [
+        0.3277716120920828,
+        0.5095673838406211,
+        0.3338914718479653
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.400619404668754,
+      "diffuse": 0.5672958983597689
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01071",
+    "wall_seconds": 126.72
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p12_20261028",
+    "dataset_episode_index": 62,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 7560,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0500",
+      "pipe": [
+        0.3413267753166686,
+        0.41328995112458095,
+        0.46201213894846943
+      ],
+      "background": [
+        0.5934868751480942,
+        0.6452044282698737,
+        0.5311651134606653
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5345813857725884,
+      "diffuse": 0.6150483143900293
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01073",
+    "wall_seconds": 144.09
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p13_20261028",
+    "dataset_episode_index": 63,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 3842,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0501",
+      "pipe": [
+        0.2739192066087453,
+        0.5729628407763789,
+        0.4577450734741126
+      ],
+      "background": [
+        0.3944821617257888,
+        0.6649223065781468,
+        0.33624981240510143
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.3959307223703234,
+      "diffuse": 0.6927807716724517
+    },
+    "max_time_alignment_error_s": 1.6122214674396673e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01075",
+    "wall_seconds": 74.75
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p14_20261028",
+    "dataset_episode_index": 64,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4644,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0502",
+      "pipe": [
+        0.495648843498914,
+        0.6674423135988031,
+        0.6533351983530833
+      ],
+      "background": [
+        0.6145264082094786,
+        0.5024045172094358,
+        0.5294298060155727
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.524360613842815,
+      "diffuse": 0.5705922775372572
+    },
+    "max_time_alignment_error_s": 1.750777300912887e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01077",
+    "wall_seconds": 90.47
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p15_20261028",
+    "dataset_episode_index": 65,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5033,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0503",
+      "pipe": [
+        0.6612764942310193,
+        0.6004886391418944,
+        0.37579851544679405
+      ],
+      "background": [
+        0.34356683209788985,
+        0.44123131206307353,
+        0.499174685846247
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5203559646173975,
+      "diffuse": 0.5626104436491611
+    },
+    "max_time_alignment_error_s": 2.6574298317427747e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01079",
+    "wall_seconds": 96.95
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p16_20261028",
+    "dataset_episode_index": 66,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4513,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0504",
+      "pipe": [
+        0.6213388219176655,
+        0.5961892350849893,
+        0.5340113336828557
+      ],
+      "background": [
+        0.694936445625668,
+        0.3766679871576157,
+        0.32861157228532073
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.5273754731698266,
+      "diffuse": 0.5348035902551658
+    },
+    "max_time_alignment_error_s": 1.6122214674396673e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01081",
+    "wall_seconds": 86.62
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p17_20261028",
+    "dataset_episode_index": 67,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4594,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0505",
+      "pipe": [
+        0.3280876611554477,
+        0.6637752469885158,
+        0.5820655546726347
+      ],
+      "background": [
+        0.5678860991970919,
+        0.7024305930952406,
+        0.442770958834714
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.44643032762778584,
+      "diffuse": 0.5572146301797207
+    },
+    "max_time_alignment_error_s": 1.6342482922482304e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01083",
+    "wall_seconds": 88.94
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p18_20261028",
+    "dataset_episode_index": 68,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4771,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0506",
+      "pipe": [
+        0.48051727298196945,
+        0.5015905143323696,
+        0.3021153436744891
+      ],
+      "background": [
+        0.3332413884163095,
+        0.7293995750682105,
+        0.6860102560521073
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5505802720176741,
+      "diffuse": 0.7373446385422164
+    },
+    "max_time_alignment_error_s": 2.0470736217248486e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01085",
+    "wall_seconds": 93.27
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p19_20261028",
+    "dataset_episode_index": 69,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 4011,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0507",
+      "pipe": [
+        0.5243094583748499,
+        0.45851041346469706,
+        0.3563487133706673
+      ],
+      "background": [
+        0.5841466658891401,
+        0.40051471423823565,
+        0.551089137706126
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.4551778121483703,
+      "diffuse": 0.7181816644466734
+    },
+    "max_time_alignment_error_s": 1.6122214674396673e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01087",
+    "wall_seconds": 77.38
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p20_20261028",
+    "dataset_episode_index": 70,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 3765,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0508",
+      "pipe": [
+        0.2863710129953004,
+        0.6183502279130325,
+        0.4802658954168609
+      ],
+      "background": [
+        0.6042186707940105,
+        0.3106741363614516,
+        0.5456284918112242
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.4876745630960397,
+      "diffuse": 0.6138326923096572
+    },
+    "max_time_alignment_error_s": 1.6122214674396673e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01089",
+    "wall_seconds": 73.96
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p21_20261028",
+    "dataset_episode_index": 71,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5594,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0509",
+      "pipe": [
+        0.27905156620874844,
+        0.3526854605122609,
+        0.6452625533415439
+      ],
+      "background": [
+        0.300480463060578,
+        0.7117820317938515,
+        0.5394902655673256
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.48519130481740574,
+      "diffuse": 0.5563944075764826
+    },
+    "max_time_alignment_error_s": 3.964828465541359e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01091",
+    "wall_seconds": 108.3
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p22_20261028",
+    "dataset_episode_index": 72,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5632,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0510",
+      "pipe": [
+        0.6730005316050333,
+        0.28228187560317175,
+        0.37018288387924986
+      ],
+      "background": [
+        0.5164684486934615,
+        0.6340865225223903,
+        0.522589670715106
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4108863754876074,
+      "diffuse": 0.6610481172540532
+    },
+    "max_time_alignment_error_s": 4.0536463075113716e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01093",
+    "wall_seconds": 107.61
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p23_20261028",
+    "dataset_episode_index": 73,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5679,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0511",
+      "pipe": [
+        0.2756533704950716,
+        0.4007861557375074,
+        0.59611245623808
+      ],
+      "background": [
+        0.42378634004284055,
+        0.6566880779256815,
+        0.33487776012004045
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5531405117193166,
+      "diffuse": 0.6242672658200433
+    },
+    "max_time_alignment_error_s": 4.163069888818427e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01095",
+    "wall_seconds": 109.43
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p24_20261028",
+    "dataset_episode_index": 74,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 6187,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0512",
+      "pipe": [
+        0.4302263796801413,
+        0.46356914365431173,
+        0.37298497264228686
+      ],
+      "background": [
+        0.33819104302639036,
+        0.6231468523659905,
+        0.6496344405866138
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.3861665839619389,
+      "diffuse": 0.5884642179521506
+    },
+    "max_time_alignment_error_s": 5.346834086594754e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01097",
+    "wall_seconds": 118.32
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p25_20261028",
+    "dataset_episode_index": 75,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5964,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0513",
+      "pipe": [
+        0.5917699576208743,
+        0.4800779611735197,
+        0.30368820476141206
+      ],
+      "background": [
+        0.38008860393743216,
+        0.39782832865203804,
+        0.5883408956238129
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.5580479865843309,
+      "diffuse": 0.650148814939381
+    },
+    "max_time_alignment_error_s": 4.8274273467541207e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01099",
+    "wall_seconds": 116.41
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p26_20261028",
+    "dataset_episode_index": 76,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5681,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0514",
+      "pipe": [
+        0.35568573963768235,
+        0.5968230306569035,
+        0.2946854167684413
+      ],
+      "background": [
+        0.45357120520561484,
+        0.442611880266617,
+        0.6300326733117831
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.3984988580131242,
+      "diffuse": 0.731295326577988
+    },
+    "max_time_alignment_error_s": 4.1673331452329876e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01101",
+    "wall_seconds": 109.23
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p27_20261028",
+    "dataset_episode_index": 77,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 7784,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0515",
+      "pipe": [
+        0.3638969306870436,
+        0.49464650964761736,
+        0.5601215620084831
+      ],
+      "background": [
+        0.610376480426771,
+        0.36986695853919016,
+        0.6404626565053968
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5171652409623005,
+      "diffuse": 0.6542388929153868
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01103",
+    "wall_seconds": 147.51
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p28_20261028",
+    "dataset_episode_index": 78,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5153,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0516",
+      "pipe": [
+        0.6869591225063983,
+        0.6371807934413509,
+        0.4443272352085989
+      ],
+      "background": [
+        0.6286713739529506,
+        0.6574739768736957,
+        0.7298650287610583
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5402783978861029,
+      "diffuse": 0.5750558100377946
+    },
+    "max_time_alignment_error_s": 2.937383669632254e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01105",
+    "wall_seconds": 100.9
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p29_20261028",
+    "dataset_episode_index": 79,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 7119,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0517",
+      "pipe": [
+        0.5962951127093551,
+        0.5474179222950616,
+        0.6660651142015116
+      ],
+      "background": [
+        0.503571413007171,
+        0.6429017401256815,
+        0.31814352812757424
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5117602698565098,
+      "diffuse": 0.6965591862990854
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01107",
+    "wall_seconds": 138.37
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p30_20261028",
+    "dataset_episode_index": 80,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5991,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0518",
+      "pipe": [
+        0.3528788886567249,
+        0.4331583809374042,
+        0.5703527820130483
+      ],
+      "background": [
+        0.6729300569549632,
+        0.42654225390985967,
+        0.3708850077448141
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.45587535985395694,
+      "diffuse": 0.611888573530643
+    },
+    "max_time_alignment_error_s": 4.8899551075010095e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01109",
+    "wall_seconds": 114.11
+  },
+  {
+    "episode_id": "v0_train_A2_open_c06_p31_20261028",
+    "dataset_episode_index": 81,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 5638,
+    "condition_index": 6,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0519",
+      "pipe": [
+        0.41439227923561767,
+        0.5186734466457347,
+        0.29439143871418916
+      ],
+      "background": [
+        0.622861026332,
+        0.6802020556964126,
+        0.4237241090156957
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.44445907779900906,
+      "diffuse": 0.6901861173517789
+    },
+    "max_time_alignment_error_s": 4.0671466194908135e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01111",
+    "wall_seconds": 108.88
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p00_20261028",
+    "dataset_episode_index": 0,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 6434,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0520",
+      "pipe": [
+        0.656204642569727,
+        0.46368045506956185,
+        0.31898513170472215
+      ],
+      "background": [
+        0.5252501265588251,
+        0.3541451985271621,
+        0.30756965927817026
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.418051619455738,
+      "diffuse": 0.7135797430653571
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01113",
+    "wall_seconds": 122.97
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p01_20261028",
+    "dataset_episode_index": 1,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 4427,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0521",
+      "pipe": [
+        0.5633600749171317,
+        0.5567718500808672,
+        0.338287181038848
+      ],
+      "background": [
+        0.3269779732764974,
+        0.687270092945995,
+        0.5361904474378743
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5537632756370792,
+      "diffuse": 0.6695383242773897
+    },
+    "max_time_alignment_error_s": 1.6122214674396673e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01115",
+    "wall_seconds": 85.39
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p02_20261028",
+    "dataset_episode_index": 2,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 5755,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0522",
+      "pipe": [
+        0.3432460520349691,
+        0.28763455594470666,
+        0.3625039533911035
+      ],
+      "background": [
+        0.5255682015476011,
+        0.7059987018430423,
+        0.7039187790999518
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.4717333593877859,
+      "diffuse": 0.6265855360761329
+    },
+    "max_time_alignment_error_s": 4.339995030022692e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01117",
+    "wall_seconds": 109.06
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p04_20261028",
+    "dataset_episode_index": 3,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 5562,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0523",
+      "pipe": [
+        0.6709421997189775,
+        0.5778606393236361,
+        0.5923133213320314
+      ],
+      "background": [
+        0.42319218753671,
+        0.5530049679083331,
+        0.4275292580908999
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.5344919323297993,
+      "diffuse": 0.5737969362962431
+    },
+    "max_time_alignment_error_s": 3.8902214782865485e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01119",
+    "wall_seconds": 103.88
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p05_20261028",
+    "dataset_episode_index": 4,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 6416,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0524",
+      "pipe": [
+        0.4205499034336929,
+        0.33784810806901455,
+        0.5592708614952675
+      ],
+      "background": [
+        0.5623315935825143,
+        0.5931586666005969,
+        0.5613936044829227
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5281902023825519,
+      "diffuse": 0.7108088665759463
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01121",
+    "wall_seconds": 117.82
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p06_20261028",
+    "dataset_episode_index": 5,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 7588,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0525",
+      "pipe": [
+        0.6748594491041375,
+        0.3109333089702702,
+        0.6968640345685494
+      ],
+      "background": [
+        0.6798241886037112,
+        0.5698082539072906,
+        0.4147066156405111
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.547953890719561,
+      "diffuse": 0.6304692317749762
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01123",
+    "wall_seconds": 139.03
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p08_20261028",
+    "dataset_episode_index": 6,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 4695,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0527",
+      "pipe": [
+        0.31284370273565715,
+        0.48987851999645277,
+        0.4290283384816312
+      ],
+      "background": [
+        0.43639349922770987,
+        0.6923979878688702,
+        0.5299621512813918
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.4955786554075361,
+      "diffuse": 0.5429474569863952
+    },
+    "max_time_alignment_error_s": 1.8694379377848236e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01127",
+    "wall_seconds": 88.96
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p09_20261028",
+    "dataset_episode_index": 7,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 3947,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0528",
+      "pipe": [
+        0.4599654686917577,
+        0.5874635663763933,
+        0.3336311806537759
+      ],
+      "background": [
+        0.5316636640120869,
+        0.6385651371715708,
+        0.35037423497917525
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.5080102161269664,
+      "diffuse": 0.7608939768604152
+    },
+    "max_time_alignment_error_s": 1.6122214674396673e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01129",
+    "wall_seconds": 74.53
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p10_20261028",
+    "dataset_episode_index": 8,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 7330,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0529",
+      "pipe": [
+        0.2743934177013867,
+        0.41702488693022444,
+        0.40391448893761167
+      ],
+      "background": [
+        0.3728537405666459,
+        0.6036152024349383,
+        0.6968506161184576
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4766679738115824,
+      "diffuse": 0.7233847924831218
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01131",
+    "wall_seconds": 138.14
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p13_20261028",
+    "dataset_episode_index": 9,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 4108,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0531",
+      "pipe": [
+        0.33665261068991004,
+        0.44847905452775877,
+        0.6368044778216247
+      ],
+      "background": [
+        0.5976135262978867,
+        0.6378030099802499,
+        0.41367748999890835
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.508947768018551,
+      "diffuse": 0.676905295453907
+    },
+    "max_time_alignment_error_s": 1.6122214674396673e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01135",
+    "wall_seconds": 78.77
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p14_20261028",
+    "dataset_episode_index": 10,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 5486,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0532",
+      "pipe": [
+        0.585635385321681,
+        0.3248391816590122,
+        0.6552603654625813
+      ],
+      "background": [
+        0.32036904364353835,
+        0.4853387360355623,
+        0.6663569665078293
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.5440150965439975,
+      "diffuse": 0.575697468669484
+    },
+    "max_time_alignment_error_s": 3.7132963370822836e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01137",
+    "wall_seconds": 102.9
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p15_20261028",
+    "dataset_episode_index": 11,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 5987,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0533",
+      "pipe": [
+        0.514518383211175,
+        0.5615596427284811,
+        0.36888113780147935
+      ],
+      "background": [
+        0.36006505252857557,
+        0.6723661597597841,
+        0.5110612608066347
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.42737734941032585,
+      "diffuse": 0.6580882332999329
+    },
+    "max_time_alignment_error_s": 4.880718051936128e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01139",
+    "wall_seconds": 113.15
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p16_20261028",
+    "dataset_episode_index": 12,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 5803,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0534",
+      "pipe": [
+        0.4697698624307474,
+        0.44875308095863575,
+        0.600432076653619
+      ],
+      "background": [
+        0.40511477306075516,
+        0.43044847433153705,
+        0.5321739935537444
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.39127558730655637,
+      "diffuse": 0.5834606368050077
+    },
+    "max_time_alignment_error_s": 4.452260782272788e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01141",
+    "wall_seconds": 109.04
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p17_20261028",
+    "dataset_episode_index": 13,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 5580,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0535",
+      "pipe": [
+        0.32750432212764574,
+        0.36675534161932355,
+        0.31601675340095764
+      ],
+      "background": [
+        0.6435462225756996,
+        0.5569337533355899,
+        0.48497922840904345
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5312118360071908,
+      "diffuse": 0.5609283366707558
+    },
+    "max_time_alignment_error_s": 3.9321434996963944e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01143",
+    "wall_seconds": 106.06
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p18_20261028",
+    "dataset_episode_index": 14,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 6373,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0536",
+      "pipe": [
+        0.31587595038397986,
+        0.45177686633408104,
+        0.6161818379085463
+      ],
+      "background": [
+        0.5054713372041685,
+        0.38680280873062767,
+        0.5474459044812432
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.5434467727590577,
+      "diffuse": 0.5815135746868038
+    },
+    "max_time_alignment_error_s": 5.780265155408415e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01145",
+    "wall_seconds": 120.81
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p19_20261028",
+    "dataset_episode_index": 15,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 4640,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0537",
+      "pipe": [
+        0.502359580626461,
+        0.5081931493048749,
+        0.335187100771936
+      ],
+      "background": [
+        0.3982725489298726,
+        0.7022384017422091,
+        0.39568651013548745
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5291894453266234,
+      "diffuse": 0.7180655740223437
+    },
+    "max_time_alignment_error_s": 1.7415402453480056e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01147",
+    "wall_seconds": 88.22
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p20_20261028",
+    "dataset_episode_index": 16,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 3981,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0538",
+      "pipe": [
+        0.5655066389365553,
+        0.5175343177294425,
+        0.39429630649026787
+      ],
+      "background": [
+        0.38255034178871533,
+        0.6148146307214521,
+        0.6853355349752668
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.526440364327293,
+      "diffuse": 0.5767994840816879
+    },
+    "max_time_alignment_error_s": 1.6122214674396673e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01149",
+    "wall_seconds": 78.43
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p21_20261028",
+    "dataset_episode_index": 17,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 7688,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0539",
+      "pipe": [
+        0.3797564221190742,
+        0.5505518755830693,
+        0.3137858056734454
+      ],
+      "background": [
+        0.6227155833681273,
+        0.3285896859717684,
+        0.4012545896284295
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.4400948722437957,
+      "diffuse": 0.5413424591187521
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01151",
+    "wall_seconds": 146.66
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p22_20261028",
+    "dataset_episode_index": 18,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 7709,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0540",
+      "pipe": [
+        0.5945925724574941,
+        0.36729815261661203,
+        0.696092709428826
+      ],
+      "background": [
+        0.5598141951601899,
+        0.6842287016875721,
+        0.6237817638159913
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5588345445410865,
+      "diffuse": 0.708878174133966
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01153",
+    "wall_seconds": 145.24
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p23_20261028",
+    "dataset_episode_index": 19,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 6930,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0541",
+      "pipe": [
+        0.5649712285080993,
+        0.6145079608063956,
+        0.45669008448843496
+      ],
+      "background": [
+        0.33288135607911656,
+        0.40716151425137476,
+        0.548605420063421
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.5448097846900406,
+      "diffuse": 0.5540859692126364
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01155",
+    "wall_seconds": 130.71
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p24_20261028",
+    "dataset_episode_index": 20,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 8441,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0542",
+      "pipe": [
+        0.4211506082871067,
+        0.5230828000625299,
+        0.6737763798330523
+      ],
+      "background": [
+        0.5838509295601962,
+        0.5778249318812262,
+        0.6741395948394422
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5190185685854395,
+      "diffuse": 0.7368434472812304
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01157",
+    "wall_seconds": 160.46
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p25_20261028",
+    "dataset_episode_index": 21,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 7598,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0543",
+      "pipe": [
+        0.5438396054628359,
+        0.5693487022681494,
+        0.4143405405916015
+      ],
+      "background": [
+        0.6401502852114395,
+        0.6623932927540411,
+        0.543857183949751
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5151607220006515,
+      "diffuse": 0.718612642966427
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01159",
+    "wall_seconds": 143.02
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p26_20261028",
+    "dataset_episode_index": 22,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 6601,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0544",
+      "pipe": [
+        0.5597502198350705,
+        0.41996280163493016,
+        0.554314447637761
+      ],
+      "background": [
+        0.48798526734826475,
+        0.5761282616889226,
+        0.3855089254959303
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.39260519386746473,
+      "diffuse": 0.6157048157510636
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01161",
+    "wall_seconds": 125.23
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p27_20261028",
+    "dataset_episode_index": 23,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 8989,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0545",
+      "pipe": [
+        0.47404830065531406,
+        0.6950008078371223,
+        0.6692756158500454
+      ],
+      "background": [
+        0.6690688924266013,
+        0.5933196571728558,
+        0.41885758895783626
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.4600162153515181,
+      "diffuse": 0.5449843329329482
+    },
+    "max_time_alignment_error_s": 6.511413630505558e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01163",
+    "wall_seconds": 170.05
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p28_20261028",
+    "dataset_episode_index": 24,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 6728,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0546",
+      "pipe": [
+        0.3754025143921726,
+        0.32501151364954417,
+        0.3736842096434049
+      ],
+      "background": [
+        0.5865743747539864,
+        0.42019948242585864,
+        0.4917517217802776
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5475386630794893,
+      "diffuse": 0.567030843969507
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01165",
+    "wall_seconds": 127.75
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p29_20261028",
+    "dataset_episode_index": 25,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 8783,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0547",
+      "pipe": [
+        0.3682098612458984,
+        0.6328009415502003,
+        0.4720980250167091
+      ],
+      "background": [
+        0.464258697788583,
+        0.3794388936957978,
+        0.3747478143349909
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.48159665761207215,
+      "diffuse": 0.6598261057785599
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01167",
+    "wall_seconds": 165.53
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p30_20261028",
+    "dataset_episode_index": 26,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 7652,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0548",
+      "pipe": [
+        0.32958181817522547,
+        0.36416668295610566,
+        0.6099421557403278
+      ],
+      "background": [
+        0.3615620284727714,
+        0.46511844401683766,
+        0.5211874087970212
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.49252304690952453,
+      "diffuse": 0.663489202749711
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01169",
+    "wall_seconds": 145.42
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p31_20261028",
+    "dataset_episode_index": 27,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 7370,
+    "condition_index": 7,
+    "full_return": true,
+    "partial_operation_only": false,
+    "clip_end_s": null,
+    "appearance": {
+      "id": "train_episode_0549",
+      "pipe": [
+        0.3897111378660395,
+        0.5622547930523956,
+        0.3887218023889176
+      ],
+      "background": [
+        0.5086214249281018,
+        0.506532577729333,
+        0.7088596103322021
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.42803919571893234,
+      "diffuse": 0.7286762838508294
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01171",
+    "wall_seconds": 140.87
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p00_20261028",
+    "dataset_episode_index": 82,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8347,
+    "condition_index": 0,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 83.4600000000345,
+    "appearance": {
+      "id": "train_episode_0417",
+      "pipe": [
+        0.5237169227836449,
+        0.5989604367201297,
+        0.42152000856785404
+      ],
+      "background": [
+        0.39346752553152986,
+        0.39725726985592025,
+        0.41441843211734075
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5324433845626144,
+      "diffuse": 0.688869436613375
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00907",
+    "wall_seconds": 156.81
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p08_20261028",
+    "dataset_episode_index": 83,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8509,
+    "condition_index": 0,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 85.08000000004223,
+    "appearance": {
+      "id": "train_episode_0421",
+      "pipe": [
+        0.3295772164367662,
+        0.2855281237091518,
+        0.4179964697933024
+      ],
+      "background": [
+        0.6932139063365622,
+        0.494946803778422,
+        0.6336368213717974
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.41794437771556336,
+      "diffuse": 0.6823090998670926
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00915",
+    "wall_seconds": 159.54
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p15_20261028",
+    "dataset_episode_index": 84,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8306,
+    "condition_index": 0,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 83.05000000003254,
+    "appearance": {
+      "id": "train_episode_0425",
+      "pipe": [
+        0.4534816831213271,
+        0.6842047395658627,
+        0.5943675948708841
+      ],
+      "background": [
+        0.656949671225872,
+        0.30155515525317317,
+        0.7168562900104996
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.49221292915099785,
+      "diffuse": 0.5903276716653908
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00923",
+    "wall_seconds": 156.9
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p16_20261028",
+    "dataset_episode_index": 85,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8572,
+    "condition_index": 0,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 85.71000000004524,
+    "appearance": {
+      "id": "train_episode_0426",
+      "pipe": [
+        0.5643098690264865,
+        0.615289525897213,
+        0.28346726009160966
+      ],
+      "background": [
+        0.374725984471543,
+        0.6483621849223382,
+        0.6983264730096537
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4440844598610869,
+      "diffuse": 0.5416731356545958
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00925",
+    "wall_seconds": 161.55
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p18_20261028",
+    "dataset_episode_index": 86,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8258,
+    "condition_index": 0,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 82.57000000003025,
+    "appearance": {
+      "id": "train_episode_0428",
+      "pipe": [
+        0.511885997681658,
+        0.27917380815164583,
+        0.5302344953531476
+      ],
+      "background": [
+        0.5058508491644913,
+        0.7143391040611841,
+        0.6741852155694718
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4547424987728957,
+      "diffuse": 0.5964580741458981
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00929",
+    "wall_seconds": 157.9
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p21_20261028",
+    "dataset_episode_index": 87,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8923,
+    "condition_index": 0,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 89.220000000062,
+    "appearance": {
+      "id": "train_episode_0430",
+      "pipe": [
+        0.639383907988913,
+        0.5047326443701462,
+        0.4864065313569219
+      ],
+      "background": [
+        0.40276485976937587,
+        0.566363781517738,
+        0.4876306029030939
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.5095235236074203,
+      "diffuse": 0.5601951685660409
+    },
+    "max_time_alignment_error_s": 6.195932655828074e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00933",
+    "wall_seconds": 168.37
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p22_20261028",
+    "dataset_episode_index": 88,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8515,
+    "condition_index": 0,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 85.14000000004252,
+    "appearance": {
+      "id": "train_episode_0431",
+      "pipe": [
+        0.335326754409067,
+        0.406828442442615,
+        0.43795397409368425
+      ],
+      "background": [
+        0.5971625442787549,
+        0.4221153152729427,
+        0.5916062391762624
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.5063357462759807,
+      "diffuse": 0.684272743449525
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00935",
+    "wall_seconds": 160.18
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p23_20261028",
+    "dataset_episode_index": 89,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8604,
+    "condition_index": 0,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 86.03000000004677,
+    "appearance": {
+      "id": "train_episode_0432",
+      "pipe": [
+        0.2789950118521871,
+        0.36706267047676583,
+        0.6439850673720185
+      ],
+      "background": [
+        0.45520230307816834,
+        0.48431832955370646,
+        0.6501684189220569
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.47909214847397386,
+      "diffuse": 0.7284419123129591
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00937",
+    "wall_seconds": 162.21
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p25_20261028",
+    "dataset_episode_index": 90,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8633,
+    "condition_index": 0,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 86.32000000004815,
+    "appearance": {
+      "id": "train_episode_0433",
+      "pipe": [
+        0.3800068793508809,
+        0.4608632367228431,
+        0.3117091072588978
+      ],
+      "background": [
+        0.48314445366366676,
+        0.33260412157030067,
+        0.7257187306412115
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.4024826340029301,
+      "diffuse": 0.5920415103214965
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00939",
+    "wall_seconds": 162.03
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p26_20261028",
+    "dataset_episode_index": 91,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8509,
+    "condition_index": 0,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 85.08000000004223,
+    "appearance": {
+      "id": "train_episode_0434",
+      "pipe": [
+        0.4676995362754916,
+        0.6834982381741536,
+        0.31096988996649916
+      ],
+      "background": [
+        0.40268176048617704,
+        0.4525427121397722,
+        0.5262516031438299
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.48085001086279633,
+      "diffuse": 0.6393798134961196
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00941",
+    "wall_seconds": 161.98
+  },
+  {
+    "episode_id": "v0_train_A2_open_c00_p28_20261028",
+    "dataset_episode_index": 92,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8114,
+    "condition_index": 0,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 81.13000000002337,
+    "appearance": {
+      "id": "train_episode_0435",
+      "pipe": [
+        0.6196694202547697,
+        0.6140379169439699,
+        0.41322384905720816
+      ],
+      "background": [
+        0.7253063659447812,
+        0.5687435459033207,
+        0.563974340931534
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.43539376363758564,
+      "diffuse": 0.697113048955914
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00943",
+    "wall_seconds": 152.38
+  },
+  {
+    "episode_id": "v0_train_A2_open_c01_p08_20261028",
+    "dataset_episode_index": 93,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8589,
+    "condition_index": 1,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 85.88000000004605,
+    "appearance": {
+      "id": "train_episode_0438",
+      "pipe": [
+        0.6598875669072505,
+        0.5188348164095863,
+        0.6688968504402151
+      ],
+      "background": [
+        0.37497684161837275,
+        0.4062855037925652,
+        0.5144387377562926
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4293887184514237,
+      "diffuse": 0.5355761246389108
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00949",
+    "wall_seconds": 161.77
+  },
+  {
+    "episode_id": "v0_train_A2_open_c01_p14_20261028",
+    "dataset_episode_index": 94,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8942,
+    "condition_index": 1,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 89.41000000006291,
+    "appearance": {
+      "id": "train_episode_0441",
+      "pipe": [
+        0.6479010552059821,
+        0.5061918246872222,
+        0.6754072908969596
+      ],
+      "background": [
+        0.4694287619120958,
+        0.4134468399804651,
+        0.473499968705458
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.4020130960482217,
+      "diffuse": 0.5838797225999162
+    },
+    "max_time_alignment_error_s": 6.286882126005366e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00955",
+    "wall_seconds": 168.68
+  },
+  {
+    "episode_id": "v0_train_A2_open_c01_p17_20261028",
+    "dataset_episode_index": 95,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8744,
+    "condition_index": 1,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 87.43000000005345,
+    "appearance": {
+      "id": "train_episode_0442",
+      "pipe": [
+        0.27701626928080625,
+        0.5477709502403472,
+        0.6432112891518696
+      ],
+      "background": [
+        0.6294471677889345,
+        0.3552032293988787,
+        0.5783602030704725
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.540312648214682,
+      "diffuse": 0.7602342722271145
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00957",
+    "wall_seconds": 167.4
+  },
+  {
+    "episode_id": "v0_train_A2_open_c02_p01_20261028",
+    "dataset_episode_index": 96,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8978,
+    "condition_index": 2,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 89.77000000006463,
+    "appearance": {
+      "id": "train_episode_0444",
+      "pipe": [
+        0.676120168985294,
+        0.5486114422038196,
+        0.6846176460547135
+      ],
+      "background": [
+        0.5653041483012666,
+        0.6339516443328814,
+        0.3569507746282614
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.47403685797917255,
+      "diffuse": 0.5362625381761112
+    },
+    "max_time_alignment_error_s": 6.458833468059311e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00961",
+    "wall_seconds": 167.84
+  },
+  {
+    "episode_id": "v0_train_A2_open_c02_p04_20261028",
+    "dataset_episode_index": 97,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8683,
+    "condition_index": 2,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 86.82000000005054,
+    "appearance": {
+      "id": "train_episode_0445",
+      "pipe": [
+        0.5007048123401182,
+        0.48773170852869757,
+        0.4444700468142116
+      ],
+      "background": [
+        0.6631906224474624,
+        0.4422336035441996,
+        0.7246013208164888
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.5139745195111816,
+      "diffuse": 0.6836338253497953
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00963",
+    "wall_seconds": 160.7
+  },
+  {
+    "episode_id": "v0_train_A2_open_c02_p20_20261028",
+    "dataset_episode_index": 98,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8284,
+    "condition_index": 2,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 82.83000000003149,
+    "appearance": {
+      "id": "train_episode_0448",
+      "pipe": [
+        0.32601748909596573,
+        0.6016868269195076,
+        0.6245751355576729
+      ],
+      "background": [
+        0.32828019241278034,
+        0.45713064024398464,
+        0.7219446767569951
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4324699571979914,
+      "diffuse": 0.6920393284751559
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00969",
+    "wall_seconds": 156.32
+  },
+  {
+    "episode_id": "v0_train_A2_open_c03_p03_20261028",
+    "dataset_episode_index": 99,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8989,
+    "condition_index": 3,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 89.88000000006515,
+    "appearance": {
+      "id": "train_episode_0452",
+      "pipe": [
+        0.5938486522824827,
+        0.6580122582287921,
+        0.5937620913995327
+      ],
+      "background": [
+        0.626843862353204,
+        0.694154132057582,
+        0.4227784165737702
+      ],
+      "handle": [
+        0.86,
+        0.66,
+        0.045
+      ],
+      "ambient": 0.3877077362499583,
+      "diffuse": 0.7008589527936091
+    },
+    "max_time_alignment_error_s": 6.511413630505558e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_00977",
+    "wall_seconds": 169.31
+  },
+  {
+    "episode_id": "v0_train_A2_open_c04_p20_20261028",
+    "dataset_episode_index": 100,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8359,
+    "condition_index": 4,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 83.58000000003507,
+    "appearance": {
+      "id": "train_episode_0482",
+      "pipe": [
+        0.43884751580378356,
+        0.48694261596757404,
+        0.3225683395056952
+      ],
+      "background": [
+        0.392003526066225,
+        0.5792151042504574,
+        0.34973799580210646
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.38303097379493056,
+      "diffuse": 0.5913497938681822
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01037",
+    "wall_seconds": 156.3
+  },
+  {
+    "episode_id": "v0_train_A2_open_c05_p01_20261028",
+    "dataset_episode_index": 101,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8653,
+    "condition_index": 5,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 86.52000000004911,
+    "appearance": {
+      "id": "train_episode_0483",
+      "pipe": [
+        0.3600575360281854,
+        0.3719813657216407,
+        0.6913333301652123
+      ],
+      "background": [
+        0.6266457716181484,
+        0.5015155358698752,
+        0.6915993465294409
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.4831775980352418,
+      "diffuse": 0.7255391898053638
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01039",
+    "wall_seconds": 164.05
+  },
+  {
+    "episode_id": "v0_train_A2_open_c05_p04_20261028",
+    "dataset_episode_index": 102,
+    "task": "A2_open",
+    "split": "train",
+    "frames": 8486,
+    "condition_index": 5,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 84.85000000004113,
+    "appearance": {
+      "id": "train_episode_0484",
+      "pipe": [
+        0.5575817312291208,
+        0.4545146530848889,
+        0.550896945825133
+      ],
+      "background": [
+        0.5407473715038553,
+        0.3926113987412673,
+        0.3862427189140636
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.5355118224189622,
+      "diffuse": 0.6146369748974639
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01041",
+    "wall_seconds": 152.88
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p07_20261028",
+    "dataset_episode_index": 28,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 8260,
+    "condition_index": 7,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 82.59000000003034,
+    "appearance": {
+      "id": "train_episode_0526",
+      "pipe": [
+        0.38734696767160276,
+        0.46779710078530434,
+        0.4631405732656078
+      ],
+      "background": [
+        0.35365531679088175,
+        0.5200392329094272,
+        0.34192467285209666
+      ],
+      "handle": [
+        0.025,
+        0.35,
+        0.67
+      ],
+      "ambient": 0.532749608240466,
+      "diffuse": 0.7639060380942675
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01125",
+    "wall_seconds": 140.85
+  },
+  {
+    "episode_id": "v0_train_A2_open_c07_p11_20261028",
+    "dataset_episode_index": 29,
+    "task": "A2_open",
+    "split": "validation",
+    "frames": 8096,
+    "condition_index": 7,
+    "full_return": false,
+    "partial_operation_only": true,
+    "clip_end_s": 80.95000000002251,
+    "appearance": {
+      "id": "train_episode_0530",
+      "pipe": [
+        0.4821207747169897,
+        0.5243713008256013,
+        0.5716288614064442
+      ],
+      "background": [
+        0.38630548473778065,
+        0.6300399903594758,
+        0.32375801348000294
+      ],
+      "handle": [
+        0.72,
+        0.075,
+        0.07
+      ],
+      "ambient": 0.42371422717496093,
+      "diffuse": 0.7705975161702541
+    },
+    "max_time_alignment_error_s": 5.845635087098344e-11,
+    "fps": 100,
+    "action_semantics": "complete_issued_controls_100Hz_v1",
+    "source_directory": "provenance/recorded_sources.json#source_01133",
+    "wall_seconds": 140.05
+  }
+]

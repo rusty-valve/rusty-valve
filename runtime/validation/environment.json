@@ -1,0 +1,36 @@
+{
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "python": "3.12.15",
+  "packages": {
+    "rusty-valve-runtime": "0.0.1",
+    "mujoco": "3.16.0",
+    "torch": "2.11.0",
+    "torchvision": "0.26.0",
+    "lerobot": "0.6.1",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "gymnasium": "1.4.0",
+    "av": "15.1.0",
+    "pyarrow": "26.0.0",
+    "imageio": "2.38.1",
+    "imageio-ffmpeg": "0.7.0"
+  },
+  "device": "cpu",
+  "original_training_environment_retested": false,
+  "old_project_site_packages_used": false,
+  "network_used_for_inference": false,
+  "videos": {
+    "round1": {
+      "fps": 20.0,
+      "frames": 713,
+      "width": 768,
+      "height": 280
+    },
+    "round2": {
+      "fps": 20.0,
+      "frames": 1800,
+      "width": 768,
+      "height": 280
+    }
+  }
+}

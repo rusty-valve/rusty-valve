@@ -1,0 +1,16 @@
+{
+  "policy_version": "1.1",
+  "target_contact_fraction": 0.875,
+  "target_contact_fraction_range": [
+    0.7,
+    0.875
+  ],
+  "current_example": {
+    "handle_length_m": 0.2,
+    "resolved_target_radius_m": 0.175,
+    "resolved_target_radius_range_m": [
+      0.14,
+      0.175
+    ]
+  }
+}

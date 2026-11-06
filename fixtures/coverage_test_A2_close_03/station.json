@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "case": "A2",
+  "title": "横管上装",
+  "units": {
+    "length": "m",
+    "angle": "rad",
+    "force": "N",
+    "torque": "N*m",
+    "time": "s"
+  },
+  "valve": {
+    "kind": "ball",
+    "axis_origin_world_m": [
+      0.537114491026166,
+      -1.3344599368793937,
+      1.0825469989223573
+    ],
+    "stem_axis_world": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "handle_zero_radial_world": [
+      -3.4450928483976665e-16,
+      -1.0,
+      0.0
+    ],
+    "handle_length_m": 0.2,
+    "handle_plane_offset_m": 0.084,
+    "q_open_rad": 0.0,
+    "q_closed_rad": 1.5707963267948966,
+    "closing_direction_about_stem": -1,
+    "geometry": {
+      "name": "Bray-reference generic DN25 ball valve",
+      "reference_product": "Bray Flow-Tek 7000 series / 7100 threaded full-port, RPTFE seats",
+      "body_length_m": 0.092,
+      "body_radius_m": 0.026,
+      "connection_radius_m": 0.028,
+      "lever_reach_m": 0.2,
+      "lever_mid_width_m": 0.02,
+      "lever_mid_thickness_m": 0.006,
+      "lever_plate_thickness_m": 0.003,
+      "lever_bend_start_m": 0.03,
+      "lever_bend_end_m": 0.055,
+      "lever_cover_start_m": 0.07,
+      "lever_highest_m": 0.087,
+      "mounting_height_above_pipe_m": 0.052,
+      "moving_mass_kg": 0.12,
+      "moving_inertia_kg_m2": [
+        1e-05,
+        0.0004,
+        0.0004
+      ],
+      "close_angle_deg": 90.0,
+      "safety_trigger_state": "fixed unlocked / manufacturer-described bypass; trigger action omitted",
+      "provenance": {
+        "catalogue_dimensions": "Bray 7000/8000 brochure, page 10, DN25: A=92 mm for NPT/SW/BW, D=200 mm shaft-to-handle-end, C=87 mm pipe-axis-to-highest-point, C1=52 mm pipe-axis-to-mounting-top. Visual PDF dimension lines verified. H/J=35.7 mm are mounting hole spacings, not heights.",
+        "contact_shape_reference": "User-approved 2026-10-21 generic bent flat metal lever with thin blue cover. It stays flat through the tip, without QH enlarged block/cylinder. Width 20 mm, covered total thickness 6 mm, metal plate 3 mm and bend positions are task assumptions, not Bray measurements.",
+        "assumptions": "Body radii, rounded bolt envelopes, detailed cast shape, covered grip cross-section, bend location, moving mass/inertia and contact friction are simplified task settings. Simplified exterior only; internal ball, seals, threads, fluid and pressure omitted. Safety trigger held in the manufacturer-described bypass state; unlocking not part of this task."
+      }
+    },
+    "resistance": {
+      "motion_enter_rad_s": 0.02,
+      "rest_enter_rad_s": 0.003,
+      "rest_dwell_s": 0.1,
+      "solref": [
+        0.002,
+        1.0
+      ],
+      "solimp": [
+        0.9999,
+        0.9999,
+        0.001,
+        0.5,
+        2.0
+      ],
+      "breakaway_Nm": 14,
+      "running_ratio": 0.75,
+      "opening_end_ratio": 0.9,
+      "closing_end_ratio": 0.9,
+      "opening_start_fraction": 0.15,
+      "opening_end_fraction": 0.22,
+      "closing_start_fraction": 0.15,
+      "closing_end_fraction": 0.22,
+      "scale": 1.0
+    },
+    "resistance_provenance": {
+      "parameters": {
+        "breakaway_Nm": 14.0,
+        "running_ratio": 0.75,
+        "opening_end_ratio": 0.9,
+        "closing_end_ratio": 0.9,
+        "opening_start_fraction": 0.15,
+        "opening_end_fraction": 0.22,
+        "closing_start_fraction": 0.15,
+        "closing_end_fraction": 0.22
+      },
+      "magnitude_source": "Bray TB1005, page 3: DN25 full-port two-way ball valve with RPTFE seats, 0 bar line pressure, basic torque 14 N*m. Used as the task breakaway reference for the Bray Flow-Tek 7000/7100 dimension-reference valve. This is manufacturer actuator-sizing guidance, not a direct measurement of our valve or a universal DN25 standard value; application and operation-frequency factors may change real requirements.",
+      "magnitude_url": "https://www.bray.com/docs/default-source/technical-bulletin/en_tb-1005_act-selectguide-ball-valves.pdf#page=3",
+      "shape_source": "Bray TB1005, page 11: typical floating-ball valve curve in both opening and closing directions, break torque 100%, running approximately 75%, ending approximately 90%. MSS SP-91-2025 provides broader qualitative guidance; it does not specify a universal DN25 torque.",
+      "shape_assumptions": "The model uses the manufacturer typical 100/75/90 percent ratios in both directions. Smooth initial transitions span 15% of travel and end rises span 22%; these transition positions, interpolation, static re-entry and friction hysteresis are task assumptions, not digitized or individually measured Bray curves. With scale=1, nominal break/run/end levels are 14/10.5/12.6 N*m.",
+      "measured_real_valve": false,
+      "shape_url": "https://www.bray.com/docs/default-source/technical-bulletin/en_tb-1005_act-selectguide-ball-valves.pdf#page=11"
+    }
+  },
+  "pipe": {
+    "axis_world": [
+      2.220446049250313e-16,
+      1.0,
+      0.0
+    ],
+    "outside_diameter_m": 0.0337,
+    "length_m": 0.7
+  },
+  "supports": [
+    {
+      "name": "support_-1",
+      "type": "cylinder",
+      "fromto": [
+        0.5371144910261659,
+        -1.6044599368793937,
+        0.0075469989223571725,
+        0.5371144910261659,
+        -1.6044599368793937,
+        1.0656969989223573
+      ],
+      "size": [
+        0.012
+      ],
+      "rgba": [
+        0.24,
+        0.27,
+        0.29,
+        1.0
+      ]
+    },
+    {
+      "name": "foot_-1",
+      "type": "box",
+      "pos": [
+        0.5371144910261659,
+        -1.6044599368793937,
+        -0.004953001077642828
+      ],
+      "size": [
+        0.065,
+        0.055,
+        0.0125
+      ],
+      "rgba": [
+        0.2,
+        0.23,
+        0.25,
+        1.0
+      ]
+    },
+    {
+      "name": "support_1",
+      "type": "cylinder",
+      "fromto": [
+        0.5371144910261662,
+        -1.0644599368793937,
+        0.0075469989223571725,
+        0.5371144910261662,
+        -1.0644599368793937,
+        1.0656969989223573
+      ],
+      "size": [
+        0.012
+      ],
+      "rgba": [
+        0.24,
+        0.27,
+        0.29,
+        1.0
+      ]
+    },
+    {
+      "name": "foot_1",
+      "type": "box",
+      "pos": [
+        0.5371144910261662,
+        -1.0644599368793937,
+        -0.004953001077642828
+      ],
+      "size": [
+        0.065,
+        0.055,
+        0.0125
+      ],
+      "rgba": [
+        0.2,
+        0.23,
+        0.25,
+        1.0
+      ]
+    }
+  ],
+  "allowed_base_region_world": {
+    "kind": "axis_aligned_rectangle",
+    "xy_min_m": [
+      -0.32000000000000006,
+      -2.1
+    ],
+    "xy_max_m": [
+      0.48,
+      -0.5
+    ],
+    "floor_z_m": 0.0,
+    "interpretation": "Allowed fixed-base reference position only; the submitted physical geometry must also remain collision-free."
+  },
+  "physics": {
+    "timestep_s": 0.001,
+    "gravity_world_m_s2": [
+      0.0,
+      0.0,
+      -9.81
+    ],
+    "integrator": "implicitfast",
+    "solver": "Newton",
+    "iterations": 100,
+    "ls_iterations": 50
+  },
+  "provenance": "Derived from the agreed six_workstations.json environmental geometry. No measured real-valve force data."
+}

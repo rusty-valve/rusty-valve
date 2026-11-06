@@ -1,0 +1,605 @@
+{
+  "schema_version": 1,
+  "kind": "user_approved_frozen_G2_setup",
+  "user_approved": true,
+  "frozen_for_G2": true,
+  "approved_utc": "2026-10-25T08:16:18.651827+00:00",
+  "user_approval": "The next G2 validation stage was authorized.",
+  "source": "试验记录/2026-10-25_G1_自动选位",
+  "controller_version": "approved_g1_auto_v3",
+  "initial_all_joint_angles_rad": 0,
+  "idle_all_joint_angles_rad": 0,
+  "body_yaw_deg": 0,
+  "stations": {
+    "A1": {
+      "placement": {
+        "base_position_xy_m": [
+          0.3147500905516301,
+          0.065
+        ],
+        "base_yaw_deg": 0,
+        "shoulder_height_m": 1.4
+      },
+      "stance": {
+        "chest_to_valve_axis_m": 0.2,
+        "lateral_offset_m": 0.065,
+        "measurement": "chest front surface to valve shaft axis, horizontal body-forward projection"
+      },
+      "methods": {
+        "close": {
+          "mode": "push",
+          "radius_m": 0.14,
+          "pitch_deg": 15.0,
+          "pitch_constant": false,
+          "tilt_deg": 15.0,
+          "roll_deg": 0.0,
+          "standby_roll_deg": 0.0,
+          "push_contact_geometry": "legacy",
+          "variant_id": "radius_tilt_15",
+          "id": "A1_close",
+          "station": "A1",
+          "task": "close",
+          "side": "left"
+        },
+        "open": {
+          "mode": "pull",
+          "radius_m": 0.14,
+          "pitch_deg": 30.0,
+          "pitch_constant": false,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0,
+          "standby_roll_deg": 0.0,
+          "push_contact_geometry": "legacy",
+          "variant_id": "original_variable_30",
+          "id": "A1_open",
+          "station": "A1",
+          "task": "open",
+          "side": "left"
+        }
+      },
+      "cameras": {
+        "head": {
+          "xml": "<camera name=\"robot_head\" pos=\"0.08 0 0.917\" xyaxes=\"-0 -1 0 0.7880107536 0 0.6156614753\" fovy=\"85.0\" mode=\"fixed\" projection=\"perspective\" />",
+          "metadata": {
+            "name": "robot_head",
+            "profile": "user_selected_head",
+            "parent": "openarm_body_link0",
+            "local_position_m": [
+              0.08,
+              0.0,
+              0.917
+            ],
+            "forward_direction_local": [
+              0.6156614753256583,
+              0.0,
+              -0.788010753606722
+            ],
+            "nominal_world_position_m": [
+              0.3947500906,
+              0.065,
+              1.62
+            ],
+            "above_shoulder_m": 0.22,
+            "forward_from_root_axis_m": 0.08,
+            "yaw_relative_to_torso_deg": 0.0,
+            "downward_tilt_deg": 52.0,
+            "vertical_fov_deg": 85.0,
+            "horizontal_fov_deg": 116.91171544474624,
+            "mode": "user-selected fixed head mount and gaze; no target tracking",
+            "role": "virtual eye in a plausible head position above the OpenArm shoulders",
+            "approximation": "OpenArm has no head. Eye mount is a declared adapter design assumption, informed by but not copied from Reachy reference coordinates.",
+            "coordinates": {
+              "mujoco_camera": "-Z forward, +X image-right, +Y image-up",
+              "ros_optical": "Conversion uses diag(1,-1,-1): +Z forward, +X right, +Y down"
+            },
+            "references": [
+              {
+                "title": "Reachy 2 official head and torso camera specifications",
+                "url": "https://docs.pollen-robotics.com/hardware-guide/specifications/vision/",
+                "observation": "Official localisation drawing shows the eye 62 mm above its neck reference and that reference 115 mm above the upper-body origin; forward offset is 35.31 mm. These are Reachy coordinates, not OpenArm shoulder coordinates."
+              },
+              {
+                "title": "Unitree official head-perspective camera example",
+                "url": "https://oss-global-cdn.unitree.com/static/fdeee4e5197f416290d8fa9ecc0b28e6_2480x1286.png",
+                "observation": "Actual image inspected: hands and tabletop dominate the working area; forearms and a chest edge remain visible at the bottom. Visible body parts alone do not make a view third-person."
+              },
+              {
+                "title": "Unitree official XR camera hardware and mounting",
+                "url": "https://github.com/unitreerobotics/xr_teleoperate/blob/main/Device.md",
+                "observation": "Distinguishes head-mounted cameras from wrist cameras. The optional wide-angle stereo hardware does not prescribe a universal vertical FOV or tilt."
+              },
+              {
+                "title": "MuJoCo camera and plane definitions",
+                "url": "https://mujoco.readthedocs.io/en/latest/XMLreference.html",
+                "observation": "Fixed cameras look along local -Z, image up is +Y, fovy is vertical angle. A plane has infinite collision extent; its first two sizes control only the rendered rectangle. Zero values render an infinite plane."
+              },
+              {
+                "title": "ROS REP 103 camera optical frame",
+                "url": "https://www.ros.org/reps/rep-0103.html",
+                "observation": "Optical convention is +Z forward, +X right, +Y down. Converting from MuJoCo requires changing Y/Z signs; no image mirroring is used."
+              }
+            ],
+            "user_selection": {
+              "settings": {
+                "tilt": 52.0,
+                "yaw": 0.0,
+                "fov": 85.0,
+                "forward": 8.0,
+                "height": 22.0,
+                "distance": 35.0
+              },
+              "source": "provenance/recorded_sources.json#source_00070",
+              "preview_time_s": 0.10000000000000007,
+              "parent_body": "openarm_body_link0",
+              "camera_position_local_m": [
+                0.08,
+                0.0,
+                0.9169999999999999
+              ],
+              "camera_quaternion_wxyz": [
+                0.6685825965441222,
+                0.2302114497550448,
+                -0.2302114497550448,
+                -0.6685825965441222
+              ],
+              "vertical_fov_deg": 85.0,
+              "image_size": [
+                960,
+                540
+              ],
+              "physics_steps_run": 0,
+              "action_changed": false,
+              "production_camera_changed": false,
+              "preview_view": "head",
+              "preview_base_position_world_m": [
+                0.16474999999999998,
+                -1.17,
+                0.703
+              ],
+              "original_chest_to_axis_m": 0.2600000905516302,
+              "preview_chest_to_axis_m": 0.35000009055163017,
+              "stance_preview_only": true,
+              "reach_replanned": false,
+              "production_stance_changed": false,
+              "note": "候选站位与视角；机器人整体平移，关节姿态来自原记录。新站位未重新规划伸手或验证接触，不代表可完成操作。"
+            },
+            "reference_metadata_source": "试验记录/2026-10-24_A2用户选定35厘米/双视角/render_metadata.json",
+            "reference_xml_source": "试验记录/2026-10-24_A2用户选定35厘米/双视角/render_scene.xml",
+            "reference_source_nominal_world_position_m": [
+              0.24474999999999997,
+              -1.17,
+              1.6199999999999999
+            ],
+            "actual_world_position_m": [
+              0.3947500906,
+              0.065,
+              1.62
+            ],
+            "actual_world_rotation_matrix": [
+              [
+                -5.551115123125783e-17,
+                0.7880107536166222,
+                -0.6156614753129867
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.6156614753129867,
+                0.7880107536166222
+              ]
+            ],
+            "robot_base_position_world_m": [
+              0.3147500905516301,
+              0.065,
+              0.703
+            ],
+            "local_quaternion_wxyz": [
+              0.6685825965459732,
+              0.2302114497496692,
+              -0.2302114497496692,
+              -0.6685825965459732
+            ]
+          },
+          "parent_body": "openarm_body_link0"
+        },
+        "side": {
+          "xml": "<camera name=\"station_observer\" pos=\"1.09 0.5725 1.712\" xyaxes=\"-0.6448709392 0.7642914835 0 -0.4087493117 -0.3448822317 0.8449735182\" fovy=\"42.0\" mode=\"fixed\" />",
+          "metadata": {
+            "name": "station_observer",
+            "parent": "worldbody",
+            "station": "A1",
+            "role": "human action inspection; separate from robot visual observation",
+            "mode": "fixed world camera; no target tracking or per-frame adjustment",
+            "position_world_m": [
+              1.09,
+              0.5724999999999999,
+              1.712
+            ],
+            "target_world_m": [
+              0.44999999999999996,
+              0.0325,
+              1.182
+            ],
+            "vertical_fov_deg": 42.0,
+            "aspect_ratio": 1.7777777777777777,
+            "distance_m": 0.9910095862301233,
+            "across_pipe_direction_world": [
+              1.0,
+              -2.1350442781253013e-16,
+              -0.0
+            ],
+            "side_direction_world": [
+              2.1350442781253013e-16,
+              1.0,
+              -0.0
+            ],
+            "framing_source": "earlier A1 overview direction, moved closer to frame upper body and valve",
+            "offset_m": {
+              "across": 0.64,
+              "lateral": 0.54,
+              "elevation": 0.53,
+              "target_height": -0.11
+            },
+            "robot_base_position_world_m": [
+              0.3147500905516301,
+              0.065,
+              0.703
+            ],
+            "shoulder_height_m": 1.4,
+            "note": "Fixed upper-body inspection camera. No framing guarantee for unrecorded motions; actual occlusion is retained.",
+            "fixed_aim_down_m": 0.05,
+            "reference_metadata_source": "试验记录/2026-10-24_圆孔碰撞修正复测/展示_close/render_metadata.json",
+            "reference_xml_source": "试验记录/2026-10-24_圆孔碰撞修正复测/展示_close/render_scene.xml",
+            "reference_source_robot_base_position_world_m": [
+              0.32,
+              0.065,
+              0.703
+            ],
+            "nominal_world_position_m": [
+              1.09,
+              0.5725,
+              1.712
+            ],
+            "actual_world_position_m": [
+              1.09,
+              0.5725,
+              1.712
+            ],
+            "actual_world_rotation_matrix": [
+              [
+                -0.6448709392079576,
+                -0.4087493116742702,
+                0.64580606374581
+              ],
+              [
+                0.764291483509431,
+                -0.3448822317234943,
+                0.5448988662828868
+              ],
+              [
+                0.0,
+                0.8449735181928676,
+                0.5348081464906529
+              ]
+            ],
+            "local_position_m": [
+              1.09,
+              0.5725,
+              1.712
+            ],
+            "local_quaternion_wxyz": [
+              0.3691391931098624,
+              0.20322594939185537,
+              0.4373729989933679,
+              0.7944434085292207
+            ]
+          },
+          "parent_body": "worldbody"
+        }
+      },
+      "accepted_keyposes": {
+        "close": "试验记录/2026-10-25_G1_自动选位/A1_close/keyposes.json",
+        "open": "试验记录/2026-10-25_G1_自动选位/A1_open/keyposes.json"
+      }
+    },
+    "A2": {
+      "placement": {
+        "base_position_xy_m": [
+          0.16475009055163015,
+          -1.4300000000000002
+        ],
+        "base_yaw_deg": 0,
+        "shoulder_height_m": 1.4
+      },
+      "stance": {
+        "chest_to_valve_axis_m": 0.35,
+        "lateral_offset_m": -0.13,
+        "measurement": "chest front surface to valve shaft axis, horizontal body-forward projection"
+      },
+      "methods": {
+        "close": {
+          "mode": "pull",
+          "radius_m": 0.17,
+          "pitch_deg": 0.0,
+          "pitch_constant": true,
+          "tilt_deg": 0.0,
+          "roll_deg": 180.0,
+          "standby_roll_deg": 180.0,
+          "push_contact_geometry": "legacy",
+          "variant_id": "outer_radius_flat",
+          "id": "A2_close",
+          "station": "A2",
+          "task": "close",
+          "side": "left"
+        },
+        "open": {
+          "mode": "push",
+          "radius_m": 0.12,
+          "pitch_deg": 0.0,
+          "pitch_constant": true,
+          "tilt_deg": 15.0,
+          "roll_deg": 180.0,
+          "standby_roll_deg": 180.0,
+          "push_contact_geometry": "support_planes",
+          "variant_id": "inner_radius_tilt",
+          "id": "A2_open",
+          "station": "A2",
+          "task": "open",
+          "side": "left"
+        }
+      },
+      "cameras": {
+        "head": {
+          "xml": "<camera name=\"robot_head\" pos=\"0.08 0 0.917\" xyaxes=\"-0 -1 0 0.7880107536 0 0.6156614753\" fovy=\"85.0\" mode=\"fixed\" projection=\"perspective\" />",
+          "metadata": {
+            "name": "robot_head",
+            "profile": "user_selected_head",
+            "parent": "openarm_body_link0",
+            "local_position_m": [
+              0.08,
+              0.0,
+              0.917
+            ],
+            "forward_direction_local": [
+              0.6156614753256583,
+              0.0,
+              -0.788010753606722
+            ],
+            "nominal_world_position_m": [
+              0.24475009060000003,
+              -1.43,
+              1.62
+            ],
+            "above_shoulder_m": 0.22,
+            "forward_from_root_axis_m": 0.08,
+            "yaw_relative_to_torso_deg": 0.0,
+            "downward_tilt_deg": 52.0,
+            "vertical_fov_deg": 85.0,
+            "horizontal_fov_deg": 116.91171544474624,
+            "mode": "user-selected fixed head mount and gaze; no target tracking",
+            "role": "virtual eye in a plausible head position above the OpenArm shoulders",
+            "approximation": "OpenArm has no head. Eye mount is a declared adapter design assumption, informed by but not copied from Reachy reference coordinates.",
+            "coordinates": {
+              "mujoco_camera": "-Z forward, +X image-right, +Y image-up",
+              "ros_optical": "Conversion uses diag(1,-1,-1): +Z forward, +X right, +Y down"
+            },
+            "references": [
+              {
+                "title": "Reachy 2 official head and torso camera specifications",
+                "url": "https://docs.pollen-robotics.com/hardware-guide/specifications/vision/",
+                "observation": "Official localisation drawing shows the eye 62 mm above its neck reference and that reference 115 mm above the upper-body origin; forward offset is 35.31 mm. These are Reachy coordinates, not OpenArm shoulder coordinates."
+              },
+              {
+                "title": "Unitree official head-perspective camera example",
+                "url": "https://oss-global-cdn.unitree.com/static/fdeee4e5197f416290d8fa9ecc0b28e6_2480x1286.png",
+                "observation": "Actual image inspected: hands and tabletop dominate the working area; forearms and a chest edge remain visible at the bottom. Visible body parts alone do not make a view third-person."
+              },
+              {
+                "title": "Unitree official XR camera hardware and mounting",
+                "url": "https://github.com/unitreerobotics/xr_teleoperate/blob/main/Device.md",
+                "observation": "Distinguishes head-mounted cameras from wrist cameras. The optional wide-angle stereo hardware does not prescribe a universal vertical FOV or tilt."
+              },
+              {
+                "title": "MuJoCo camera and plane definitions",
+                "url": "https://mujoco.readthedocs.io/en/latest/XMLreference.html",
+                "observation": "Fixed cameras look along local -Z, image up is +Y, fovy is vertical angle. A plane has infinite collision extent; its first two sizes control only the rendered rectangle. Zero values render an infinite plane."
+              },
+              {
+                "title": "ROS REP 103 camera optical frame",
+                "url": "https://www.ros.org/reps/rep-0103.html",
+                "observation": "Optical convention is +Z forward, +X right, +Y down. Converting from MuJoCo requires changing Y/Z signs; no image mirroring is used."
+              }
+            ],
+            "user_selection": {
+              "settings": {
+                "tilt": 52.0,
+                "yaw": 0.0,
+                "fov": 85.0,
+                "forward": 8.0,
+                "height": 22.0,
+                "distance": 35.0
+              },
+              "source": "provenance/recorded_sources.json#source_00070",
+              "preview_time_s": 0.10000000000000007,
+              "parent_body": "openarm_body_link0",
+              "camera_position_local_m": [
+                0.08,
+                0.0,
+                0.9169999999999999
+              ],
+              "camera_quaternion_wxyz": [
+                0.6685825965441222,
+                0.2302114497550448,
+                -0.2302114497550448,
+                -0.6685825965441222
+              ],
+              "vertical_fov_deg": 85.0,
+              "image_size": [
+                960,
+                540
+              ],
+              "physics_steps_run": 0,
+              "action_changed": false,
+              "production_camera_changed": false,
+              "preview_view": "head",
+              "preview_base_position_world_m": [
+                0.16474999999999998,
+                -1.17,
+                0.703
+              ],
+              "original_chest_to_axis_m": 0.2600000905516302,
+              "preview_chest_to_axis_m": 0.35000009055163017,
+              "stance_preview_only": true,
+              "reach_replanned": false,
+              "production_stance_changed": false,
+              "note": "候选站位与视角；机器人整体平移，关节姿态来自原记录。新站位未重新规划伸手或验证接触，不代表可完成操作。"
+            },
+            "reference_metadata_source": "试验记录/2026-10-24_A2用户选定35厘米/双视角/render_metadata.json",
+            "reference_xml_source": "试验记录/2026-10-24_A2用户选定35厘米/双视角/render_scene.xml",
+            "reference_source_nominal_world_position_m": [
+              0.24474999999999997,
+              -1.17,
+              1.6199999999999999
+            ],
+            "actual_world_position_m": [
+              0.24475009060000003,
+              -1.43,
+              1.62
+            ],
+            "actual_world_rotation_matrix": [
+              [
+                -5.551115123125783e-17,
+                0.7880107536166222,
+                -0.6156614753129867
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.6156614753129867,
+                0.7880107536166222
+              ]
+            ],
+            "robot_base_position_world_m": [
+              0.16475009055163015,
+              -1.4300000000000002,
+              0.703
+            ],
+            "local_quaternion_wxyz": [
+              0.6685825965459732,
+              0.2302114497496692,
+              -0.2302114497496692,
+              -0.6685825965459732
+            ]
+          },
+          "parent_body": "openarm_body_link0"
+        },
+        "side": {
+          "xml": "<camera name=\"station_observer\" pos=\"1.012375 -0.695 1.712\" xyaxes=\"-0.6448709392 0.7642914835 0 -0.4087493117 -0.3448822317 0.8449735182\" fovy=\"42.0\" mode=\"fixed\" />",
+          "metadata": {
+            "name": "station_observer",
+            "parent": "worldbody",
+            "station": "A2",
+            "role": "human action inspection; separate from robot visual observation",
+            "mode": "fixed world camera; no target tracking or per-frame adjustment",
+            "position_world_m": [
+              1.012375,
+              -0.6950000000000001,
+              1.712
+            ],
+            "target_world_m": [
+              0.37237499999999996,
+              -1.2349999999999999,
+              1.182
+            ],
+            "vertical_fov_deg": 42.0,
+            "aspect_ratio": 1.7777777777777777,
+            "distance_m": 0.9910095862301233,
+            "across_pipe_direction_world": [
+              1.0,
+              -2.005219189569819e-16,
+              -0.0
+            ],
+            "side_direction_world": [
+              2.005219189569819e-16,
+              1.0,
+              -0.0
+            ],
+            "framing_source": "earlier A1 overview direction, moved closer to frame upper body and valve",
+            "offset_m": {
+              "across": 0.64,
+              "lateral": 0.54,
+              "elevation": 0.53,
+              "target_height": -0.11
+            },
+            "robot_base_position_world_m": [
+              0.16475009055163015,
+              -1.4300000000000002,
+              0.703
+            ],
+            "shoulder_height_m": 1.4,
+            "note": "Fixed upper-body inspection camera. No framing guarantee for unrecorded motions; actual occlusion is retained.",
+            "fixed_aim_down_m": 0.05,
+            "reference_metadata_source": "试验记录/2026-10-24_A2用户选定35厘米/双视角/render_metadata.json",
+            "reference_xml_source": "试验记录/2026-10-24_A2用户选定35厘米/双视角/render_scene.xml",
+            "reference_source_robot_base_position_world_m": [
+              0.16474999999999998,
+              -1.17,
+              0.703
+            ],
+            "nominal_world_position_m": [
+              1.012375,
+              -0.695,
+              1.712
+            ],
+            "actual_world_position_m": [
+              1.012375,
+              -0.695,
+              1.712
+            ],
+            "actual_world_rotation_matrix": [
+              [
+                -0.6448709392079576,
+                -0.4087493116742702,
+                0.64580606374581
+              ],
+              [
+                0.764291483509431,
+                -0.3448822317234943,
+                0.5448988662828868
+              ],
+              [
+                0.0,
+                0.8449735181928676,
+                0.5348081464906529
+              ]
+            ],
+            "local_position_m": [
+              1.012375,
+              -0.695,
+              1.712
+            ],
+            "local_quaternion_wxyz": [
+              0.3691391931098624,
+              0.20322594939185537,
+              0.4373729989933679,
+              0.7944434085292207
+            ]
+          },
+          "parent_body": "worldbody"
+        }
+      },
+      "accepted_keyposes": {
+        "close": "试验记录/2026-10-25_G1_自动选位/A2_close/keyposes.json",
+        "open": "试验记录/2026-10-25_G1_自动选位/A2_open/keyposes.json"
+      }
+    }
+  }
+}

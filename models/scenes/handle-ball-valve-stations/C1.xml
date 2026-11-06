@@ -1,0 +1,64 @@
+<mujoco model="H0_C1_independent_workstation">
+  <compiler angle="radian" autolimits="true" />
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic" iterations="100" solver="Newton" ls_iterations="50" />
+  <default>
+    <default class="valve_task">
+      <geom friction=".6 .01 .001" condim="4" solref=".004 1" solimp=".95 .99 .001" density="1000" />
+      <joint damping="0.005" armature=".00001" />
+    </default>
+  </default>
+  <visual>
+    <global offwidth="1280" offheight="960" />
+    <quality shadowsize="2048" offsamples="4" />
+  </visual>
+  <asset>
+    <texture name="floor_tex" type="2d" builtin="checker" rgb1=".25 .28 .30" rgb2=".30 .33 .35" width="256" height="256" />
+    <material name="floor_mat" texture="floor_tex" texrepeat="5 5" reflectance="0" />
+  </asset>
+  <worldbody>
+    <light name="key" pos="1 -2 3" dir="-.2 .4 -1" directional="true" />
+    <light name="fill" pos="-1 -1 2" dir=".4 .3 -1" diffuse=".5 .5 .5" />
+    <geom name="floor" type="plane" rgba="1 1 1 1" material="floor_mat" pos="0 0 0" size="0 0 .1" class="valve_task" />
+    <body name="C1_installation" pos="3.68 0 1.1" childclass="valve_task">
+      <body name="C1_valve_mount" pos="0 0 0" quat="0.7071067812 0 -0.7071067812 0">
+        <geom name="C1_pipe_-1" type="cylinder" rgba=".50 .54 .57 1" size="0.01685" fromto="-0.046 0 0 -0.35 0 0" />
+        <geom name="C1_pipe_end_shadow_-1" type="cylinder" rgba=".075 .09 .10 1" contype="0" conaffinity="0" size="0.0125" fromto="-0.3501 0 0 -0.3503 0 0" />
+        <geom name="C1_pipe_1" type="cylinder" rgba=".50 .54 .57 1" size="0.01685" fromto="0.046 0 0 0.35 0 0" />
+        <geom name="C1_pipe_end_shadow_1" type="cylinder" rgba=".075 .09 .10 1" contype="0" conaffinity="0" size="0.0125" fromto="0.3501 0 0 0.3503 0 0" />
+        <geom name="C1_ball_body" type="cylinder" rgba=".64 .67 .70 1" size="0.026" fromto="-0.046 0 0 0.046 0 0" />
+        <geom name="C1_ball_connection_-1" type="cylinder" rgba=".64 .67 .70 1" size="0.028" fromto="-0.046 0 0 -0.028 0 0" />
+        <geom name="C1_ball_connection_1" type="cylinder" rgba=".64 .67 .70 1" size="0.028" fromto="0.028 0 0 0.046 0 0" />
+        <geom name="C1_ball_tie_bolt_-0.023_-0.023" type="cylinder" rgba=".43 .46 .49 1" size="0.003" fromto="-0.038 -0.023 -0.023 0.038 -0.023 -0.023" />
+        <geom name="C1_ball_tie_bolt_-0.023_0.023" type="cylinder" rgba=".43 .46 .49 1" size="0.003" fromto="-0.038 -0.023 0.023 0.038 -0.023 0.023" />
+        <geom name="C1_ball_tie_bolt_0.023_-0.023" type="cylinder" rgba=".43 .46 .49 1" size="0.003" fromto="-0.038 0.023 -0.023 0.038 0.023 -0.023" />
+        <geom name="C1_ball_tie_bolt_0.023_0.023" type="cylinder" rgba=".43 .46 .49 1" size="0.003" fromto="-0.038 0.023 0.023 0.038 0.023 0.023" />
+        <geom name="C1_ball_stem_bonnet" type="cylinder" rgba=".64 .67 .70 1" size="0.01" fromto="0 0 0.018 0 0 0.048" />
+        <geom name="C1_ball_mounting_plate" type="box" rgba=".64 .67 .70 1" pos="0 0 0.05" size="0.023 0.023 0.002" />
+      </body>
+      <body name="C1_valve_moving" pos="0 0 0" quat="0.7071067812 0 -0.7071067812 0">
+        <joint name="C1_valve_hinge" type="hinge" axis="0 0 -1" limited="true" range="0 1.570796327" frictionloss="14.0" solreffriction="0.002 1" solimpfriction="0.9999 0.9999 0.001 0.5 2" solreflimit=".002 1" solimplimit=".9999 .9999 .001 .5 2" />
+        <inertial pos="0.1 0 0.084" mass="0.12" diaginertia="1e-05 0.0004 0.0004" quat="1 0 0 0" />
+        <body name="C1_handle_phase" quat="1 0 0 0">
+          <geom name="C1_handle_hub" type="cylinder" rgba=".64 .67 .70 1" pos="0 0 0.0537" size="0.015 0.0015" />
+          <geom name="C1_handle_hub_fastener" type="cylinder" rgba=".64 .67 .70 1" pos="0 0 0.0585" size="0.006 0.003" />
+          <geom name="C1_handle_root_flat" type="box" rgba=".64 .67 .70 1" euler="0 -0 0" pos="0.019 0 0.054" size="0.011 0.01 0.0015" />
+          <geom name="C1_handle_root_bend" type="box" rgba=".64 .67 .70 1" euler="0 -0.8567056282 0" pos="0.042 0 0.069" size="0.01984943324 0.01 0.0015" />
+          <geom name="C1_handle_flat_core" type="box" rgba=".64 .67 .70 1" euler="0 -0 0" pos="0.1265 0 0.084" size="0.0725 0.009 0.0015" />
+          <geom name="C1_handle_flat_grip" type="box" rgba=".025 .35 .67 1" pos="0.135 0 0.084" size="0.065 0.01 0.003" />
+          <site name="C1_valve_axis" pos="0 0 0" size=".002" rgba="0 0 0 0" />
+          <site name="C1_handle_tip" pos="0.2 0 0.084" size=".001" rgba="0 0 0 0" group="4" />
+          <site name="C1_handle_center" pos="0.1 0 0.084" size=".001" rgba="0 0 0 0" group="4" />
+        </body>
+        <site name="C1_stem_axis_point" pos="0 0 0.084" size=".001" rgba="0 0 0 0" group="4" />
+      </body>
+    </body>
+    <geom name="C1_vertical_pedestal" type="cylinder" fromto="3.68 0 0.025 3.68 0 0.75" size="0.022" rgba="0.24 0.27 0.29 1" class="valve_task" />
+    <geom name="C1_vertical_foot" type="box" pos="3.68 0 0.0125" size="0.1 0.1 0.0125" rgba="0.2 0.23 0.25 1" class="valve_task" />
+    <camera name="environment_overview" pos="2.88 -0.8 1.75" xyaxes="0.7071067812 -0.7071067812 0 0.3312945782 0.3312945782 0.8834522086" fovy="45" />
+    <camera name="C1_detail" pos="2.98 -0.66 1.58" xyaxes="0.6938436848 -0.7201256426 0 0.2994876703 0.2885574633 0.9094183447" fovy="36" />
+  </worldbody>
+  <keyframe>
+    <key name="environment_open" qpos="0" />
+    <key name="environment_closed" qpos="1.570796327" />
+  </keyframe>
+</mujoco>

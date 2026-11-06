@@ -1,0 +1,71 @@
+{
+  "version": "s_hook_v3_real_bores_2026-10-24",
+  "total_forward_extent_mm": 104.83578643762691,
+  "out_of_plane_width_mm": 20.0,
+  "plate_thickness_mm": 4.0,
+  "density_kg_m3": 7800.0,
+  "profile_yz_mm": [
+    [
+      14.0,
+      95.17157287525383
+    ],
+    [
+      0.0,
+      81.17157287525382
+    ],
+    [
+      -20.835786437626908,
+      102.00735931288072
+    ],
+    [
+      -43.08578643762691,
+      79.75735931288072
+    ]
+  ],
+  "shaft_junction_index": 1,
+  "push_flanks": [
+    [
+      0,
+      "right"
+    ],
+    [
+      1,
+      "right"
+    ]
+  ],
+  "pull_flanks": [
+    [
+      1,
+      "left"
+    ],
+    [
+      2,
+      "left"
+    ]
+  ],
+  "provenance": {
+    "user_defined": "S/zigzag outline with a shaft connected at the middle and no lower horizontal return. Upper concave faces push; lower concave faces hook and pull. Both wrists use this fixed part.",
+    "source_dimensions": "User-approved sketch, 2026-10-24: 42.5 mm from shaft lower surface to lowest edge, equal working edges of 29.466 mm, width 20 mm, thickness 4 mm; 16 x 10 mm flat-sided shaft hole and 8 mm upper circular hole.",
+    "assumptions": "45-degree bends, 4mm thickness and steel density7800kg/m3 remain modelling assumptions. Holes are actual faceted through openings; shaft junction trimmed to avoid duplicate material.",
+    "frame": "+X is the 20mm extrusion width, Y points up in the side sketch, +Z goes from wrist toward tool tip. A common Z shift places the foremost outer edge at the configured 104.83578643762691mm forward extent; no horizontal return is added."
+  },
+  "wrist_mount": {
+    "shape": "solid_cylinder",
+    "radius_mm": 14.0,
+    "length_mm": 5.6,
+    "density_kg_m3": 7800.0,
+    "material_assumption": "Steel, same assumed density as the S tool.",
+    "placement": "Cylinder front face is at the hand/S-shaft origin (wrist z=100.1 mm); rear face is at wrist z=94.5 mm.",
+    "geometry_note": "One solid cylinder defines visual and collision geometry. Mass and inertia are calculated for this fixed body. The cylinder seats about 1 mm inside the wrist visual shell.",
+    "role": "Fixed wrist connection, separate from the tool end. Mount contacts are recorded separately in S-tool working-face records."
+  },
+  "through_holes": {
+    "shaft_flat_mm": [
+      16,
+      10
+    ],
+    "shaft_center_behind_junction_mm": 14,
+    "upper_diameter_mm": 8,
+    "method": "disjoint convex pieces around true holes; visual and collision identical; mass from remaining volume"
+  }
+}

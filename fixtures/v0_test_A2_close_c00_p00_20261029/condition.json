@@ -1,0 +1,16 @@
+{
+  "episode_id": "v0_test_A2_close_c00_p00_20261029",
+  "task": "A2_close",
+  "station": "A2",
+  "condition_index": 0,
+  "offset_m": [
+    -0.015367600877241941,
+    0.016045840818802906,
+    0.026624681240931064
+  ],
+  "resistance_scale": 1.2616492194413627,
+  "seed": 9026104801,
+  "original_directory": "90_过程归档/下载原件_2026-10-30/试验记录/2026-10-29_D1最后一次生成器运行/云端结果/records/holdout16/A2_close_05cm_holdout_reserved_00_p00",
+  "model_source": "unchanged recorded scene",
+  "used_for_training": false
+}

@@ -1,0 +1,324 @@
+{
+  "checked_at": "2026-11-06T00:19:29.864206+08:00",
+  "status": "local_installation_verified",
+  "gpu_started": false,
+  "training_run": false,
+  "uploaded": false,
+  "platform": {
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.12.15",
+    "packages": {
+      "rusty-valve-runtime": "0.0.1",
+      "mujoco": "3.16.0",
+      "torch": "2.11.0",
+      "torchvision": "0.26.0",
+      "lerobot": "0.6.1",
+      "numpy": "2.2.6",
+      "scipy": "1.18.1",
+      "gymnasium": "1.4.0",
+      "av": "15.1.0",
+      "pyarrow": "26.0.0",
+      "imageio": "2.38.1",
+      "imageio-ffmpeg": "0.7.0"
+    },
+    "device": "cpu",
+    "original_training_environment_retested": false,
+    "old_project_site_packages_used": false,
+    "network_used_for_inference": false,
+    "videos": {
+      "round1": {
+        "fps": 20.0,
+        "frames": 713,
+        "width": 768,
+        "height": 280
+      },
+      "round2": {
+        "fps": 20.0,
+        "frames": 1800,
+        "width": 768,
+        "height": 280
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "scene_A1",
+      "returncode": 0,
+      "wall_s": 22.455,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "scene",
+        "--station",
+        "A1",
+        "--output",
+        "$CHECK_OUTPUT/scenes/A1.xml"
+      ]
+    },
+    {
+      "name": "scene_A2",
+      "returncode": 0,
+      "wall_s": 0.435,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "scene",
+        "--station",
+        "A2",
+        "--output",
+        "$CHECK_OUTPUT/scenes/A2.xml"
+      ]
+    },
+    {
+      "name": "scene_B1",
+      "returncode": 0,
+      "wall_s": 0.148,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "scene",
+        "--station",
+        "B1",
+        "--output",
+        "$CHECK_OUTPUT/scenes/B1.xml"
+      ]
+    },
+    {
+      "name": "scene_B2",
+      "returncode": 0,
+      "wall_s": 0.142,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "scene",
+        "--station",
+        "B2",
+        "--output",
+        "$CHECK_OUTPUT/scenes/B2.xml"
+      ]
+    },
+    {
+      "name": "scene_C1",
+      "returncode": 0,
+      "wall_s": 0.136,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "scene",
+        "--station",
+        "C1",
+        "--output",
+        "$CHECK_OUTPUT/scenes/C1.xml"
+      ]
+    },
+    {
+      "name": "scene_C2",
+      "returncode": 0,
+      "wall_s": 0.139,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "scene",
+        "--station",
+        "C2",
+        "--output",
+        "$CHECK_OUTPUT/scenes/C2.xml"
+      ]
+    },
+    {
+      "name": "public_score_cli",
+      "returncode": 0,
+      "wall_s": 2.838,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "score",
+        "$MATERIALS/evaluations/round1/seen_valve_positions/v0_train_A2_close_c01_p00_20261028_train_episode_0193/physical_step_evidence.jsonl.gz",
+        "--output",
+        "$CHECK_OUTPUT/public_score_cli.json"
+      ]
+    },
+    {
+      "name": "teacher_A1_open_attempt2",
+      "returncode": 0,
+      "wall_s": 37.452,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "teacher",
+        "--task",
+        "A1_open",
+        "--output",
+        "$CHECK_OUTPUT/teacher_A1_open_attempt2"
+      ],
+      "public_score": "pass",
+      "final_opening_deg": 88.25636972331378,
+      "simulated_seconds": 45.629999999984356
+    },
+    {
+      "name": "teacher_A1_close_attempt2",
+      "returncode": 0,
+      "wall_s": 70.538,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "teacher",
+        "--task",
+        "A1_close",
+        "--output",
+        "$CHECK_OUTPUT/teacher_A1_close_attempt2"
+      ],
+      "public_score": "pass",
+      "final_opening_deg": 3.3486542401837,
+      "simulated_seconds": 77.08000000000399
+    },
+    {
+      "name": "teacher_A2_open_attempt2",
+      "returncode": 0,
+      "wall_s": 65.432,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "teacher",
+        "--task",
+        "A2_open",
+        "--output",
+        "$CHECK_OUTPUT/teacher_A2_open_attempt2"
+      ],
+      "public_score": "pass",
+      "final_opening_deg": 86.56029265655607,
+      "simulated_seconds": 86.6100000000495
+    },
+    {
+      "name": "teacher_A2_close_attempt2",
+      "returncode": 0,
+      "wall_s": 20.623,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "teacher",
+        "--task",
+        "A2_close",
+        "--output",
+        "$CHECK_OUTPUT/teacher_A2_close_attempt2"
+      ],
+      "public_score": "pass",
+      "final_opening_deg": 2.2727683157550644,
+      "simulated_seconds": 36.320000000006054
+    },
+    {
+      "name": "data_readback",
+      "returncode": 0,
+      "wall_s": 154.943,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "data-check",
+        "--materials",
+        "$MATERIALS",
+        "--output",
+        "$CHECK_OUTPUT/data_readback.json"
+      ]
+    },
+    {
+      "name": "act_round1",
+      "returncode": 0,
+      "wall_s": 360.977,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "act",
+        "--materials",
+        "$MATERIALS",
+        "--round",
+        "round1",
+        "--case-index",
+        "0",
+        "--output",
+        "$CHECK_OUTPUT/act_round1"
+      ],
+      "public_score": "pass",
+      "final_opening_deg": 4.5451713802014195,
+      "simulated_seconds": 35.64000000000764
+    },
+    {
+      "name": "act_round2",
+      "returncode": 0,
+      "wall_s": 832.463,
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "rusty_valve",
+        "act",
+        "--materials",
+        "$MATERIALS",
+        "--round",
+        "round2",
+        "--case-index",
+        "0",
+        "--output",
+        "$CHECK_OUTPUT/act_round2"
+      ],
+      "public_score": "fail",
+      "final_opening_deg": 90.00008784191505,
+      "simulated_seconds": 90.0
+    },
+    {
+      "name": "documented_robot_api_with_reviewed_initial_pose",
+      "returncode": 0,
+      "action_dimensions": 14,
+      "camera_shapes": {
+        "head": [
+          256,
+          256,
+          3
+        ],
+        "wrist": [
+          256,
+          256,
+          3
+        ],
+        "observer": [
+          256,
+          256,
+          3
+        ]
+      }
+    },
+    {
+      "name": "pip_check",
+      "result": "No broken requirements found."
+    }
+  ],
+  "technical_interruptions": {
+    "teacher_attempt1": "Before simulation, the reviewed natural-rest path was resolved against the current directory. Resolved relative to its storyboard instead; all four unchanged references then completed. Original failure logs retained internally.",
+    "api_example_attempt1": "Low-level constructor uses its legacy default state. The documented example now explicitly loads the bundled reviewed placement and rest state. No environment dynamics changed."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "version": "s_hook_v3_real_bores_2026-10-24",
+  "total_forward_extent_mm": 104.83578643762691,
+  "out_of_plane_width_mm": 20.0,
+  "plate_thickness_mm": 4.0,
+  "density_kg_m3": 7800.0,
+  "profile_yz_mm": [
+    [
+      14.0,
+      95.17157287525383
+    ],
+    [
+      0.0,
+      81.17157287525382
+    ],
+    [
+      -20.835786437626908,
+      102.00735931288072
+    ],
+    [
+      -43.08578643762691,
+      79.75735931288072
+    ]
+  ],
+  "shaft_junction_index": 1,
+  "push_flanks": [
+    [
+      0,
+      "right"
+    ],
+    [
+      1,
+      "right"
+    ]
+  ],
+  "pull_flanks": [
+    [
+      1,
+      "left"
+    ],
+    [
+      2,
+      "left"
+    ]
+  ],
+  "provenance": {
+    "user_defined": "Latest annotated S/zigzag outline: middle-connected shaft, no lower horizontal return. Upper concavity flat flanks push; lower concavity flat flanks hook. Both wrists use this fixed part.",
+    "source_dimensions": "2026-10-24 user-approved v2 sketch: 42.5mm shaft-lower-surface to lowest edge, equal blue working edges 29.466mm, 20mm width, 4mm assumed thickness; 16x10 DN25 flat bore in shaft, upper circular bore diameter8mm.",
+    "assumptions": "45-degree bends, 4mm thickness and steel density7800kg/m3 remain modelling assumptions. Holes are actual faceted through openings; shaft junction trimmed to avoid duplicate material. No climbing strength claim.",
+    "frame": "+X is the 20mm extrusion width, Y points up in the side sketch, +Z goes from wrist toward tool tip. A common Z shift fits the 100mm forward envelope; no horizontal return is added."
+  },
+  "wrist_mount": {
+    "shape": "solid_cylinder",
+    "radius_mm": 14.0,
+    "length_mm": 5.6,
+    "density_kg_m3": 7800.0,
+    "material_assumption": "Steel, same assumed density as the S tool; not a fabricated or strength-validated design.",
+    "placement": "Cylinder front face stays at the existing hand/S-shaft origin (wrist z=100.1mm). Rear face is wrist z=94.5mm, matching the upstream collision envelope.",
+    "geometry_note": "One solid primitive serves visual and collision geometry; mass and inertia are assigned once analytically to its separate fixed body. Upstream silver visual shell extends about 1mm beyond its collision envelope, so the rear face seats inside that visual shell; upstream assets are unchanged.",
+    "role": "Separate fixed wrist child, outside operation_end; touching a valve with this mount is not a valid tool-face contact."
+  },
+  "through_holes": {
+    "shaft_flat_mm": [
+      16,
+      10
+    ],
+    "shaft_center_behind_junction_mm": 14,
+    "upper_diameter_mm": 8,
+    "method": "disjoint convex pieces around true holes; visual and collision identical; mass from remaining volume"
+  }
+}

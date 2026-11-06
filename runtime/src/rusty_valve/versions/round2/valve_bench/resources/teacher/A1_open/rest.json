@@ -1,0 +1,97 @@
+{
+  "schema": "reviewed_bimanual_natural_rest_v1",
+  "name": "双臂自然垂放｜左钩安装朝向修正v1",
+  "robot": "openarm_s_hook",
+  "scope": "all_workstations",
+  "applies_to": [
+    "initial_pose",
+    "final_pose"
+  ],
+  "source_frame_file": "provenance/recorded_sources.json#source_00015",
+  "source_frame_index": 9,
+  "source_frame_label": "自然垂放修正",
+  "user_instruction_date": "2026-10-27",
+  "left_pose_origin": "user_saved_and_designated_as_shared_rest",
+  "right_pose_origin": "requested_mirror_of_left",
+  "mirror_joint_signs": [
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "arms": {
+    "left": {
+      "joint_names": [
+        "openarm_left_joint1",
+        "openarm_left_joint2",
+        "openarm_left_joint3",
+        "openarm_left_joint4",
+        "openarm_left_joint5",
+        "openarm_left_joint6",
+        "openarm_left_joint7"
+      ],
+      "joint_angles_rad": [
+        0.017832844065919572,
+        0.014516345248056249,
+        -0.013705908258732535,
+        0.2683443731333422,
+        -0.004353561667046997,
+        0.004414819202316108,
+        -0.17823315206248028
+      ]
+    },
+    "right": {
+      "joint_names": [
+        "openarm_right_joint1",
+        "openarm_right_joint2",
+        "openarm_right_joint3",
+        "openarm_right_joint4",
+        "openarm_right_joint5",
+        "openarm_right_joint6",
+        "openarm_right_joint7"
+      ],
+      "joint_angles_rad": [
+        -0.017832844065919572,
+        -0.014516345248056249,
+        0.013705908258732535,
+        0.2683443731333422,
+        0.004353561667046997,
+        -0.004414819202316108,
+        0.17823315206248028
+      ]
+    }
+  },
+  "body_relative": true,
+  "changes_valve": false,
+  "changes_body_layout": false,
+  "changes_camera": false,
+  "editor_sequence_file": "provenance/recorded_sources.json#source_00016",
+  "data_kind": "user_pose_and_geometric_mirror_not_physics",
+  "note": "New version only: same arm joints, right unchanged, left S-tool fixed mounting reversed. Old default rest/model remains untouched.",
+  "implementation_status": {
+    "new_adapter_written": true,
+    "default_rest_replaced": false,
+    "old_robot_model_changed": false,
+    "new_model_id": "openarm_s_hook_left_mount180_v1",
+    "new_physics_runs_completed": 0
+  },
+  "robot_adapter_id": "openarm_s_hook_left_mount180_v1",
+  "model_revision": "left_hook_mount_z180_review_v1",
+  "left_tool_mount_local_quaternion_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "source_shared_rest_file": "provenance/recorded_sources.json#source_00017",
+  "approval": {
+    "user_confirmed": true,
+    "user_original_text": "The shared natural rest pose was confirmed.",
+    "recorded_at": "2026-10-27T23:22:34.596951+08:00",
+    "source": "provenance/recorded_sources.json#source_00018"
+  },
+  "applies_to_model_revision": "left_hook_mount_z180_review_v1"
+}

@@ -1,0 +1,9 @@
+{
+  "episode_id": "v0_train_A2_close_c02_p00_20261028",
+  "task": "A2_close",
+  "condition_index": 2,
+  "seed": 2026104803,
+  "resistance_scale": 0.980461471048353,
+  "used_for_training": true,
+  "original_directory": "provenance/recorded_sources.json#source_00524"
+}

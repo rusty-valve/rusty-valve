@@ -1,0 +1,272 @@
+[
+  {
+    "dataset": "four_tasks_646",
+    "task": "A1_close",
+    "split": "train",
+    "episodes": 102,
+    "frames": 692744,
+    "action_shape": [
+      7
+    ],
+    "images": {
+      "observation.images.head": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.wrist": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.observer": [
+        3,
+        256,
+        256
+      ]
+    }
+  },
+  {
+    "dataset": "four_tasks_646",
+    "task": "A1_close",
+    "split": "validation",
+    "episodes": 31,
+    "frames": 221938,
+    "action_shape": [
+      7
+    ],
+    "images": {
+      "observation.images.head": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.wrist": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.observer": [
+        3,
+        256,
+        256
+      ]
+    }
+  },
+  {
+    "dataset": "four_tasks_646",
+    "task": "A1_open",
+    "split": "train",
+    "episodes": 92,
+    "frames": 397151,
+    "action_shape": [
+      7
+    ],
+    "images": {
+      "observation.images.head": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.wrist": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.observer": [
+        3,
+        256,
+        256
+      ]
+    }
+  },
+  {
+    "dataset": "four_tasks_646",
+    "task": "A1_open",
+    "split": "validation",
+    "episodes": 32,
+    "frames": 127797,
+    "action_shape": [
+      7
+    ],
+    "images": {
+      "observation.images.head": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.wrist": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.observer": [
+        3,
+        256,
+        256
+      ]
+    }
+  },
+  {
+    "dataset": "four_tasks_646",
+    "task": "A2_close",
+    "split": "train",
+    "episodes": 224,
+    "frames": 910256,
+    "action_shape": [
+      7
+    ],
+    "images": {
+      "observation.images.head": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.wrist": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.observer": [
+        3,
+        256,
+        256
+      ]
+    }
+  },
+  {
+    "dataset": "four_tasks_646",
+    "task": "A2_close",
+    "split": "validation",
+    "episodes": 32,
+    "frames": 139993,
+    "action_shape": [
+      7
+    ],
+    "images": {
+      "observation.images.head": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.wrist": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.observer": [
+        3,
+        256,
+        256
+      ]
+    }
+  },
+  {
+    "dataset": "four_tasks_646",
+    "task": "A2_open",
+    "split": "train",
+    "episodes": 103,
+    "frames": 720912,
+    "action_shape": [
+      7
+    ],
+    "images": {
+      "observation.images.head": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.wrist": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.observer": [
+        3,
+        256,
+        256
+      ]
+    }
+  },
+  {
+    "dataset": "four_tasks_646",
+    "task": "A2_open",
+    "split": "validation",
+    "episodes": 30,
+    "frames": 194957,
+    "action_shape": [
+      7
+    ],
+    "images": {
+      "observation.images.head": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.wrist": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.observer": [
+        3,
+        256,
+        256
+      ]
+    }
+  },
+  {
+    "dataset": "a2_close_coverage_300",
+    "task": "A2_close",
+    "split": "train",
+    "episodes": 240,
+    "frames": 985095,
+    "action_shape": [
+      7
+    ],
+    "images": {
+      "observation.images.head": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.wrist": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.observer": [
+        3,
+        256,
+        256
+      ]
+    }
+  },
+  {
+    "dataset": "a2_close_coverage_300",
+    "task": "A2_close",
+    "split": "validation",
+    "episodes": 60,
+    "frames": 238209,
+    "action_shape": [
+      7
+    ],
+    "images": {
+      "observation.images.head": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.wrist": [
+        3,
+        256,
+        256
+      ],
+      "observation.images.observer": [
+        3,
+        256,
+        256
+      ]
+    }
+  }
+]

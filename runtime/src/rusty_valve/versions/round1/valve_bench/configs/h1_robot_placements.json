@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "purpose": "Robot placement input for H1; independent of the pure workstation descriptions",
+  "robot_adapter": "openarm_s_hook",
+  "initial_rule": {
+    "reference": "valve.axis_origin_world_m",
+    "world_xy_offset_m": [
+      -0.18,
+      0.065
+    ],
+    "base_yaw_deg": 0.0,
+    "shoulder_height_m": 1.4
+  },
+  "placements": {
+    "A1": {
+      "base_position_xy_m": [
+        0.4,
+        0.065
+      ],
+      "base_yaw_deg": 0.0,
+      "shoulder_height_m": 1.4
+    },
+    "A2": {
+      "base_position_xy_m": [
+        0.4,
+        -1.235
+      ],
+      "base_yaw_deg": 0.0,
+      "shoulder_height_m": 1.4
+    },
+    "B1": {
+      "base_position_xy_m": [
+        1.95,
+        0.065
+      ],
+      "base_yaw_deg": 0.0,
+      "shoulder_height_m": 1.4
+    },
+    "B2": {
+      "base_position_xy_m": [
+        1.95,
+        -1.235
+      ],
+      "base_yaw_deg": 0.0,
+      "shoulder_height_m": 1.4
+    },
+    "C1": {
+      "base_position_xy_m": [
+        3.5,
+        0.065
+      ],
+      "base_yaw_deg": 0.0,
+      "shoulder_height_m": 1.4
+    },
+    "C2": {
+      "base_position_xy_m": [
+        3.5,
+        -1.235
+      ],
+      "base_yaw_deg": 0.0,
+      "shoulder_height_m": 1.4
+    }
+  },
+  "note": "Contains setup positions only, no motion path. These initial positions are not a reachability or success claim; failures are retained."
+}

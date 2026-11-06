@@ -1,0 +1,121 @@
+{
+  "schema_version": 2,
+  "units": "SI: metre, kilogram, second, radian; angles explicitly suffixed _deg are degrees",
+  "description": "WP1 generic valve geometry; default ball valve uses Bray Flow-Tek 7100 DN25 dimensions and an approved simplified flat lever. No manufacturer CAD or converted mesh is embedded.",
+  "pipe": {
+    "nominal_diameter": "DN25",
+    "outside_diameter_m": 0.0337,
+    "length_m": 0.7,
+    "provenance": "33.7 mm external diameter selected in the approved work package; bore, thread and flow omitted"
+  },
+  "ball": {
+    "name": "Bray-reference generic DN25 ball valve",
+    "reference_product": "Bray Flow-Tek 7000 series / 7100 threaded full-port, RPTFE seats",
+    "body_length_m": 0.092,
+    "body_radius_m": 0.026,
+    "connection_radius_m": 0.028,
+    "lever_reach_m": 0.2,
+    "lever_mid_width_m": 0.02,
+    "lever_mid_thickness_m": 0.006,
+    "lever_plate_thickness_m": 0.003,
+    "lever_bend_start_m": 0.03,
+    "lever_bend_end_m": 0.055,
+    "lever_cover_start_m": 0.07,
+    "lever_highest_m": 0.087,
+    "mounting_height_above_pipe_m": 0.052,
+    "moving_mass_kg": 0.12,
+    "moving_inertia_kg_m2": [
+      1e-05,
+      0.0004,
+      0.0004
+    ],
+    "close_angle_deg": 90.0,
+    "safety_trigger_state": "fixed unlocked / manufacturer-described bypass; trigger action omitted",
+    "provenance": {
+      "catalogue_dimensions": "Bray 7000/8000 brochure, page 10, DN25: A=92 mm for NPT/SW/BW, D=200 mm shaft-to-handle-end, C=87 mm pipe-axis-to-highest-point, C1=52 mm pipe-axis-to-mounting-top. Visual PDF dimension lines verified. H/J=35.7 mm are mounting hole spacings, not heights.",
+      "contact_shape_reference": "User-approved 2026-10-21 generic bent flat metal lever with thin blue cover. It stays flat through the tip, without QH enlarged block/cylinder. Width 20 mm, covered total thickness 6 mm, metal plate 3 mm and bend positions are task assumptions, not Bray measurements.",
+      "assumptions": "Body radii, rounded bolt envelopes, detailed cast shape, covered grip cross-section, bend location, moving mass/inertia and contact friction are simplified task settings. Simplified exterior only; internal ball, seals, threads, fluid and pressure omitted. Safety trigger held in the manufacturer-described bypass state; unlocking not part of this task."
+    }
+  },
+  "globe": {
+    "name": "BOA-H dimension-reference DN25 handwheel globe valve",
+    "body_length_m": 0.16,
+    "body_radius_m": 0.033,
+    "flange_radius_m": 0.0575,
+    "wheel_outside_diameter_m": 0.125,
+    "wheel_tube_radius_m": 0.004,
+    "wheel_height_above_pipe_m": 0.178,
+    "wheel_segments": 32,
+    "wheel_spokes": 4,
+    "reference_h1_m": 0.184,
+    "stroke_m": 0.008,
+    "screw_pitch_m_per_turn": 0.002,
+    "turns_open_to_closed": 4,
+    "moving_mass_kg": 0.14,
+    "moving_inertia_kg_m2": [
+      0.0003,
+      0.0003,
+      0.00055
+    ],
+    "provenance": {
+      "catalogue_dimensions": "KSB BOA-H 7150.1/23-EN, table 7, DN25 PN16: d1=125 mm and l1=160 mm. h1=184 mm is an overall-height reference; its exact endpoint/state is not claimed here.",
+      "assumptions": "Wheel elevation 178 mm, spoke/rim sections, flange/body outline, wheel mass/inertia, 2 mm screw pitch and 8 mm travel are temporary assumptions. Only the rotary joint is modelled; axial screw translation and internal disc/seal mechanics are omitted. Four turns is a configured task span, not a measured BOA-H turn count."
+    }
+  },
+  "layouts": {
+    "horizontal_front": {
+      "label_zh": "横管，阀杆朝前，开位手柄水平",
+      "quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ]
+    },
+    "horizontal_top": {
+      "label_zh": "横管，阀杆向上，手柄水平扫转",
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "vertical_front": {
+      "label_zh": "竖管，阀杆朝前，开位手柄向上",
+      "quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        0.5
+      ]
+    },
+    "obstructed": {
+      "label_zh": "横管，阀杆朝前，附近有邻管",
+      "quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "obstacle_pipe_offset_local_m": [
+        0.0,
+        0.16,
+        0.045
+      ]
+    }
+  },
+  "coordinate_convention": {
+    "world": "right-handed, Z up; camera on negative Y side",
+    "valve_local": "pipe along X; stem and positive hinge axis along Z; ball open handle along +X",
+    "joint": "valve_hinge, q=0 open. Positive q closes. Ball upper limit close_angle_deg; globe upper limit 2*pi*turns_open_to_closed."
+  },
+  "sources": {
+    "ksb_boa_h": "https://www.ksb.com/en-us/lc/products/valve/globe-valve/boa-h/b08a",
+    "ksb_table_reference": "7150.1/23-EN, page 10, table 7",
+    "note": "Bray-based generic task geometry, not an exact manufacturer replica. No Festo CAD/tessellation is used. Historical QH trials remain archived and do not define this current model.",
+    "bray_dimensions": "https://www.bray.com/docs/default-source/brochures/product-brochures/en_f-2301_s7000_8000_web.pdf",
+    "bray_dimensions_reference": "Page 10, DN25, A=92, C=87, C1=52, D=200 mm; 7100 threaded end on page 11",
+    "bray_torque": "https://www.bray.com/docs/default-source/technical-bulletin/en_tb-1005_act-selectguide-ball-valves.pdf"
+  }
+}
