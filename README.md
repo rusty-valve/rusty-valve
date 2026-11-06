@@ -6,7 +6,7 @@
 
 *A2 closing replay from the reference controller. The industrial backdrop is illustrative.*
 
-[Level 1: Handle ball valve](levels/01-handle-ball-valve/) · [MuJoCo station models](models/scenes/handle-ball-valve-stations/) · [ACT training records and weights](models/#act-training-records-and-checkpoint-downloads) · [S-hook tool](hardware/s-hook/) · [Dataset description](docs/dataset_card.md) · [ACT results](docs/act_baseline.md) · [Climbing preview](docs/climbing.md) · [Hugging Face organization](https://huggingface.co/rusty-valve) · [Why we built this](docs/story.md)
+[Level 1: Handle ball valve](levels/01-handle-ball-valve/) · [MuJoCo station models](models/scenes/handle-ball-valve-stations/) · [ACT training records and weights](models/README.md#act-training-records-and-checkpoint-downloads) · [S-hook tool](hardware/s-hook/) · [Dataset description](docs/dataset_card.md) · [ACT results](docs/act_baseline.md) · [Climbing preview](docs/climbing.md) · [Hugging Face organization](https://huggingface.co/rusty-valve) · [Why we built this](docs/story.md)
 
 Rusty Valve is developing an open simulation benchmark for manual valve operation in refineries and fine-chemical plants. The project includes valve stations, a common scoring program, a scripted "teacher" that generates demonstrations, a LeRobot-format dataset, and learning baselines. The public exam applies to any robot and end-effector. The teacher is a reference solution for OpenArm with an S-hook; users of another robot must write their own controller.
 
