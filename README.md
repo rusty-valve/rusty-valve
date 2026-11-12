@@ -2,9 +2,9 @@
 
 **Training robot field operators for chemical plants.**
 
-![A robot closes a DN25 ball valve with an S-hook tool](assets/a2-close-reference-replay.gif)
+![An S-hook closes a DN25 ball valve alongside synchronized contact torque and force curves](assets/a2-close-reference-replay.gif)
 
-*A2 closing replay from the reference controller. The industrial backdrop is illustrative.*
+*A2 closing replay with contact torque and tool–handle force from the same recorded simulation, at original speed. Curves use 50 ms averages, with raw peaks shown separately. The 14 N·m line is the model breakaway reference. The industrial backdrop is illustrative.*
 
 [Level 1: Handle ball valve](levels/01-handle-ball-valve/) · [MuJoCo station models](models/scenes/handle-ball-valve-stations/) · [ACT training records and weights](models/README.md#act-training-records-and-checkpoint-downloads) · [S-hook tool](hardware/s-hook/) · [Dataset description](docs/dataset_card.md) · [ACT results](docs/act_baseline.md) · [Climbing preview](docs/climbing.md) · [Hugging Face organization](https://huggingface.co/rusty-valve) · [Why we built this](docs/story.md)
 
