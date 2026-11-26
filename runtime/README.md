@@ -1,6 +1,6 @@
-# Rusty Valve v0 runtime
+# Rusty Valve runtime (Level 1)
 
-A frozen OpenArm + S-hook reference implementation, two ACT inference runtimes, and public exam v1. A1/A2 each provide open/close references; B1/B2/C1/C2 are robot-free challenges without reference controllers. This package contains no RL baseline or slow-opening task.
+The OpenArm + S-hook reference controller, two ACT inference runtimes, and Public Exam v1. A1/A2 each provide open/close references; B1/B2/C1/C2 are robot-free challenges without reference controllers. This package contains no RL baseline or slow-opening task.
 
 Code, simulation models, and ACT weights use Apache-2.0. Demonstration datasets, technical documentation, and project-generated exam evidence, state arrays, and recordings use CC BY 4.0. Third-party assets retain their original notices. See `LICENSE`, `LICENSES/`, and `THIRD_PARTY_NOTICES.md`.
 
@@ -35,7 +35,7 @@ The five v0 downloads are available in separate Hugging Face repositories in the
 Use [`hf download`](https://huggingface.co/docs/huggingface_hub/en/guides/download#download-from-the-cli) with the type and destination above. This example downloads the first dataset into its runtime directory.
 
 ```sh
-materials_root='/path/to/complete-v0-materials'
+materials_root='/path/to/downloaded-materials'
 hf download rusty-valve/a1_a2_open_close_646 --repo-type dataset --local-dir "$materials_root/datasets/four_tasks_646"
 ```
 
@@ -65,7 +65,7 @@ Install the optional dependencies from the repository root. Set `materials_root`
 
 ```sh
 python -m pip install './runtime[act]'
-materials_root='/path/to/complete-v0-materials'
+materials_root='/path/to/downloaded-materials'
 
 rusty-valve data-check --materials "$materials_root" --output ./data_readback.json
 rusty-valve act --materials "$materials_root" --round round1 --case-index 0 --output ./act_round1_case0
@@ -74,7 +74,7 @@ rusty-valve act --materials "$materials_root" --round round2 --case-index 0 --ou
 
 Each ACT round needs its own checkpoint, plan and fixed inputs. During inference, LeRobot reads the matching A2-close training split for control rate and normalization statistics, and the runtime reads the camera capture rate from the dataset manifest. `case-index` follows the zero-based order in the selected round's exam plan. Commands execute locally on CPU. ACT inference may take much longer than simulation time and needs a render-capable local OpenGL context. A headless Linux installation needs a suitable MuJoCo rendering backend.
 
-The original models were trained on Linux with Torch 2.7.1+cu118, LeRobot 0.6.1, MuJoCo 3.16.0, NumPy 2.2.6 and SciPy 1.18.1. The macOS installation uses the cached Torch 2.11.0 CPU / torchvision 0.26.0 distributions with the same saved weights. Download attempts for Torch 2.7.1 and its dependencies timed out; this is a macOS compatibility check, not a validation of the original Linux/CUDA installation. No training setting was changed. Cross-platform floating-point differences are possible; the local installation checks do not replace the frozen published results. See `VALIDATION.md` for actual tested versions and results, including any remaining limitations.
+The original models were trained on Linux with Torch 2.7.1+cu118, LeRobot 0.6.1, MuJoCo 3.16.0, NumPy 2.2.6 and SciPy 1.18.1. The macOS installation uses the cached Torch 2.11.0 CPU / torchvision 0.26.0 distributions with the same saved weights. Download attempts for Torch 2.7.1 and its dependencies timed out; this is a macOS compatibility check, not a validation of the original Linux/CUDA installation. No training setting was changed. Cross-platform floating-point differences are possible; the local installation checks do not replace the published results. See `VALIDATION.md` for actual tested versions and results, including any remaining limitations.
 
 ## Data
 
@@ -118,16 +118,16 @@ renderer.close()
 env.close()
 ```
 
-The underlying interface is the frozen `H0Env`. Both `reset()` and `step()` return a dictionary of time, valve angle, contacts and cumulative status. Robot joint angles are available through `env.data.qpos[env.robot_qpos_indices]`. Public pass/fail comes from the separate public exam scorer, not the legacy `goal_hold_reached` field. The low-level constructor alone does not select the reviewed rest pose; use the explicit initial state above. Commands contain all configured motor position targets in radians; ACT fills only the active arm and preserves the idle-arm commands. Robot adapters are under `rusty_valve/versions/<round>/valve_bench/configs/robots/`. A different robot needs its own adapter, actuator order, limits and contact categories. The supplied reference controller and reviewed key poses are OpenArm/S-hook specific; changing the tool does not automatically produce a reference solution.
+The underlying interface is `H0Env`. Both `reset()` and `step()` return a dictionary of time, valve angle, contacts and cumulative status. Robot joint angles are available through `env.data.qpos[env.robot_qpos_indices]`. Public pass/fail comes from the public exam scorer, not the older `goal_hold_reached` field. The low-level constructor alone does not select the reviewed rest pose; use the explicit initial state above. Commands contain all configured motor position targets in radians; ACT fills only the active arm and preserves the idle-arm commands. Robot adapters are under `rusty_valve/versions/<round>/valve_bench/configs/robots/`. A different robot needs its own adapter, actuator order, limits and contact categories. The supplied reference controller and reviewed key poses are OpenArm/S-hook specific; changing the tool does not automatically produce a reference solution.
 
 ## Scores and evidence
 
-Public v1 requires the target (0 degrees closed or 90 degrees open) within 5 degrees for the final continuous second, no robot-to-nonhandle-environment contact above 20 N, and a 90-second deadline. Any robot part may contact the handle; robot self-contact is recorded only. The valve must move through native physical contact. Tool working-face checks and full arm return are recorded separately and are not public pass criteria. The legacy v2.5 control-loop termination conditions are retained to reproduce the frozen policies; the public score is computed separately from their full physical evidence.
+Public v1 requires the target (0 degrees closed or 90 degrees open) within 5 degrees for the final continuous second, no robot-to-nonhandle-environment contact above 20 N, and a 90-second deadline. Any robot part may contact the handle; robot self-contact is recorded only. The valve must move through native physical contact. Tool working-face checks and full arm return are recorded separately and are not public pass criteria. The ACT runs keep their original stopping conditions so the published policies reproduce; the public score is computed separately from the full physical evidence.
 
 The score CLI reads `valve_solved_step_evidence_v1` gzip JSONL: one header with `variant`, `physics_dt_s`, `contact_evidence_complete`, `data_kind`; one sample per solved physics step with increasing `time_s`, `opening_deg` and complete `contacts`; and the matching completion footer. Contact entries include `kind` (`handle`, `self`, `fixture`, `environment`) and `force_N` as each individual contact-force magnitude. The footer must retain sample counts/timestamps, completion flags and physical-runtime provenance. Sparse snapshots cannot prove absence of collisions. Results are `pass`, `fail`, `unverified` or `invalid`; gaps stay explicit. For another simulator, use `PublicExamScorer.observe()` with the same fields and supply truthful coverage/physical-validity declarations to `finish()`.
 
 ## Portability changes
 
-Only paths, packaging and entry points were adapted. Round-specific controller, physics, camera settings, action cadence, temporal ensemble coefficient (0.01), normalization statistics, weights, labels and data splits remain frozen. The full ACT checkpoint supplies the visual backbone; its constructor's optional pretrained-backbone download is disabled during loading, then all saved weights are loaded. The bundled `h3_act_train.py` only reads local data for ACT inference. The inactive historical compatibility fields remain private implementation details; no slow-opening command is exposed. See [portability notes](PORTABILITY.md) for details.
+Only paths, packaging and entry points were adapted. Controllers, physics, camera settings, action cadence, temporal ensemble coefficient (0.01), normalization statistics, weights, labels and data splits are unchanged from the published runs. The full ACT checkpoint supplies the visual backbone; its constructor's optional pretrained-backbone download is disabled during loading, then all saved weights are loaded. See [portability notes](PORTABILITY.md) for details.
 
-The frozen reference code and metadata retain some internal Chinese comments and historical paths, which do not affect runtime operation.
+Some code comments and metadata fields are in Chinese. They do not affect running the code.

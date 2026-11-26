@@ -1,0 +1,59 @@
+{
+  "version": "supported_recipe_sampling_v1",
+  "scope": "Process material entry. Utility-only checks retain the process relationships.",
+  "transfer_modes": [
+    "pump",
+    "no_pump"
+  ],
+  "self_return_modes": [
+    "pump"
+  ],
+  "transfer_via": [],
+  "recycle_auxiliaries": [
+    {
+      "kind": "exchanger",
+      "service": "steam_heater",
+      "forms": [
+        "horizontal",
+        "vertical"
+      ]
+    }
+  ],
+  "reflux_condenser_forms": [
+    "horizontal",
+    "vertical"
+  ],
+  "jacket_media": [
+    "steam",
+    "cold_source",
+    "hot_water"
+  ],
+  "not_implemented": {
+    "fixed_bed": "Fixed-bed process piping is not implemented",
+    "transfer_exchanger": "Inline heat exchangers in transfer lines are not implemented"
+  },
+  "out_of_scope": {
+    "distillation": "Distillate export and its receiving tank are outside this supported mode"
+  },
+  "batch_strata": [
+    {
+      "mode": "pump",
+      "self_return": false,
+      "count": 5
+    },
+    {
+      "mode": "pump",
+      "self_return": true,
+      "count": 5
+    },
+    {
+      "mode": "no_pump",
+      "self_return": false,
+      "count": 10
+    }
+  ],
+  "batch_jacket_media": [
+    "steam",
+    "cold_source"
+  ]
+}

@@ -5,7 +5,7 @@ Completed 2026-11-06 (Asia/Shanghai). A fresh Python 3.12 virtual environment wa
 | Check | Actual outcome |
 |---|---|
 | Six standalone stations A1, A2, B1, B2, C1, C2 | All six loaded in MuJoCo |
-| Four frozen OpenArm/S-hook teacher references | All four completed; public v1 pass |
+| Four OpenArm/S-hook teacher references | All four completed; public v1 pass |
 | A1 open / close final opening | 88.2564° / 3.3487° |
 | A2 open / close final opening | 86.5603° / 2.2728° |
 | Official LeRobot reader | First sample of all ten train/validation splits loaded; 646 + 300 episodes accounted for |
@@ -24,6 +24,4 @@ macOS 15.6.1 arm64, Python 3.12.15, MuJoCo 3.16.0, LeRobot 0.6.1, Torch 2.11.0, 
 
 The macOS PyAV/OpenCV combination emitted duplicate AVFoundation class warnings; both inference runs and video generation finished. LeRobot first reported unavailable saved `cuda` configuration while reading it; the wrapper then explicitly set CPU before constructing/loading the policy. No pretrained model was downloaded.
 
-The first teacher launch failed before physics because a relative rest-file reference was checked against the current directory. Resolving it against the storyboard fixed this packaging issue; the original failure logs remain in the internal handoff workspace. The low-level API example was also corrected to select the bundled reviewed placement and natural-rest state explicitly. Physics, controllers, scores and saved numeric parameters were not changed.
-
-Original installation logs, failed initialization logs, full local smoke evidence and videos are under `_internal/validation/` in the local handoff. That private workspace is excluded from public uploads. Small sanitized check logs are included in `validation/`.
+Small check logs are included in `validation/`.

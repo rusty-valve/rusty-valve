@@ -1,0 +1,49 @@
+{
+  "maintenance_width_m": 0.8,
+  "ground_bottom_maintenance_width_m": 0.8,
+  "ground_bottom_source": "BL v2.4 §2.1 BL-2F",
+  "extraction_width_extra_m": 0.8,
+  "source": "BL v2.4",
+  "normal_equipment_opening_clearance_m": 0.1,
+  "opening_source": "Radius plus 0.1 m opening allowance for physical shell or BL-6 drive intersections. Keep the maintenance widths.",
+  "large_maintenance_range_m": [
+    1.0,
+    1.2
+  ],
+  "large_maintenance_width_m": 1.2,
+  "large_maintenance_source": "BL v2.4 layout rules",
+  "large_maintenance_choice": "Use the upper specified clearance for every large unit before layout search",
+  "dimension_range_source": "BL-4 equipment sizing rules",
+  "rule_version": "v2.4",
+  "horizontal_vessel_limits": {
+    "diameter_m": [
+      1.0,
+      2.0
+    ],
+    "length_m": [
+      2.5,
+      5.0
+    ]
+  },
+  "slender_limits": {
+    "aspect_ratio_min": 5.0,
+    "diameter_m": [
+      0.5,
+      1.2
+    ],
+    "height_m": [
+      5.0,
+      9.0
+    ]
+  },
+  "exchanger_limits": {
+    "diameter_m": [
+      0.3,
+      0.7
+    ],
+    "length_m": [
+      1.5,
+      3.5
+    ]
+  }
+}

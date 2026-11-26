@@ -39,7 +39,7 @@ The **round-2 A2-close experiment used a separate set of 300 complete demonstrat
 
 ## Where the code is
 
-Run an OpenArm + S-hook reference demonstration with `rusty-valve teacher --task A2_close --output ./teacher_A2_close` after following the [quick start](../runtime/QUICKSTART.md). The [command-line entry point](../runtime/src/rusty_valve/cli.py) uses the bundled round-2 reference implementation. The [round-1 source](../runtime/src/rusty_valve/versions/round1/valve_bench/) is also bundled for the frozen ACT evaluation.
+Run an OpenArm + S-hook reference demonstration with `rusty-valve teacher --task A2_close --output ./teacher_A2_close` after following the [quick start](../runtime/QUICKSTART.md). The [command-line entry point](../runtime/src/rusty_valve/cli.py) uses the bundled round-2 reference implementation. The [round-1 source](../runtime/src/rusty_valve/versions/round1/valve_bench/) is also bundled for the ACT evaluation.
 
 | Purpose | File |
 |---|---|

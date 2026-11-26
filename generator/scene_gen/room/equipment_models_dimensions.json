@@ -1,0 +1,362 @@
+{
+  "pump": {
+    "anchor": [
+      -0.003820134571485889,
+      0.043789998023606114,
+      0.0
+    ],
+    "bounds_m": {
+      "min": [
+        -0.8143030779258716,
+        -0.29152977680939035,
+        0.0
+      ],
+      "max": [
+        0.8066628087828999,
+        0.3791097728566026,
+        0.708739337647842
+      ]
+    },
+    "base_bounds_m": {
+      "min": [
+        -0.4885838,
+        -0.29152977680939035,
+        0.0
+      ],
+      "max": [
+        0.7367749,
+        0.3791097728566026,
+        0.0082797
+      ]
+    },
+    "reference_dimensions": "Pump catalogue dimensional survey",
+    "ports": {
+      "in": {
+        "position": [
+          -0.8143018766107024,
+          0.04381776042241414,
+          0.36417048425646054
+        ],
+        "normal": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "dn": null,
+        "flange_outer_diameter_m": 0.25318212147746083,
+        "opening_diameter_m": 0.13255286952698372,
+        "bolt_circle_m": 0.20281088733335437,
+        "bolt_holes": [
+          {
+            "center_m": [
+              -0.8143018766107024,
+              -0.05789322881553782,
+              0.3641696575870626
+            ],
+            "diameter_m": 0.01912628479311722
+          },
+          {
+            "center_m": [
+              -0.8143018766107024,
+              0.04351477958691636,
+              0.2627673177323963
+            ],
+            "diameter_m": 0.019122990075824863
+          },
+          {
+            "center_m": [
+              -0.8143018766107024,
+              0.14491877065914138,
+              0.36417339138259497
+            ],
+            "diameter_m": 0.01912769840551407
+          },
+          {
+            "center_m": [
+              -0.8143018766107024,
+              0.043514594593271505,
+              0.4655770928430941
+            ],
+            "diameter_m": 0.019127521737403962
+          }
+        ],
+        "source_tag": "suction",
+        "flange_thickness_m": 0.021051876610702402,
+        "face_tolerance_m": 2e-06,
+        "flange_bore_open": true
+      },
+      "out": {
+        "position": [
+          -0.6026209518710589,
+          0.23299854302501558,
+          0.7087388943327197
+        ],
+        "normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "dn": null,
+        "flange_outer_diameter_m": 0.21469375820985173,
+        "opening_diameter_m": 0.11240233883884015,
+        "bolt_circle_m": 0.17659999477571975,
+        "bolt_holes": [
+          {
+            "center_m": [
+              -0.6022560373188593,
+              0.14457452427176967,
+              0.7087388943327197
+            ],
+            "diameter_m": 0.017247045746551944
+          },
+          {
+            "center_m": [
+              -0.6022535770367959,
+              0.3211745106142543,
+              0.7087388943327197
+            ],
+            "diameter_m": 0.017246627318961993
+          },
+          {
+            "center_m": [
+              -0.6905562609941676,
+              0.2328771141094644,
+              0.7087388943327197
+            ],
+            "diameter_m": 0.017247921346624416
+          },
+          {
+            "center_m": [
+              -0.5139562578658803,
+              0.23287502587943817,
+              0.7087388943327197
+            ],
+            "diameter_m": 0.017248397840076448
+          }
+        ],
+        "source_tag": "discharge",
+        "flange_thickness_m": 0.015493715412592035,
+        "face_tolerance_m": 2e-06,
+        "flange_bore_open": true
+      }
+    }
+  },
+  "filter": {
+    "anchor": [
+      0,
+      0,
+      0
+    ],
+    "bounds_m": {
+      "min": [
+        -0.115,
+        -0.0825,
+        -0.149813295832492
+      ],
+      "max": [
+        0.115,
+        0.0825,
+        0.08242566471188625
+      ]
+    },
+    "reference_dimensions": "SZ03 DN50 PN16 catalogue dimensional survey",
+    "ports": {
+      "in": {
+        "position": [
+          -0.115,
+          0.0,
+          0.0
+        ],
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "dn": 50,
+        "flange_outer_diameter_m": 0.165,
+        "opening_diameter_m": 0.04483318713608454,
+        "bolt_circle_m": 0.125,
+        "bolt_holes": [
+          {
+            "center_m": [
+              -0.115,
+              0.0441941738241592,
+              -0.0441941738241592
+            ],
+            "diameter_m": 0.018
+          },
+          {
+            "center_m": [
+              -0.115,
+              -0.0441941738241592,
+              -0.0441941738241592
+            ],
+            "diameter_m": 0.018
+          },
+          {
+            "center_m": [
+              -0.115,
+              -0.0441941738241592,
+              0.0441941738241592
+            ],
+            "diameter_m": 0.018
+          },
+          {
+            "center_m": [
+              -0.115,
+              0.0441941738241592,
+              0.0441941738241592
+            ],
+            "diameter_m": 0.018
+          }
+        ],
+        "source_tag": "in",
+        "flange_thickness_m": 0.015,
+        "face_tolerance_m": 2e-06,
+        "flange_bore_open": true,
+        "opening_center_m": [
+          -0.115,
+          -3.07909529936914e-18,
+          0.00246973873353393
+        ],
+        "opening_semi_axes_mm": [
+          25.0,
+          24.8863323015762
+        ],
+        "bolt_offsets_m": [
+          [
+            0.0,
+            0.0441941738241592,
+            -0.0441941738241592
+          ],
+          [
+            0.0,
+            -0.0441941738241592,
+            -0.0441941738241592
+          ],
+          [
+            0.0,
+            -0.0441941738241592,
+            0.0441941738241592
+          ],
+          [
+            0.0,
+            0.0441941738241592,
+            0.0441941738241592
+          ]
+        ],
+        "flange_reference": {
+          "outer_diameter_mm": 165,
+          "fit_bore_mm": 44.8,
+          "bolt_circle_mm": 125,
+          "hole_diameter_mm": 18,
+          "bolt_count": 4,
+          "plate_thickness_mm": 15,
+          "raised_face_diameter_mm": 102,
+          "rf_height_mm": 3,
+          "overall_thickness_mm": 18,
+          "basis": "Manufacturer PN16 drawing page 2. b includes the raised face. STEP gives 18 mm from face to back and 15 mm plate thickness."
+        },
+        "contact_face_outer_diameter_m": 0.102
+      },
+      "out": {
+        "position": [
+          0.115,
+          0.0,
+          0.0
+        ],
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "dn": 50,
+        "flange_outer_diameter_m": 0.165,
+        "opening_diameter_m": 0.05,
+        "bolt_circle_m": 0.125,
+        "bolt_holes": [
+          {
+            "center_m": [
+              0.115,
+              0.0441941738241592,
+              0.0441941738241592
+            ],
+            "diameter_m": 0.018
+          },
+          {
+            "center_m": [
+              0.115,
+              -0.0441941738241592,
+              0.0441941738241592
+            ],
+            "diameter_m": 0.018
+          },
+          {
+            "center_m": [
+              0.115,
+              -0.0441941738241592,
+              -0.0441941738241592
+            ],
+            "diameter_m": 0.018
+          },
+          {
+            "center_m": [
+              0.115,
+              0.0441941738241592,
+              -0.0441941738241592
+            ],
+            "diameter_m": 0.018
+          }
+        ],
+        "source_tag": "out",
+        "flange_thickness_m": 0.015,
+        "face_tolerance_m": 2e-06,
+        "flange_bore_open": true,
+        "opening_center_m": [
+          0.115,
+          0.0,
+          0.0
+        ],
+        "opening_semi_axes_mm": [
+          25.0,
+          25.0
+        ],
+        "bolt_offsets_m": [
+          [
+            0.0,
+            0.0441941738241592,
+            0.0441941738241592
+          ],
+          [
+            0.0,
+            -0.0441941738241592,
+            0.0441941738241592
+          ],
+          [
+            0.0,
+            -0.0441941738241592,
+            -0.0441941738241592
+          ],
+          [
+            0.0,
+            0.0441941738241592,
+            -0.0441941738241592
+          ]
+        ],
+        "flange_reference": {
+          "outer_diameter_mm": 165,
+          "fit_bore_mm": 50.0,
+          "bolt_circle_mm": 125,
+          "hole_diameter_mm": 18,
+          "bolt_count": 4,
+          "plate_thickness_mm": 15,
+          "raised_face_diameter_mm": 102,
+          "rf_height_mm": 3,
+          "overall_thickness_mm": 18,
+          "basis": "Manufacturer PN16 drawing page 2. b includes the raised face. STEP gives 18 mm from face to back and 15 mm plate thickness."
+        },
+        "contact_face_outer_diameter_m": 0.102
+      }
+    }
+  }
+}

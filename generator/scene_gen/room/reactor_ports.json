@@ -1,0 +1,19 @@
+{
+  "feed":               {"F5000":"c", "F10000":"g1", "F20000":"g1"},
+  "liquid_return":      {"F5000":"c", "F10000":"g1", "F20000":"g1"},
+  "condensate_return":  {"F5000":"d", "F10000":"g2", "F20000":"g2"},
+  "vapor":              {"F5000":"h", "F10000":"e2", "F20000":"e2"},
+  "offgas":             {"F5000":"h", "F10000":"e2", "F20000":"e2"},
+  "nitrogen":           {"F5000":"g", "F10000":"k",  "F20000":"k"},
+  "safety":             {"F5000":"f", "F10000":"g4", "F20000":"g4"},
+  "bottom":             {"F5000":"j", "F10000":"a",  "F20000":"a"},
+  "mount": {
+    "F5000": {"c":"upper_head", "d":"upper_head", "f":"upper_head", "g":"upper_head", "h":"upper_head", "j":"lower_head"},
+    "F10000": {"g1":"upper_head", "g2":"upper_head", "e2":"upper_head", "k":"upper_head", "g4":"upper_head", "a":"lower_head"},
+    "F20000": {"g1":"upper_head", "g2":"upper_head", "e2":"upper_head", "k":"upper_head", "g4":"upper_head", "a":"lower_head"}
+  },
+  "protected":          {"F5000":["a","b","e"], "F10000":["c","d","s","e1"], "F20000":["c","d","s","e1"]},
+  "idle":               {"F5000":[], "F10000":["g3"], "F20000":["g3"]},
+  "reopen_from":        {"F5000":{"c":"d"}, "F10000":{}, "F20000":{}},
+  "yaw_offset_deg":     {"F5000":45, "F10000":0, "F20000":0}
+}

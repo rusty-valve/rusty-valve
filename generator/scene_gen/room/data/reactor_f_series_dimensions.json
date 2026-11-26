@@ -1,0 +1,447 @@
+{
+  "manufacturer": "Taiji",
+  "series": "F",
+  "jacket_configuration": "full_jacket",
+  "scope": "reactor_unit_only",
+  "length_unit": "mm",
+  "bearing": "Top view, clockwise from drawing +Y toward +X, Z up",
+  "origin": "Reactor axis at underside bearing plane of all four side lugs",
+  "lug_bearings_deg": [
+    45,
+    135,
+    225,
+    315
+  ],
+  "catalog_notes": {
+    "h": "Approximate catalog overall as drawn, absent from the F5000 table.",
+    "dN_and_h5": "Catalog reference only, not exact drive component geometry.",
+    "d3": "Measure the same span between the indicated lug-hole centerlines as on the section.",
+    "d4_and_d5": "Internal agitator blade extents in the section, unused for the exterior.",
+    "B1_and_B2": "Lower jacket-nozzle offsets shown by the selected section, B2 is retained but unused for full jacket.",
+    "manway_opening": "Catalog opening dimensions only. The F20000 single value is retained without inferring the cover shape."
+  },
+  "sources": {
+    "T0": {
+      "url": "https://www.taijiglasslined.com/1-2-glass-lined-reactor/232327/",
+      "label": "Taiji F-series catalogue tables"
+    },
+    "T2024": {
+      "url": "https://www.magicpump.com.tw/files/glass_20240628.pdf",
+      "label": "Mirror of Taiji bilingual 2024 catalogue, F5000 j row"
+    },
+    "T14": {
+      "url": "https://www.taijiglasslined.com/product/1-2-glass-lined-reactor_14.webp",
+      "label": "F5000 full jacket section"
+    },
+    "T15": {
+      "url": "https://www.taijiglasslined.com/product/1-2-glass-lined-reactor_15.webp",
+      "label": "F5000 plan"
+    },
+    "T17": {
+      "url": "https://www.taijiglasslined.com/product/1-2-glass-lined-reactor_17.webp",
+      "label": "F10000 and F20000 full jacket section"
+    },
+    "T19": {
+      "url": "https://www.taijiglasslined.com/product/1-2-glass-lined-reactor_19.webp",
+      "label": "F10000 and F20000 plan"
+    }
+  },
+  "unresolved": [
+    "External shell diameter and wall thickness apart from jacket outside diameter.",
+    "Exact shell head profile, upper nozzle radii, elevations, tilt and mating face geometry.",
+    "Lug plate outlines, thickness and fabrication details.",
+    "F5000 total height, F20000 manway cover outline and exact drive assembly dimensions.",
+    "Exact bottom discharge valve selection and maintenance envelopes."
+  ],
+  "models": {
+    "F5000": {
+      "capacity_l": {
+        "nominal": 5000,
+        "total": 6040,
+        "calculated": 6016,
+        "jacket": 898
+      },
+      "dimensions_mm": {
+        "d0": null,
+        "d1": 1750,
+        "d2": 1900,
+        "d3": 2412,
+        "d4": 720,
+        "d5": 850,
+        "h1": 2888,
+        "h2": 190,
+        "h3": 750,
+        "h4": 1200,
+        "B1": 350,
+        "B2": 500,
+        "lug_hole_diameter": 30
+      },
+      "reference_drive_and_overall_mm": {
+        "dN": 95,
+        "h5": 1680,
+        "h": null
+      },
+      "drawing": {
+        "section": "T14",
+        "plan": "T15"
+      },
+      "manway": {
+        "tag": "a",
+        "bearing_deg": 270,
+        "opening_mm": [
+          300,
+          400
+        ]
+      },
+      "drive_mount": {
+        "tag": "b",
+        "dn": 150
+      },
+      "bottom_discharge": {
+        "tag": "j",
+        "dn": 125,
+        "source_id": "T2024"
+      },
+      "process_top_nozzles": [
+        {
+          "tag": "c",
+          "dn": 125,
+          "bearing_deg": 330
+        },
+        {
+          "tag": "d",
+          "dn": 125,
+          "bearing_deg": 15
+        },
+        {
+          "tag": "e",
+          "dn": 125,
+          "bearing_deg": 65
+        },
+        {
+          "tag": "f",
+          "dn": 150,
+          "bearing_deg": 115
+        },
+        {
+          "tag": "g",
+          "dn": 125,
+          "bearing_deg": 165
+        },
+        {
+          "tag": "h",
+          "dn": 150,
+          "bearing_deg": 210
+        }
+      ],
+      "jacket_nozzles": [
+        {
+          "tag": "k1",
+          "dn": 65,
+          "bearing_deg": 0,
+          "mount": "side_upper"
+        },
+        {
+          "tag": "k2",
+          "dn": 65,
+          "bearing_deg": 180,
+          "mount": "side_upper"
+        },
+        {
+          "tag": "k3",
+          "dn": 65,
+          "bearing_deg": 0,
+          "mount": "bottom"
+        },
+        {
+          "tag": "k4",
+          "dn": 65,
+          "bearing_deg": 180,
+          "mount": "bottom"
+        }
+      ],
+      "threaded_ports": [
+        {
+          "tag": "m",
+          "thread": "G3/8",
+          "bearing_deg": 300
+        }
+      ],
+      "derived_from_section_mm": {
+        "h1_lower_datum_z": -1688,
+        "upper_reference_z": 1200,
+        "upper_jacket_nozzle_axis_z": 450,
+        "drive_mount_reference_z": 1390
+      }
+    },
+    "F10000": {
+      "capacity_l": {
+        "nominal": 10000,
+        "total": 11757,
+        "calculated": 11724,
+        "jacket": 1940
+      },
+      "dimensions_mm": {
+        "d0": 800,
+        "d1": 2200,
+        "d2": 2400,
+        "d3": 2964,
+        "d4": 980,
+        "d5": 1200,
+        "h1": 3533,
+        "h2": 210,
+        "h3": 900,
+        "h4": 1300,
+        "B1": 470,
+        "B2": 700,
+        "lug_hole_diameter": 36
+      },
+      "reference_drive_and_overall_mm": {
+        "dN": 110,
+        "h5": 1960,
+        "h": 5890
+      },
+      "manway": {
+        "tag": "C",
+        "bearing_deg": 0,
+        "opening_mm": [
+          300,
+          400
+        ]
+      },
+      "drive_mount": {
+        "tag": "d",
+        "dn": 200
+      },
+      "drawing": {
+        "section": "T17",
+        "plan": "T19"
+      },
+      "bottom_discharge": {
+        "tag": "a",
+        "dn": 150,
+        "source_id": "T0"
+      },
+      "process_top_nozzles": [
+        {
+          "tag": "e1",
+          "dn": 200,
+          "bearing_deg": 40
+        },
+        {
+          "tag": "g1",
+          "dn": 150,
+          "bearing_deg": 75
+        },
+        {
+          "tag": "g2",
+          "dn": 150,
+          "bearing_deg": 110
+        },
+        {
+          "tag": "g3",
+          "dn": 150,
+          "bearing_deg": 145
+        },
+        {
+          "tag": "S",
+          "dn": 125,
+          "bearing_deg": 180
+        },
+        {
+          "tag": "g4",
+          "dn": 150,
+          "bearing_deg": 215
+        },
+        {
+          "tag": "e2",
+          "dn": 200,
+          "bearing_deg": 250
+        },
+        {
+          "tag": "k",
+          "dn": 125,
+          "bearing_deg": 300
+        }
+      ],
+      "jacket_nozzles": [
+        {
+          "tag": "b1",
+          "dn": 80,
+          "bearing_deg": 270,
+          "mount": "side_upper"
+        },
+        {
+          "tag": "b2",
+          "dn": 80,
+          "bearing_deg": 90,
+          "mount": "side_upper"
+        },
+        {
+          "tag": "b3",
+          "dn": 80,
+          "bearing_deg": 270,
+          "mount": "bottom"
+        },
+        {
+          "tag": "b4",
+          "dn": 80,
+          "bearing_deg": 90,
+          "mount": "bottom"
+        }
+      ],
+      "threaded_ports": [
+        {
+          "tag": "m",
+          "thread": "G3/4",
+          "bearing_deg": 60
+        },
+        {
+          "tag": "n",
+          "thread": "G1/2",
+          "bearing_deg": null
+        }
+      ],
+      "derived_from_section_mm": {
+        "h1_lower_datum_z": -2233,
+        "upper_reference_z": 1300,
+        "upper_jacket_nozzle_axis_z": 400,
+        "drive_mount_reference_z": 1510
+      }
+    },
+    "F20000": {
+      "capacity_l": {
+        "nominal": 20000,
+        "total": 21835,
+        "calculated": 21790,
+        "jacket": 2870
+      },
+      "dimensions_mm": {
+        "d0": 900,
+        "d1": 2600,
+        "d2": 2800,
+        "d3": 3439,
+        "d4": 1080,
+        "d5": 1300,
+        "h1": 4641,
+        "h2": 210,
+        "h3": 1000,
+        "h4": 1550,
+        "B1": 470,
+        "B2": 700,
+        "lug_hole_diameter": 36
+      },
+      "reference_drive_and_overall_mm": {
+        "dN": 140,
+        "h5": 2300,
+        "h": 7350
+      },
+      "manway": {
+        "tag": "C",
+        "bearing_deg": 0,
+        "opening_mm": [
+          450
+        ]
+      },
+      "drive_mount": {
+        "tag": "d",
+        "dn": 250
+      },
+      "drawing": {
+        "section": "T17",
+        "plan": "T19"
+      },
+      "bottom_discharge": {
+        "tag": "a",
+        "dn": 150,
+        "source_id": "T0"
+      },
+      "process_top_nozzles": [
+        {
+          "tag": "e1",
+          "dn": 200,
+          "bearing_deg": 40
+        },
+        {
+          "tag": "g1",
+          "dn": 150,
+          "bearing_deg": 75
+        },
+        {
+          "tag": "g2",
+          "dn": 150,
+          "bearing_deg": 110
+        },
+        {
+          "tag": "g3",
+          "dn": 150,
+          "bearing_deg": 145
+        },
+        {
+          "tag": "S",
+          "dn": 125,
+          "bearing_deg": 180
+        },
+        {
+          "tag": "g4",
+          "dn": 150,
+          "bearing_deg": 215
+        },
+        {
+          "tag": "e2",
+          "dn": 200,
+          "bearing_deg": 250
+        },
+        {
+          "tag": "k",
+          "dn": 125,
+          "bearing_deg": 300
+        }
+      ],
+      "jacket_nozzles": [
+        {
+          "tag": "b1",
+          "dn": 100,
+          "bearing_deg": 270,
+          "mount": "side_upper"
+        },
+        {
+          "tag": "b2",
+          "dn": 100,
+          "bearing_deg": 90,
+          "mount": "side_upper"
+        },
+        {
+          "tag": "b3",
+          "dn": 100,
+          "bearing_deg": 270,
+          "mount": "bottom"
+        },
+        {
+          "tag": "b4",
+          "dn": 100,
+          "bearing_deg": 90,
+          "mount": "bottom"
+        }
+      ],
+      "threaded_ports": [
+        {
+          "tag": "m",
+          "thread": "G3/4",
+          "bearing_deg": 60
+        },
+        {
+          "tag": "n",
+          "thread": "G1/2",
+          "bearing_deg": null
+        }
+      ],
+      "derived_from_section_mm": {
+        "h1_lower_datum_z": -3091,
+        "upper_reference_z": 1550,
+        "upper_jacket_nozzle_axis_z": 550,
+        "drive_mount_reference_z": 1760
+      }
+    }
+  }
+}

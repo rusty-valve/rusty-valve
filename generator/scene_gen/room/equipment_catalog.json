@@ -1,0 +1,407 @@
+{
+  "version": "equipment_catalogue_2026-11-17",
+  "authority": "BL v2.4 §4 / pipe specification / material connection figures 17, 19 and 20",
+  "detailed_models": {
+    "archive": "catalogue/equipment_details.zip",
+    "selection": {
+      "vessel.vertical.small": "F5000",
+      "exchanger.horizontal": "exchanger_horizontal",
+      "exchanger.vertical": "exchanger_vertical",
+      "condenser.horizontal": "condenser_horizontal",
+      "condenser.vertical": "condenser_vertical",
+      "pump": "pump",
+      "filter": "filter",
+      "automatic_steam_trap": "automatic_steam_trap",
+      "safety_valve": "safety_valve"
+    },
+    "horizontal_storage": "Generate the fixed horizontal storage vessel from the physical dimensions and original nozzle layout"
+  },
+  "sources": {
+    "pfaudler_ae": {
+      "author": "Pfaudler",
+      "title": "Pfaudler DIN AE Reactors, 622-4E",
+      "url": "https://www.gmmpfaudler.com/uploads/files/A_Pfaudler-DIN-AE-Reactors-622-4E.pdf",
+      "archival_pdf": "Pfaudler AE published dimension drawing",
+      "local_pdf_pages": {
+        "section_drawing": 5,
+        "support_options": 6,
+        "AE250": 10,
+        "AE1000": 11
+      },
+      "note": "Page numbering follows the archived 12-page English edition. The current 24-page edition duplicates languages and appendices. Preserve h1 as defined on the original section."
+    },
+    "gmm_pfaudler_be": {
+      "author": "GMM Pfaudler",
+      "title": "GMM Pfaudler product catalogue, DIN Reactors BE",
+      "mirror_url": "https://plantequipment.co.th/wp-content/uploads/2020/08/GMM-Pfaudler.pdf",
+      "official_current_entry": "https://www.gmmpfaudler.com/download-pdf/GMM-Pfaudler-DIN-BE-Reactors-624-13E.pdf",
+      "official_series_description": "https://www.gmmpfaudler.com/glass-lined-equipment-1/glass-lined-reactors/products-1/din-reactors",
+      "page": 11,
+      "note": "Manufacturer handbook hosted by a distributor. Its authorship and page 11 table and section were checked. The large tier uses the same manufacturer's BE4000.",
+      "document": "GMM Pfaudler BE manufacturer catalogue, distributor mirror",
+      "table_caption": "BE4000 dimensions and section, printed page 11"
+    },
+    "estimated_bl4": {
+      "author": "project geometry estimates",
+      "authority": "BL v2.4 §4",
+      "note": "Horizontal vessels use the reference R1 dimensions on the second level of room-01. Fixed beds, exchangers and condensers retain their respective dimensions. Envelopes, supports, heads and stubs are modeling estimates."
+    },
+    "taiji_f": {
+      "author": "Taiji",
+      "title": "Taiji F-series closed glass-lined production reactors",
+      "url": "https://www.taijiglasslined.com/1-2-glass-lined-reactor/232327/",
+      "local_parameters": "data/taiji_f_series.json",
+      "local_sections": [
+        "Taiji F manufacturer drawing 14",
+        "Taiji F manufacturer drawing 17"
+      ],
+      "note": "Catalogue dimensions and nominal volume are separate. h1 and h4 follow the manufacturer datums, not the straight-shell length. Details and interfaces use explicit estimates. F5000 bottom DN125 comes from T2024."
+    }
+  },
+  "items": {
+    "vessel.vertical.small": {
+      "series": "Taiji F",
+      "model": "F5000",
+      "kind": "vessel",
+      "form": "vertical",
+      "size_tier": "small",
+      "nominal_volume_l": 5000,
+      "catalog_total_volume_l": 6040,
+      "catalog_calculated_volume_l": 6016,
+      "manufacturer_capacities_l": {
+        "nominal": 5000,
+        "total": 6040,
+        "calculated": 6016,
+        "jacket": 898
+      },
+      "source_id": "taiji_f",
+      "estimated": false,
+      "manufacturer_dimensions_mm": {
+        "d0": null,
+        "d1": 1750,
+        "d2": 1900,
+        "d3": 2412,
+        "d4": 720,
+        "d5": 850,
+        "h1": 2888,
+        "h2": 190,
+        "h3": 750,
+        "h4": 1200,
+        "B1": 350,
+        "B2": 500,
+        "lug_hole_diameter": 30
+      },
+      "reference_drive_and_overall_mm": {
+        "dN": 95,
+        "h5": 1680,
+        "h": null
+      },
+      "support_type": "four_side_lugs",
+      "lug_bearings_deg": [
+        45,
+        135,
+        225,
+        315
+      ],
+      "bottom_discharge_reference": {
+        "tag": "j",
+        "dn": 125,
+        "source_id": "T2024"
+      },
+      "nozzle_length_m_estimate": 0.12,
+      "head_depth_diameter_fraction_estimate": 0.25,
+      "drive_width_m_estimate": 0.32,
+      "drive_width_source": "Original coarse drive envelope is 0.32 m OD. The catalogue dN denotes shaft diameter.",
+      "reference_origin": "Four lug bearing faces, Z up. U is the common upper datum for h1, h3 and h4.",
+      "field_note": "Drawing datums use h1, h4, h2 and h3. Head depth d2/4, shell top U minus 0.12 m, base B, 0.12 m necks and local support geometry are estimates."
+    },
+    "vessel.vertical.medium": {
+      "series": "Taiji F",
+      "model": "F10000",
+      "kind": "vessel",
+      "form": "vertical",
+      "size_tier": "medium",
+      "nominal_volume_l": 10000,
+      "catalog_total_volume_l": 11757,
+      "catalog_calculated_volume_l": 11724,
+      "manufacturer_capacities_l": {
+        "nominal": 10000,
+        "total": 11757,
+        "calculated": 11724,
+        "jacket": 1940
+      },
+      "source_id": "taiji_f",
+      "estimated": false,
+      "manufacturer_dimensions_mm": {
+        "d0": 800,
+        "d1": 2200,
+        "d2": 2400,
+        "d3": 2964,
+        "d4": 980,
+        "d5": 1200,
+        "h1": 3533,
+        "h2": 210,
+        "h3": 900,
+        "h4": 1300,
+        "B1": 470,
+        "B2": 700,
+        "lug_hole_diameter": 36
+      },
+      "reference_drive_and_overall_mm": {
+        "dN": 110,
+        "h5": 1960,
+        "h": 5890
+      },
+      "support_type": "four_side_lugs",
+      "lug_bearings_deg": [
+        45,
+        135,
+        225,
+        315
+      ],
+      "bottom_discharge_reference": {
+        "tag": "a",
+        "dn": 150,
+        "source_id": "T0"
+      },
+      "nozzle_length_m_estimate": 0.12,
+      "head_depth_diameter_fraction_estimate": 0.25,
+      "drive_width_m_estimate": 0.32,
+      "drive_width_source": "Original coarse drive envelope is 0.32 m OD. The catalogue dN denotes shaft diameter.",
+      "reference_origin": "Four lug bearing faces, Z up. U is the common upper datum for h1, h3 and h4.",
+      "field_note": "Drawing datums use h1, h4, h2 and h3. Head depth d2/4, shell top U minus 0.12 m, base B, 0.12 m necks and local support geometry are estimates."
+    },
+    "vessel.vertical.large": {
+      "series": "Taiji F",
+      "model": "F20000",
+      "kind": "vessel",
+      "form": "vertical",
+      "size_tier": "large",
+      "nominal_volume_l": 20000,
+      "catalog_total_volume_l": 21835,
+      "catalog_calculated_volume_l": 21790,
+      "manufacturer_capacities_l": {
+        "nominal": 20000,
+        "total": 21835,
+        "calculated": 21790,
+        "jacket": 2870
+      },
+      "source_id": "taiji_f",
+      "estimated": false,
+      "manufacturer_dimensions_mm": {
+        "d0": 900,
+        "d1": 2600,
+        "d2": 2800,
+        "d3": 3439,
+        "d4": 1080,
+        "d5": 1300,
+        "h1": 4641,
+        "h2": 210,
+        "h3": 1000,
+        "h4": 1550,
+        "B1": 470,
+        "B2": 700,
+        "lug_hole_diameter": 36
+      },
+      "reference_drive_and_overall_mm": {
+        "dN": 140,
+        "h5": 2300,
+        "h": 7350
+      },
+      "support_type": "four_side_lugs",
+      "lug_bearings_deg": [
+        45,
+        135,
+        225,
+        315
+      ],
+      "bottom_discharge_reference": {
+        "tag": "a",
+        "dn": 150,
+        "source_id": "T0"
+      },
+      "nozzle_length_m_estimate": 0.12,
+      "head_depth_diameter_fraction_estimate": 0.25,
+      "drive_width_m_estimate": 0.32,
+      "drive_width_source": "Original coarse drive envelope is 0.32 m OD. The catalogue dN denotes shaft diameter.",
+      "reference_origin": "Four lug bearing faces, Z up. U is the common upper datum for h1, h3 and h4.",
+      "field_note": "Drawing datums use h1, h4, h2 and h3. Head depth d2/4, shell top U minus 0.12 m, base B, 0.12 m necks and local support geometry are estimates."
+    },
+    "vessel.horizontal.small": {
+      "kind": "vessel",
+      "form": "horizontal",
+      "size_tier": "small",
+      "source_id": "estimated_bl4",
+      "estimated": true,
+      "diameter_m": 1.2,
+      "length_m": 2.8,
+      "head_depth_m": 0.18,
+      "leg_clearance_m": 0.54,
+      "bottom_design_dn": 50,
+      "support_type": "saddles"
+    },
+    "fixed_bed.vertical.small": {
+      "kind": "fixed_bed",
+      "form": "vertical",
+      "size_tier": "small",
+      "source_id": "estimated_bl4",
+      "estimated": true,
+      "diameter_m": 0.8,
+      "height_m": 5.5,
+      "head_depth_m": 0.12,
+      "skirt_height_m": 0.5,
+      "support_type": "skirt"
+    },
+    "fixed_bed.vertical.large": {
+      "kind": "fixed_bed",
+      "form": "vertical",
+      "size_tier": "large",
+      "source_id": "estimated_bl4",
+      "estimated": true,
+      "diameter_m": 1.0,
+      "height_m": 8.0,
+      "head_depth_m": 0.15,
+      "skirt_height_m": 0.5,
+      "support_type": "skirt"
+    },
+    "heat_exchanger.vertical.small": {
+      "kind": "heat_exchanger",
+      "form": "vertical",
+      "size_tier": "small",
+      "source_id": "estimated_bl4",
+      "estimated": true,
+      "diameter_m": 0.35,
+      "length_m": 1.5,
+      "head_depth_m": 0.0525,
+      "leg_clearance_m": 0.35,
+      "support_type": "legs",
+      "channel_box_length_m_estimate": 0.22,
+      "tube_sheet_thickness_m_estimate": 0.02,
+      "tube_sheet_radial_extra_m_estimate": 0.015,
+      "construction_source": "Figures 19 and 20 show vertical channels, sheets and shell. Channel sizes are estimated by tier."
+    },
+    "heat_exchanger.vertical.large": {
+      "kind": "heat_exchanger",
+      "form": "vertical",
+      "size_tier": "large",
+      "source_id": "estimated_bl4",
+      "estimated": true,
+      "diameter_m": 0.65,
+      "length_m": 3.0,
+      "head_depth_m": 0.0975,
+      "leg_clearance_m": 0.35,
+      "support_type": "legs",
+      "channel_box_length_m_estimate": 0.39,
+      "tube_sheet_thickness_m_estimate": 0.03,
+      "tube_sheet_radial_extra_m_estimate": 0.015,
+      "construction_source": "Figures 19 and 20 show vertical channels, sheets and shell. Channel sizes are estimated by tier."
+    },
+    "heat_exchanger.horizontal.small": {
+      "kind": "heat_exchanger",
+      "form": "horizontal",
+      "size_tier": "small",
+      "source_id": "estimated_bl4",
+      "estimated": true,
+      "diameter_m": 0.35,
+      "length_m": 1.5,
+      "head_depth_m": 0.0525,
+      "leg_clearance_m": 0.85,
+      "support_type": "saddles",
+      "channel_box_length_m_estimate": 0.22,
+      "tube_sheet_thickness_m_estimate": 0.02,
+      "tube_sheet_radial_extra_m_estimate": 0.015,
+      "construction_source": "Figures 19 and 20 show channels, sheets and central shell. Catalogue length_m is the straight central shell. The two estimated channels add length.",
+      "installation_note": "Modeled saddle clearance is 0.85 m. Allow space below the nozzles for elbows and valve groups."
+    },
+    "heat_exchanger.horizontal.large": {
+      "kind": "heat_exchanger",
+      "form": "horizontal",
+      "size_tier": "large",
+      "source_id": "estimated_bl4",
+      "estimated": true,
+      "diameter_m": 0.65,
+      "length_m": 3.0,
+      "head_depth_m": 0.0975,
+      "leg_clearance_m": 0.85,
+      "support_type": "saddles",
+      "channel_box_length_m_estimate": 0.39,
+      "tube_sheet_thickness_m_estimate": 0.03,
+      "tube_sheet_radial_extra_m_estimate": 0.015,
+      "construction_source": "Figures 19 and 20 show channels, sheets and central shell. Catalogue length_m is the straight central shell. The two estimated channels add length.",
+      "installation_note": "Modeled saddle clearance is 0.85 m. Allow space below the nozzles for elbows and valve groups."
+    },
+    "filter.horizontal.small": {
+      "kind": "filter",
+      "form": "horizontal",
+      "size_tier": "small",
+      "source_id": "estimated_bl4",
+      "estimated": true,
+      "diameter_m": 0.3,
+      "length_m": 0.5,
+      "head_depth_m": 0.03,
+      "leg_clearance_m": 0.4,
+      "support_type": "saddles",
+      "purpose": "Pump protection filter with a low axial through path and approximate outline",
+      "scope": "Estimated geometry with different small and large outlines. Both centerlines are 0.55 m high to match the ground-level pump port."
+    },
+    "filter.horizontal.large": {
+      "kind": "filter",
+      "form": "horizontal",
+      "size_tier": "large",
+      "source_id": "estimated_bl4",
+      "estimated": true,
+      "diameter_m": 0.5,
+      "length_m": 0.8,
+      "head_depth_m": 0.05,
+      "leg_clearance_m": 0.3,
+      "support_type": "saddles",
+      "purpose": "Pump protection filter with a low axial through path and approximate outline",
+      "scope": "Estimated geometry with different small and large outlines. Both centerlines are 0.55 m high to match the ground-level pump port."
+    },
+    "filter.vertical.small": {
+      "kind": "filter",
+      "form": "vertical",
+      "size_tier": "small",
+      "source_id": "estimated_bl4",
+      "estimated": true,
+      "diameter_m": 0.5,
+      "length_m": 1.3,
+      "head_depth_m": 0.075,
+      "leg_clearance_m": 0.5,
+      "support_type": "legs",
+      "purpose": "Approximate vertical filter when requested explicitly. The default pump protection filter is horizontal.",
+      "scope": "Small size follows the earlier envelope with estimated heads. The large size is independently estimated."
+    },
+    "filter.vertical.large": {
+      "kind": "filter",
+      "form": "vertical",
+      "size_tier": "large",
+      "source_id": "estimated_bl4",
+      "estimated": true,
+      "diameter_m": 0.65,
+      "length_m": 1.8,
+      "head_depth_m": 0.0975,
+      "leg_clearance_m": 0.5,
+      "support_type": "legs",
+      "purpose": "Approximate vertical filter when requested explicitly. The default pump protection filter is horizontal.",
+      "scope": "Small size follows the earlier envelope with estimated heads. The large size is independently estimated."
+    }
+  },
+  "construction_estimates": {
+    "source_id": "estimated_bl4",
+    "items": [
+      "Simplified ellipsoidal heads, with estimated lower-head depth",
+      "Estimated thicknesses and details of lugs, supports, legs, saddles and skirts",
+      "Estimated native equipment stub positions and 0.12 m lengths",
+      "Modeled AE mounting flange 0.04 m above the operating level",
+      "Modeled BE side support offset of 0.04 m. Original h6 and h3 are retained.",
+      "Estimated AE motor and gearbox envelope with catalogue h13 retained",
+      "Taiji F lug datum is zero. U=h4, B=h4-h1 and D=h4+h2. The body uses U minus 0.12 m and B. Original faces use U and B minus the estimated neck.",
+      "Taiji F heads use d2/4 and the shell uses the remaining length. Estimated volume uses catalogue d1 and those sections.",
+      "Taiji F lug holes use d3/2 and bearings 45, 135, 225 and 315 degrees. Estimated support shoes reach the solid deck outside the rectangular opening.",
+      "Taiji F drive box uses the 0.32 m estimated envelope from body top to h4+h2+h5. Catalogue h is recorded separately.",
+      "Horizontal exchangers and condensers use a central shell plus two channels and tube sheets. Ports are radial by service. The additional dimensions and 0.85 m saddle gap are estimated.",
+      "Estimated small and large horizontal and vertical pump protection filter envelopes"
+    ]
+  }
+}

@@ -1,0 +1,759 @@
+{
+  "version": 13,
+  "source": {
+    "type": "explicit_user_instruction",
+    "date": "2026-11-11",
+    "document": "Scene generation rule v13",
+    "note": "Scene generation conventions with implementation interpretations recorded separately",
+    "pg17_authority": "PG v1.4 §§3.3、5",
+    "header_body_taps_authority": "PG v1.5 §3.5",
+    "service_rows_authority": "PG v1.6 §3.6"
+  },
+  "implementation_status": "PG01_PG17_machine_rules_mapped_smallcase_review_pending",
+  "current_scene_scope": "frozen_building_equipment_P1_all_new_pipes_axis_aligned_without_exceptions; historical_sample_rules_not_active_overrides",
+  "workstation": {
+    "rule_ids": [
+      "PG-01",
+      "PG-02"
+    ],
+    "location": "inside_guardrail_at_steel_structure_edge",
+    "main_orientation": "vertical",
+    "main_arrangement": "parallel_single_row",
+    "height_policy": "follow_building_height_and_reach_every_served_floor",
+    "main_end_default": "flanged_blind",
+    "temporary_connection": {
+      "required_per_active_service_per_served_floor": true,
+      "connection_order": [
+        "main_riser_branch",
+        "one_valve_space_spool",
+        "root_ball_valve",
+        "threaded_adapter_when_needed",
+        "flanged_interface",
+        "blind_when_unused"
+      ],
+      "must_preserve_main_continuity_to_upper_floors": true,
+      "interpretation": "Temporary taps branch off the main riser without interrupting it with inline blinds."
+    },
+    "main_dn": {
+      "status": "user_approved",
+      "allowed_values": {
+        "nitrogen": [
+          50,
+          65,
+          80
+        ],
+        "utility_steam": [
+          80,
+          100,
+          125,
+          150
+        ],
+        "cooling_water": [
+          80,
+          100,
+          125,
+          150
+        ],
+        "chilled_water": [
+          80,
+          100,
+          125,
+          150
+        ],
+        "compressed_air": [
+          50
+        ]
+      },
+      "default": null,
+      "ordinary_offgas": "The original single-reactor fixture uses a DN65 off-gas collector main."
+    },
+    "temporary_connection_dn": {
+      "status": "user_approved",
+      "allowed_values": [
+        15,
+        20,
+        25,
+        32,
+        40,
+        50
+      ],
+      "default": null
+    },
+    "missing_dn_policy": "require_input_and_validate_approved_range_or_explicit_existing_case_value",
+    "fixed_branch_connection": {
+      "root_manual_valve_required": true,
+      "flanged_interface_required": true,
+      "unused_end_requires_blind": true,
+      "threaded_valve_requires_adapter": true,
+      "source": "Approved fixed-branch routing conventions",
+      "unused_floor_connection": {
+        "source": "explicit_user_instruction_2026-11-10",
+        "evaluate_per_medium_per_floor": true,
+        "retain_root_manual_valve": true,
+        "termination": "blind_at_root_valve_outlet_flanged_interface",
+        "keep_only": "one_valve_space_spool_and_required_straight_adapters_flanges",
+        "extend_unused_floor_distribution_or_collection": false,
+        "main_riser_to_other_floors_continues": true,
+        "implementation_status": "implemented_and_checked_single_reactor",
+        "scope": "default_non_exempt_media; offgas uses fixed_branch_connection.exceptions.offgas"
+      },
+      "exceptions": {
+        "offgas": {
+          "root_manual_valve_required": false,
+          "flanged_interface_required": false,
+          "without_floor_source": "omit_fixed_outlet",
+          "route_to_main": "direct_overhead",
+          "source": "2026-11-10 diagram and PG-15 off-gas exception"
+        }
+      },
+      "without_floor_source": "blind_at_root_valve",
+      "route_to_main": "via_accessible_root_valve"
+    }
+  },
+  "distribution": {
+    "rule_ids": [
+      "PG-03",
+      "PG-04"
+    ],
+    "supply_order": [
+      "workstation_main",
+      "floor_distribution",
+      "equipment_connection_with_root_valve",
+      "equipment"
+    ],
+    "collection_order": [
+      "equipment",
+      "equipment_connection_with_root_valve",
+      "floor_collection",
+      "workstation_collection_main"
+    ],
+    "equipment_direct_to_workstation_main_allowed": false,
+    "floor_branch_position": "overhead_below_next_floor_slab",
+    "top_floor_support": "separate_pipe_rack",
+    "height_interpretation_source": "Route below the floor above. Use a separate rack at the top level.",
+    "branch_dn_relation": {
+      "kind": "template_default",
+      "expression": "floor_branch_dn < workstation_main_dn",
+      "exception_requires_explicit_reason": true,
+      "explicit_medium_exceptions": {
+        "offgas": {
+          "expression": "floor_collection_dn == workstation_main_dn",
+          "source": "explicit_user_instruction_2026-11-10",
+          "priority": "overrides_default_branch_smaller_than_main",
+          "equipment_connection_excluded": true,
+          "temporary_outlet_excluded": true
+        }
+      }
+    },
+    "top_header_layout": {
+      "preferred_common_support_plane": "pipe_bottom_or_shoe_bottom",
+      "shared_support_beams": true,
+      "horizontal_parallel_lanes": true,
+      "source": "Top headers share one rack at a common elevation",
+      "spacing_rule": "PG-14",
+      "support_structure": "opposite_edge_frames_with_full_platform_crossbeams",
+      "crossing_height_policy": "prefer_same_plane; choose_clear_elevation_within_rack_and_support_on_common_beams_with_seats",
+      "offgas_top_entry_vertical": "PG-13 v1.4: descend vertically from above own floor collector"
+    },
+    "rack_zone": {
+      "rule_id": "PG-04",
+      "thickness_m": 0.6,
+      "top_floor_bottom_above_floor_m": 2.4,
+      "intermediate_floor_beam_depth_m": 0.26,
+      "plan_edge_padding_m": 0.15,
+      "upward_crossing": "rise_into_destination_floor_rack_before_horizontal_distribution",
+      "measure": "pipe_outer_surface_inside_zone; final_drop_to_equipment_is_separate",
+      "source": "Adjustable model rack is 0.6 m deep and starts 2.4 m above the top floor"
+    },
+    "rack_support": {
+      "column_width_m": 0.09,
+      "edge_girder_depth_m": 0.16,
+      "crossbeam_width_m": 0.07,
+      "crossbeam_depth_m": 0.14,
+      "seat_min_height_m": 0.02,
+      "crossbeam_count": 2,
+      "edge_axis": 1,
+      "source": "2026-11-11 figure 3. Shared full-span beams bear at opposite edges. Dimensions are approximate."
+    }
+  },
+  "routing": {
+    "rule_id": "PG-05",
+    "optimize_only_among_feasible_routes": true,
+    "priority": [
+      "PG17_strict_building_XYZ_and_90_degree_turns_then_connectivity_supports_clearances_applicable_crossings",
+      "fewest_elbows",
+      "shorter_length"
+    ],
+    "supports_attach_to": "steel_structure",
+    "guardrail_is_default_pipe_support": false,
+    "support_interpretation_source": "Support and routing conventions with SG-07. The inner rail edge defines position.",
+    "process_evaporated_vapor_exception": {
+      "rule_id": "PG-11",
+      "source": {
+        "type": "explicit_user_instruction",
+        "date": "2026-11-10"
+      },
+      "medium": "process_evaporated_vapor",
+      "origin": "reactor_process_vapor_nozzle",
+      "destination": "next_interface_already_specified_by_process_graph",
+      "requires_platform_edge_detour": false,
+      "priority": [
+        "PG17_compliant_connectivity_supports_clearances_and_floor_openings",
+        "shortest_feasible_pipe_length",
+        "fewest_elbows"
+      ],
+      "not_applicable_to": [
+        "utility_steam",
+        "ordinary_offgas"
+      ],
+      "may_change_process_connection_to_save_length": false,
+      "implementation_status": "implemented_route_ranking_and_crossing_exception; branch_tests_only_in_current_scope",
+      "orthogonality_exemption": false
+    },
+    "unconnected_crossing_clearance_m": 0.05,
+    "crossing_clearance_source": "The crossing clearance is the project modeling value of 50 mm"
+  },
+  "appearance": {
+    "rule_id": "PG-06",
+    "color_key": "medium_identity",
+    "unknown_medium_finish": "bare_stainless_steel",
+    "color_map": {
+      "nitrogen": {
+        "rgb": [
+          0.83,
+          0.7,
+          0.15
+        ],
+        "label": "medium yellow for gas",
+        "basis": "Approximate screen color for gas identification from GB2894-2025 table 3"
+      },
+      "offgas": {
+        "rgb": [
+          0.65,
+          0.7,
+          0.71
+        ],
+        "label": "natural stainless steel for unspecified media",
+        "basis": "media color convention"
+      },
+      "unknown": {
+        "rgb": [
+          0.65,
+          0.7,
+          0.71
+        ],
+        "label": "natural stainless steel",
+        "basis": "media color convention"
+      }
+    },
+    "color_map_note": "This configuration assigns colors to nitrogen and unspecified media only.",
+    "change_color_just_for_recirculation_role": false
+  },
+  "diameter_defaults": {
+    "source": "2026-11-10 pipe sizing convention",
+    "kind": "user_template_defaults_not_hydraulic_calculation",
+    "excludes": [
+      "workstation_main_risers",
+      "workstation_temporary_outlets",
+      "safety_relief_lines"
+    ],
+    "nitrogen": {
+      "min_dn": null,
+      "max_dn": 50
+    },
+    "ordinary_offgas": {
+      "relation": "same_dn_as_corresponding_equipment_nitrogen_line",
+      "excludes": [
+        "process_evaporated_vapor",
+        "collection_main",
+        "safety_relief",
+        "floor_collection_header"
+      ],
+      "applies_to": "individual_equipment_connection_to_floor_collector"
+    },
+    "utility_steam": {
+      "min_dn": 50,
+      "max_dn": 100
+    },
+    "process_evaporated_vapor_to_condenser": {
+      "min_dn": 100,
+      "max_dn": 200
+    },
+    "condenser_material_condensate_outlet": {
+      "min_dn": 25,
+      "max_dn": 50
+    },
+    "condenser_material_nozzles": {
+      "relation": "inlet_dn > outlet_dn"
+    },
+    "heat_exchanger_material_nozzles": {
+      "relation": "inlet_dn == outlet_dn"
+    },
+    "exception_requires_explicit_reason": true
+  },
+  "diameter_matching": {
+    "rule_id": "PG-07",
+    "record_dn_separately_for": [
+      "workstation_main",
+      "floor_branch",
+      "equipment_connection",
+      "temporary_outlet"
+    ],
+    "valve_dn_matches_local_pipe_dn": true,
+    "mismatched_equipment_nozzle_requires_reducer": true,
+    "geometry_diameter_source": "selected_pipe_specification_outer_diameter_not_dn_numeric_value",
+    "pipe_outer_diameter_mm": {
+      "15": 21.34,
+      "20": 26.67,
+      "25": 33.4,
+      "32": 42.16,
+      "40": 48.26,
+      "50": 60.33,
+      "65": 73.03,
+      "80": 88.9,
+      "100": 114.3,
+      "125": 141.3,
+      "150": 168.28,
+      "200": 219.08
+    },
+    "outer_diameter_source": "ASME B36.19 series, Tonkin Steel pipe table https://tonkinsteel.com/wp-content/uploads/sites/15/2024/05/Tonkin_Steel_Fittings-Data-Charts_April24.pdf. Match the native NPT packages by physical OD."
+  },
+  "medium_semantics": {
+    "rule_id": "PG-08",
+    "keep_distinct": [
+      "utility_steam",
+      "process_evaporated_vapor",
+      "ordinary_offgas",
+      "condenser_material_condensate",
+      "utility_steam_condensate",
+      "cooling_water"
+    ]
+  },
+  "checks_to_implement": [
+    "main_risers_inside_guardrail_parallel_and_reach_all_served_floors",
+    "main_ends_and_each_floor_temporary_outlets_have_blind_flanges",
+    "temporary_outlets_have_ball_valves_without_blocking_main_continuity",
+    "equipment_utilities_pass_through_floor_distribution_or_collection",
+    "floor_branches_use_upper_slab_space_or_top_floor_pipe_rack",
+    "branch_dn_relationship_and_user_medium_defaults_are_respected",
+    "medium_identity_drives_color_and_unknown_medium_uses_stainless_finish",
+    "compare_elbow_count_only_after_connectivity_support_and_space_checks"
+  ],
+  "implementation_tracking": {
+    "existing_scene_rule_version": "user-piping-2026-11-10-v6",
+    "implemented_rule_ids": [
+      "PG-01",
+      "PG-02",
+      "PG-03",
+      "PG-04",
+      "PG-05",
+      "PG-06",
+      "PG-07",
+      "PG-08",
+      "PG-09",
+      "PG-10",
+      "PG-11",
+      "PG-12",
+      "PG-13",
+      "PG-14"
+    ],
+    "pending_rule_ids": [],
+    "new_rules_checked_in_scene": true,
+    "process_vapor_scope": "Shortest path ordering and edge crossings were verified separately. This single-vessel fixture has no condenser or vapor pipe.",
+    "limitations": [
+      "Approximate flanges and elbows. Pressure rating and tool clearance require verification.",
+      "Ordinary off-gas condensate destination and drain slope are unspecified",
+      "Geometric screening only"
+    ],
+    "current_scene_unchanged": false
+  },
+  "valve_installation_spacing": {
+    "rule_id": "PG-09",
+    "source": {
+      "type": "user_field_experience",
+      "date": "2026-11-10",
+      "instruction": "Allow one valve length between any valve, including a root valve, and the adjacent elbow, equipment or main."
+    },
+    "applies_to": [
+      "manual_valves",
+      "root_valves"
+    ],
+    "adjacent_objects": [
+      "elbow",
+      "equipment_nozzle",
+      "main_pipe"
+    ],
+    "minimum_gap_in_valve_lengths": 1.0,
+    "measurement_interpretation": {
+      "source": "implementation_interpretation_of_user_valve_space",
+      "valve_length": "actual_axial_installation_length_of_selected_model_package",
+      "package_length_fields_in_priority_order": [
+        "geometry.face_to_face_mm",
+        "geometry.body_length_mm"
+      ],
+      "valve_reference": "connection_end_face_facing_adjacent_object",
+      "object_references": {
+        "elbow": "connection_end_face",
+        "equipment_nozzle": "original_nozzle_connection_face",
+        "main_pipe": "outer_surface"
+      },
+      "gap": "straight_connection_run_between_reference_faces_or_surface",
+      "check_each_adjacent_side": true,
+      "allowed_in_reserved_run": [
+        "straight_spool",
+        "necessary_connection_flanges",
+        "straight_adapters"
+      ],
+      "not_a_length_proxy": [
+        "dn",
+        "valve_center_distance",
+        "handle_length"
+      ],
+      "missing_dimensions": "pending_input_not_assumed_fixed_mm"
+    },
+    "root_valve_placement": "closest_feasible_after_one_valve_length_installation_and_operation_constraints",
+    "full_operation_sweep_check_still_required": true,
+    "prior_proposal_wheel100mm_handle50mm": "not_adopted_as_new_thresholds",
+    "implementation_status": "implemented_single_reactor"
+  },
+  "floor_crossings": {
+    "rule_id": "PG-10",
+    "source": {
+      "type": "user_field_experience",
+      "date": "2026-11-10"
+    },
+    "default_policy": "route_to_platform_edge_inside_guardrail_before_crossing_floor",
+    "check_every_crossed_floor": true,
+    "whole_pipe_outer_envelope_inside_guardrail": true,
+    "edge_zone_width_m": null,
+    "edge_zone_width_policy": "derive_from_platform_structure_and_pipe_envelope_not_a_fixed_assumed_width",
+    "constraints": [
+      "explicit_floor_opening",
+      "avoid_beams_columns_stair_openings_and_required_walkways",
+      "retain_pipe_supports"
+    ],
+    "exception_rule_id": "PG-11",
+    "implementation_status": "implemented_single_reactor"
+  },
+  "approval_history": [
+    {
+      "source": "Approved flow and arrangement conventions for the single-reactor fixture",
+      "date": "2026-11-10"
+    },
+    {
+      "source": "Valve installation length, rail-side level crossing and shortest vessel vapor path convention",
+      "date": "2026-11-10",
+      "rule_ids": [
+        "PG-09",
+        "PG-10",
+        "PG-11"
+      ],
+      "scope": "record_rules_only; model_not_regenerated",
+      "measurement_details": "implementation_interpretation_separately_marked"
+    },
+    {
+      "source": "Header, temporary connection, floor branch and overhead off-gas approach conventions",
+      "date": "2026-11-10",
+      "rule_ids": [
+        "PG-12",
+        "PG-13"
+      ],
+      "angle_basis": "45 degrees verified in scoped SH 3009-2013 clause; project analogy recorded",
+      "scope": "record_rules_only; model_not_regenerated",
+      "superseded_direction_policy": "v1.4: historical 45-degree arrangement inactive; all new pipe directions strictly XYZ"
+    },
+    {
+      "date": "2026-11-10",
+      "source": "Apply the piping additions and regenerate the 6 m by 6 m single-reactor fixture for checks",
+      "scope": "implement_generate_local_preview_and_report"
+    },
+    {
+      "date": "2026-11-10",
+      "source": "user: compact branch spacing with standards; offgas floor header matches main DN; unused floor root outlet blind without extended pipes",
+      "scope": "record_rules_and_explain_extra_recycle_valve; scene_not_regenerated",
+      "rule_ids": [
+        "PG-02",
+        "PG-03",
+        "PG-04",
+        "PG-12",
+        "PG-14"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "source": "user rejected V016 deletion proposal and requested 3D regeneration using this round rules",
+      "scope": "implement_generate_refresh_local_viser; retain_V016"
+    },
+    {
+      "date": "2026-11-10",
+      "source": "Off-gas direct merges stay high without a root valve. An unused off-gas floor has a temporary outlet only.",
+      "scope": "offgas_floor_main_connection_exception"
+    },
+    {
+      "date": "2026-11-14",
+      "source": "All piping is orthogonal without direction exemptions",
+      "authority": "PG v1.4 §§3.3、5",
+      "scope": "all_new_pipes; PG13 now top-entry vertical 90 degrees; old nonorthogonal exceptions disabled"
+    }
+  ],
+  "offgas_collection": {
+    "rule_ids": [
+      "PG-12",
+      "PG-13",
+      "PG-15"
+    ],
+    "source": {
+      "type": "explicit_user_instruction_v1.4",
+      "date": "2026-11-14",
+      "document": "PG §3.3",
+      "evidence_document": "Piping source evidence"
+    },
+    "applies_to_media": [
+      "offgas",
+      "ordinary_offgas"
+    ],
+    "excludes": [
+      "utility_steam",
+      "process_evaporated_vapor_to_condenser",
+      "safety_relief_system"
+    ],
+    "workstation_main_required": true,
+    "main_function": "collect_equipment_offgas_not_supply_equipment",
+    "temporary_connections": {
+      "required_per_served_floor": true,
+      "connection_order_from_main": [
+        "main_riser_branch",
+        "root_ball_valve",
+        "flanged_interface"
+      ],
+      "unused_interface_closure": "blind_flange",
+      "root_spacing_rule": "PG-09",
+      "must_preserve_main_continuity": true
+    },
+    "floor_collector": {
+      "required_when_floor_has_offgas_source": true,
+      "required_without_offgas_source": false,
+      "position": "overhead_below_next_floor_slab",
+      "top_floor_support": "separate_pipe_rack",
+      "position_confirmation": "Route under the floor above, or use a top rack.",
+      "flow_path": [
+        "equipment_root_valve",
+        "equipment_offgas_connection",
+        "own_floor_collector",
+        "workstation_offgas_main"
+      ],
+      "equipment_direct_to_main_allowed": false,
+      "floor_crossings_follow": "PG-10",
+      "dn_relation": "same_dn_as_workstation_offgas_main",
+      "dn_relation_source": "explicit_user_instruction_2026-11-10; equipment_connection_diameter_unchanged",
+      "latest_revision_status": "implemented_and_checked_single_reactor",
+      "source": "2026-11-10 outlet correction retains equipment root valves and temporary ball valves",
+      "main_connection_policy": "workstation.fixed_branch_connection.exceptions.offgas"
+    },
+    "equipment_to_floor_collector_join": {
+      "entry_surface": "top_of_own_horizontal_floor_collector",
+      "approach_above_collector": true,
+      "extra_rise_if_outlet_already_high_enough": false,
+      "terminal_segment_direction": "vertical_downward_Z_only",
+      "axis_angle_degrees": 90,
+      "angle_reference": "between_vertical_incoming_and_actual_horizontal_floor_collector",
+      "geometry_checks": [
+        "connected_to_assigned_floor_collector",
+        "approach_above_collector_top",
+        "terminal_flow_vector_Z_negative_XY_unchanged",
+        "axis_angle_matches_90_degrees"
+      ],
+      "disallowed": [
+        "bottom_entry",
+        "same_height_side_entry",
+        "any_diagonal_entry",
+        "changing_frozen_nozzle_or_device"
+      ],
+      "local_height_above_shared_rack_allowed": true,
+      "floor_header_to_main_must_also_be_orthogonal": true
+    },
+    "design_intent": "simplified_training_scene_orthogonal_top_entry_per_user_v1.4",
+    "geometry_does_not_prove_pressure_backflow_prevention": true,
+    "unresolved_inputs": [
+      "drainage_design_not_modelled_in_this_orthogonal_training_stage"
+    ],
+    "implementation_status": "v1.4_generic_implementation_and_smallcases_pending_review",
+    "historical_angle_basis_inactive": {
+      "standard": "SH 3009-2013",
+      "clause": "7.2.1(d)",
+      "verified_printed_page": 5,
+      "verified_pdf_page": 9,
+      "standard_scope": "petrochemical_combustible_gas_discharge_systems",
+      "project_use": "analogy_for_user_requested_ordinary_offgas_geometry_not_blanket_standard_applicability",
+      "direction_to_workstation_source": "explicit_user_instruction",
+      "cross_reference": {
+        "standard": "SH/T 3206-2019",
+        "table": "14.5.4",
+        "item": 8,
+        "pdf_page": 84,
+        "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3691/site/attach/0/fd76bc9e2ce44623b818a22e18041553.pdf#page=84"
+      },
+      "current_adoption": "not_adopted_v1.4_all_pipes_orthogonal"
+    }
+  },
+  "implemented_checks": [
+    {
+      "rule_id": "PG-09",
+      "check": "adjacent_connection_run_at_least_one_selected_valve_installation_length_including_root_valves",
+      "status": "implemented"
+    },
+    {
+      "rule_id": "PG-10",
+      "check": "each_non_exempt_floor_crossing_at_platform_edge_and_entire_pipe_inside_guardrail_with_valid_opening",
+      "status": "implemented"
+    },
+    {
+      "rule_id": "PG-11",
+      "check": "reactor_process_vapor_uses_correct_next_port_and_length_before_elbows_without_forced_edge_detour",
+      "status": "implemented"
+    },
+    {
+      "rule_id": "PG-12",
+      "check": "offgas_main_temporary_root_valve_flange_blind_each_floor_and_collector_for_each_source_floor",
+      "status": "implemented"
+    },
+    {
+      "rule_id": "PG-13",
+      "check": "equipment_offgas_top_entry_vertical_downward_90_degrees_to_own_floor_collector",
+      "status": "v1.4_smallcases_pending_review"
+    },
+    {
+      "rule_id": "PG-15",
+      "check": "active_offgas_collector_direct_overhead_no_root_valve_unused_floor_only_temporary_interface",
+      "status": "implemented"
+    },
+    {
+      "rule_id": "PG-16",
+      "check": "unspecified_feed_blind_at_root_without_free_tail",
+      "status": "implemented"
+    }
+  ],
+  "parallel_pipe_spacing": {
+    "rule_id": "PG-14",
+    "source": {
+      "standard": "HG/T 20549.2-1998",
+      "clause": "1.2.2(1)-(4)",
+      "pdf": "https://pro5323b5d3-pic11.ysjianzhan.cn/upload/30HG-T20549-1998HGZZGDBZSJGD.pdf",
+      "catalog": "https://ebook.chinabuilding.com.cn/zbooklib/book/detail/show?SiteID=1&bookID=155360",
+      "layout_preference": "user_requests_compact_layout; standard_specifies_clearances_not_fixed_centre_pitch"
+    },
+    "measurement": "shortest_distance_between_actual_outer_surfaces_not_centrelines_or_DN",
+    "bare_unflanged_parallel_runs": {
+      "general_min_clearance_mm": 50,
+      "conditions": [
+        "no_insulation",
+        "no_flange_at_evaluated_section",
+        "welding_and_inspection_space_satisfied"
+      ]
+    },
+    "protrusions": {
+      "min_clearance_mm": 30,
+      "examples": [
+        "flange_to_adjacent_insulation_outer_surface",
+        "flange_to_flange"
+      ],
+      "apply_at_actual_axial_positions": true
+    },
+    "outermost_pipe_or_insulation_to_column_or_wall_min_mm": 100,
+    "allowance_for_lateral_movement": "increase_gap_by_supplied_movement_envelope; do_not_invent_thermal_values",
+    "placement_policy": "compact_parallel_radial_envelopes_including_flange_radii_after_root_valve_and_elbow_spacing; conservative_without_relying_on_axial_flange_stagger",
+    "flanges_or_valves": "widen_locally_or_stagger_if_feasible; never_use_50mm_as_universal_handle_clearance",
+    "insulation": "include_actual_outer_envelope; missing_thickness_is_pending_input",
+    "sh3012_version_note": "SH/T 3012-2026 replaced SH 3012-2011 on 2026-11-01; new spacing clauses not verified",
+    "implementation_status": "implemented_and_checked_single_reactor"
+  },
+  "pump_recycle_valve_retention": {
+    "source": "explicit_user_instruction_2026-11-10",
+    "retain_separate_recycle_manual_valve": true,
+    "single_reactor_valve_id": "V016",
+    "deletion_proposal": "rejected_and_withdrawn; process_rule_and_model_remain_intact"
+  },
+  "feed_connections": {
+    "rule_id": "PG-16",
+    "unspecified_source": "blind_at_equipment_root_valve_outlet",
+    "root_valve_retained": true,
+    "free_ended_feed_pipe_allowed": false,
+    "source": "2026-11-10 convention blinds an unspecified feed"
+  },
+  "orthogonal_routing": {
+    "rule_id": "PG-17",
+    "authority": "PG v1.4 §§3.3、5",
+    "source_decision": "Orthogonal routing convention",
+    "default": {
+      "reference_frame": "frozen_building_longitudinal_lateral_vertical",
+      "straight_segment_changes_one_coordinate_only": true,
+      "turns_degrees": 90,
+      "numerical_equality_eps_m": 1e-08,
+      "new_angular_construction_tolerance": false,
+      "applies_to": [
+        "mains",
+        "floor_headers",
+        "equipment_to_valve",
+        "valve_to_header",
+        "material_lines",
+        "straight_spools_between_fittings"
+      ],
+      "axis_preserved_by_direct_search_and_compression": true,
+      "fewest_elbows_or_shortest_path_may_override": false,
+      "PG11_only_waives_edge_detour": true
+    },
+    "coarse_bends": {
+      "real_fitting_geometry_required": true,
+      "trim_straights_to_tangent_faces": true,
+      "intersecting_bare_pipes_are_not_elbows": true,
+      "dense_or_zero_length_installation": "explicit_refusal",
+      "centreline_radius_outer_diameter_factor": 1.5,
+      "radius_basis": "existing project coarse model: installation_checks.py valve_spaces/method, 3*actual_pipe_radius; estimate, not manufacturer or pressure design",
+      "allowed_terminal_turn_degrees": 90,
+      "curved_surface_facets_are_not_straight_centerlines": true
+    },
+    "actual_model_validation": {
+      "measure_parent_transforms": true,
+      "enumerate_all_actual_additions": true,
+      "verify_route_model_correspondence": true,
+      "no_mask_or_kind_rename_exemption": true,
+      "verify_fitting_ports_tangents_and_occupation": true,
+      "report": [
+        "actual_straight_total",
+        "checked_straights",
+        "nonorthogonal_violations"
+      ],
+      "pass_requires_all_actual_pipes_checked_and_zero_nonorthogonal": true
+    },
+    "rollout_gate": "small_fixed_examples_and_variants_first; independent_review_before_20_rooms_original_10_or_formal_P2",
+    "other_limits_unchanged": {
+      "bare_parallel_mm": 50,
+      "protrusion_mm": 30,
+      "column_wall_mm": 100,
+      "operation_fraction_gate_P1_P2": false
+    },
+    "status": "implementation_and_smallcases_pending_independent_review",
+    "nonorthogonal_exceptions_permitted": false,
+    "frozen_inclined_interface_policy": "explicit_refusal_if_no_axis_aligned_connection; do_not_move_or_rotate_frozen_port"
+  },
+  "service_row_headers": {
+    "authority": "PG v1.6 §3.6",
+    "axis_source": "frozen equipment spatial row geometry, not vessel cylinder axis or workstation edge",
+    "group_coverage": "every original service point exactly once on one same-floor same-medium effective header group; no empty group",
+    "plan_position": "finite geometric candidates near served outlets; report distances and differences without equal-length threshold",
+    "avoidance": "original physical solids, maintenance/pullout/operation reservations; PG04 height/thickness and actual shared support unchanged",
+    "supply_connection_proof": "same distribution/main/level/medium/verified native valve identity; actual in plus native passage plus out; no alternate group or temporary outlet borrowing",
+    "scope": "one version, same two original frozen input trials, sequential; no resumed batch or material phase"
+  },
+  "header_body_taps": {
+    "authority": "PG v1.5 §3.5",
+    "active_floor_headers_both_ends": "actual_flanged_blind_caps",
+    "workstation_connection": "interior_body_tee; may_interleave_device_taps",
+    "four_way_connections_allowed": false,
+    "device_order": "canonical_positive_header_axis_projection_of_frozen_actual_device_outlet_virtual_plane; geometric_ties_only",
+    "installation_spacing": "tee half extent=max(actual header OD,branch OD); adjacent straight allowance=max(header OD,branch ODs,associated native install lengths); end actual fitting inner edge + half extent + same straight allowance",
+    "spacing_basis": "explicit project coarse installation estimate, not manufacturing standard; PG14 parallel50/protrusion30/wall100 unchanged",
+    "independent_actual_model_check_required": true,
+    "scope": "same two frozen input trial; no batch or material phase"
+  }
+}

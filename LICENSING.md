@@ -10,6 +10,7 @@ The [Apache License 2.0](LICENSE) covers:
 
 - Project source code and configuration files outside the demonstration datasets.
 - Simulation model files: `models/**/*.xml`, `models/**/*.json`, and `hardware/s-hook/parameters.json`.
+- Project-created room and valve assets, CAD geometry, meshes, textures, the equipment catalogue, and generator resources.
 - Rusty Valve ACT model weights and their accompanying model configuration when distributed.
 
 Commercial use, modification, and redistribution are allowed under the license. Retain the applicable copyright, license, and attribution notices, and identify modified files.
@@ -20,8 +21,8 @@ The [Creative Commons Attribution 4.0 International license](LICENSES/CC-BY-4.0.
 
 - The two formal demonstration datasets, including records, labels, metadata, and rendered videos.
 - Project-generated solved-step evidence, saved state arrays, and original-speed recordings from the 52 formal ACT exams.
-- Technical text in the README files and `docs/`, `CONTRIBUTING.md`, this licensing guide, and project-written explanations in `THIRD_PARTY_NOTICES.md`, except the founder's story and its homepage excerpt.
-- Simulation images and videos in `assets/`.
+- Technical text in the README files and `docs/`, `CONTRIBUTING.md`, this licensing guide, and project-written explanations in `THIRD_PARTY_NOTICES.md`, except the founder's story.
+- Project-generated simulation images and videos in `assets/` and in the room and valve datasets.
 - Result figures in `docs/figures/`.
 - The S-hook illustration in `hardware/s-hook/drawings/` and project-created images in `hardware/s-hook/images/`.
 
@@ -32,7 +33,6 @@ When sharing these materials, credit **Rusty Valve contributors**, retain any ad
 The following are **not covered by either project open license**:
 
 - [The founder's story](docs/story.md).
-- Its excerpt under **Why we built this** in [README.md](README.md).
 
 All rights reserved by their respective rights holders. Reuse beyond what applicable law permits requires separate permission.
 

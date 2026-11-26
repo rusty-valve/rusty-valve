@@ -1,0 +1,190 @@
+{
+  "version": "room_rules_v1",
+  "authority": "room_rules_v1",
+  "scope": "Scene generation rules and geometric screening",
+  "unit_rules": {
+    "vessel": {
+      "ports": [
+        "feed",
+        "nitrogen",
+        "offgas",
+        "bottom"
+      ],
+      "manual": "every_connected_port",
+      "source": "Process notes, section 1"
+    },
+    "jacket": {
+      "ports": [
+        "utility_in",
+        "utility_out"
+      ],
+      "manual": "every_connected_port",
+      "source": "Process notes, section 1"
+    },
+    "pump": {
+      "ports": [
+        "in",
+        "out"
+      ],
+      "manual": "every_connected_port",
+      "source": "Process notes, section 1"
+    },
+    "filter": {
+      "ports": [
+        "in",
+        "out"
+      ],
+      "manual": "every_connected_port",
+      "placement": "after_pump",
+      "source": "Process notes, section 1"
+    },
+    "exchanger": {
+      "ports": [
+        "in",
+        "out",
+        "utility_in",
+        "utility_out"
+      ],
+      "manual": "every_connected_port",
+      "source": "Process notes, section 1"
+    },
+    "condenser": {
+      "ports": [
+        "vapor",
+        "condensate",
+        "utility_in",
+        "utility_out"
+      ],
+      "manual": "every_connected_port",
+      "source": "Process notes, section 1, with explicit condenser cooling-water inlet and outlet"
+    },
+    "header": {
+      "ports": [],
+      "manual": "every_connected_port",
+      "source": "Process notes, section 1"
+    },
+    "junction": {
+      "ports": [],
+      "manual": "none",
+      "source": "Geometric tee and collector node"
+    },
+    "boundary": {
+      "ports": [
+        "port"
+      ],
+      "manual": "none",
+      "source": "Geometric room boundary, outside process equipment counts"
+    }
+  },
+  "network_rules": [
+    {
+      "id": "pump_return",
+      "predicate": "pump_out_to_own_vessel_without_other_vessel",
+      "manual_on_branch": true,
+      "source": "Process notes, section 1"
+    },
+    {
+      "id": "filter_bypass",
+      "predicate": "alternate_path_between_filter_neighbors",
+      "manual_on_branch": true,
+      "source": "Process notes, section 1"
+    },
+    {
+      "id": "utility_connected",
+      "predicate": "utility_ports_reach_matching_headers",
+      "source": "Process notes, section 1"
+    },
+    {
+      "id": "automatic_companion",
+      "predicate": "automatic_valve_has_adjacent_manual",
+      "source": "Process notes, section 1"
+    }
+  ],
+  "transfer_rules": {
+    "pump": {
+      "path": [
+        "source.bottom",
+        "pump.in",
+        "pump.out",
+        "target.feed"
+      ],
+      "source": "Process notes, section 2"
+    },
+    "no_pump": {
+      "requires": [
+        "no_pump_in_material_path"
+      ],
+      "source": "Pump-free transfer is not decided from nozzle elevation difference"
+    },
+    "distillation": {
+      "path": [
+        "source.vapor",
+        "condenser.vapor",
+        "condenser.condensate",
+        "target.feed"
+      ],
+      "source": "Process notes, section 2"
+    }
+  },
+  "floor_rules": {
+    "bay_size_m": [
+      6,
+      6
+    ],
+    "bays": 2,
+    "ground_plus_platforms": 2,
+    "storey_height_range_m": [
+      3,
+      4
+    ],
+    "pump_level": 0,
+    "condenser_order": "above_source_vessel",
+    "vessel_operating_faces": [
+      "upper_head",
+      "lower_head"
+    ],
+    "circulation": "external_stair_and_front_passage",
+    "structure": "steel",
+    "source": "Process notes, sections 3 and 4. Ground and two steel operating platforms."
+  },
+  "claude_section5": {
+    "adopted": [
+      "central_agitator_obstacle",
+      "lugs_and_saddles",
+      "low_drain_high_vent_gauge_root",
+      "pump_check_valve_obstacle",
+      "top_safety_obstacle",
+      "passage_headroom",
+      "no_downward_operator",
+      "valve_name_role",
+      "bottom_ball_substitute"
+    ],
+    "source": "Process notes, section 5, confirmed on 2026-11-09",
+    "limits": "Use vessel low and high points for drains and vents. Local pockets and relief set pressures are outside the model."
+  },
+  "geometry_screen": {
+    "walk_width_m": 0.8,
+    "walk_depth_m": 0.48,
+    "walk_height_m": 2.2,
+    "station_width_m": 0.56,
+    "station_depth_m": 0.54,
+    "station_height_m": 1.9,
+    "sweep_margin_m": 0.025,
+    "pipe_post_clearance_m": 0.1,
+    "parallel_pipe_clearance_m": 0.05,
+    "source": "Standing and installation rule R6 geometry screening criteria"
+  },
+  "construction_choices": {
+    "storey_height_m": 3.6,
+    "passage_width_m": 1.2,
+    "stair_width_m": 1.0,
+    "stair_rise_m": 0.18,
+    "stair_run_m": 0.28,
+    "stance_reach_proxy_m": 0.8,
+    "source": "Estimated geometry screening parameters. Stair relationship 0.28 + 2 x 0.18 is 0.64 m, within the 550 to 700 mm reference range.",
+    "questions": [
+      "Robot reach has not been specified. Screen only geometric stance and grip distance.",
+      "NPT assets supply general geometry. Media, vibration, pressure and joint specifications require separate selection."
+    ]
+  }
+}

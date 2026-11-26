@@ -2,57 +2,56 @@
 
 **Training robot field operators for chemical plants.**
 
+Rusty Valve is an open simulation project for robots that operate manual valves in refineries and chemical plants. We model real valves with their resistance, generate plant rooms full of them, and score any robot with the same public exam. Everything here is free to download, run, and build on.
+
+![One chemical plant room generated from a process recipe](assets/room-12-generation.gif)
+
+*Replay of one generation run from the room-12 process recipe: equipment placement, pipe routing, valve fitting, then insulation, platforms, and stairs.*
+
+| | What is here | Start |
+|---|---|---|
+| **Valves** | 17 ball-valve models, DN15–DN200, with lever or gear-operated handwheel and opening and closing resistance curves. | [Valve library](models/valves/README.md) |
+| **Rooms** | 15 chemical plant rooms with reactors, vessels, pumps, heat exchangers, pipes, insulation, platforms, and 304 installed manual valves. A generator builds new rooms from process recipes. | [Browse rooms](models/scenes/chemical-plant-rooms/README.md) · [Generate a room](models/scenes/chemical-plant-rooms/README.md#generate-your-own-room) |
+| **Platforms** | MuJoCo 3.16 and Isaac Sim 6.2.0 with OpenUSD. The room and valve pages describe what was tested. | [Quick start](#quick-start) |
+
+## Why robots, and why manual valves
+
+- **Most valves in a plant are manual.** An actuated valve can cost up to ten times as much, so plants put them only where control requires them. In the units we worked in, we estimate 80–90% of valves were manual.
+- **Actuated valves still need manual ones.** Isolation for maintenance, draining, and replacing a leaking flange all depend on manual valves on either side.
+- **Much of the work is local.** Starting a pump against a closed discharge valve, releasing pressure after a test, and taking a sample are done by a person standing at the valve.
+- **In an emergency, the manual valve is the last shutoff.** During a fire, a power loss, or a toxic leak, someone has to walk into the hazard and close it. Valves above 2 m also need a work-at-height permit, and emergencies do not wait for one.
+- **It is hard for robots.** Valves sit among pipes, platforms, and insulation. Turning one takes sustained force through contact, a body braced against the reaction, and a feel for when the valve has reached its stop.
+
+[Why we started this project: the founder's story](docs/story.md)
+
+## Operate a valve
+
 ![An S-hook closes a DN25 ball valve alongside synchronized contact torque and force curves](assets/a2-close-reference-replay.gif)
 
-*A2 closing replay with contact torque and tool–handle force from the same recorded simulation, at original speed. Curves use 50 ms averages, with raw peaks shown separately. The 14 N·m line is the model breakaway reference. The industrial backdrop is illustrative.*
+*Closing a DN25 ball valve through physical contact, with contact torque and tool–handle force from the same simulation. The 14 N·m line is the model breakaway reference. The industrial backdrop is illustrative.*
 
-[Level 1: Handle ball valve](levels/01-handle-ball-valve/) · [MuJoCo station models](models/scenes/handle-ball-valve-stations/) · [ACT training records and weights](models/README.md#act-training-records-and-checkpoint-downloads) · [S-hook tool](hardware/s-hook/) · [Dataset description](docs/dataset_card.md) · [ACT results](docs/act_baseline.md) · [Climbing preview](docs/climbing.md) · [Hugging Face organization](https://huggingface.co/rusty-valve) · [Why we built this](docs/story.md)
+[Level 1](levels/01-handle-ball-valve/) has six installations of one valve: horizontal or vertical pipe, stem up or facing the operator. Any robot, end-effector, or method takes the same [Public Exam v1](levels/01-handle-ball-valve/#public-exam-v1):
 
-Rusty Valve is developing an open simulation benchmark for manual valve operation in refineries and fine-chemical plants. The project includes valve stations, a common scoring program, a scripted "teacher" that generates demonstrations, a LeRobot-format dataset, and learning baselines. The public exam applies to any robot and end-effector. The teacher is a reference solution for OpenArm with an S-hook; users of another robot must write their own controller.
+1. Hold the valve within 5° of its stop for the final second.
+2. No environment contact above 20 N. The handle is free to touch.
+3. Finish within 90 seconds.
 
-**Release v0.** This repository includes the runtime, standalone station models, S-hook design files, and benchmark summaries. The full datasets, ACT checkpoints, and raw exam records are separate materials. See [download and placement instructions](runtime/README.md#download-and-place-materials).
+The valve must move through contact. Records that overwrite the valve state are invalid.
 
-**v0 downloads** · [Four-task dataset](https://huggingface.co/datasets/rusty-valve/a1_a2_open_close_646) · [A2-closing coverage dataset](https://huggingface.co/datasets/rusty-valve/a2_close_300_positions) · [ACT round 1 checkpoint](https://huggingface.co/rusty-valve/a2_close_act_round1) · [ACT round 2 checkpoint](https://huggingface.co/rusty-valve/a2_close_act_round2) · [Original exam records](https://huggingface.co/datasets/rusty-valve/raw_exam_records_v0)
+## Demonstrations and learning
 
-## What the project includes
-
-| Component | What it is |
-|---|---|
-| **[Stations and valve models](models/)** | MuJoCo scenes of a DN25 handle ball valve in 6 installations: horizontal or vertical pipe, stem up or facing the operator. MJCF models and JSON parameters are separate from the robot model. A1 and A2 have opening and closing reference demonstrations; B1–C2 are challenge stations. The library will grow to include real-to-sim valves and small chemical-plant scenes. |
-| **Exam** | Public Exam v1: endpoint and hold, no hard collision with the environment, and a 90-second cutoff. Applies to any robot and end-effector. Working-face checks are separate **S-tool-specific records** and do not affect the public result. |
-| **Teacher** | A state-feedback reference solution for **OpenArm + S-hook**, using privileged simulator state. For another robot, write your own controller. See [How the demonstrations are made](docs/teacher.md). |
-| **Dataset** | Two sets. **Four-task set:** 646 A1/A2 opening and closing demonstrations; ACT round 1 trained on its 256 A2-closing demonstrations. **A2-closing coverage set:** 300 demonstrations, each at a different valve position; used for ACT round 2. LeRobot format with three camera views, joint state/actions, and valve labels. [Contents and splits](docs/dataset_card.md). |
-| **Learning baseline** | ACT learns from images and joint state. Results from two training rounds and their evaluation scope are listed below. Training records are included in this repository. ACT weights are separate release materials. |
-| **Reference hardware** | OpenArm (bimanual, shoulder-mounted) with a fixed S-hook designed for SUS304 stainless steel. The [tool directory](hardware/s-hook/) explains why we chose it and includes the simulation drawing and parameters; manufacturing CAD is not yet included. |
-
-## Public Exam v1
-
-The same three rules apply to **any robot, any end-effector, and any method**, including scripts, learned policies, and teleoperation:
-
-1. **Reach and hold the endpoint.** At the end of the operation or episode cutoff, the valve must be within 5° of the target stop and have stayed there continuously for the final 1 second or longer. Reaching it earlier and then moving out of the target region does not pass.
-2. **No hard collision with the environment.** Any robot part contacting a pipe, support, valve body, or other non-handle environment object with an individual contact force above 20 N fails. Any robot part or surface may contact the handle. Robot self-contact, including between fingers or between a finger and palm, is recorded and does not count as a hard collision.
-3. **90-second cutoff.** End the episode at 90 seconds if the operation has not finished, and assess its state at that cutoff.
-
-Valve motion must come from physical robot contact. Records that directly overwrite the valve state are invalid. **S-tool-specific records**, such as orange/blue working-face checks, are reported separately and do not affect public pass/fail. The exam does not prescribe a hand, surface, pose, or technique.
-
-## Experiment results
-
-The results below were re-evaluated under Public Exam v1.
-
-| Method | Inputs | Test | Public Exam v1 result |
+| Method | Inputs | Test | Passed |
 |---|---|---|---|
-| Teacher (reference), A1/A2 open and close | Privileged simulator state | Standard condition of each task, rerun on a clean macOS install | 4 / 4 |
-| ACT, round 1, A2 close | Head + wrist images, joint angles | Valve positions used in training | 1 / 4 |
-| ACT, round 1, A2 close | Head + wrist images, joint angles | Valve positions not used in training; some tests change colors and lighting | 0 / 12 |
-| ACT, round 2, A2 close | Head + wrist images, joint angles | More valve positions not used in training; some tests change colors and lighting | 0 / 36 |
+| Teacher, OpenArm + S-hook | Privileged simulator state | Standard A1/A2 open and close, clean macOS install | 4 / 4 |
+| ACT, round 1 | Head + wrist images, joint angles | Valve positions seen in training | 1 / 4 |
+| ACT, round 1 | Same | Unseen positions, some with new colors and lighting | 0 / 12 |
+| ACT, round 2 | Same, 300 valve positions in training | Unseen positions | 0 / 36 |
 
-ACT has not solved Level 1. More scene coverage did help: on the 12 unseen-position and appearance tests shared by both rounds, runs that turned the valve more than 5° rose from 2 to 8, and runs that never engaged the handle fell from 4 to 0.
-
-The ACT round-1 pass includes complete retraction. Valve-operation completion and retraction are recorded separately.
-
-See [the ACT experiment report](docs/act_baseline.md) for both rounds and [Level 1](levels/01-handle-ball-valve/) for the task, settings, and success/failure videos.
+The [teacher](docs/teacher.md) is a scripted controller for OpenArm with a fixed [S-hook](hardware/s-hook/). It generated 646 demonstrations ([dataset](docs/dataset_card.md)). ACT has not solved Level 1: with more valve positions it engages the handle and turns the valve more often, but typical failures still lose contact near the end of closing. [Full report](docs/act_baseline.md)
 
 ## Quick start
+
+Run the teacher and score its recording:
 
 ```sh
 python3.12 -m venv .venv && . .venv/bin/activate
@@ -61,47 +60,24 @@ rusty-valve teacher --task A2_close --output ./teacher_A2_close
 rusty-valve score ./teacher_A2_close/physical_step_evidence.jsonl.gz --output ./public_score.json
 ```
 
-Follow the [installation and run commands](runtime/README.md#installation-and-commands) to load a station, run an OpenArm + S-hook reference demonstration, and score its recording. These steps use files in this repository. Reading the datasets and running the ACT policies require the [complete local materials](runtime/README.md#material-layout). The [validation notes](runtime/VALIDATION.md) record the clean macOS CPU checks.
+Open a downloaded room with its valve resistance:
 
-## How it works
+```sh
+cd room-12
+python -B run_room.py            # macOS viewer: mjpython -B run_room.py
+```
 
-**Teacher and student.** Our teacher is a reference solution for **OpenArm + S-hook**. It uses privileged simulator state and reviewed key poses through six phases: approach, engage, turn, hold, release, and retract. Each transition depends on the actual state. For another robot, you must write your own controller; changing the end-effector also requires tool-specific contact and control logic. See [How the demonstrations are made](docs/teacher.md). The student, ACT, learns from head and wrist images plus arm joint angles; it does not receive the true valve angle or contact force as policy inputs.
+[Runtime and downloads](runtime/README.md) · [Hugging Face](https://huggingface.co/rusty-valve) · [Rooms](models/scenes/chemical-plant-rooms/README.md#use-a-ready-made-room) · [Valves](models/valves/README.md)
 
-For demonstration generation, we encoded field technique in the teacher, then used imitation learning for ACT. See [Level 1](levels/01-handle-ball-valve/) for details.
+## Next
 
-## Curriculum
-
-One course, valve operation, split into levels. Each level adds one new skill.
-
-| Level | Skill | Status |
-|---|---|---|
-| 1 Handle ball valve | Reach and hold the open or closed endpoint without a hard collision with the environment | **v0** |
-| 2 Handwheel valve | Multi-turn gate and globe valves, regrasping without stalling | Planned |
-| 3 Tools and high torque | Valve wrench on handle-less valves; stuck and rusted valves | Planned |
-| 4 Find the right valve | Follow a radio instruction, read tags, trace the line | Planned |
-| 5 Reach it | Step over pipes and grating, climb steps and ladders | [Ladder-climbing simulation preview](docs/climbing.md) |
-| 6 Operate with the process | Open slowly against pressure, follow switching sequences, emergency isolation | Long term |
-
-## Why chemical plants, and why valves
-
-- **Manual valves aren't going away.** Even where actuated valves are installed, manual valves sit beside them for maintenance and isolation, and they are the last reliable means of shutoff in an emergency.
-- **The most dangerous moment is when someone has to go turn one.** In a leak or a fire, closing a valve means sending a person into the hazard.
-- **Valves can be graded.** Angle, force, contact, and collisions are all measurable, so methods can be compared.
-
-## Why we built this
-
-On a pyridine wastewater pilot, a bottom valve set too narrow let a fixed bed overflow. Fixing it meant reaching in for that valve with wastewater running down from above. Next door, in a hydrogen fluoride unit, an operator told me every flange leaked and some workers carried permanent burn marks. None of this was unusual, and somebody still has to walk up to the valve. [Full story.](docs/story.md)
-
-## FAQ
-
-**Why not just teleoperate an inspection robot?**
-Teleoperation is a useful way to work remotely and collect demonstrations. This project focuses on learning the manipulation itself: making contact, applying force through the tool, and completing the valve operation. Teleoperated runs can also use the exam when their records follow its input format.
+Put robot motion into the rooms: generate whole-body motion for Unitree G1, execute it under physical contact, and score it with the same exam. [Roadmap](docs/roadmap.md)
 
 ## Contribute
 
-- **Worked in a plant?** [Share a valve station](CONTRIBUTING.md): give its nominal size or model, then add photos, videos, sketches, or a written description. No need to repeat what the media already shows. Please remove plant names, equipment tags, and faces.
-- **Build robots?** See the [runtime interface](runtime/README.md#robottask-api) to adapt your robot or policy to Level 1, share the score, or help build the next level.
+- **Worked in a plant?** [Share a valve installation](CONTRIBUTING.md): size or model, plus photos, sketches, or a description. Remove plant names, equipment tags, and faces.
+- **Build robots?** Adapt your robot through the [runtime interface](runtime/README.md#robottask-api), run the exam, and share the score.
 
 ## License
 
-**Apache-2.0:** our code, simulation model files, and ACT weights. **CC BY 4.0:** our demonstration data, exam evidence, state arrays, exam recordings, technical text, and illustrations. The founder's story and its homepage excerpt are excluded. Third-party material retains its original license. See [license scope and texts](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
+Apache-2.0 for our code, models, and ACT weights. CC BY 4.0 for our data, exam records, text, and illustrations. The founder's story is excluded. Third-party material keeps its own terms. [License scope](LICENSING.md) · [Third-party notices](THIRD_PARTY_NOTICES.md)

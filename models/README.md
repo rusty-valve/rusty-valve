@@ -1,34 +1,22 @@
-# Valve and plant scene models
+# Models
 
-An open library of valve models and small chemical-plant scenes. We aim to turn site photos, dimensions, and operating videos into reusable simulation models of equipment and the spaces robots work in.
+[Rusty Valve](../README.md)
 
-## Included models
-
-The entries below use a **generic DN25 handle ball valve**, simplified from catalog references.
-
-| Entry | Included |
+| | What it is |
 |---|---|
-| [DN25 handle ball valve](valves/dn25-handle-ball-valve/) | Geometry and resistance parameters, with sources; valve geometry is included in the station files |
-| [Six Level 1 stations](scenes/handle-ball-valve-stations/) | A1–C2 models with valves, pipes, supports, and contact geometry; can be loaded independently of a robot |
+| [Valves](valves/README.md) | 17 ball valves, DN15–DN200, lever and handwheel, for MuJoCo and Isaac Sim |
+| [Chemical plant rooms](scenes/chemical-plant-rooms/README.md) | 15 rooms with equipment, pipes, platforms, and 304 valves, plus the generator that builds them |
+| [Level 1 stations](scenes/handle-ball-valve-stations/) | Six installations of a DN25 lever valve used by the exam |
+| [DN25 station valve](valves/dn25-handle-ball-valve/) | The generic valve inside the six stations |
+| [ACT training records, round 1](round1/) · [round 2](round2/) | Training settings and loss curves for the learned baseline. Weights: [round 1](https://huggingface.co/rusty-valve/a2_close_act_round1) · [round 2](https://huggingface.co/rusty-valve/a2_close_act_round2). [Where to put them](../runtime/README.md#download-and-place-materials) |
 
-See each entry for model details and resistance settings.
+## Formats
 
-## ACT training records and checkpoint downloads
-
-[ACT round 1 training records](round1/) and [ACT round 2 training records](round2/) contain their training metadata and curves. Download the complete [ACT round 1 checkpoint](https://huggingface.co/rusty-valve/a2_close_act_round1) or [ACT round 2 checkpoint](https://huggingface.co/rusty-valve/a2_close_act_round2), including the model and normalization tensors. See [download and placement instructions](../runtime/README.md#download-and-place-materials) for the two model repositories and where to place each checkpoint and its matching dataset.
-
-## File formats
-
-- **MJCF (`.xml`)** — models for MuJoCo simulation.
-- **JSON (`.json`)** — dimensions, installation layouts, parameters, and sources.
-- **OpenUSD** — planned for exchanging and assembling larger scenes; not yet included.
-
-## Growing from real sites
-
-We will gradually add more valve types, installation layouts, and small chemical-plant scenes based on real equipment. Each entry will include supporting images, dimensions, simulation files, and a short explanation of its sources and simplifications, distinguishing measured values from modeling assumptions.
-
-[S-hook tool](../hardware/s-hook/) · [Level 1](../levels/01-handle-ball-valve/) · [Back to Rusty Valve](../README.md)
+- **MJCF (`.xml`)** for MuJoCo.
+- **OpenUSD (`.usd`)** for Isaac Sim and other USD tools.
+- **STEP (`.step`)** CAD geometry of each valve.
+- **JSON** dimensions, parameters, recipes, valve lists, and their sources.
 
 ## License
 
-Our MJCF and JSON model files are **Apache-2.0**. Technical text and project-created illustrations are **CC BY 4.0**. Third-party material retains its original terms. See [license scope](../LICENSING.md) and [third-party notices](../THIRD_PARTY_NOTICES.md).
+Our models and JSON files are Apache-2.0. Text and project-made images are CC BY 4.0. Third-party material keeps its own terms. [License scope](../LICENSING.md) · [Third-party notices](../THIRD_PARTY_NOTICES.md)

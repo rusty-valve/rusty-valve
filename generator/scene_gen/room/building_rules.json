@@ -1,0 +1,97 @@
+{
+  "version": "1.7",
+  "source": "Building and site rules v0.10, with the 2026-11-11 stair intersection correction",
+  "seed": 11010,
+  "panel": {
+    "pitch_m": 0.02,
+    "bar_width_m": 0.003,
+    "depth_m": 0.03,
+    "seam_range_m": [
+      0.01,
+      0.015
+    ],
+    "bearing_min_m": 0.025,
+    "normal_edge_step_max_m": 0.004,
+    "defect_count": 2,
+    "raised_edge_m": 0.007,
+    "sag_m": 0.01
+  },
+  "stairs": {
+    "risers": 18,
+    "going_m": 0.28,
+    "depth_m": 0.3,
+    "thickness_m": 0.03,
+    "width_m": 1.1,
+    "overlap_limits_m": [
+      0.01,
+      0.035
+    ],
+    "note": "Open treads and the lower lip of the next tread retain collisions. The 20 mm construction overlap is intentional.",
+    "stringer_top_below_tread_m": 0.06,
+    "landing_transition": "stringer_ends_at_landing_front_beam_below_walking_surface_no_protruding_tail"
+  },
+  "drain": {
+    "width_m": 0.3,
+    "depth_m": 0.2,
+    "floor_slope": 0.005,
+    "channel_slope": 0.005,
+    "normal_recess_m": 0.004,
+    "sunken_recess_m": 0.015,
+    "raised_edge_m": 0.006
+  },
+  "bund": {
+    "height_m": 0.15,
+    "thickness_m": 0.15,
+    "ramp_width_m": 1.2,
+    "boundary": "raised_slab_outer_edge",
+    "cross_section": "rectangle",
+    "alignment": "axis_aligned_straight_walls",
+    "corner": "right_angle",
+    "render_edges": "flat",
+    "entry_ramp": {
+      "mode": "symmetric_on_full_front_extension",
+      "run_per_rise": 6.0,
+      "outer_walkway_offset_m": 0.0,
+      "approach_length_m": 0.3,
+      "note": "The entrance plinth extends along the full edge to form a rectangular floor. Identical mirrored ramps cross the curb. The example rises 150 mm over 900 mm on each side and is 1200 mm wide, for a 1:6 modeled slope.",
+      "base_extension_width": "full_front_edge"
+    }
+  },
+  "scope": "Record standard construction, site imperfections and envelope estimates separately. Small grating perforations are visual. Panel joints, depressions and steps have collision geometry.",
+  "pipe_penetrations": {
+    "local_reinforcing_frame": false,
+    "note": "Cut only the openings for small pipes. Keep panel supports and beams at equipment openings."
+  },
+  "rails": {
+    "color_rgb": [
+      0.95,
+      0.72,
+      0.06
+    ],
+    "source": "Field observation: platform rails and stair handrails are often yellow. Color is approximate."
+  },
+  "frame": {
+    "bracing": "beam_column_knees",
+    "full_bay_cross_braces": false,
+    "knee_horizontal_m": 0.5,
+    "knee_vertical_m": 0.5,
+    "knee_section_m": 0.08,
+    "min_clear_height_m": 2.1,
+    "source": "2026-11-10 framing sketch, with approximate geometry dimensions",
+    "placement": "each_endpoint_of_load_bearing_frame_span"
+  },
+  "human_scale": {
+    "required_per_floor": 1,
+    "height_m": 1.75,
+    "body_width_m": 0.58,
+    "body_depth_m": 0.3,
+    "color_rgb": [
+      0.16,
+      0.42,
+      0.68
+    ],
+    "annotation_only": true,
+    "placement": "free_supported_surface_away_from_entry_and_valve_stance",
+    "source": "Optional 1.75 m person including helmet is a visual scale reference only"
+  }
+}

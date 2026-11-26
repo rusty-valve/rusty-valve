@@ -1,6 +1,6 @@
 # A2 Closing Across 300 Valve Positions
 
-300 frozen simulated demonstrations; 240 training / 60 validation. License: CC BY 4.0; attribution: Rusty Valve contributors. The original camera streams, action/state arrays, labels and split memberships are unchanged. File paths and directory names have been made portable.
+300 simulated demonstrations; 240 training / 60 validation. License: CC BY 4.0; attribution: Rusty Valve contributors. The original camera streams, action/state arrays, labels and split memberships are unchanged. File paths and directory names have been made portable.
 
 This repository includes the [manifest](manifest.json) and `datasets/A2_close/episode_map.json`. The complete dataset is stored separately. In that dataset, read a split at `datasets/A2_close/train` or `datasets/A2_close/validation` using LeRobot 0.6.1 with the PyAV backend. Three cameras are stored at 256×256; controls are 100 Hz and actual capture is 20 Hz.
 

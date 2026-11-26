@@ -42,6 +42,10 @@ The generic DN25 valve uses selected dimensions and torque references from:
 
 The valve and station files use project-built, simplified geometry. No Bray CAD, converted manufacturer mesh, or handbook PDF is included. These links credit the references; Rusty Valve does not relicense the handbooks.
 
+## Room and valve geometry references
+
+The valve library uses catalogue dimensions and sizing-torque references from Bray Flow-Tek and Cameron. Room equipment uses drawing dimensions or shape references for Taiji F-series reactors, TLV J7.2X steam traps, NieRuf SF01 relief valves, and the project-rebuilt pump, strainer, and heat exchangers. The distributed model and texture files use project-generated geometry and materials. Manufacturer names identify the references. Manufacturer brochures, original CAD and source meshes stay with their owners.
+
 ## Runnable package
 
 See the [runtime's third-party notices](runtime/THIRD_PARTY_NOTICES.md) for the bundled model assets and their license texts. The runtime's installed software dependencies retain their own licenses.

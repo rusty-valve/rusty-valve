@@ -79,10 +79,10 @@ Plausible causes, not yet separated:
 
 ## 6. Release materials
 
-The [runtime instructions](../runtime/README.md#read-data-and-run-act) give the ACT commands and identify the required local materials. In a clean macOS CPU environment, one fixed case from each round ran to completion. The [installation checks](../runtime/VALIDATION.md) are separate from the frozen benchmark results.
+The [runtime instructions](../runtime/README.md#read-data-and-run-act) give the ACT commands and identify the required local materials. In a clean macOS CPU environment, one fixed case from each round ran to completion. The [installation checks](../runtime/VALIDATION.md) are separate from the published benchmark results.
 
 - **Demonstrations:** the 100 Hz, 646-record A1/A2 dataset and the separate 100 Hz, 300-record A2-closing coverage dataset. Their camera rates and splits are listed in the [dataset description](dataset_card.md).
-- **In this repository:** [training configurations and curves](../models/#act-training-records-and-checkpoint-downloads), [the 52 exam results and the two exam plans](../evaluations/), and [28 fixed scene and initial-state bundles](../fixtures/).
+- **In this repository:** [training configurations and curves](../models/), [the 52 exam results and the two exam plans](../evaluations/), and [28 fixed scene and initial-state bundles](../fixtures/).
 - **v0 downloads:** the full datasets, both ACT checkpoints, and the raw exam records and videos. See the [download and placement instructions](../runtime/README.md#download-and-place-materials).
 
 The [project home](../README.md) lists the release status.

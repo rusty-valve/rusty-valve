@@ -1,0 +1,220 @@
+{
+  "version": "2026-11-17-current",
+  "authority": "Pipe specification",
+  "services": {
+    "steam": {
+      "main_dn": 150,
+      "header_dn": 80,
+      "device_dn": 50
+    },
+    "steam_condensate": {
+      "device_dn": 50,
+      "before_trap_dn": 50,
+      "after_trap_dn": 50
+    },
+    "cold_source": {
+      "main_dn": 100,
+      "header_dn": 80,
+      "device_dn": 50
+    },
+    "cold_return": {
+      "main_dn": 100,
+      "header_dn": 80,
+      "device_dn": 50
+    },
+    "jacket_water": {
+      "device_dn": 50
+    },
+    "offgas": {
+      "main_dn": 100,
+      "header_dn": 100,
+      "emergency_dn": 50,
+      "condenser_dn": 50,
+      "normal_matches_nitrogen": true
+    },
+    "nitrogen": {
+      "main_candidates": [
+        50,
+        65,
+        80
+      ],
+      "header_max_dn": 50,
+      "device_candidates": [
+        25,
+        32,
+        40,
+        50
+      ]
+    }
+  },
+  "material_by_tier": {
+    "small": 50,
+    "medium": 80,
+    "large": 100
+  },
+  "process_vapor_candidates": [
+    100,
+    150,
+    200,
+    250,
+    300
+  ],
+  "condenser_condensate_candidates": [
+    25,
+    32,
+    40,
+    50
+  ],
+  "pipe_outer_diameter_mm": {
+    "15": 21.34,
+    "20": 26.67,
+    "25": 33.4,
+    "32": 42.16,
+    "40": 48.26,
+    "50": 60.33,
+    "65": 73.03,
+    "80": 88.9,
+    "100": 114.3,
+    "125": 141.3,
+    "150": 168.28,
+    "200": 219.08,
+    "250": 273.05,
+    "300": 323.85
+  },
+  "colors": {
+    "nitrogen": [
+      1,
+      0.82,
+      0.05
+    ],
+    "steam": [
+      0.82,
+      0.1,
+      0.08
+    ],
+    "steam_supply": [
+      0.82,
+      0.1,
+      0.08
+    ],
+    "water": [
+      0.12,
+      0.58,
+      0.22
+    ],
+    "water_return": [
+      0.12,
+      0.58,
+      0.22
+    ],
+    "cold_source": [
+      0.12,
+      0.58,
+      0.22
+    ],
+    "cold_return": [
+      0.12,
+      0.58,
+      0.22
+    ],
+    "hot_water": [
+      0.12,
+      0.58,
+      0.22
+    ],
+    "steam_condensate": [
+      0.12,
+      0.58,
+      0.22
+    ],
+    "steam_return": [
+      0.12,
+      0.58,
+      0.22
+    ],
+    "material": [
+      0.68,
+      0.72,
+      0.73
+    ],
+    "unknown_material": [
+      0.68,
+      0.72,
+      0.73
+    ],
+    "vapor": [
+      0.68,
+      0.72,
+      0.73
+    ],
+    "process_evaporated_vapor": [
+      0.68,
+      0.72,
+      0.73
+    ],
+    "condenser_material_condensate": [
+      0.68,
+      0.72,
+      0.73
+    ],
+    "recycle": [
+      0.68,
+      0.72,
+      0.73
+    ],
+    "bypass": [
+      0.68,
+      0.72,
+      0.73
+    ],
+    "offgas": [
+      0.68,
+      0.72,
+      0.73
+    ],
+    "emergency_discharge": [
+      0.68,
+      0.72,
+      0.73
+    ],
+    "unknown": [
+      0.68,
+      0.72,
+      0.73
+    ]
+  },
+  "operation_band_m": [
+    0,
+    2.2
+  ],
+  "headers": {
+    "alignment": "pipe_bottom",
+    "orientation": "building_long_axis",
+    "same_purpose_per_level": 1
+  },
+  "display": {
+    "allowed": [
+      "equipment",
+      "pipe",
+      "valve",
+      "platform",
+      "stair",
+      "support",
+      "ground"
+    ],
+    "excluded": [
+      "rail",
+      "curb",
+      "bund",
+      "ramp",
+      "drain",
+      "drain_cover",
+      "grating_drain"
+    ],
+    "temporary_interfaces": false
+  },
+  "notes": [
+    "Candidates follow the recipe and seed. The room records the actual selected dimensions.",
+    "Send steam condensate to its specified level-one point, separately from material condensate and cooling-water return."
+  ]
+}
